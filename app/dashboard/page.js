@@ -1,10 +1,10 @@
 'use client';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import api from '@/lib/api';
 import Cookies from 'js-cookie';
 
-export default function Dashboard() {
+function DashboardContent() {
     const router = useRouter();
     const searchParams = useSearchParams();
     const [connections, setConnections] = useState([]);
@@ -127,5 +127,13 @@ export default function Dashboard() {
                 </div>
             </div>
         </div>
+    );
+}
+
+export default function Dashboard() {
+    return (
+        <Suspense fallback={<div className="p-10">Loading...</div>}>
+            <DashboardContent />
+        </Suspense>
     );
 }
