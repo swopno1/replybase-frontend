@@ -14,8 +14,8 @@ export default function LandingPage() {
   const handleFacebookLogin = async () => {
     try {
       // Fetch the Facebook Auth URL from the backend
-      // Using '/auth/facebook/url' as the endpoint to initiate the flow
-      const { data } = await api.get('/auth/facebook/url');
+      // Using '/auth/facebook/login' as the endpoint to initiate the flow
+      const { data } = await api.get('/auth/facebook/login');
       window.location.href = data.url;
     } catch (err: any) {
       console.error('Login Error:', err);

@@ -48,7 +48,7 @@ function DashboardContent() {
         try {
             const tenantId = Cookies.get('tenant_id');
             // Get the correct URL from backend (includes the secure state param)
-            const { data } = await api.get(`/auth/facebook/url?tenant_id=${tenantId}`);
+            const { data } = await api.get(`/auth/facebook/login?tenant_id=${tenantId}`);
             // Redirect user to Meta
             window.location.href = data.url;
         } catch (err) {

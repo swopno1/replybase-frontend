@@ -11,7 +11,7 @@ export default function LandingNavbar() {
 
     const handleLogin = async () => {
         try {
-            const { data } = await api.get('/auth/facebook/url');
+            const { data } = await api.get('/auth/facebook/login');
             window.location.href = data.url;
         } catch (err: any) {
             console.error('Login Error:', err);
