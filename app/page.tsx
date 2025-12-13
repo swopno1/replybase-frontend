@@ -1,49 +1,177 @@
 'use client';
-import { useState, FormEvent } from 'react';
+
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import api from '@/lib/api';
-import Cookies from 'js-cookie';
+import LandingNavbar from '@/components/LandingNavbar';
+import LandingFooter from '@/components/LandingFooter';
+import { Bot, Zap, BarChart3, Check, X as XIcon } from 'lucide-react';
+import Link from 'next/link';
 
-export default function Login() {
-  const [isRegister, setIsRegister] = useState(false);
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+export default function LandingPage() {
   const router = useRouter();
 
-  const handleSubmit = async (e: FormEvent) => {
-    e.preventDefault();
+  const handleFacebookLogin = async () => {
     try {
-      const endpoint = isRegister ? '/auth/register' : '/auth/login';
-      const { data } = await api.post(endpoint, { email, password, company_name: 'Demo' });
-
-      if (!isRegister) {
-        Cookies.set('token', data.token);
-        Cookies.set('tenant_id', data.user.id); // Save ID for the FB Link
-        router.push('/dashboard');
-      } else {
-        setIsRegister(false);
-        alert('Registered! Now Login.');
-      }
+      // Fetch the Facebook Auth URL from the backend
+      // Using '/auth/facebook/url' as the endpoint to initiate the flow
+      const { data } = await api.get('/auth/facebook/url');
+      window.location.href = data.url;
     } catch (err) {
-      alert('Error: ' + ((err as any).response?.data?.error || (err as any).message));
+      console.error(err);
+      alert('Failed to initiate Facebook connection. Please try again.');
     }
   };
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gray-100">
-      <div className="w-full max-w-md p-8 space-y-6 bg-white rounded shadow-md">
-        <h2 className="text-2xl font-bold text-center">{isRegister ? 'Register' : 'Login'} to SaaS</h2>
-        <form onSubmit={handleSubmit} className="space-y-4">
-          <input className="w-full p-2 border rounded" type="email" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} required />
-          <input className="w-full p-2 border rounded" type="password" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)} required />
-          <button className="w-full p-2 text-white bg-blue-600 rounded hover:bg-blue-700">
-            {isRegister ? 'Sign Up' : 'Sign In'}
-          </button>
-        </form>
-        <button onClick={() => setIsRegister(!isRegister)} className="text-sm text-blue-500 underline w-full text-center">
-          {isRegister ? 'Already have an account? Login' : 'Need an account? Register'}
-        </button>
-      </div>
+    <div className="bg-slate-900 text-slate-300 antialiased selection:bg-indigo-500/20 font-inter">
+      <LandingNavbar />
+
+      <main>
+        {/* Hero Section */}
+        <section id="home" className="py-24 md:py-32 relative overflow-hidden">
+          {/* Background decorative elements could go here */}
+          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-indigo-900/20 via-slate-900 to-slate-900 -z-10"></div>
+
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight tracking-tight">
+              Build Smarter Chatbots, <span className="text-indigo-500">Faster.</span>
+            </h1>
+            <p className="mt-6 text-lg md:text-xl text-slate-400 max-w-3xl mx-auto">
+              The ultimate open-source, visual chatbot builder designed for performance and scale.
+              Automate your Facebook & WhatsApp customer support with ease.
+            </p>
+
+            <div className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
+              <button
+                onClick={handleFacebookLogin}
+                className="w-full sm:w-auto bg-[#1877F2] hover:bg-[#166fe5] text-white font-semibold px-8 py-3 rounded-lg transition-transform duration-300 transform hover:scale-105 flex items-center justify-center gap-2"
+              >
+                <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.791-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                </svg>
+                Continue with Facebook
+              </button>
+              <Link
+                href="#features"
+                className="w-full sm:w-auto border border-slate-700 text-white font-semibold px-8 py-3 rounded-lg hover:bg-slate-800 transition-colors duration-300 block sm:inline-block" // added block/inline-block to safe match button styling if needed, but flex gap handles it. 
+              >
+                Learn More
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Features Section */}
+        <section id="features" className="py-20 bg-slate-800/50">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-white">
+                Why ReplyBase is a Game-Changer
+              </h2>
+              <p className="mt-4 text-slate-400 max-w-2xl mx-auto">
+                Our platform is packed with features to help you build, deploy, and manage chatbots with unparalleled ease.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* Feature 1 */}
+              <div className="bg-slate-800 p-8 rounded-2xl shadow-xl border border-slate-700/50 hover:border-indigo-500/50 transition-colors duration-300">
+                <div className="flex items-center justify-center h-12 w-12 rounded-xl bg-indigo-600 text-white mb-6">
+                  <Bot size={24} />
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">Intuitive Visual Builder</h3>
+                <p className="text-slate-400">
+                  Drag, drop, and connect nodes to create complex conversational flows in minutes, not hours.
+                </p>
+              </div>
+
+              {/* Feature 2 */}
+              <div className="bg-slate-800 p-8 rounded-2xl shadow-xl border border-slate-700/50 hover:border-indigo-500/50 transition-colors duration-300">
+                <div className="flex items-center justify-center h-12 w-12 rounded-xl bg-indigo-600 text-white mb-6">
+                  <Zap size={24} />
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">Powerful Integrations</h3>
+                <p className="text-slate-400">
+                  Seamlessly connect to your CRM, email marketing tools, and other essential services with our robust API.
+                </p>
+              </div>
+
+              {/* Feature 3 */}
+              <div className="bg-slate-800 p-8 rounded-2xl shadow-xl border border-slate-700/50 hover:border-indigo-500/50 transition-colors duration-300">
+                <div className="flex items-center justify-center h-12 w-12 rounded-xl bg-indigo-600 text-white mb-6">
+                  <BarChart3 size={24} />
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">Advanced Analytics</h3>
+                <p className="text-slate-400">
+                  Get deep insights into your chatbot's performance and user engagement to optimize conversations.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Pricing Section */}
+        <section id="pricing" className="py-20">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-white">
+                Flexible Pricing for Every Team
+              </h2>
+              <p className="mt-4 text-slate-400 max-w-2xl mx-auto">
+                Choose the plan that's right for your business. All plans come with a 14-day free trial.
+              </p>
+            </div>
+
+            <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-800/50 p-1.5">
+              <table className="w-full text-sm text-left">
+                <thead className="text-xs text-slate-400 uppercase">
+                  <tr>
+                    <th scope="col" className="p-4 w-1/4">Feature</th>
+                    <th scope="col" className="p-4 text-center">Starter</th>
+                    <th scope="col" className="p-4 text-center">Growth (Best Value)</th>
+                    <th scope="col" className="p-4 text-center">Pro</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-800">
+                  <tr>
+                    <td className="p-4 font-semibold text-white">Monthly Price</td>
+                    <td className="p-4 text-center text-white">£19</td>
+                    <td className="p-4 text-center text-indigo-400 font-bold">£29</td>
+                    <td className="p-4 text-center text-white">£49</td>
+                  </tr>
+                  <tr>
+                    <td className="p-4 font-semibold text-white">Ideal For</td>
+                    <td className="p-4 text-center text-slate-400">Solopreneurs</td>
+                    <td className="p-4 text-center text-slate-400">Small Businesses</td>
+                    <td className="p-4 text-center text-slate-400">Agencies</td>
+                  </tr>
+                  <tr>
+                    <td className="p-4 font-semibold text-white">WhatsApp Integration</td>
+                    <td className="p-4 text-center text-red-500"><XIcon className="mx-auto" size={16} /></td>
+                    <td className="p-4 text-center text-green-500"><Check className="mx-auto" size={16} /></td>
+                    <td className="p-4 text-center text-green-500"><Check className="mx-auto" size={16} /></td>
+                  </tr>
+                  <tr>
+                    <td className="p-4"></td>
+                    <td className="p-4 text-center">
+                      <a href="https://buy.stripe.com/3cI4gBckAgn89yncmbefC00" className="block w-full bg-slate-700 hover:bg-slate-600 text-white py-2 rounded-lg">Start Trial</a>
+                    </td>
+                    <td className="p-4 text-center">
+                      <a href="https://buy.stripe.com/bJeeVfckAgn89yncmbefC01" className="block w-full bg-indigo-600 hover:bg-indigo-500 text-white py-2 rounded-lg">Start Trial</a>
+                    </td>
+                    <td className="p-4 text-center">
+                      <a href="https://buy.stripe.com/14AaEZ70g5IuaCrfynefC02" className="block w-full bg-slate-700 hover:bg-slate-600 text-white py-2 rounded-lg">Start Trial</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <LandingFooter />
     </div>
   );
 }
