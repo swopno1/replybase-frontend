@@ -47,8 +47,8 @@ function DashboardContent() {
     const handleConnectFacebook = async () => {
         try {
             const tenantId = Cookies.get('tenant_id');
-            // Get the correct URL from backend (includes the secure state param)
-            const { data } = await api.get(`/auth/facebook/login?tenant_id=${tenantId}`);
+            // Get the correct URL from backend for CONNECTING pages (not login)
+            const { data } = await api.get(`/auth/facebook/connect?tenant_id=${tenantId}`);
             // Redirect user to Meta
             window.location.href = data.url;
         } catch (err) {
@@ -106,7 +106,7 @@ function DashboardContent() {
                             onClick={handleConnectFacebook}
                             className="w-full py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded transition"
                         >
-                            Connect with Facebook
+                            Connect Facebook Pages
                         </button>
                     </div>
 

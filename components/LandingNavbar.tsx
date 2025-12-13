@@ -9,17 +9,8 @@ import api from '@/lib/api';
 export default function LandingNavbar() {
     const [isOpen, setIsOpen] = useState(false);
 
-    const handleLogin = async () => {
-        try {
-            const { data } = await api.get('/auth/facebook/login');
-            window.location.href = data.url;
-        } catch (err: any) {
-            console.error('Login Error:', err);
-            const apiUrl = process.env.NEXT_PUBLIC_API_URL;
-            const errorMessage = err.response?.data?.message || err.message || 'Unknown error';
-            alert(`Failed to initiate login.\nError: ${errorMessage}\nAPI URL: ${apiUrl || 'UNDEFINED'}`);
-        }
-    };
+    // handleLogin removed as we now redirect to /login
+
 
     return (
         <header className="bg-slate-900/70 backdrop-blur-lg sticky top-0 z-50 border-b border-slate-800">
@@ -54,12 +45,12 @@ export default function LandingNavbar() {
                  The user prompt says "Login" button (right). 
                  Since the main action is "Continue with Facebook" in the hero, let's make this button also go there or just href to home for now. 
                  Actually, the prompt says "Login" button. Let's make it consistent. */}
-                        <button
-                            onClick={handleLogin}
+                        <Link
+                            href="/login"
                             className="text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-500 rounded-lg px-4 py-2 transition-colors"
                         >
                             Login
-                        </button>
+                        </Link>
                     </li>
                 </ul>
 
@@ -89,12 +80,13 @@ export default function LandingNavbar() {
                     >
                         Pricing
                     </Link>
-                    <button
-                        onClick={() => { setIsOpen(false); handleLogin(); }}
+                    <Link
+                        href="/login"
                         className="block w-full text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-500 rounded-lg px-4 py-2 text-center"
+                        onClick={() => setIsOpen(false)}
                     >
                         Login
-                    </button>
+                    </Link>
                 </div>
             )}
         </header>
