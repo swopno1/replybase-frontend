@@ -17,9 +17,11 @@ export default function LandingPage() {
       // Using '/auth/facebook/url' as the endpoint to initiate the flow
       const { data } = await api.get('/auth/facebook/url');
       window.location.href = data.url;
-    } catch (err) {
-      console.error(err);
-      alert('Failed to initiate Facebook connection. Please try again.');
+    } catch (err: any) {
+      console.error('Login Error:', err);
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+      const errorMessage = err.response?.data?.message || err.message || 'Unknown error';
+      alert(`Failed to initiate connection.\nError: ${errorMessage}\nAPI URL: ${apiUrl || 'UNDEFINED'}`);
     }
   };
 
