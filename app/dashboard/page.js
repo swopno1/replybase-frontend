@@ -1,139 +1,46 @@
 'use client';
-import { useEffect, useState, Suspense } from 'react';
-import { useRouter, useSearchParams } from 'next/navigation';
+
+import { useState } from 'react';
 import api from '@/lib/api';
-import Cookies from 'js-cookie';
 
-function DashboardContent() {
-    const router = useRouter();
-    const searchParams = useSearchParams();
-    const [connections, setConnections] = useState([]);
-    const [loading, setLoading] = useState(true);
-    const [waPhone, setWaPhone] = useState('');
-    const [waToken, setWaToken] = useState('');
+export default function Login() {
+    const [loading, setLoading] = useState(false);
 
-    // 1. Fetch Data on Load
-    useEffect(() => {
-        const token = Cookies.get('token');
-        if (!token) router.push('/');
-
-        // Check for Facebook Success Message in URL
-        if (searchParams.get('fb_status') === 'success') {
-            alert('Facebook Connected Successfully!');
-            router.replace('/dashboard'); // Clean URL
-        }
-
-        fetchStatus();
-    }, [searchParams]);
-
-    const fetchStatus = async () => {
+    const handleFacebookLogin = async () => {
+        setLoading(true);
         try {
-            const { data } = await api.get('/tenant/status');
-            setConnections(data.connections);
-        } catch (err) {
-            console.error(err);
-        } finally {
+            // Get the Facebook Login URL from our API
+            const { data } = await api.get('/auth/facebook/login');
+            // Redirect the browser
+            window.location.href = data.url;
+        } catch (error) {
+            alert("Failed to initialize login");
             setLoading(false);
         }
     };
 
-    // 2. Connect Facebook Logic
-    const handleConnectFacebook = async () => {
-        try {
-            const tenantId = Cookies.get('tenant_id');
-            // Get the correct URL from backend (includes the secure state param)
-            const { data } = await api.get(`/auth/facebook/url?tenant_id=${tenantId}`);
-            // Redirect user to Meta
-            window.location.href = data.url;
-        } catch (err) {
-            alert('Failed to initiate Facebook connection');
-        }
-    };
-
-    // 3. Connect WhatsApp Logic (Manual)
-    const handleConnectWhatsApp = async (e) => {
-        e.preventDefault();
-        try {
-            await api.post('/tenant/whatsapp', { phone_id: waPhone, access_token: waToken });
-            alert('WhatsApp Saved!');
-            setWaPhone(''); setWaToken('');
-            fetchStatus();
-        } catch (err) {
-            alert('Error saving WhatsApp');
-        }
-    };
-
-    if (loading) return <div className="p-10">Loading...</div>;
-
     return (
-        <div className="min-h-screen bg-gray-50 p-8">
-            <div className="max-w-4xl mx-auto">
-                <div className="flex justify-between items-center mb-8">
-                    <h1 className="text-3xl font-bold text-gray-800">Bot Automation Dashboard</h1>
-                    <button onClick={() => { Cookies.remove('token'); router.push('/'); }} className="text-red-500">Logout</button>
-                </div>
+        <div className="flex min-h-screen items-center justify-center bg-gray-50">
+            <div className="w-full max-w-md p-8 bg-white rounded-lg shadow-lg text-center">
+                <h1 className="text-2xl font-bold mb-2">Bot Automation SaaS</h1>
+                <p className="text-gray-600 mb-8">Manage your bots seamlessly.</p>
 
-                {/* Status Section */}
-                <div className="bg-white p-6 rounded-lg shadow mb-8">
-                    <h2 className="text-xl font-semibold mb-4">Active Connections</h2>
-                    {connections.length === 0 ? (
-                        <p className="text-gray-500">No platforms connected yet.</p>
-                    ) : (
-                        <ul className="space-y-2">
-                            {connections.map((c, i) => (
-                                <li key={i} className="flex items-center justify-between p-3 bg-gray-50 rounded border">
-                                    <span className="font-bold uppercase text-blue-600">{c.platform}</span>
-                                    <span className="text-sm text-gray-600">ID: {c.page_id}</span>
-                                    <span className="text-xs text-green-500 bg-green-100 px-2 py-1 rounded">Active</span>
-                                </li>
-                            ))}
-                        </ul>
+                <button
+                    onClick={handleFacebookLogin}
+                    disabled={loading}
+                    className="w-full flex items-center justify-center gap-3 py-3 px-4 bg-[#1877F2] hover:bg-[#166fe5] text-white font-semibold rounded-md transition-all shadow-sm"
+                >
+                    {loading ? 'Redirecting...' : (
+                        <>
+                            {/* Facebook Icon SVG */}
+                            <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                            Continue with Facebook
+                        </>
                     )}
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    {/* Facebook Card */}
-                    <div className="bg-white p-6 rounded-lg shadow border-t-4 border-blue-600">
-                        <h3 className="text-lg font-bold mb-2">Facebook Messenger</h3>
-                        <p className="text-sm text-gray-600 mb-4">Connect your Facebook Page to enable auto-replies.</p>
-                        <button
-                            onClick={handleConnectFacebook}
-                            className="w-full py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded transition"
-                        >
-                            Connect with Facebook
-                        </button>
-                    </div>
-
-                    {/* WhatsApp Card */}
-                    <div className="bg-white p-6 rounded-lg shadow border-t-4 border-green-500">
-                        <h3 className="text-lg font-bold mb-2">WhatsApp Cloud API</h3>
-                        <p className="text-sm text-gray-600 mb-4">Enter your Meta Developer Credentials manually.</p>
-                        <form onSubmit={handleConnectWhatsApp} className="space-y-3">
-                            <input
-                                type="text" placeholder="Phone Number ID"
-                                className="w-full p-2 border rounded text-sm"
-                                value={waPhone} onChange={e => setWaPhone(e.target.value)} required
-                            />
-                            <input
-                                type="password" placeholder="Permanent Access Token"
-                                className="w-full p-2 border rounded text-sm"
-                                value={waToken} onChange={e => setWaToken(e.target.value)} required
-                            />
-                            <button className="w-full py-2 bg-green-500 hover:bg-green-600 text-white font-semibold rounded transition">
-                                Save WhatsApp Credentials
-                            </button>
-                        </form>
-                    </div>
-                </div>
+                </button>
             </div>
         </div>
-    );
-}
-
-export default function Dashboard() {
-    return (
-        <Suspense fallback={<div className="p-10">Loading...</div>}>
-            <DashboardContent />
-        </Suspense>
     );
 }
