@@ -5,12 +5,18 @@ import { useRouter, useSearchParams } from 'next/navigation';
 import api from '@/lib/api';
 import LandingNavbar from '@/components/LandingNavbar';
 import LandingFooter from '@/components/LandingFooter';
-import { Mail, AlertCircle } from 'lucide-react';
+import { Mail, AlertCircle, Lock } from 'lucide-react';
 import Image from 'next/image';
+import Cookies from 'js-cookie';
+import Link from 'next/link';
 
 function LoginContent() {
+    const router = useRouter();
     const searchParams = useSearchParams();
     const [error, setError] = useState<string | null>(null);
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [successMessage, setSuccessMessage] = useState<string | null>(null);
 
     useEffect(() => {
         const errorType = searchParams.get('error');
@@ -19,7 +25,38 @@ function LoginContent() {
         } else if (errorType === 'auth_failed') {
             setError('Authentication failed. Please try again.');
         }
-    }, [searchParams]);
+
+        if (searchParams.get('registered') === 'true') {
+            setSuccessMessage('Registration successful! Please sign in.');
+            // Clean the URL
+            router.replace('/login', undefined);
+        }
+    }, [searchParams, router]);
+
+    const handleEmailLogin = async (e: React.FormEvent) => {
+        e.preventDefault();
+        setError(null);
+        setSuccessMessage(null);
+
+        try {
+            const { data } = await api.post('/auth/login', { email, password });
+            const { token, tenant_id } = data;
+
+            if (token) {
+                Cookies.set('token', token, { expires: 7 });
+                if (tenant_id) Cookies.set('tenant_id', tenant_id, { expires: 7 });
+                router.push('/dashboard');
+            } else {
+                setError('Login failed. Please check your credentials.');
+            }
+        } catch (err: any) {
+            if (err.response && err.response.data && err.response.data.message) {
+                setError(err.response.data.message);
+            } else {
+                setError('An unexpected error occurred. Please try again.');
+            }
+        }
+    };
 
     const handleGoogleLogin = async () => {
         try {
@@ -27,7 +64,7 @@ function LoginContent() {
             window.location.href = data.url;
         } catch (err) {
             console.error(err);
-            alert('Failed to initiate Google login');
+            setError('Failed to initiate Google login. Please try again.');
         }
     };
 
@@ -37,7 +74,7 @@ function LoginContent() {
             window.location.href = data.url;
         } catch (err) {
             console.error(err);
-            alert('Failed to initiate Facebook login');
+            setError('Failed to initiate Facebook login. Please try again.');
         }
     };
 
@@ -59,11 +96,56 @@ function LoginContent() {
                         </div>
                     )}
 
+                    {successMessage && (
+                        <div className="mb-6 p-4 bg-green-500/10 border border-green-500/20 rounded-lg text-green-500 text-sm">
+                            <p>{successMessage}</p>
+                        </div>
+                    )}
+
+                    <form onSubmit={handleEmailLogin} className="space-y-4">
+                        <div className="relative">
+                            <Mail className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-500" size={20} />
+                            <input
+                                type="email"
+                                placeholder="Email Address"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                                required
+                                className="w-full bg-slate-900 border border-slate-700 rounded-lg pl-10 pr-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                            />
+                        </div>
+                        <div className="relative">
+                            <Lock className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-500" size={20} />
+                            <input
+                                type="password"
+                                placeholder="Password"
+                                value={password}
+                                onChange={(e) => setPassword(e.target.value)}
+                                required
+                                className="w-full bg-slate-900 border border-slate-700 rounded-lg pl-10 pr-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                            />
+                        </div>
+                        <button
+                            type="submit"
+                            className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors"
+                        >
+                            Sign In
+                        </button>
+                    </form>
+
+                    <div className="relative my-6">
+                        <div className="absolute inset-0 flex items-center">
+                            <span className="w-full border-t border-slate-700" />
+                        </div>
+                        <div className="relative flex justify-center text-xs uppercase">
+                            <span className="bg-slate-800 px-2 text-slate-500">Or sign in with</span>
+                        </div>
+                    </div>
+
                     <div className="space-y-4">
-                        {/* Google Login */}
                         <button
                             onClick={handleGoogleLogin}
-                            className="w-full bg-white hover:bg-gray-100 text-gray-900 font-semibold px-6 py-3 rounded-lg transition-colors flex items-center justify-center gap-3 relative overflow-hidden group"
+                            className="w-full bg-white hover:bg-gray-100 text-gray-900 font-semibold px-6 py-3 rounded-lg transition-colors flex items-center justify-center gap-3"
                         >
                             <svg className="w-5 h-5" viewBox="0 0 24 24">
                                 <path
@@ -86,16 +168,6 @@ function LoginContent() {
                             <span>Sign in with Google</span>
                         </button>
 
-                        <div className="relative">
-                            <div className="absolute inset-0 flex items-center">
-                                <span className="w-full border-t border-slate-700" />
-                            </div>
-                            <div className="relative flex justify-center text-xs uppercase">
-                                <span className="bg-slate-800 px-2 text-slate-500">Or continue with</span>
-                            </div>
-                        </div>
-
-                        {/* Facebook Login */}
                         <button
                             onClick={handleFacebookLogin}
                             className="w-full bg-[#1877F2] hover:bg-[#166fe5] text-white font-semibold px-6 py-3 rounded-lg transition-colors flex items-center justify-center gap-3"
@@ -108,10 +180,16 @@ function LoginContent() {
                     </div>
 
                     <p className="mt-8 text-center text-sm text-slate-500">
+                        Don't have an account?{' '}
+                        <Link href="/register" className="text-indigo-400 hover:text-indigo-300">
+                            Sign up
+                        </Link>
+                    </p>
+                    <p className="mt-4 text-center text-xs text-slate-600">
                         By continuing, you agree to our{' '}
-                        <a href="/terms" className="text-indigo-400 hover:text-indigo-300">Terms of Service</a>{' '}
+                        <a href="/terms" className="hover:text-slate-400">Terms of Service</a>{' '}
                         and{' '}
-                        <a href="/privacy" className="text-indigo-400 hover:text-indigo-300">Privacy Policy</a>.
+                        <a href="/privacy" className="hover:text-slate-400">Privacy Policy</a>.
                     </p>
                 </div>
             </main>
