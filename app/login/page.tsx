@@ -2,12 +2,10 @@
 
 import { Suspense, useEffect, useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
-import api from '@/lib/api';
+import { signIn } from 'next-auth/react';
 import LandingNavbar from '@/components/LandingNavbar';
 import LandingFooter from '@/components/LandingFooter';
 import { Mail, AlertCircle, Lock } from 'lucide-react';
-import Image from 'next/image';
-import Cookies from 'js-cookie';
 import Link from 'next/link';
 
 function LoginContent() {
@@ -19,11 +17,13 @@ function LoginContent() {
     const [successMessage, setSuccessMessage] = useState<string | null>(null);
 
     useEffect(() => {
-        const errorType = searchParams.get('error');
-        if (errorType === 'missing_email') {
-            setError('Your Facebook account has no email. Please sign in with Google to continue.');
-        } else if (errorType === 'auth_failed') {
-            setError('Authentication failed. Please try again.');
+        const callbackError = searchParams.get('error');
+        if (callbackError) {
+            if (callbackError === 'CredentialsSignin') {
+                setError('Invalid email or password. Please try again.');
+            } else {
+                setError('Authentication failed. Please try again.');
+            }
         }
 
         if (searchParams.get('registered') === 'true') {
@@ -38,44 +38,21 @@ function LoginContent() {
         setError(null);
         setSuccessMessage(null);
 
-        try {
-            const { data } = await api.post('/auth/login', { email, password });
-            const { token, tenant_id } = data;
+        const result = await signIn('credentials', {
+            redirect: false,
+            email,
+            password,
+        });
 
-            if (token) {
-                Cookies.set('token', token, { expires: 7 });
-                if (tenant_id) Cookies.set('tenant_id', tenant_id, { expires: 7 });
-                router.push('/dashboard');
-            } else {
-                setError('Login failed. Please check your credentials.');
-            }
-        } catch (err: any) {
-            if (err.response && err.response.data && err.response.data.message) {
-                setError(err.response.data.message);
-            } else {
-                setError('An unexpected error occurred. Please try again.');
-            }
+        if (result?.ok) {
+            router.push('/dashboard');
+        } else {
+            setError(result?.error || 'Login failed. Please check your credentials.');
         }
     };
 
     const handleGoogleLogin = async () => {
-        try {
-            const { data } = await api.get('/auth/google/login');
-            window.location.href = data.url;
-        } catch (err) {
-            console.error(err);
-            setError('Failed to initiate Google login. Please try again.');
-        }
-    };
-
-    const handleFacebookLogin = async () => {
-        try {
-            const { data } = await api.get('/auth/facebook/login');
-            window.location.href = data.url;
-        } catch (err) {
-            console.error(err);
-            setError('Failed to initiate Facebook login. Please try again.');
-        }
+        await signIn('google', { callbackUrl: '/dashboard' });
     };
 
     return (
@@ -166,16 +143,6 @@ function LoginContent() {
                                 />
                             </svg>
                             <span>Sign in with Google</span>
-                        </button>
-
-                        <button
-                            onClick={handleFacebookLogin}
-                            className="w-full bg-[#1877F2] hover:bg-[#166fe5] text-white font-semibold px-6 py-3 rounded-lg transition-colors flex items-center justify-center gap-3"
-                        >
-                            <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
-                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.791-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-                            </svg>
-                            <span>Sign in with Facebook</span>
                         </button>
                     </div>
 
