@@ -4,13 +4,9 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Menu, X } from 'lucide-react';
-import api from '@/lib/api';
 
 export default function LandingNavbar() {
     const [isOpen, setIsOpen] = useState(false);
-
-    // handleLogin removed as we now redirect to /login
-
 
     return (
         <header className="bg-slate-900/70 backdrop-blur-lg sticky top-0 z-50 border-b border-slate-800">
@@ -40,13 +36,8 @@ export default function LandingNavbar() {
                         </Link>
                     </li>
                     <li>
-                        {/* The user requested a "Login" button on the right which we will make scroll to top or trigger login modal if we had one. 
-                 For now, referencing the original HTML, it links to an external builder or just a login action. 
-                 The user prompt says "Login" button (right). 
-                 Since the main action is "Continue with Facebook" in the hero, let's make this button also go there or just href to home for now. 
-                 Actually, the prompt says "Login" button. Let's make it consistent. */}
                         <Link
-                            href="/login"
+                            href="https://app.replybase.co.uk"
                             className="text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-500 rounded-lg px-4 py-2 transition-colors"
                         >
                             Login
@@ -81,7 +72,7 @@ export default function LandingNavbar() {
                         Pricing
                     </Link>
                     <Link
-                        href="/login"
+                        href="https://app.replybase.co.uk"
                         className="block w-full text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-500 rounded-lg px-4 py-2 text-center"
                         onClick={() => setIsOpen(false)}
                     >
