@@ -56,10 +56,44 @@ export default function LandingFooter() {
                         © {new Date().getFullYear()} ReplyBase. All rights reserved.
                     </p>
                     <div className="mt-4 opacity-50 hover:opacity-80 transition-opacity">
-                        <p className="text-[10px] leading-tight text-slate-500">
-                            Developed by <a href="https://vivescriptsolutions.com" className="font-medium text-slate-400 hover:text-slate-200">ViveScript Solutions LLC</a>
-                        </p>
-                    </div>
+            <p className="text-[10px] leading-tight text-slate-500">
+              Developed by
+              <a
+                href="https://vivescriptsolutions.com"
+                className="font-medium text-slate-400 hover:text-slate-200"
+              >
+                ViveScript Solutions LLC
+              </a>
+              &nbsp;— AI Automation • Chatbots • Workflow Engineering • Web
+              Development
+            </p>
+            <div className="flex flex-wrap justify-center gap-2 mt-2">
+              <a
+                href="https://vivescriptsolutions.com"
+                className="text-[9px] text-slate-600 hover:text-slate-300"
+              >
+                AI Automation
+              </a>
+              <a
+                href="https://vivescriptsolutions.com"
+                className="text-[9px] text-slate-600 hover:text-slate-300"
+              >
+                Chatbot Developer
+              </a>
+              <a
+                href="https://vivescriptsolutions.com"
+                className="text-[9px] text-slate-600 hover:text-slate-300"
+              >
+                Google Workspace Automation
+              </a>
+              <a
+                href="https://vivescriptsolutions.com"
+                className="text-[9px] text-slate-600 hover:text-slate-300"
+              >
+                Workflow Engineering
+              </a>
+            </div>
+          </div>
                 </div>
             </div>
         </footer>
