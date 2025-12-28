@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import api from '@/lib/api';
 import LandingNavbar from '@/components/LandingNavbar';
 import LandingFooter from '@/components/LandingFooter';
 import { Bot, Zap, BarChart3, Check, X as XIcon } from 'lucide-react';
@@ -10,9 +9,6 @@ import Link from 'next/link';
 
 export default function LandingPage() {
   const router = useRouter();
-
-  // handleFacebookLogin removed as we now redirect to /login
-
 
   return (
     <div className="bg-slate-900 text-slate-300 antialiased selection:bg-indigo-500/20 font-inter">
@@ -35,7 +31,7 @@ export default function LandingPage() {
 
             <div className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
               <Link
-                href="/login"
+                href="https://app.replybase.co.uk"
                 className="w-full sm:w-auto bg-[#1877F2] hover:bg-[#166fe5] text-white font-semibold px-8 py-3 rounded-lg transition-transform duration-300 transform hover:scale-105 flex items-center justify-center gap-2"
               >
                 Get Started
