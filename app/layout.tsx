@@ -29,7 +29,6 @@ export const metadata: Metadata = {
   },
 };
 
-import SessionProvider from '@/components/SessionProvider';
 import CookieConsent from '@/components/CookieConsent';
 
 export default function RootLayout({
@@ -42,7 +41,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <SessionProvider>{children}</SessionProvider>
+        {children}
         <CookieConsent />
       </body>
     </html>
