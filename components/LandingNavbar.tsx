@@ -36,6 +36,11 @@ export default function LandingNavbar() {
                         </Link>
                     </li>
                     <li>
+                        <Link href="/about" className="text-sm font-medium text-slate-300 hover:text-white transition-colors">
+                            About
+                        </Link>
+                    </li>
+                    <li>
                         <Link
                             href="https://app.replybase.co.uk"
                             className="text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-500 rounded-lg px-4 py-2 transition-colors"
@@ -70,6 +75,13 @@ export default function LandingNavbar() {
                         onClick={() => setIsOpen(false)}
                     >
                         Pricing
+                    </Link>
+                    <Link
+                        href="/about"
+                        className="block text-sm font-medium text-slate-300 hover:text-white"
+                        onClick={() => setIsOpen(false)}
+                    >
+                        About
                     </Link>
                     <Link
                         href="https://app.replybase.co.uk"
