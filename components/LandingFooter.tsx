@@ -85,6 +85,11 @@ export default function LandingFooter() {
                 </Link>
               </li>
               <li>
+                <Link href="/cookie-policy" className="hover:text-white">
+                  Cookie Policy
+                </Link>
+              </li>
+              <li>
                 <Link href="/terms" className="hover:text-white">
                   Terms of Service
                 </Link>
