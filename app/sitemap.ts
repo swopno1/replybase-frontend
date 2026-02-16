@@ -34,6 +34,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/docs/onboarding-implementation",
     "/deletion-status",
     "/privacy",
+    "/cookie-policy",
     "/terms",
   ];
 

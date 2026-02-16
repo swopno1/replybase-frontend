@@ -29,7 +29,7 @@ export default function CookieConsent() {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
                 <p className="text-sm text-slate-300">
                     We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.
-                    <Link href="/privacy" className="underline ml-2 hover:text-white">
+                    <Link href="/cookie-policy" className="underline ml-2 hover:text-white">
                         Learn more
                     </Link>
                 </p>

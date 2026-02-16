@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Mail } from "lucide-react";
+import { subscribeToNewsletter } from "@/app/actions/replybase-api";
 
 export default function NewsletterSubscribe({
   compact = false,
@@ -24,24 +25,17 @@ export default function NewsletterSubscribe({
     setStatus("loading");
 
     try {
-      // Placeholder API endpoint - replace with actual endpoint when ready
-      const response = await fetch("/api/newsletter/subscribe", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email }),
-      });
+      const result = await subscribeToNewsletter(email);
 
-      if (response.ok) {
+      if (result.success) {
         setStatus("success");
-        setMessage("Thanks for subscribing! Check your email to confirm.");
+        setMessage(result.message || "Thanks for subscribing!");
         setEmail("");
       } else {
         setStatus("error");
-        setMessage("Something went wrong. Please try again.");
+        setMessage(result.error || "Something went wrong. Please try again.");
       }
-    } catch (error) {
+    } catch (_error) {
       setStatus("error");
       setMessage("Failed to subscribe. Please try again later.");
     }

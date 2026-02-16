@@ -1,5 +1,6 @@
 import LandingNavbar from "@/components/LandingNavbar";
 import LandingFooter from "@/components/LandingFooter";
+import { DataDeletionForm } from "@/components/DataDeletionForm";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -9,6 +10,8 @@ export const metadata: Metadata = {
 };
 
 export default function PrivacyPage() {
+  const lastUpdated = "February 16, 2026";
+
   return (
     <div className="bg-slate-900 text-slate-300 min-h-screen font-inter selection:bg-indigo-500/20">
       <LandingNavbar />
@@ -18,7 +21,7 @@ export default function PrivacyPage() {
           Privacy Policy
         </h1>
         <p className="text-slate-400 mb-8">
-          <strong>Last Updated:</strong> January 30, 2026
+          <strong>Last Updated:</strong> {lastUpdated}
         </p>
 
         <div className="space-y-8 text-slate-300">
@@ -69,7 +72,27 @@ export default function PrivacyPage() {
 
           <section>
             <h2 className="text-xl font-bold text-white mb-4">
-              2. Facebook & Meta Data (App Review Disclosure)
+              2. AI Data Processing
+            </h2>
+            <p className="mb-4">
+              ReplyBase uses third-party AI providers (such as OpenAI and Anthropic) to power our automated conversation features.
+            </p>
+            <ul className="list-disc ml-6 space-y-2 text-slate-400">
+              <li>
+                <strong className="text-slate-200">Real-time Processing:</strong> Conversation data is sent to these providers in real-time to generate intelligent responses.
+              </li>
+              <li>
+                <strong className="text-slate-200">No Model Training:</strong> We ensure that our agreements with AI providers prohibit the use of your data or your customers&apos; data for training their global models.
+              </li>
+              <li>
+                <strong className="text-slate-200">Data Minimization:</strong> We only send the minimum necessary context to AI providers to fulfill the specific automation request.
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-bold text-white mb-4">
+              3. Facebook & Meta Data (App Review Disclosure)
             </h2>
             <p className="mb-4">
               Our application integrates with the Meta (Facebook) Platform. If
@@ -104,7 +127,27 @@ export default function PrivacyPage() {
 
           <section>
             <h2 className="text-xl font-bold text-white mb-4">
-              3. How We Use Your Information
+              4. Newsletter & Marketing
+            </h2>
+            <p className="mb-4">
+              If you choose to subscribe to our newsletter, we collect your email address to send you updates, product news, and marketing communications.
+            </p>
+            <ul className="list-disc ml-6 space-y-2 text-slate-400">
+              <li>
+                <strong className="text-slate-200">Consent:</strong> We only send marketing emails to users who have explicitly opted in.
+              </li>
+              <li>
+                <strong className="text-slate-200">Unsubscribe:</strong> You can opt-out of marketing communications at any time by clicking the &quot;unsubscribe&quot; link in our emails.
+              </li>
+              <li>
+                <strong className="text-slate-200">Third-party Services:</strong> We may use reputable third-party email service providers to manage and deliver our newsletter.
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-bold text-white mb-4">
+              5. How We Use Your Information
             </h2>
             <ul className="list-disc ml-6 space-y-2 text-slate-400">
               <li>
@@ -136,7 +179,7 @@ export default function PrivacyPage() {
 
           <section>
             <h2 className="text-xl font-bold text-white mb-4">
-              4. Data Retention and Deletion
+              6. Data Retention and Deletion
             </h2>
             <p className="mb-4">
               We retain your data as long as your account is active. You can
@@ -145,17 +188,13 @@ export default function PrivacyPage() {
             <ul className="list-disc ml-6 space-y-2 text-slate-400">
               <li>Via account settings in your dashboard</li>
               <li>By contacting support@replybase.co.uk</li>
-              <li>
-                Through our{" "}
-                <a
-                  href="/deletion-status"
-                  className="text-indigo-400 hover:text-indigo-300 underline"
-                >
-                  Data Deletion Request
-                </a>{" "}
-                page
-              </li>
             </ul>
+            <p className="mt-6 mb-4 text-slate-400">
+              In accordance with GDPR, you have the right to request deletion of your personal data. You can submit a request directly below:
+            </p>
+            <div className="bg-slate-800 p-6 rounded-xl border border-slate-700 mb-6">
+              <DataDeletionForm />
+            </div>
             <p className="mt-4 text-slate-400">
               Upon deletion request, we will remove your personal data within 30
               days, except where retention is required by law.
@@ -164,7 +203,7 @@ export default function PrivacyPage() {
 
           <section>
             <h2 className="text-xl font-bold text-white mb-4">
-              5. Data Sharing and Third Parties
+              7. Data Sharing and Third Parties
             </h2>
             <p className="mb-4">
               We share your data only in the following circumstances:
@@ -173,6 +212,9 @@ export default function PrivacyPage() {
               <li>
                 <strong className="text-slate-200">Payment Processing:</strong>{" "}
                 Stripe processes payments on our behalf (PCI DSS compliant).
+              </li>
+              <li>
+                <strong className="text-slate-200">AI Processing:</strong> Third-party AI providers for conversation automation.
               </li>
               <li>
                 <strong className="text-slate-200">Messaging Platforms:</strong>{" "}
@@ -197,7 +239,7 @@ export default function PrivacyPage() {
 
           <section>
             <h2 className="text-xl font-bold text-white mb-4">
-              6. Data Storage and Security
+              8. Data Storage and Security
             </h2>
             <p className="text-slate-400">
               We implement industry-standard security measures including
@@ -210,7 +252,7 @@ export default function PrivacyPage() {
 
           <section>
             <h2 className="text-xl font-bold text-white mb-4">
-              7. Your Rights (GDPR Compliance)
+              9. Your Rights (GDPR Compliance)
             </h2>
             <p className="mb-4">
               If you are in the EU/UK, you have the following rights:
@@ -244,19 +286,25 @@ export default function PrivacyPage() {
 
           <section>
             <h2 className="text-xl font-bold text-white mb-4">
-              8. Cookies and Tracking
+              10. Cookies and Tracking
             </h2>
             <p className="text-slate-400">
               We use essential cookies for authentication and session
-              management. Analytics cookies (optional) help us understand how
+              management. Functional cookies help us remember your preferences. Analytics cookies (optional) help us understand how
               you use our platform. You can manage cookie preferences through
-              our cookie consent banner.
+              our cookie consent banner or view our dedicated{" "}
+              <a
+                href="/cookie-policy"
+                className="text-indigo-400 hover:text-indigo-300 underline"
+              >
+                Cookie Policy
+              </a>.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-bold text-white mb-4">
-              9. Children&apos;s Privacy
+              11. Children&apos;s Privacy
             </h2>
             <p className="text-slate-400">
               Our service is not intended for users under 16 years of age. We do
@@ -266,7 +314,7 @@ export default function PrivacyPage() {
 
           <section>
             <h2 className="text-xl font-bold text-white mb-4">
-              10. Changes to This Policy
+              12. Changes to This Policy
             </h2>
             <p className="text-slate-400">
               We may update this Privacy Policy from time to time. We will
@@ -277,7 +325,7 @@ export default function PrivacyPage() {
 
           <section>
             <h2 className="text-xl font-bold text-white mb-4">
-              11. Contact Us
+              13. Contact Us
             </h2>
             <p className="text-slate-400 mb-4">
               If you have questions about this Privacy Policy, please contact
