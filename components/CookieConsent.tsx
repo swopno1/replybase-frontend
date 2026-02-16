@@ -9,7 +9,9 @@ export default function CookieConsent() {
     useEffect(() => {
         const consent = localStorage.getItem('cookie_consent');
         if (consent !== 'true') {
-            setShowBanner(true);
+            // Use a timeout to avoid cascading renders warning
+            const timer = setTimeout(() => setShowBanner(true), 0);
+            return () => clearTimeout(timer);
         }
     }, []);
 

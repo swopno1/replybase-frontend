@@ -1,6 +1,13 @@
 import LandingNavbar from '@/components/LandingNavbar';
 import LandingFooter from '@/components/LandingFooter';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: '/about',
+  },
+};
 
 export default function AboutPage() {
   return (

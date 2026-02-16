@@ -1,15 +1,16 @@
-"use client";
-
-import { useState, useEffect } from "react";
-import { useRouter } from "next/navigation";
 import LandingNavbar from "@/components/LandingNavbar";
 import LandingFooter from "@/components/LandingFooter";
 import { Bot, Zap, BarChart3, Check, X as XIcon } from "lucide-react";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/",
+  },
+};
 
 export default function LandingPage() {
-  const router = useRouter();
-
   return (
     <div className="bg-slate-900 text-slate-300 antialiased selection:bg-indigo-500/20 font-inter">
       <LandingNavbar />
@@ -559,12 +560,12 @@ export default function LandingPage() {
                       </a>
                     </td>
                     <td className="p-4 text-center">
-                      <a
-                        href="https://app.replybase.co.uk/contact"
-                        className="block w-full bg-slate-700 hover:bg-slate-600 text-white py-2 rounded-lg"
+                      <Link
+                        href="/contact"
+                        className="block w-full bg-slate-700 hover:bg-slate-600 text-white py-2 rounded-lg text-center"
                       >
                         Contact Sales
-                      </a>
+                      </Link>
                     </td>
                   </tr>
                 </tbody>

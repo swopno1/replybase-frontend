@@ -1,7 +1,12 @@
-"use client";
-
 import LandingNavbar from "@/components/LandingNavbar";
 import LandingFooter from "@/components/LandingFooter";
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: '/terms',
+  },
+};
 
 export default function TermsPage() {
   return (
@@ -22,7 +27,7 @@ export default function TermsPage() {
               1. Acceptance of Terms
             </h2>
             <p className="text-slate-400">
-              By accessing or using ReplyBase (the "Service"), you agree to be
+              By accessing or using ReplyBase (the &quot;Service&quot;), you agree to be
               bound by these Terms of Service. If you disagree with any part of
               the terms, you may not access the Service. These terms apply to
               all users of the platform, including free and paid subscribers.
@@ -205,10 +210,10 @@ export default function TermsPage() {
 
           <section>
             <h2 className="text-xl font-bold text-white mb-4">
-              10. "As Is" Service
+              10. &quot;As Is&quot; Service
             </h2>
             <p className="text-slate-400">
-              The Service is provided on an "AS IS" and "AS AVAILABLE" basis
+              The Service is provided on an &quot;AS IS&quot; and &quot;AS AVAILABLE&quot; basis
               without warranties of any kind, either express or implied. We do
               not warrant that the Service will be uninterrupted, secure, or
               error-free.
