@@ -58,6 +58,9 @@ export async function generateMetadata({
     return {
       title: `${postData.title} | ReplyBase Blog`,
       description: postData.excerpt,
+      alternates: {
+        canonical: `/blog/${slug}`,
+      },
     };
   } catch (_error) {
     return {

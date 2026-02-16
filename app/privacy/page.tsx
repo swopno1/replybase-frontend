@@ -1,7 +1,12 @@
-"use client";
-
 import LandingNavbar from "@/components/LandingNavbar";
 import LandingFooter from "@/components/LandingFooter";
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: '/privacy',
+  },
+};
 
 export default function PrivacyPage() {
   return (
@@ -18,7 +23,7 @@ export default function PrivacyPage() {
 
         <div className="space-y-8 text-slate-300">
           <p>
-            Welcome to ReplyBase ("we," "our," or "us"). We are committed to
+            Welcome to ReplyBase (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;). We are committed to
             protecting your privacy. This Privacy Policy explains how your
             personal information is collected, used, and disclosed by ReplyBase,
             an AI-powered conversation management platform.
@@ -251,7 +256,7 @@ export default function PrivacyPage() {
 
           <section>
             <h2 className="text-xl font-bold text-white mb-4">
-              9. Children's Privacy
+              9. Children&apos;s Privacy
             </h2>
             <p className="text-slate-400">
               Our service is not intended for users under 16 years of age. We do
