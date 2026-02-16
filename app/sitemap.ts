@@ -1,6 +1,19 @@
 import { MetadataRoute } from "next";
+import fs from "fs";
+import path from "path";
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const postsDirectory = path.join(process.cwd(), "_posts");
+  let blogPosts: { url: string; lastModified: Date }[] = [];
+
+  if (fs.existsSync(postsDirectory)) {
+    const fileNames = fs.readdirSync(postsDirectory);
+    blogPosts = fileNames.map((fileName) => ({
+      url: `https://replybase.co.uk/blog/${fileName.replace(/\.md$/, "")}`,
+      lastModified: new Date(),
+    }));
+  }
+
   const mainRoutes = [
     "",
     "/about",
@@ -29,5 +42,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(),
   }));
 
-  return [...routes];
+  return [...routes, ...blogPosts];
 }
