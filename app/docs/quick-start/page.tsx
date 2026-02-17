@@ -77,7 +77,7 @@ export default function QuickStartDoc() {
                 <div className="bg-slate-900 p-4 rounded border border-slate-700">
                   <h3 className="text-white font-bold mb-2">Free</h3>
                   <p className="text-2xl font-bold text-indigo-400 mb-2">
-                    $0<span className="text-sm text-slate-400">/month</span>
+                    £0<span className="text-sm text-slate-400">/month</span>
                   </p>
                   <ul className="text-sm text-slate-400 space-y-1">
                     <li>• 1 bot</li>
@@ -91,7 +91,7 @@ export default function QuickStartDoc() {
                   </div>
                   <h3 className="text-white font-bold mb-2">Starter</h3>
                   <p className="text-2xl font-bold text-indigo-400 mb-2">
-                    $29<span className="text-sm text-slate-400">/month</span>
+                    £29<span className="text-sm text-slate-400">/month</span>
                   </p>
                   <ul className="text-sm text-slate-400 space-y-1">
                     <li>• 5 bots</li>
