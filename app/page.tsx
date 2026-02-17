@@ -18,7 +18,7 @@ export default function LandingPage() {
       <main>
         {/* Hero Section */}
         <section id="home" className="py-24 md:py-32 relative overflow-hidden">
-          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-indigo-900/20 via-slate-900 to-slate-900 -z-10 animate-fade-in"></div>
+          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top,var(--tw-gradient-stops))] from-indigo-900/20 via-slate-900 to-slate-900 -z-10 animate-fade-in"></div>
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight tracking-tight drop-shadow-lg motion-safe:animate-fade-in">
               Empower Your Conversations with{" "}
@@ -30,7 +30,7 @@ export default function LandingPage() {
             </p>
             <div className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
               <Link
-                href="https://app.replybase.co.uk"
+                href="https://app.replybase.co.uk/auth/register"
                 className="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-8 py-3 rounded-lg transition-transform duration-300 transform hover:scale-105 flex items-center justify-center gap-2 shadow-lg"
               >
                 Get Started
@@ -445,6 +445,14 @@ export default function LandingPage() {
                 Start free, upgrade as you grow. All plans include essential
                 features for conversation automation.
               </p>
+              <div className="mt-6 inline-flex items-center gap-2 bg-indigo-900/30 border border-indigo-500/50 rounded-full px-6 py-3">
+                <span className="text-indigo-400 font-bold text-lg">
+                  🎁 14-Day Free Trial
+                </span>
+                <span className="text-slate-300 text-sm">
+                  • No card charged until trial ends • Cancel anytime
+                </span>
+              </div>
             </div>
 
             <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-800/50 p-1.5">
@@ -537,7 +545,7 @@ export default function LandingPage() {
                     <td className="p-4"></td>
                     <td className="p-4 text-center">
                       <a
-                        href="https://app.replybase.co.uk/auth/signin"
+                        href="https://app.replybase.co.uk/auth/register"
                         className="block w-full bg-slate-700 hover:bg-slate-600 text-white py-2 rounded-lg"
                       >
                         Get Started
@@ -545,19 +553,21 @@ export default function LandingPage() {
                     </td>
                     <td className="p-4 text-center">
                       <a
-                        href="https://app.replybase.co.uk/auth/signin"
-                        className="block w-full bg-indigo-600 hover:bg-indigo-500 text-white py-2 rounded-lg"
+                        href="https://app.replybase.co.uk/pricing"
+                        className="block w-full bg-indigo-600 hover:bg-indigo-500 text-white py-2 rounded-lg mb-1"
                       >
                         Start Free Trial
                       </a>
+                      <p className="text-xs text-slate-500">14 days free</p>
                     </td>
                     <td className="p-4 text-center">
                       <a
-                        href="https://app.replybase.co.uk/auth/signin"
-                        className="block w-full bg-indigo-600 hover:bg-indigo-500 text-white py-2 rounded-lg"
+                        href="https://app.replybase.co.uk/pricing"
+                        className="block w-full bg-indigo-600 hover:bg-indigo-500 text-white py-2 rounded-lg mb-1"
                       >
                         Start Free Trial
                       </a>
+                      <p className="text-xs text-slate-500">14 days free</p>
                     </td>
                     <td className="p-4 text-center">
                       <Link
@@ -571,24 +581,66 @@ export default function LandingPage() {
                 </tbody>
               </table>
             </div>
+
+            {/* Trial Information */}
+            <div className="mt-8 max-w-3xl mx-auto">
+              <div className="bg-slate-800/50 border border-slate-700 rounded-xl p-6">
+                <h3 className="text-white font-semibold mb-3 text-center">
+                  💳 Risk-Free Trial Policy
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+                  <div>
+                    <div className="text-indigo-400 font-bold mb-1">
+                      14 Days Free
+                    </div>
+                    <p className="text-xs text-slate-400">
+                      Full access to all features during trial
+                    </p>
+                  </div>
+                  <div>
+                    <div className="text-green-400 font-bold mb-1">
+                      No Charge Until Trial Ends
+                    </div>
+                    <p className="text-xs text-slate-400">
+                      Your card won&apos;t be charged during the trial period
+                    </p>
+                  </div>
+                  <div>
+                    <div className="text-yellow-400 font-bold mb-1">
+                      Cancel Anytime
+                    </div>
+                    <p className="text-xs text-slate-400">
+                      Cancel before trial ends with no charge at all
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
         {/* Final CTA Section */}
         <section
           id="cta"
-          className="py-20 bg-gradient-to-b from-indigo-900 via-slate-900 to-slate-900 text-center"
+          className="py-20 bg-linear-to-b from-indigo-900 via-slate-900 to-slate-900 text-center"
         >
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 motion-safe:animate-fade-in">
               Ready to Transform Your Customer Conversations?
             </h2>
+            <p className="text-slate-300 text-lg mb-2">
+              Start your 14-day free trial today — No credit card charged until
+              trial ends
+            </p>
+            <p className="text-slate-400 text-sm mb-6">
+              Cancel anytime before trial ends with zero charges
+            </p>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-8">
               <Link
-                href="https://app.replybase.co.uk"
+                href="https://app.replybase.co.uk/pricing"
                 className="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-8 py-3 rounded-lg transition-transform duration-300 transform hover:scale-105 flex items-center justify-center gap-2 shadow-lg"
               >
-                Start Free Trial
+                Start 14-Day Free Trial
               </Link>
               <Link
                 href="/contact"

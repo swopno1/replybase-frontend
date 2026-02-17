@@ -46,10 +46,10 @@ export default function QuickStartDoc() {
                 <li>
                   Visit{" "}
                   <a
-                    href="https://app.replybase.co.uk"
+                    href="https://app.replybase.co.uk/auth/register"
                     className="text-indigo-400 hover:text-indigo-300"
                   >
-                    app.replybase.co.uk
+                    app.replybase.co.uk/auth/register
                   </a>
                 </li>
                 <li>
@@ -267,7 +267,7 @@ export default function QuickStartDoc() {
                 </p>
               </Link>
               <Link
-                href="https://app.replybase.co.uk"
+                href="https://app.replybase.co.uk/auth/login"
                 className="bg-indigo-600 hover:bg-indigo-500 p-6 rounded-lg border border-indigo-500 transition-colors"
               >
                 <h3 className="text-white font-bold mb-2">Launch Dashboard</h3>

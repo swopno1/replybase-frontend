@@ -111,7 +111,7 @@ export default function DocsPage() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <Link
-              href="https://app.replybase.co.uk"
+              href="https://app.replybase.co.uk/auth/login"
               className="bg-slate-800 hover:bg-slate-700 p-4 rounded-lg border border-slate-700 transition-colors text-center"
             >
               <div className="text-white font-semibold mb-1">Launch App</div>
