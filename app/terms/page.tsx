@@ -1,10 +1,10 @@
 import LandingNavbar from "@/components/LandingNavbar";
 import LandingFooter from "@/components/LandingFooter";
-import { Metadata } from 'next';
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
   alternates: {
-    canonical: '/terms',
+    canonical: "/terms",
   },
 };
 
@@ -29,10 +29,11 @@ export default function TermsPage() {
               1. Acceptance of Terms
             </h2>
             <p className="text-slate-400">
-              By accessing or using ReplyBase (the &quot;Service&quot;), you agree to be
-              bound by these Terms of Service. If you disagree with any part of
-              the terms, you may not access the Service. These terms apply to
-              all users of the platform, including free and paid subscribers.
+              By accessing or using ReplyBase (the &quot;Service&quot;), you
+              agree to be bound by these Terms of Service. If you disagree with
+              any part of the terms, you may not access the Service. These terms
+              apply to all users of the platform, including free and paid
+              subscribers.
             </p>
           </section>
 
@@ -56,8 +57,8 @@ export default function TermsPage() {
             </h2>
             <ul className="list-disc ml-6 space-y-2 text-slate-400">
               <li>
-                The Service offers four subscription tiers: Free ($0), Starter
-                ($29/month), Pro ($99/month), and Business ($299/month).
+                The Service offers four subscription tiers: Free (£0), Starter
+                (£29/month), Pro (£99/month), and Business (£299/month).
               </li>
               <li>
                 You agree to pay the fees associated with your selected plan.
@@ -88,13 +89,26 @@ export default function TermsPage() {
               4. Usage Limits and Fair Use
             </h2>
             <p className="mb-4 text-slate-400">
-              Each subscription plan includes specific limits based on your tier:
+              Each subscription plan includes specific limits based on your
+              tier:
             </p>
             <ul className="list-disc ml-6 space-y-2 text-slate-400">
-              <li><strong className="text-slate-200">Free:</strong> 1 bot, 100 daily messages.</li>
-              <li><strong className="text-slate-200">Starter:</strong> 5 bots, 1,000 daily messages, API access.</li>
-              <li><strong className="text-slate-200">Pro:</strong> 25 bots, 5,000 daily messages, Advanced AI.</li>
-              <li><strong className="text-slate-200">Business:</strong> Unlimited bots, Unlimited messages, Premium AI.</li>
+              <li>
+                <strong className="text-slate-200">Free:</strong> 1 bot, 100
+                daily messages.
+              </li>
+              <li>
+                <strong className="text-slate-200">Starter:</strong> 5 bots,
+                1,000 daily messages, API access.
+              </li>
+              <li>
+                <strong className="text-slate-200">Pro:</strong> 25 bots, 5,000
+                daily messages, Advanced AI.
+              </li>
+              <li>
+                <strong className="text-slate-200">Business:</strong> Unlimited
+                bots, Unlimited messages, Premium AI.
+              </li>
             </ul>
             <p className="mt-4 text-slate-400">
               If you consistently exceed your plan limits, we reserve the right
@@ -215,10 +229,10 @@ export default function TermsPage() {
               10. &quot;As Is&quot; Service
             </h2>
             <p className="text-slate-400">
-              The Service is provided on an &quot;AS IS&quot; and &quot;AS AVAILABLE&quot; basis
-              without warranties of any kind, either express or implied. We do
-              not warrant that the Service will be uninterrupted, secure, or
-              error-free.
+              The Service is provided on an &quot;AS IS&quot; and &quot;AS
+              AVAILABLE&quot; basis without warranties of any kind, either
+              express or implied. We do not warrant that the Service will be
+              uninterrupted, secure, or error-free.
             </p>
           </section>
 
@@ -227,20 +241,33 @@ export default function TermsPage() {
               11. AI Service Terms & Acceptable Use
             </h2>
             <p className="text-slate-400 mb-4">
-              ReplyBase utilizes advanced Artificial Intelligence and Large Language Models to provide its services. By using our AI features, you acknowledge and agree that:
+              ReplyBase utilizes advanced Artificial Intelligence and Large
+              Language Models to provide its services. By using our AI features,
+              you acknowledge and agree that:
             </p>
             <ul className="list-disc ml-6 space-y-2 text-slate-400">
               <li>
-                <strong className="text-slate-200">Nature of AI:</strong> AI-generated content may occasionally be inaccurate, incomplete, or biased. You are responsible for reviewing and validating any content generated by your bots.
+                <strong className="text-slate-200">Nature of AI:</strong>{" "}
+                AI-generated content may occasionally be inaccurate, incomplete,
+                or biased. You are responsible for reviewing and validating any
+                content generated by your bots.
               </li>
               <li>
-                <strong className="text-slate-200">No Professional Advice:</strong> AI responses do not constitute professional, legal, or financial advice.
+                <strong className="text-slate-200">
+                  No Professional Advice:
+                </strong>{" "}
+                AI responses do not constitute professional, legal, or financial
+                advice.
               </li>
               <li>
-                <strong className="text-slate-200">Acceptable Use:</strong> You agree not to use AI features to generate harmful, illegal, or deceptive content.
+                <strong className="text-slate-200">Acceptable Use:</strong> You
+                agree not to use AI features to generate harmful, illegal, or
+                deceptive content.
               </li>
               <li>
-                <strong className="text-slate-200">Disclaimer:</strong> ReplyBase is not liable for any damages or losses resulting from reliance on AI-generated output.
+                <strong className="text-slate-200">Disclaimer:</strong>{" "}
+                ReplyBase is not liable for any damages or losses resulting from
+                reliance on AI-generated output.
               </li>
             </ul>
           </section>

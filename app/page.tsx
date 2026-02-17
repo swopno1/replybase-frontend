@@ -473,12 +473,12 @@ export default function LandingPage() {
                     <td className="p-4 font-semibold text-white">
                       Monthly Price
                     </td>
-                    <td className="p-4 text-center text-white">$0</td>
-                    <td className="p-4 text-center text-white">$29</td>
+                    <td className="p-4 text-center text-white">£0</td>
+                    <td className="p-4 text-center text-white">£29</td>
                     <td className="p-4 text-center text-indigo-400 font-bold">
-                      $99
+                      £99
                     </td>
-                    <td className="p-4 text-center text-white">$299</td>
+                    <td className="p-4 text-center text-white">£299</td>
                   </tr>
                   <tr>
                     <td className="p-4 font-semibold text-white">Bots</td>

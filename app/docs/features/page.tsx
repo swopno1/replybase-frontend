@@ -8,7 +8,7 @@ import Link from "next/link";
 const plans = [
   {
     name: "Free",
-    price: "$0",
+    price: "£0",
     description: "For individuals and testing",
     features: [
       "1 bot",
@@ -19,7 +19,7 @@ const plans = [
   },
   {
     name: "Starter",
-    price: "$29",
+    price: "£29",
     description: "For small businesses",
     features: [
       "5 bots",
@@ -30,7 +30,7 @@ const plans = [
   },
   {
     name: "Pro",
-    price: "$99",
+    price: "£99",
     description: "For growing agencies",
     features: [
       "25 bots",
@@ -41,7 +41,7 @@ const plans = [
   },
   {
     name: "Business",
-    price: "$299",
+    price: "£299",
     description: "For enterprises at scale",
     features: [
       "Unlimited bots",

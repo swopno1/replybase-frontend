@@ -61,7 +61,7 @@ export default function RoadmapDoc() {
                   className="flex items-start gap-3 bg-slate-800 p-4 rounded-lg border border-slate-700"
                 >
                   <CheckCircle
-                    className="text-green-500 mt-1 flex-shrink-0"
+                    className="text-green-500 mt-1 shrink-0"
                     size={20}
                   />
                   <span className="text-slate-300">{feature}</span>
@@ -100,10 +100,7 @@ export default function RoadmapDoc() {
                   key={index}
                   className="flex items-start gap-3 bg-slate-800 p-4 rounded-lg border border-slate-700"
                 >
-                  <Clock
-                    className="text-yellow-500 mt-1 flex-shrink-0"
-                    size={20}
-                  />
+                  <Clock className="text-yellow-500 mt-1 shrink-0" size={20} />
                   <div className="flex-1">
                     <span className="text-slate-300">{feature.title}</span>
                     <span
@@ -143,10 +140,7 @@ export default function RoadmapDoc() {
                   key={index}
                   className="flex items-start gap-3 bg-slate-800 p-4 rounded-lg border border-slate-700"
                 >
-                  <Circle
-                    className="text-slate-500 mt-1 flex-shrink-0"
-                    size={20}
-                  />
+                  <Circle className="text-slate-500 mt-1 shrink-0" size={20} />
                   <span className="text-slate-400">{feature}</span>
                 </div>
               ))}
@@ -206,7 +200,7 @@ export default function RoadmapDoc() {
             <h2 className="text-2xl font-bold text-white mb-6">
               🔮 Future Vision (2027+)
             </h2>
-            <div className="bg-gradient-to-r from-indigo-900/20 to-purple-900/20 border border-indigo-700/50 p-6 rounded-lg">
+            <div className="bg-linear-to-r from-indigo-900/20 to-purple-900/20 border border-indigo-700/50 p-6 rounded-lg">
               <ul className="space-y-3 text-slate-300">
                 <li className="flex items-start gap-2">
                   <span className="text-indigo-400 font-bold mt-1">•</span>
