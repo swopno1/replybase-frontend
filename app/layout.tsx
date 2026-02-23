@@ -15,10 +15,17 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://replybase.co.uk"),
   title: "ReplyBase - Build Smarter Chatbots",
-  description: "The ultimate open-source, visual chatbot builder designed for performance and scale.",
+  description:
+    "The ultimate open-source, visual chatbot builder designed for performance and scale.",
+  verification: {
+    other: {
+      "facebook-domain-verification": "4yq6iobk3tkzyrnvh8ktaimneauxkp",
+    },
+  },
   openGraph: {
     title: "ReplyBase - Build Smarter Chatbots",
-    description: "The ultimate open-source, visual chatbot builder designed for performance and scale.",
+    description:
+      "The ultimate open-source, visual chatbot builder designed for performance and scale.",
     url: "https://replybase.co.uk",
     siteName: "ReplyBase",
     locale: "en_US",
@@ -30,7 +37,7 @@ export const metadata: Metadata = {
   },
 };
 
-import CookieConsent from '@/components/CookieConsent';
+import CookieConsent from "@/components/CookieConsent";
 
 export default function RootLayout({
   children,
