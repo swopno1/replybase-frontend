@@ -17,9 +17,9 @@ export const metadata: Metadata = {
   title: "ReplyBase - Build Smarter Chatbots",
   description:
     "The ultimate open-source, visual chatbot builder designed for performance and scale.",
-  // other: {
-  //   "facebook-domain-verification": "4yq6iobk3tkzyrnvh8ktaimneauxkp",
-  // },
+  other: {
+    "facebook-domain-verification": "4yq6iobk3tkzyrnvh8ktaimneauxkp",
+  },
   openGraph: {
     title: "ReplyBase - Build Smarter Chatbots",
     description:
@@ -44,12 +44,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
+      {/* <head>
         <meta
           name="facebook-domain-verification"
           content="4yq6iobk3tkzyrnvh8ktaimneauxkp"
         />
-      </head>
+      </head> */}
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
