@@ -1,12 +1,13 @@
-import { MetadataRoute } from 'next'
+import { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
-      userAgent: '*',
-      allow: '/',
-      disallow: ['/api/'],
+      userAgent: "*",
+      allow: "/",
+      disallow: ["/api/", "/*?callbackUrl=*"],
     },
-    sitemap: 'https://replybase.co.uk/sitemap.xml',
-  }
+    host: "replybase.co.uk",
+    sitemap: "https://replybase.co.uk/sitemap.xml",
+  };
 }
