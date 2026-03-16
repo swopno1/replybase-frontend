@@ -127,7 +127,7 @@ export default function DocsPage() {
         </div>
 
         {/* Quick Links */}
-        <div className="bg-gradient-to-r from-indigo-900/20 to-purple-900/20 border border-indigo-700/50 p-8 rounded-2xl">
+        <div className="bg-linear-to-r from-indigo-900/20 to-purple-900/20 border border-indigo-700/50 p-8 rounded-2xl">
           <h2 className="text-2xl font-bold text-white mb-6 text-center">
             Quick Links
           </h2>

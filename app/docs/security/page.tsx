@@ -8,45 +8,109 @@ export default function SecurityDoc() {
       title="Security Model (Application-Level)"
       description="How ReplyBase currently protects accounts, tenants, admin tools, billing, and webchat traffic"
     >
+      <p className="text-slate-300 mb-8">
+        ReplyBase uses layered application security across authentication,
+        tenant isolation, admin access, billing, and public channel endpoints.
+      </p>
+
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-white mb-4">
-          Authentication And Tenant Isolation
+          1. Authentication And Tenant Isolation
         </h2>
         <ul className="space-y-2 text-slate-300">
-          <li>Session-based auth with tenant checks on protected APIs.</li>
+          <li>users authenticate through NextAuth-backed flows</li>
+          <li>registration creates a dedicated tenant workspace automatically</li>
           <li>
-            Registration creates a dedicated tenant workspace automatically.
+            most protected APIs require both a valid session and tenant
+            association
           </li>
-          <li>
-            Tenant ownership checks gate access to tenant-scoped resources.
-          </li>
+          <li>tenant ownership checks gate tenant-scoped resources</li>
         </ul>
       </section>
 
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-white mb-4">
-          Channel And Billing Protection
+          2. Secure Builder Access
+        </h2>
+        <p className="text-slate-300 mb-4">
+          ReplyBase uses a controlled launch flow for bot builder access.
+        </p>
+        <ul className="space-y-2 text-slate-300">
+          <li>users do not open the external builder from arbitrary URLs</li>
+          <li>ReplyBase checks authentication and subscription state first</li>
+          <li>only eligible users receive builder authorization redirect</li>
+        </ul>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-white mb-4">3. Billing Protection</h2>
+        <ul className="space-y-2 text-slate-300">
+          <li>billing endpoints require authenticated user session</li>
+          <li>subscription lookups are tenant-scoped</li>
+          <li>customer portal access is created server-side through Stripe</li>
+          <li>plan limits are checked before selected resource creation flows</li>
+        </ul>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-white mb-4">4. Admin Access</h2>
+        <ul className="space-y-2 text-slate-300">
+          <li>admin pages are guarded server-side</li>
+          <li>admin APIs perform independent authorization checks</li>
+          <li>admin access is tied to a single allowlisted identity in code</li>
+          <li>non-admin requests are redirected or rejected with 403</li>
+        </ul>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-white mb-4">
+          5. Webchat Protection
+        </h2>
+        <p className="text-slate-300 mb-4">
+          The webchat stack has the strongest explicit public-endpoint hardening
+          in the product today.
+        </p>
+        <ul className="space-y-2 text-slate-300">
+          <li>short-lived signed session tokens</li>
+          <li>origin and referer validation</li>
+          <li>allowed-domain enforcement per site</li>
+          <li>rate limiting on init, message, and events</li>
+          <li>replay-resistant init challenge handling</li>
+          <li>bot mitigation checks</li>
+          <li>configurable PII retention behavior</li>
+          <li>rollout gating for staged enablement</li>
+        </ul>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-white mb-4">
+          6. Data And Compliance Utilities
         </h2>
         <ul className="space-y-2 text-slate-300">
-          <li>Secure builder launch with subscription-aware access checks.</li>
           <li>
-            Stripe portal and billing APIs require authenticated sessions.
+            newsletter subscribe/unsubscribe supports app-session and API-key
+            access where intended
           </li>
-          <li>
-            Plan limits are enforced for selected resource creation flows.
-          </li>
+          <li>account data deletion requests are recorded via dedicated APIs</li>
+          <li>Facebook data deletion support is part of compliance surface</li>
         </ul>
       </section>
 
       <section>
         <h2 className="text-2xl font-bold text-white mb-4">
-          Webchat Hardening
+          Practical Security Posture
         </h2>
+        <p className="text-slate-300 mb-2">What is strongest today:</p>
+        <ul className="space-y-2 text-slate-300 mb-4">
+          <li>session and tenant checks on protected APIs</li>
+          <li>webchat public endpoint defenses</li>
+          <li>subscription-aware builder and billing flows</li>
+        </ul>
+        <p className="text-slate-300 mb-2">What still needs follow-through:</p>
         <ul className="space-y-2 text-slate-300">
-          <li>Signed short-lived session tokens.</li>
-          <li>Origin/referer verification and allowed-domain controls.</li>
-          <li>Rate limiting on init, message, and events routes.</li>
-          <li>Replay-resistant init challenge handling and rollout gating.</li>
+          <li>broader production observability in non-webchat areas</li>
+          <li>more complete real usage accounting</li>
+          <li>remove hardcoded admin configuration over time</li>
         </ul>
       </section>
     </DocLayout>

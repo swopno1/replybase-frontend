@@ -6,22 +6,26 @@ const plans = [
   {
     name: "Free",
     price: "GBP0",
-    limits: "1 bot, 100 daily messages, 3,000 monthly messages",
+    limits:
+      "Best for testing and first setup: 1 bot, 100 daily messages, 3,000 monthly messages, 1 channel per bot, 100 max conversations",
   },
   {
     name: "Starter",
     price: "GBP19",
-    limits: "3 bots, 1,000 daily messages, 30,000 monthly messages",
+    limits:
+      "Best for small live deployments: 3 bots, 1,000 daily messages, 30,000 monthly messages, 3 channels per bot, 1,000 max conversations",
   },
   {
     name: "Pro",
     price: "GBP49",
-    limits: "10 bots, 5,000 daily messages, 150,000 monthly messages",
+    limits:
+      "Best for growing teams and agencies: 10 bots, 5,000 daily messages, 150,000 monthly messages, 5 channels per bot, 5,000 max conversations",
   },
   {
     name: "Business",
     price: "GBP99",
-    limits: "50 bots, 20,000 daily messages, 600,000 monthly messages",
+    limits:
+      "Best for high-volume deployments: 50 bots, 20,000 daily messages, 600,000 monthly messages, 10 channels per bot, 20,000 max conversations",
   },
 ];
 
@@ -31,6 +35,11 @@ export default function FeaturesDoc() {
       title="Subscription Features"
       description="Current ReplyBase plans, limits, and feature availability based on the implemented product"
     >
+      <p className="text-slate-300 mb-8">
+        This page describes the current plan structure and feature
+        availability reflected in the ReplyBase SaaS application and seed data.
+      </p>
+
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-white mb-4">Plan Overview</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -51,29 +60,70 @@ export default function FeaturesDoc() {
 
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-white mb-4">
-          Available Product Areas
+          Product Areas Available Today
+        </h2>
+        <h3 className="text-xl font-semibold text-white mb-3">Core Workspace</h3>
+        <ul className="space-y-2 text-slate-300">
+          <li>account registration and login</li>
+          <li>tenant-based workspace creation</li>
+          <li>bot management</li>
+          <li>secure builder launch from ReplyBase</li>
+          <li>billing page and Stripe customer portal flow</li>
+        </ul>
+        <h3 className="text-xl font-semibold text-white mb-3 mt-6">Conversation Operations</h3>
+        <ul className="space-y-2 text-slate-300">
+          <li>conversation list</li>
+          <li>contact list with identity badges</li>
+          <li>leads page for captured lead records</li>
+          <li>
+            basic dashboard health cards for AI status, connected pages, engine
+            status, and recent message timing
+          </li>
+        </ul>
+        <h3 className="text-xl font-semibold text-white mb-3 mt-6">Channels</h3>
+        <ul className="space-y-2 text-slate-300">
+          <li>Facebook Pages integration</li>
+          <li>Telegram Bot integration</li>
+          <li>Webchat Widget integration</li>
+        </ul>
+        <h3 className="text-xl font-semibold text-white mb-3 mt-6">Flow Management</h3>
+        <ul className="space-y-2 text-slate-300">
+          <li>create, edit, duplicate, activate, and delete flows</li>
+          <li>assign flows to Facebook pages</li>
+          <li>see per-flow lead and session counts</li>
+        </ul>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-white mb-4">Current UX Notes</h2>
+        <ul className="space-y-2 text-slate-300">
+          <li>The main dashboard onboarding path is still Facebook-first.</li>
+          <li>Telegram and Webchat have dedicated stronger setup pages.</li>
+          <li>
+            Settings and Activity exist, but are lighter than channel and
+            webchat areas.
+          </li>
+        </ul>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-white mb-4">
+          What Is Not Fully Mature Yet
         </h2>
         <ul className="space-y-2 text-slate-300">
-          <li>Core workspace: auth, tenant setup, bot management, billing.</li>
-          <li>Conversation operations: conversations, contacts, leads.</li>
-          <li>Channels: Facebook Pages, Telegram Bot, Webchat Widget.</li>
-          <li>Flow management: create/edit/duplicate/activate/assign flows.</li>
+          <li>activity history is still placeholder/mock in current UI</li>
+          <li>some usage analytics are still mocked behind API layer</li>
+          <li>advanced workspace settings are minimal</li>
+          <li>full self-serve team or role management is not present</li>
         </ul>
       </section>
 
       <section>
-        <h2 className="text-2xl font-bold text-white mb-4">Current Notes</h2>
+        <h2 className="text-2xl font-bold text-white mb-4">Billing Notes</h2>
         <ul className="space-y-2 text-slate-300">
-          <li>
-            Paid plans currently show a 14-day free trial in the pricing UI.
-          </li>
-          <li>
-            Plan-aware limits are enforced for resources like bot creation.
-          </li>
-          <li>
-            Settings and Activity are still lighter than channel/webchat
-            surfaces.
-          </li>
+          <li>Paid plans currently present a 14-day free trial in pricing UI.</li>
+          <li>Plan-aware checks enforce bot and usage limits.</li>
+          <li>Billing is centered in Billing screen, not Settings.</li>
         </ul>
       </section>
     </DocLayout>

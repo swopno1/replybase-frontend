@@ -14,27 +14,57 @@ export default function QuickStartDoc() {
           Estimated time: 15 to 25 minutes
         </p>
         <p className="text-slate-300 text-sm">
-          This guide follows the product flow currently implemented in the
-          ReplyBase dashboard.
+          This guide follows the product flow that is currently implemented in
+          the ReplyBase SaaS dashboard.
         </p>
       </div>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-white mb-4">By The End</h2>
+        <ul className="space-y-2 text-slate-300">
+          <li>created your workspace</li>
+          <li>opened the bot builder from ReplyBase</li>
+          <li>connected at least one live channel</li>
+          <li>
+            confirmed where conversations, contacts, and leads appear in the
+            dashboard
+          </li>
+        </ul>
+      </section>
 
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-white mb-4">
           Step 1: Create Your Account
         </h2>
         <ul className="space-y-2 text-slate-300">
-          <li>1. Visit app.replybase.co.uk and open Sign Up.</li>
-          <li>2. Use Google sign-in or Email + Password registration.</li>
-          <li>3. Registration automatically creates a tenant workspace.</li>
-          <li>4. Sign in and land in the main dashboard.</li>
+          <li>1. Visit app.replybase.co.uk.</li>
+          <li>2. Open Sign Up.</li>
+          <li>3. Choose Google sign-in or Email and password registration.</li>
+          <li>
+            4. If you register with email and password, ReplyBase creates a new
+            tenant workspace automatically.
+          </li>
+          <li>5. After sign-in, you land in the main dashboard.</li>
         </ul>
+        <div className="bg-slate-800 border border-slate-700 rounded-lg p-4 mt-4 text-sm text-slate-300">
+          <p>
+            Notes: The login UI currently shows Apple as a placeholder, but it
+            is not active.
+          </p>
+          <p className="mt-2">
+            Registration requires first name, last name, email, and a password
+            with at least 8 characters.
+          </p>
+        </div>
       </section>
 
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-white mb-4">
           Step 2: Choose Your Plan
         </h2>
+        <p className="text-slate-300 mb-4">
+          ReplyBase currently shows four plans in the pricing and billing flow:
+        </p>
         <div className="grid grid-cols-2 gap-3 text-sm">
           <div className="bg-slate-800 border border-slate-700 rounded p-3">
             Free: GBP0/mo
@@ -49,51 +79,133 @@ export default function QuickStartDoc() {
             Business: GBP99/mo
           </div>
         </div>
+        <p className="text-slate-300 text-sm mt-4">
+          Paid plans currently advertise a 14-day free trial in the UI. You can
+          upgrade from the Billing page or start from the Pricing page.
+        </p>
       </section>
 
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-white mb-4">
-          Step 3: Create Bot And Flow
+          Step 3: Create Your First Bot
         </h2>
         <ul className="space-y-2 text-slate-300">
+          <li>1. Open Bots from the left sidebar.</li>
+          <li>2. Review bots already in your workspace.</li>
+          <li>3. Use bot creation flow if you need a new bot.</li>
+          <li>4. Use Launch Builder to open the external builder.</li>
+        </ul>
+        <div className="bg-slate-800 border border-slate-700 rounded-lg p-4 mt-4 text-sm text-slate-300">
+          <p>
+            Important: Builder access is intentionally launched through
+            ReplyBase.
+          </p>
+          <p className="mt-2">
+            Subscription status is checked before builder access is granted.
+          </p>
+        </div>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-white mb-4">
+          Step 4: Design Your Conversation Flow
+        </h2>
+        <p className="text-slate-300 mb-4">
+          ReplyBase currently supports two conversation-design surfaces:
+        </p>
+        <ul className="space-y-2 text-slate-300">
+          <li>the external builder launched from Bots</li>
+          <li>the in-app Flows area for creating and managing flows</li>
+        </ul>
+        <p className="text-slate-300 mt-4 mb-2">In Flows, you can:</p>
+        <ul className="space-y-2 text-slate-300">
           <li>
-            1. Open Bots from the left sidebar and create/select your bot.
+            create, edit, duplicate, activate, deactivate, and assign flows
           </li>
-          <li>2. Use Launch Builder for secure external builder access.</li>
+          <li>review lead and session counts per flow</li>
+        </ul>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-white mb-4">
+          Step 5: Connect Your First Channel
+        </h2>
+        <p className="text-slate-300 mb-4">
+          ReplyBase currently exposes three user-facing integration screens:
+        </p>
+        <ul className="space-y-2 text-slate-300 mb-4">
+          <li>Facebook Pages</li>
+          <li>Telegram Bot</li>
+          <li>Webchat Widget</li>
+        </ul>
+        <h3 className="text-xl font-semibold text-white mb-3">Option A: Facebook Pages</h3>
+        <ul className="space-y-2 text-slate-300">
+          <li>1. Open Facebook Pages from the sidebar.</li>
+          <li>2. Click Connect with Facebook.</li>
+          <li>3. Authorize ReplyBase to access pages you manage.</li>
+          <li>4. Select the page you want to link.</li>
+          <li>5. Go to AI Status to enable AI replies for that page.</li>
+        </ul>
+        <h3 className="text-xl font-semibold text-white mb-3 mt-6">Option B: Telegram Bot</h3>
+        <ul className="space-y-2 text-slate-300">
+          <li>1. Open Telegram Bot from the sidebar.</li>
+          <li>2. Select which ReplyBase bot should power Telegram replies.</li>
+          <li>3. Paste the bot token from BotFather.</li>
+          <li>4. Optionally set a friendly internal channel name.</li>
+          <li>5. Click Connect Bot.</li>
+        </ul>
+        <h3 className="text-xl font-semibold text-white mb-3 mt-6">Option C: Webchat Widget</h3>
+        <ul className="space-y-2 text-slate-300">
+          <li>1. Open Webchat Widget from the sidebar.</li>
+          <li>2. Choose a bot.</li>
+          <li>3. Create or select a web channel.</li>
+          <li>4. Configure title, primary color, and welcome message.</li>
+          <li>5. Save site configuration and allowed domains.</li>
+          <li>6. Copy embed snippet into your website.</li>
+          <li>7. Use the built-in test harness before going live.</li>
+        </ul>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-white mb-4">
+          Step 6: Test Your Bot
+        </h2>
+        <ul className="space-y-2 text-slate-300">
+          <li>1. Send a real test message through the connected channel.</li>
+          <li>2. Open Conversations to confirm the record exists.</li>
+          <li>3. Open Contacts to confirm profile creation.</li>
+          <li>4. Open Leads if your flow collects lead data.</li>
           <li>
-            3. Use Flows to create, edit, duplicate, activate, and assign flows.
+            5. Open Activity only for a basic overview; it still uses
+            placeholder/mock data.
           </li>
         </ul>
       </section>
 
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-white mb-4">
-          Step 4: Connect A Channel
+          Step 7: Know Where To Manage Things
         </h2>
         <ul className="space-y-2 text-slate-300">
-          <li>
-            Facebook Pages: connect account, select pages, then enable AI in AI
-            Status.
-          </li>
-          <li>
-            Telegram Bot: add BotFather token and let ReplyBase configure
-            webhooks.
-          </li>
-          <li>
-            Webchat Widget: configure bot/channel/site, then copy embed snippet.
-          </li>
+          <li>Dashboard: AI status, connected pages, engine status, recency.</li>
+          <li>Bots: bot list and builder launch.</li>
+          <li>Flows: flow lifecycle and assignment.</li>
+          <li>Facebook Pages: page connection and status.</li>
+          <li>Telegram Bot: token setup and webhook logs.</li>
+          <li>Webchat Widget: setup, keys, embed, diagnostics.</li>
+          <li>Billing: plan state and customer portal.</li>
+          <li>Settings: basic account details only right now.</li>
         </ul>
       </section>
 
       <section className="mb-10">
-        <h2 className="text-2xl font-bold text-white mb-4">
-          Step 5: Validate End-To-End
-        </h2>
+        <h2 className="text-2xl font-bold text-white mb-4">Known MVP Limits</h2>
         <ul className="space-y-2 text-slate-300">
-          <li>1. Send a real channel message.</li>
-          <li>2. Confirm records in Conversations, Contacts, and Leads.</li>
+          <li>The Activity page is not backed by a full real event feed yet.</li>
+          <li>Usage accounting and advanced analytics are partially implemented.</li>
           <li>
-            3. Use Billing for plan status and customer portal management.
+            Settings is currently a lightweight account page, not full workspace
+            administration.
           </li>
         </ul>
       </section>
