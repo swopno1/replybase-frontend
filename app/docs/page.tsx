@@ -3,7 +3,14 @@
 import Link from "next/link";
 import LandingNavbar from "@/components/LandingNavbar";
 import LandingFooter from "@/components/LandingFooter";
-import { FileText, BookOpen, Rocket, Database, Settings } from "lucide-react";
+import {
+  FileText,
+  BookOpen,
+  Rocket,
+  Database,
+  Settings,
+  Globe,
+} from "lucide-react";
 
 export default function DocsPage() {
   const docCategories = [
@@ -38,6 +45,21 @@ export default function DocsPage() {
       ],
     },
     {
+      title: "Webchat",
+      icon: Globe,
+      description: "Webchat implementation, APIs, QA, and rollout status",
+      docs: [
+        { name: "Webchat Progress Status", href: "/docs/webchat-progress" },
+        {
+          name: "Webchat Implementation Guide",
+          href: "/docs/webchat-implementation-guide",
+        },
+        { name: "Webchat API Reference", href: "/docs/webchat-api-reference" },
+        { name: "Webchat QA and Rollout", href: "/docs/webchat-qa-rollout" },
+        { name: "Webchat Embed Quickstart", href: "/docs/webchat-embed" },
+      ],
+    },
+    {
       title: "Admin & Management",
       icon: Settings,
       description: "Admin panel and client onboarding documentation",
@@ -62,8 +84,8 @@ export default function DocsPage() {
             Documentation
           </h1>
           <p className="text-lg text-slate-400 max-w-2xl mx-auto">
-            Everything you need to know about ReplyBase - from getting started
-            to advanced configurations
+            Practical product documentation for the current ReplyBase SaaS
+            application
           </p>
         </div>
 
@@ -111,11 +133,13 @@ export default function DocsPage() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <Link
-              href="https://app.replybase.co.uk/auth/login"
+              href="https://app.replybase.co.uk"
               className="bg-slate-800 hover:bg-slate-700 p-4 rounded-lg border border-slate-700 transition-colors text-center"
             >
               <div className="text-white font-semibold mb-1">Launch App</div>
-              <div className="text-slate-400 text-sm">Go to dashboard</div>
+              <div className="text-slate-400 text-sm">
+                Open the SaaS dashboard
+              </div>
             </Link>
             <Link
               href="/contact"
@@ -129,7 +153,9 @@ export default function DocsPage() {
               className="bg-slate-800 hover:bg-slate-700 p-4 rounded-lg border border-slate-700 transition-colors text-center"
             >
               <div className="text-white font-semibold mb-1">Read Blog</div>
-              <div className="text-slate-400 text-sm">Latest updates</div>
+              <div className="text-slate-400 text-sm">
+                Product updates and guides
+              </div>
             </Link>
           </div>
         </div>
