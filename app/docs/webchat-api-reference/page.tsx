@@ -9,20 +9,30 @@ export default function WebchatApiReferenceDoc() {
       description="High-level API surface for webchat initialization, messaging, and events"
     >
       <section className="mb-10">
-        <h2 className="text-2xl font-bold text-white mb-4">Primary Endpoints</h2>
+        <h2 className="text-2xl font-bold text-white mb-4">
+          Primary Endpoints
+        </h2>
         <ul className="space-y-2 text-slate-300">
-          <li>`POST /api/webchat/init` - create/validate visitor session context.</li>
+          <li>
+            `POST /api/webchat/init` - create/validate visitor session context.
+          </li>
           <li>`POST /api/webchat/message` - submit user message payload.</li>
-          <li>`POST /api/webchat/events` - telemetry and interaction events.</li>
+          <li>
+            `POST /api/webchat/events` - telemetry and interaction events.
+          </li>
         </ul>
       </section>
 
       <section className="mb-10">
-        <h2 className="text-2xl font-bold text-white mb-4">Request Requirements</h2>
+        <h2 className="text-2xl font-bold text-white mb-4">
+          Request Requirements
+        </h2>
         <ul className="space-y-2 text-slate-300">
           <li>Tenant/bot/channel identifiers must map to valid ownership.</li>
           <li>Init/session tokens are required for subsequent operations.</li>
-          <li>Origin and domain constraints are checked on protected routes.</li>
+          <li>
+            Origin and domain constraints are checked on protected routes.
+          </li>
         </ul>
       </section>
 

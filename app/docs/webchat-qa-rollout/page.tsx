@@ -27,7 +27,9 @@ export default function WebchatQaRolloutDoc() {
       </section>
 
       <section>
-        <h2 className="text-2xl font-bold text-white mb-4">Post-Rollout Checks</h2>
+        <h2 className="text-2xl font-bold text-white mb-4">
+          Post-Rollout Checks
+        </h2>
         <ul className="space-y-2 text-slate-300">
           <li>Review error rates and conversation continuity metrics.</li>
           <li>Verify lead/contact creation from webchat interactions.</li>

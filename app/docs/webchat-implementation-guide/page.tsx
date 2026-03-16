@@ -9,7 +9,9 @@ export default function WebchatImplementationGuideDoc() {
       description="How ReplyBase webchat is structured from widget embed through API processing and tenant controls"
     >
       <section className="mb-10">
-        <h2 className="text-2xl font-bold text-white mb-4">Architecture Overview</h2>
+        <h2 className="text-2xl font-bold text-white mb-4">
+          Architecture Overview
+        </h2>
         <ul className="space-y-2 text-slate-300">
           <li>Client widget mounted via embed script and root container.</li>
           <li>Init endpoint issues signed short-lived session context.</li>
@@ -18,7 +20,9 @@ export default function WebchatImplementationGuideDoc() {
       </section>
 
       <section className="mb-10">
-        <h2 className="text-2xl font-bold text-white mb-4">Security-First Controls</h2>
+        <h2 className="text-2xl font-bold text-white mb-4">
+          Security-First Controls
+        </h2>
         <ul className="space-y-2 text-slate-300">
           <li>Origin + referer verification against allowed domain config.</li>
           <li>Per-route rate limiting and replay-resistant init handling.</li>
@@ -27,7 +31,9 @@ export default function WebchatImplementationGuideDoc() {
       </section>
 
       <section>
-        <h2 className="text-2xl font-bold text-white mb-4">Operational Guidance</h2>
+        <h2 className="text-2xl font-bold text-white mb-4">
+          Operational Guidance
+        </h2>
         <ul className="space-y-2 text-slate-300">
           <li>Validate embed on staging domain before production rollout.</li>
           <li>Confirm bot/channel assignment and webhook readiness.</li>

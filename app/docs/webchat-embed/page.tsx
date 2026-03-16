@@ -27,7 +27,9 @@ export default function WebchatEmbedDoc() {
       </section>
 
       <section>
-        <h2 className="text-2xl font-bold text-white mb-4">Common Troubleshooting</h2>
+        <h2 className="text-2xl font-bold text-white mb-4">
+          Common Troubleshooting
+        </h2>
         <ul className="space-y-2 text-slate-300">
           <li>Widget not loading: verify script URL and CSP allowances.</li>
           <li>403 responses: check allowed domains and token/session state.</li>
