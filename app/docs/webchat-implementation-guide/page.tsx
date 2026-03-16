@@ -122,6 +122,60 @@ export default function WebchatImplementationGuideDoc() {
 
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-white mb-4">
+          Flow Builder + Webchat Playbook
+        </h2>
+        <ol className="list-decimal list-inside space-y-2 text-slate-300">
+          <li>Create a flow in /flows and add your step sequence.</li>
+          <li>Mark the flow active and assign as the bot entry flow.</li>
+          <li>Open /integrations/webchat and select the same bot/channel.</li>
+          <li>Configure branding, welcome copy, and allowed domains.</li>
+          <li>Save Config and run Launch Test Widget before site rollout.</li>
+          <li>
+            Monitor blocked-origin and rate-limit diagnostics post-launch.
+          </li>
+        </ol>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-white mb-4">Feature Matrix</h2>
+        <ul className="space-y-2 text-slate-300">
+          <li>
+            Deterministic flow runtime: message, input, condition, action, end
+            nodes
+          </li>
+          <li>Flow-session continuity with variable capture per visitor</li>
+          <li>Flow-first response path with AI fallback when needed</li>
+          <li>Origin + referer enforcement at global and site level</li>
+          <li>Init challenge replay protection and signed session tokens</li>
+          <li>Diagnostics stream for blocked-origin and rate-limit events</li>
+        </ul>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-white mb-4">
+          Test Harness Behavior
+        </h2>
+        <p className="text-slate-300 mb-3">
+          The Launch Test Widget action opens an internal harness page that
+          loads the production embed script with your selected site key and
+          visual config.
+        </p>
+        <ul className="space-y-2 text-slate-300">
+          <li>
+            If an allowlist exists, the dashboard origin must be included.
+          </li>
+          <li>
+            Launch now auto-syncs the current dashboard origin to allowlist when
+            needed.
+          </li>
+          <li>
+            Site-level origin checks still apply in init/message/events routes.
+          </li>
+        </ul>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-white mb-4">
           Security Notes (Current)
         </h2>
         <ul className="space-y-2 text-slate-300">

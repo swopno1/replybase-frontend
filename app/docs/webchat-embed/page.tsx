@@ -77,16 +77,42 @@ export default function WebchatEmbedDoc() {
 
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-white mb-4">
-          3) CORS allowlist (optional)
+          3) Connect Flow Builder to Webchat
         </h2>
-        <div className="bg-slate-800 border border-slate-700 rounded-lg p-4 text-sm text-slate-300 overflow-x-auto">
-          <pre>{`WEBCHAT_ALLOWED_ORIGINS=https://example.com,https://www.example.com`}</pre>
-        </div>
+        <ol className="list-decimal list-inside space-y-2 text-slate-300">
+          <li>Create or edit a flow in Dashboard: /flows</li>
+          <li>
+            Add your step sequence (message, input, condition, action, end)
+          </li>
+          <li>Set the bot entry flow in bot settings</li>
+          <li>
+            Open /integrations/webchat and pick the same bot + web channel
+          </li>
+          <li>Save config, then launch the internal test widget harness</li>
+          <li>Publish the embed snippet on your website</li>
+        </ol>
+        <p className="text-slate-300 mt-4">
+          Runtime behavior is flow-first. If no flow response is produced, the
+          system falls back to AI responses for continuity.
+        </p>
       </section>
 
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-white mb-4">
-          4) Session token secret
+          4) CORS allowlist (optional)
+        </h2>
+        <div className="bg-slate-800 border border-slate-700 rounded-lg p-4 text-sm text-slate-300 overflow-x-auto">
+          <pre>{`WEBCHAT_ALLOWED_ORIGINS=https://example.com,https://www.example.com`}</pre>
+        </div>
+        <p className="text-slate-300 mt-4">
+          Site-level allowlists are managed per webchat channel in Dashboard and
+          are enforced in init, config, message, and events APIs.
+        </p>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-white mb-4">
+          5) Session token secret
         </h2>
         <ul className="space-y-2 text-slate-300">
           <li>WEBCHAT_TOKEN_SECRET</li>
@@ -96,7 +122,7 @@ export default function WebchatEmbedDoc() {
 
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-white mb-4">
-          5) Rate limiting knobs (optional)
+          6) Rate limiting knobs (optional)
         </h2>
         <div className="bg-slate-800 border border-slate-700 rounded-lg p-4 text-sm text-slate-300 overflow-x-auto">
           <pre>{`WEBCHAT_RATE_LIMIT_INIT_IP=20
@@ -114,7 +140,25 @@ WEBCHAT_RATE_LIMIT_EVENTS_SESSION_WINDOW_MS=60000`}</pre>
 
       <section>
         <h2 className="text-2xl font-bold text-white mb-4">
-          6) One-time data normalization
+          7) Troubleshooting: Origin Not Allowed
+        </h2>
+        <ul className="space-y-2 text-slate-300">
+          <li>Confirm you are testing from an allowed origin.</li>
+          <li>
+            In /integrations/webchat, use Add Current Origin and Save Config.
+          </li>
+          <li>
+            Launch Test Widget from dashboard to use the internal harness page.
+          </li>
+          <li>
+            Check Diagnostics for blocked-origin events and exact timestamps.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-white mb-4">
+          8) One-time data normalization
         </h2>
         <div className="bg-slate-800 border border-slate-700 rounded-lg p-4 text-sm text-slate-300 overflow-x-auto">
           <pre>{`pnpm run normalize:web-channel-type`}</pre>
