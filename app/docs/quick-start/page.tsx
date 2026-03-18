@@ -94,6 +94,11 @@ export default function QuickStartDoc() {
           <li>2. Review bots already in your workspace.</li>
           <li>3. Use bot creation flow if you need a new bot.</li>
           <li>4. Use Launch Builder to open the external builder.</li>
+          <li>
+            5. After creating your bot, open its detail page and assign an Entry
+            Flow. Without this, webchat will only use AI fallback responses —
+            structured conversation flows will not run.
+          </li>
         </ul>
         <div className="bg-slate-800 border border-slate-700 rounded-lg p-4 mt-4 text-sm text-slate-300">
           <p>
@@ -124,6 +129,16 @@ export default function QuickStartDoc() {
           </li>
           <li>review lead and session counts per flow</li>
         </ul>
+        <div className="bg-slate-800 border border-slate-700 rounded-lg p-4 mt-4 text-sm text-slate-300">
+          <p className="font-semibold text-white mb-1">
+            Connect your flow to a bot
+          </p>
+          <p>
+            Once your flow is active, go to Bots, open the bot you want to use,
+            and select the flow as its Entry Flow. This is what connects the
+            flow to webchat — without it, only the AI fallback responds.
+          </p>
+        </div>
       </section>
 
       <section className="mb-10">
@@ -138,7 +153,9 @@ export default function QuickStartDoc() {
           <li>Telegram Bot</li>
           <li>Webchat Widget</li>
         </ul>
-        <h3 className="text-xl font-semibold text-white mb-3">Option A: Facebook Pages</h3>
+        <h3 className="text-xl font-semibold text-white mb-3">
+          Option A: Facebook Pages
+        </h3>
         <ul className="space-y-2 text-slate-300">
           <li>1. Open Facebook Pages from the sidebar.</li>
           <li>2. Click Connect with Facebook.</li>
@@ -146,20 +163,33 @@ export default function QuickStartDoc() {
           <li>4. Select the page you want to link.</li>
           <li>5. Go to AI Status to enable AI replies for that page.</li>
         </ul>
-        <h3 className="text-xl font-semibold text-white mb-3 mt-6">Option B: Telegram Bot</h3>
+        <h3 className="text-xl font-semibold text-white mb-3 mt-6">
+          Option B: Telegram Bot
+        </h3>
         <ul className="space-y-2 text-slate-300">
           <li>Prerequisite: create at least one bot in Bots first.</li>
           <li>1. Open Telegram Bot from the sidebar.</li>
           <li>2. Select which ReplyBase bot should power Telegram replies.</li>
-          <li>3. Paste the bot token from BotFather (usually number:secret).</li>
+          <li>
+            3. Paste the bot token from BotFather (usually number:secret).
+          </li>
           <li>4. Optionally set a friendly internal channel name.</li>
           <li>5. Click Connect Bot.</li>
-          <li>Keep your token private. ReplyBase stores it encrypted at rest.</li>
+          <li>
+            Keep your token private. ReplyBase stores it encrypted at rest.
+          </li>
         </ul>
-        <h3 className="text-xl font-semibold text-white mb-3 mt-6">Option C: Webchat Widget</h3>
+        <h3 className="text-xl font-semibold text-white mb-3 mt-6">
+          Option C: Webchat Widget
+        </h3>
         <ul className="space-y-2 text-slate-300">
           <li>1. Open Webchat Widget from the sidebar.</li>
           <li>2. Choose a bot.</li>
+          <li>
+            2a. Confirm the bot has an Entry Flow set. The Webchat Widget page
+            shows a warning banner if it does not. Open the bot in Bots to
+            assign one before going live.
+          </li>
           <li>3. Create or select a web channel.</li>
           <li>4. Configure title, primary color, and welcome message.</li>
           <li>5. Save site configuration and allowed domains.</li>
@@ -183,11 +213,20 @@ export default function QuickStartDoc() {
           </li>
         </ul>
         <div className="bg-slate-800 border border-slate-700 rounded-lg p-4 mt-4 text-sm text-slate-300">
-          <p className="font-semibold text-white mb-2">Telegram-specific checks</p>
+          <p className="font-semibold text-white mb-2">
+            Telegram-specific checks
+          </p>
           <p>1. In Telegram, send /start (or any message) to your bot.</p>
-          <p className="mt-1">2. Confirm a reply is returned within a few seconds.</p>
-          <p className="mt-1">3. In ReplyBase, verify webhook status is active in Telegram Bot.</p>
-          <p className="mt-1">4. If no reply appears, check Recent Webhook Activity and reconnect webhook.</p>
+          <p className="mt-1">
+            2. Confirm a reply is returned within a few seconds.
+          </p>
+          <p className="mt-1">
+            3. In ReplyBase, verify webhook status is active in Telegram Bot.
+          </p>
+          <p className="mt-1">
+            4. If no reply appears, check Recent Webhook Activity and reconnect
+            webhook.
+          </p>
         </div>
       </section>
 
@@ -196,7 +235,9 @@ export default function QuickStartDoc() {
           Step 7: Know Where To Manage Things
         </h2>
         <ul className="space-y-2 text-slate-300">
-          <li>Dashboard: AI status, connected pages, engine status, recency.</li>
+          <li>
+            Dashboard: AI status, connected pages, engine status, recency.
+          </li>
           <li>Bots: bot list and builder launch.</li>
           <li>Flows: flow lifecycle and assignment.</li>
           <li>Facebook Pages: page connection and status.</li>
@@ -210,8 +251,12 @@ export default function QuickStartDoc() {
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-white mb-4">Known MVP Limits</h2>
         <ul className="space-y-2 text-slate-300">
-          <li>The Activity page is not backed by a full real event feed yet.</li>
-          <li>Usage accounting and advanced analytics are partially implemented.</li>
+          <li>
+            The Activity page is not backed by a full real event feed yet.
+          </li>
+          <li>
+            Usage accounting and advanced analytics are partially implemented.
+          </li>
           <li>
             Settings is currently a lightweight account page, not full workspace
             administration.
