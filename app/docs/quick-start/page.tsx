@@ -148,11 +148,13 @@ export default function QuickStartDoc() {
         </ul>
         <h3 className="text-xl font-semibold text-white mb-3 mt-6">Option B: Telegram Bot</h3>
         <ul className="space-y-2 text-slate-300">
+          <li>Prerequisite: create at least one bot in Bots first.</li>
           <li>1. Open Telegram Bot from the sidebar.</li>
           <li>2. Select which ReplyBase bot should power Telegram replies.</li>
-          <li>3. Paste the bot token from BotFather.</li>
+          <li>3. Paste the bot token from BotFather (usually number:secret).</li>
           <li>4. Optionally set a friendly internal channel name.</li>
           <li>5. Click Connect Bot.</li>
+          <li>Keep your token private. ReplyBase stores it encrypted at rest.</li>
         </ul>
         <h3 className="text-xl font-semibold text-white mb-3 mt-6">Option C: Webchat Widget</h3>
         <ul className="space-y-2 text-slate-300">
@@ -180,6 +182,13 @@ export default function QuickStartDoc() {
             placeholder/mock data.
           </li>
         </ul>
+        <div className="bg-slate-800 border border-slate-700 rounded-lg p-4 mt-4 text-sm text-slate-300">
+          <p className="font-semibold text-white mb-2">Telegram-specific checks</p>
+          <p>1. In Telegram, send /start (or any message) to your bot.</p>
+          <p className="mt-1">2. Confirm a reply is returned within a few seconds.</p>
+          <p className="mt-1">3. In ReplyBase, verify webhook status is active in Telegram Bot.</p>
+          <p className="mt-1">4. If no reply appears, check Recent Webhook Activity and reconnect webhook.</p>
+        </div>
       </section>
 
       <section className="mb-10">
