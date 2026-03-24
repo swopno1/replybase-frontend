@@ -15,57 +15,62 @@ import {
 export default function DocsPage() {
   const docCategories = [
     {
-      title: "Getting Started",
+      title: "Launch And Setup",
       icon: Rocket,
-      description: "Quick start guides and deployment instructions",
+      description:
+        "Start quickly, deploy safely, and verify production readiness",
       docs: [
-        { name: "Quick Start Deployment", href: "/docs/quick-start" },
-        { name: "Production Deployment Plan", href: "/docs/deployment-plan" },
+        { name: "Quick Start Guide", href: "/docs/quick-start" },
+        { name: "Deployment Plan", href: "/docs/deployment-plan" },
         { name: "Deployment Checklist", href: "/docs/deployment-checklist" },
       ],
     },
     {
-      title: "Product & Features",
+      title: "Product Snapshot",
       icon: BookOpen,
-      description: "Learn about ReplyBase features and capabilities",
+      description:
+        "Understand the current product direction, plans, and shipped capability",
       docs: [
-        { name: "Product Roadmap", href: "/docs/roadmap" },
-        { name: "Subscription Features", href: "/docs/features" },
-        { name: "Implementation Summary", href: "/docs/implementation" },
+        { name: "Current Direction", href: "/docs/roadmap" },
+        { name: "Plans And Limits", href: "/docs/features" },
+        { name: "Implementation Snapshot", href: "/docs/implementation" },
       ],
     },
     {
-      title: "Architecture & Technical",
+      title: "Platform And Security",
       icon: Database,
-      description: "Technical documentation and system architecture",
+      description:
+        "Technical structure, access control, and builder configuration",
       docs: [
-        { name: "Modular Dashboard Guide", href: "/docs/modular-dashboard" },
+        { name: "Dashboard Architecture", href: "/docs/modular-dashboard" },
         { name: "Security Model", href: "/docs/security" },
-        { name: "Typebot Engine Configuration", href: "/docs/typebot-config" },
+        { name: "Typebot Configuration", href: "/docs/typebot-config" },
       ],
     },
     {
-      title: "Webchat",
+      title: "Webchat Delivery",
       icon: Globe,
-      description: "Webchat implementation, APIs, QA, and rollout status",
+      description:
+        "Implementation, API, rollout status, and embed guidance for webchat",
       docs: [
-        { name: "Webchat Progress Status", href: "/docs/webchat-progress" },
+        { name: "Webchat Status", href: "/docs/webchat-progress" },
         {
           name: "Webchat Implementation Guide",
           href: "/docs/webchat-implementation-guide",
         },
         { name: "Webchat API Reference", href: "/docs/webchat-api-reference" },
-        { name: "Webchat QA and Rollout", href: "/docs/webchat-qa-rollout" },
+        { name: "Webchat QA And Rollout", href: "/docs/webchat-qa-rollout" },
         { name: "Webchat Embed Quickstart", href: "/docs/webchat-embed" },
       ],
     },
     {
-      title: "Admin & Management",
+      title: "Internal Operations",
       icon: Settings,
-      description: "Admin panel and client onboarding documentation",
+      description:
+        "Internal admin and onboarding-system context for operators and support",
       docs: [
         { name: "Admin Panel Guide", href: "/docs/admin-panel" },
-        { name: "Client Onboarding System", href: "/docs/onboarding" },
+        { name: "Onboarding Overview", href: "/docs/onboarding" },
         {
           name: "Onboarding Implementation",
           href: "/docs/onboarding-implementation",
@@ -88,7 +93,8 @@ export default function DocsPage() {
             application
           </p>
           <p className="text-sm text-slate-500 max-w-2xl mx-auto mt-3">
-            Internal planning, roadmap, and production-note source lives in
+            This area is the public documentation source. Internal planning,
+            roadmap, and production notes live in
             replybase-saas/Product_Details.
           </p>
         </div>
