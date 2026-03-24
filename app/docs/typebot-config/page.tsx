@@ -37,9 +37,10 @@ export default function TypebotConfigDoc() {
                   1. Disable Public Authentication
                 </h3>
                 <ul className="text-sm text-slate-300 space-y-1">
-                  <li>• Disable Google OAuth</li>
-                  <li>• Disable Facebook OAuth</li>
-                  <li>• Disable Email/Password login</li>
+                  <li>
+                    • Disable all direct public sign-in methods in Typebot
+                  </li>
+                  <li>• Require ReplyBase-issued OIDC access instead</li>
                 </ul>
               </div>
               <div>
@@ -51,7 +52,7 @@ export default function TypebotConfigDoc() {
                   <li>• Client ID: typebot-engine</li>
                   <li>
                     • Callback URL:
-                    https://engine.replybase.co.uk/api/auth/oauth/generic-oidc/callback
+                    https://engine.replybase.co.uk/api/auth/callback/generic-oidc
                   </li>
                   <li>
                     • Scopes: openid email profile plan subscription_status

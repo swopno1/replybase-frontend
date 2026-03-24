@@ -7,25 +7,25 @@ const plans = [
     name: "Free",
     price: "GBP0",
     limits:
-      "Best for testing and first setup: 1 bot, 100 daily messages, 3,000 monthly messages, 1 channel per bot, 100 max conversations",
+      "Best for testing and first setup: 1 bot, 100 daily messages, 3,000 monthly messages, 1 source connection per bot, 100 max conversations",
   },
   {
     name: "Starter",
     price: "GBP19",
     limits:
-      "Best for small live deployments: 3 bots, 1,000 daily messages, 30,000 monthly messages, 3 channels per bot, 1,000 max conversations",
+      "Best for small live deployments: 3 bots, 1,000 daily messages, 30,000 monthly messages, 3 source connections per bot, 1,000 max conversations",
   },
   {
     name: "Pro",
     price: "GBP49",
     limits:
-      "Best for growing teams and agencies: 10 bots, 5,000 daily messages, 150,000 monthly messages, 5 channels per bot, 5,000 max conversations",
+      "Best for growing teams and agencies: 10 bots, 5,000 daily messages, 150,000 monthly messages, 5 source connections per bot, 5,000 max conversations",
   },
   {
     name: "Business",
     price: "GBP99",
     limits:
-      "Best for high-volume deployments: 50 bots, 20,000 daily messages, 600,000 monthly messages, 10 channels per bot, 20,000 max conversations",
+      "Best for high-volume deployments: 50 bots, 20,000 daily messages, 600,000 monthly messages, 10 source connections per bot, 20,000 max conversations",
   },
 ];
 
@@ -95,7 +95,10 @@ export default function FeaturesDoc() {
         </h3>
         <ul className="space-y-2 text-slate-300">
           <li>create, edit, duplicate, activate, and delete flows</li>
-          <li>assign flows to Facebook pages</li>
+          <li>
+            assign flows to active runtime targets, with some legacy page-based
+            behavior still present
+          </li>
           <li>see per-flow lead and session counts</li>
         </ul>
       </section>
@@ -108,7 +111,7 @@ export default function FeaturesDoc() {
             Unified inbox language is being standardized across product UI.
           </li>
           <li>
-            Settings and Activity exist, but are lighter than channel and
+            Settings and Activity exist, but are lighter than integration and
             webchat areas.
           </li>
         </ul>

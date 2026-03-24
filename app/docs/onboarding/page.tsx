@@ -7,7 +7,7 @@ export default function OnboardingDoc() {
   return (
     <DocLayout
       title="Client Onboarding System"
-      description="Current onboarding flows in ReplyBase for new workspaces and Messenger-led qualification"
+      description="Current onboarding flows in ReplyBase for new workspaces and legacy assisted qualification workflows"
     >
       <p className="text-slate-300 mb-8">
         ReplyBase currently has two different onboarding concepts in the
@@ -24,8 +24,8 @@ export default function OnboardingDoc() {
             app.
           </li>
           <li>
-            Messenger onboarding sessions: structured conversation flow captured
-            through Facebook interactions and surfaced in admin.
+            Assisted onboarding sessions: structured qualification flow captured
+            in older operational workflows and surfaced in admin.
           </li>
         </ul>
       </section>
@@ -43,7 +43,7 @@ export default function OnboardingDoc() {
           Expected setup path after signup:
         </p>
         <ul className="space-y-2 text-slate-300">
-          <li>connect Facebook Pages, Telegram, or Webchat</li>
+          <li>connect Telegram or Webchat</li>
           <li>launch builder when needed</li>
           <li>configure flows and AI behavior</li>
         </ul>
@@ -51,11 +51,11 @@ export default function OnboardingDoc() {
 
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-white mb-4">
-          Messenger-Based Onboarding Sessions
+          Legacy Assisted Onboarding Sessions
         </h2>
         <p className="text-slate-300">
-          ReplyBase also tracks onboarding sessions originating from Facebook
-          conversations to capture qualification context in guided flows.
+          ReplyBase also tracks legacy onboarding sessions from older guided
+          qualification flows for operational visibility and historical context.
         </p>
       </section>
 
@@ -98,12 +98,13 @@ export default function OnboardingDoc() {
             customers.
           </li>
           <li>
-            Treat Messenger onboarding as an operational/sales-assist flow tied
-            to Facebook activity.
+            Treat assisted onboarding as an operational or sales-assist flow,
+            not the primary customer setup path.
           </li>
           <li>
-            If rollout is webchat- or Telegram-first, document onboarding around
-            those channel setup pages because older flow is Facebook-centric.
+            Document onboarding primarily around Telegram and Webchat setup,
+            because older assisted flows do not match the current product
+            direction.
           </li>
         </ul>
         <Link

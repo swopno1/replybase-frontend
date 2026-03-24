@@ -20,11 +20,13 @@ export default function ImplementationDoc() {
         <ul className="space-y-2 text-slate-300">
           <li>tenant-aware authentication and workspace creation</li>
           <li>bot management and secure builder launch</li>
-          <li>Facebook page connection and AI toggle flow</li>
-          <li>Telegram connection with webhook status and reconnect controls</li>
+          <li>
+            Telegram connection with webhook status and reconnect controls
+          </li>
           <li>webchat setup, embed generation, and rollout controls</li>
           <li>Stripe-backed checkout and billing portal flow</li>
           <li>core webchat API hardening and test coverage</li>
+          <li>legacy Facebook integration surface remains in the app</li>
         </ul>
       </section>
 
@@ -38,7 +40,13 @@ export default function ImplementationDoc() {
             bot, channel, contact, conversation, lead, plan, and subscription
             data models
           </li>
-          <li>Facebook, Telegram, and Webchat channel surfaces</li>
+          <li>
+            Telegram and Webchat are the primary active public setup surfaces
+          </li>
+          <li>
+            Facebook integration remains implemented but is not the primary
+            product direction
+          </li>
           <li>conversations and contacts views</li>
           <li>admin screens for revenue, subscribers, and rollout</li>
         </ul>
@@ -49,11 +57,14 @@ export default function ImplementationDoc() {
           Areas That Are Still MVP-Level
         </h2>
         <ul className="space-y-2 text-slate-300">
-          <li>Activity currently uses mock data, not a full live event feed.</li>
+          <li>
+            Activity currently uses mock data, not a full live event feed.
+          </li>
           <li>Settings are limited to basic account information.</li>
           <li>Usage accounting is still conservative/mocked in places.</li>
           <li>
-            Dashboard setup guidance remains Facebook-first in parts of the UI.
+            Some older UI surfaces still use channel-centric or Facebook-centric
+            terminology.
           </li>
         </ul>
       </section>
@@ -80,7 +91,9 @@ export default function ImplementationDoc() {
         <ul className="space-y-2 text-slate-300">
           <li>replace mock activity data with real tenant event history</li>
           <li>expand settings into true workspace management</li>
-          <li>align onboarding copy with multi-channel setup paths</li>
+          <li>
+            align onboarding copy with Telegram and Webchat-first setup paths
+          </li>
           <li>finish usage accounting visibility for limits</li>
         </ul>
       </section>

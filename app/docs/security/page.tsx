@@ -10,7 +10,7 @@ export default function SecurityDoc() {
     >
       <p className="text-slate-300 mb-8">
         ReplyBase uses layered application security across authentication,
-        tenant isolation, admin access, billing, and public channel endpoints.
+        tenant isolation, admin access, billing, and public source endpoints.
       </p>
 
       <section className="mb-10">
@@ -19,7 +19,9 @@ export default function SecurityDoc() {
         </h2>
         <ul className="space-y-2 text-slate-300">
           <li>users authenticate through NextAuth-backed flows</li>
-          <li>registration creates a dedicated tenant workspace automatically</li>
+          <li>
+            registration creates a dedicated tenant workspace automatically
+          </li>
           <li>
             most protected APIs require both a valid session and tenant
             association
@@ -43,12 +45,16 @@ export default function SecurityDoc() {
       </section>
 
       <section className="mb-10">
-        <h2 className="text-2xl font-bold text-white mb-4">3. Billing Protection</h2>
+        <h2 className="text-2xl font-bold text-white mb-4">
+          3. Billing Protection
+        </h2>
         <ul className="space-y-2 text-slate-300">
           <li>billing endpoints require authenticated user session</li>
           <li>subscription lookups are tenant-scoped</li>
           <li>customer portal access is created server-side through Stripe</li>
-          <li>plan limits are checked before selected resource creation flows</li>
+          <li>
+            plan limits are checked before selected resource creation flows
+          </li>
         </ul>
       </section>
 
@@ -91,8 +97,13 @@ export default function SecurityDoc() {
             newsletter subscribe/unsubscribe supports app-session and API-key
             access where intended
           </li>
-          <li>account data deletion requests are recorded via dedicated APIs</li>
-          <li>Facebook data deletion support is part of compliance surface</li>
+          <li>
+            account data deletion requests are recorded via dedicated APIs
+          </li>
+          <li>
+            legacy Facebook data deletion support remains part of compliance
+            utilities
+          </li>
         </ul>
       </section>
 

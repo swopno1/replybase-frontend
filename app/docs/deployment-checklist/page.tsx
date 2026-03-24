@@ -11,7 +11,7 @@ const checklistSections = [
     items: [
       "SSH access and Coolify dashboard access",
       "Database URL ready",
-      "Google & Facebook OAuth apps configured",
+      "OAuth apps configured for the sign-in providers you intend to use",
       "Stripe account and webhook configured",
       "Domains and SSL verified",
     ],
@@ -38,7 +38,7 @@ const checklistSections = [
     title: "Typebot Configuration",
     items: [
       "OIDC provider enabled",
-      "Public auth disabled (Google/Facebook/Email)",
+      "Public auth disabled in Typebot",
       "Subscription checks enforced",
       "Engine restarted",
     ],

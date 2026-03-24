@@ -44,7 +44,7 @@ export default function DeploymentPlanDoc() {
             <div className="space-y-3">
               {[
                 "Generate OIDC keys and application secrets",
-                "Configure environment variables for OAuth (Google/Facebook)",
+                "Configure environment variables for the sign-in providers used in your deployment",
                 "Set Stripe keys and webhook secrets",
                 "Add all variables to Coolify",
               ].map((item) => (
@@ -88,7 +88,7 @@ export default function DeploymentPlanDoc() {
             <div className="space-y-3">
               {[
                 "Configure Typebot Engine OIDC provider",
-                "Disable public auth providers (Google, Facebook, email)",
+                "Disable public auth providers inside Typebot",
                 "Enforce subscription status validation in Typebot",
                 "Verify access control with test tokens",
               ].map((item) => (

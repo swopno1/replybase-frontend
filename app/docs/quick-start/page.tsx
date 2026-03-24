@@ -7,7 +7,7 @@ export default function QuickStartDoc() {
   return (
     <DocLayout
       title="Quick Start Guide"
-      description="Get from account creation to a working ReplyBase channel with the current dashboard flow"
+      description="Get from account creation to a working ReplyBase inbox source with the current dashboard flow"
     >
       <div className="bg-indigo-900/20 border border-indigo-700/50 p-6 rounded-lg mb-8">
         <p className="text-white font-semibold mb-2">
@@ -24,7 +24,7 @@ export default function QuickStartDoc() {
         <ul className="space-y-2 text-slate-300">
           <li>created your workspace</li>
           <li>opened the bot builder from ReplyBase</li>
-          <li>connected at least one live channel</li>
+          <li>connected at least one live source</li>
           <li>
             confirmed where conversations, contacts, and leads appear in the
             dashboard
@@ -143,28 +143,19 @@ export default function QuickStartDoc() {
 
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-white mb-4">
-          Step 5: Connect Your First Channel
+          Step 5: Connect Your First Source
         </h2>
         <p className="text-slate-300 mb-4">
-          ReplyBase currently exposes three user-facing integration screens:
+          ReplyBase currently exposes two primary setup paths for active use,
+          plus one legacy integration surface still present in the dashboard:
         </p>
         <ul className="space-y-2 text-slate-300 mb-4">
-          <li>Facebook Pages</li>
           <li>Telegram Bot</li>
           <li>Webchat Widget</li>
+          <li>Facebook Pages (legacy surface still present in app)</li>
         </ul>
         <h3 className="text-xl font-semibold text-white mb-3">
-          Option A: Facebook Pages
-        </h3>
-        <ul className="space-y-2 text-slate-300">
-          <li>1. Open Facebook Pages from the sidebar.</li>
-          <li>2. Click Connect with Facebook.</li>
-          <li>3. Authorize ReplyBase to access pages you manage.</li>
-          <li>4. Select the page you want to link.</li>
-          <li>5. Go to AI Status to enable AI replies for that page.</li>
-        </ul>
-        <h3 className="text-xl font-semibold text-white mb-3 mt-6">
-          Option B: Telegram Bot
+          Option A: Telegram Bot
         </h3>
         <ul className="space-y-2 text-slate-300">
           <li>Prerequisite: create at least one bot in Bots first.</li>
@@ -180,7 +171,7 @@ export default function QuickStartDoc() {
           </li>
         </ul>
         <h3 className="text-xl font-semibold text-white mb-3 mt-6">
-          Option C: Webchat Widget
+          Option B: Webchat Widget
         </h3>
         <ul className="space-y-2 text-slate-300">
           <li>1. Open Webchat Widget from the sidebar.</li>
@@ -196,6 +187,16 @@ export default function QuickStartDoc() {
           <li>6. Copy embed snippet into your website.</li>
           <li>7. Use the built-in test harness before going live.</li>
         </ul>
+        <div className="bg-slate-800 border border-slate-700 rounded-lg p-4 mt-4 text-sm text-slate-300">
+          <p className="font-semibold text-white mb-1">
+            Legacy integration note
+          </p>
+          <p>
+            Facebook Pages is still present in the current dashboard, but it is
+            not the primary public setup path in current product direction.
+            Prefer Telegram or Webchat for new setup guidance.
+          </p>
+        </div>
       </section>
 
       <section className="mb-10">
@@ -203,7 +204,7 @@ export default function QuickStartDoc() {
           Step 6: Test Your Bot
         </h2>
         <ul className="space-y-2 text-slate-300">
-          <li>1. Send a real test message through the connected channel.</li>
+          <li>1. Send a real test message through the connected source.</li>
           <li>2. Open Conversations to confirm the record exists.</li>
           <li>3. Open Contacts to confirm profile creation.</li>
           <li>4. Open Leads if your flow collects lead data.</li>
@@ -236,13 +237,15 @@ export default function QuickStartDoc() {
         </h2>
         <ul className="space-y-2 text-slate-300">
           <li>
-            Dashboard: AI status, connected pages, engine status, recency.
+            Dashboard: AI status, engine status, and recent activity summary.
           </li>
           <li>Bots: bot list and builder launch.</li>
           <li>Flows: flow lifecycle and assignment.</li>
-          <li>Facebook Pages: page connection and status.</li>
           <li>Telegram Bot: token setup and webhook logs.</li>
           <li>Webchat Widget: setup, keys, embed, diagnostics.</li>
+          <li>
+            Facebook Pages: legacy integration surface still available in app.
+          </li>
           <li>Billing: plan state and customer portal.</li>
           <li>Settings: basic account details only right now.</li>
         </ul>

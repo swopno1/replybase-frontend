@@ -54,8 +54,8 @@ export default function RoadmapDoc() {
         </h2>
         <ul className="space-y-2 text-slate-300">
           <li>finalize webchat rollout playbooks and monitoring</li>
-          <li>continue hardening public channel endpoints</li>
-          <li>improve onboarding conversion and channel health visibility</li>
+          <li>continue hardening public source endpoints</li>
+          <li>improve onboarding conversion and source health visibility</li>
           <li>reduce mismatch between dashboard copy and capability</li>
         </ul>
       </section>
@@ -67,7 +67,7 @@ export default function RoadmapDoc() {
         <ul className="space-y-2 text-slate-300">
           <li>richer analytics and reporting</li>
           <li>stronger workspace administration tooling</li>
-          <li>broader channel coverage after consistency goals are met</li>
+          <li>broader source coverage after consistency goals are met</li>
           <li>better collaboration and role-based workflows</li>
         </ul>
       </section>

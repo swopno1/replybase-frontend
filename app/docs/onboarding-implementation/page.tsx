@@ -24,8 +24,19 @@ export default function OnboardingImplementationDoc() {
             Onboarding Implementation Guide
           </h1>
           <p className="text-lg text-slate-400 mb-8">
-            Technical setup for the onboarding system
+            Technical setup summary for onboarding-related systems in the
+            current codebase
           </p>
+
+          <section className="mb-12">
+            <div className="bg-slate-800 p-6 rounded-lg border border-slate-700">
+              <p className="text-slate-300 text-sm">
+                This page documents legacy onboarding-related implementation
+                patterns that still exist in the codebase. It is not the primary
+                public setup path for new customers.
+              </p>
+            </div>
+          </section>
 
           <section className="mb-12">
             <h2 className="text-2xl font-bold text-white mb-6">
@@ -54,7 +65,7 @@ export default function OnboardingImplementationDoc() {
               {[
                 "Onboarding service to manage session state",
                 "Flow handler to process messages and transitions",
-                "Facebook webhook integration for message routing",
+                "Legacy assisted-flow webhook integration for message routing",
                 "Dashboard analytics for onboarding metrics",
               ].map((item) => (
                 <div
@@ -76,8 +87,9 @@ export default function OnboardingImplementationDoc() {
               <div className="flex items-start gap-3">
                 <Webhook className="text-indigo-400 mt-1" size={18} />
                 <div className="text-sm text-slate-300">
-                  Facebook webhook routes onboarding messages and triggers the
-                  onboarding flow handler for new conversations.
+                  Older assisted onboarding flows route messages into the
+                  onboarding flow handler for qualification-style session
+                  tracking.
                 </div>
               </div>
             </div>
