@@ -87,6 +87,10 @@ export default function DocsPage() {
             Practical product documentation for the current ReplyBase SaaS
             application
           </p>
+          <p className="text-sm text-slate-500 max-w-2xl mx-auto mt-3">
+            Internal planning, roadmap, and production-note source lives in
+            replybase-saas/Product_Details.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">

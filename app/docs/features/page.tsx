@@ -36,8 +36,8 @@ export default function FeaturesDoc() {
       description="Current ReplyBase plans, limits, and feature availability based on the implemented product"
     >
       <p className="text-slate-300 mb-8">
-        This page describes the current plan structure and feature
-        availability reflected in the ReplyBase SaaS application and seed data.
+        This page describes the current plan structure and feature availability
+        reflected in the ReplyBase SaaS application and seed data.
       </p>
 
       <section className="mb-10">
@@ -62,7 +62,9 @@ export default function FeaturesDoc() {
         <h2 className="text-2xl font-bold text-white mb-4">
           Product Areas Available Today
         </h2>
-        <h3 className="text-xl font-semibold text-white mb-3">Core Workspace</h3>
+        <h3 className="text-xl font-semibold text-white mb-3">
+          Core Workspace
+        </h3>
         <ul className="space-y-2 text-slate-300">
           <li>account registration and login</li>
           <li>tenant-based workspace creation</li>
@@ -70,7 +72,9 @@ export default function FeaturesDoc() {
           <li>secure builder launch from ReplyBase</li>
           <li>billing page and Stripe customer portal flow</li>
         </ul>
-        <h3 className="text-xl font-semibold text-white mb-3 mt-6">Conversation Operations</h3>
+        <h3 className="text-xl font-semibold text-white mb-3 mt-6">
+          Conversation Operations
+        </h3>
         <ul className="space-y-2 text-slate-300">
           <li>conversation list</li>
           <li>contact list with identity badges</li>
@@ -82,11 +86,13 @@ export default function FeaturesDoc() {
         </ul>
         <h3 className="text-xl font-semibold text-white mb-3 mt-6">Channels</h3>
         <ul className="space-y-2 text-slate-300">
-          <li>Facebook Pages integration</li>
           <li>Telegram Bot integration</li>
           <li>Webchat Widget integration</li>
+          <li>Email and contact-form intake are planned adapters</li>
         </ul>
-        <h3 className="text-xl font-semibold text-white mb-3 mt-6">Flow Management</h3>
+        <h3 className="text-xl font-semibold text-white mb-3 mt-6">
+          Flow Management
+        </h3>
         <ul className="space-y-2 text-slate-300">
           <li>create, edit, duplicate, activate, and delete flows</li>
           <li>assign flows to Facebook pages</li>
@@ -97,8 +103,10 @@ export default function FeaturesDoc() {
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-white mb-4">Current UX Notes</h2>
         <ul className="space-y-2 text-slate-300">
-          <li>The main dashboard onboarding path is still Facebook-first.</li>
-          <li>Telegram and Webchat have dedicated stronger setup pages.</li>
+          <li>Telegram and Webchat have dedicated setup pages.</li>
+          <li>
+            Unified inbox language is being standardized across product UI.
+          </li>
           <li>
             Settings and Activity exist, but are lighter than channel and
             webchat areas.
@@ -121,10 +129,16 @@ export default function FeaturesDoc() {
       <section>
         <h2 className="text-2xl font-bold text-white mb-4">Billing Notes</h2>
         <ul className="space-y-2 text-slate-300">
-          <li>Paid plans currently present a 14-day free trial in pricing UI.</li>
+          <li>
+            Paid plans currently present a 14-day free trial in pricing UI.
+          </li>
           <li>Plan-aware checks enforce bot and usage limits.</li>
           <li>Billing is centered in Billing screen, not Settings.</li>
         </ul>
+        <p className="text-slate-300 mt-4">
+          Canonical product planning and feature strategy are maintained in
+          replybase-saas/Product_Details.
+        </p>
       </section>
     </DocLayout>
   );
