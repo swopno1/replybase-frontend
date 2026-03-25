@@ -4,6 +4,13 @@ import path from "path";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://replybase.co.uk";
 
+// Routes that exist as redirect stubs or are internal-only and should not be indexed.
+const EXCLUDED_ROUTES = new Set([
+  "/docs/deployment-checklist",
+  "/docs/deployment-plan",
+  "/docs/typebot-config",
+]);
+
 function getStaticAppRoutes(): string[] {
   const appDirectory = path.join(process.cwd(), "app");
   const routes = new Set<string>();
@@ -16,7 +23,9 @@ function getStaticAppRoutes(): string[] {
 
     if (hasPage) {
       const route = `/${urlSegments.join("/")}`.replace(/\/$/, "") || "/";
-      routes.add(route);
+      if (!EXCLUDED_ROUTES.has(route)) {
+        routes.add(route);
+      }
     }
 
     for (const entry of entries) {
