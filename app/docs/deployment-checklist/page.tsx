@@ -35,12 +35,12 @@ const checklistSections = [
     ],
   },
   {
-    title: "Typebot Configuration",
+    title: "Channel Integration Readiness",
     items: [
-      "OIDC provider enabled",
-      "Public auth disabled in Typebot",
-      "Subscription checks enforced",
-      "Engine restarted",
+      "Telegram bot token connected (if Telegram is enabled)",
+      "Webchat channel configured with branding and welcome message",
+      "Allowed domains saved for website embeds",
+      "Embed snippet tested on a staging page",
     ],
   },
   {

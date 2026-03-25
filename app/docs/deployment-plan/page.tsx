@@ -31,8 +31,8 @@ export default function DeploymentPlanDoc() {
             <div className="bg-slate-800 p-6 rounded-lg border border-slate-700">
               <p className="text-slate-300">
                 This plan assumes deployment on Coolify with application-level
-                security (no Nginx rules). The Typebot Engine authenticates via
-                OIDC tokens issued by the SaaS app.
+                security (no Nginx rules). Telegram and Webchat channels are
+                configured directly in ReplyBase.
               </p>
             </div>
           </section>
@@ -83,14 +83,14 @@ export default function DeploymentPlanDoc() {
 
           <section className="mb-12">
             <h2 className="text-2xl font-bold text-white mb-6">
-              Phase 3: Security & Typebot
+              Phase 3: Channel Integrations & Security
             </h2>
             <div className="space-y-3">
               {[
-                "Configure Typebot Engine OIDC provider",
-                "Disable public auth providers inside Typebot",
-                "Enforce subscription status validation in Typebot",
-                "Verify access control with test tokens",
+                "Connect Telegram bot token if Telegram is in scope",
+                "Configure webchat channel, branding, and allowed domains",
+                "Validate session security and origin protections",
+                "Verify integration access and diagnostics from dashboard",
               ].map((item) => (
                 <div
                   key={item}

@@ -44,7 +44,6 @@ export default function DocsPage() {
       docs: [
         { name: "Workspace Navigation Guide", href: "/docs/modular-dashboard" },
         { name: "Security Model", href: "/docs/security" },
-        { name: "Typebot Configuration", href: "/docs/typebot-config" },
       ],
     },
     {
