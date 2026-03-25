@@ -88,7 +88,7 @@ export default function WebchatEmbedDoc() {
           <li>
             Open /integrations/webchat and pick the same bot + web channel
           </li>
-          <li>Save config, then launch the internal test widget harness</li>
+          <li>Save config, then launch the built-in test widget</li>
           <li>Publish the embed snippet on your website</li>
         </ol>
         <p className="text-slate-300 mt-4">
@@ -147,9 +147,7 @@ WEBCHAT_RATE_LIMIT_EVENTS_SESSION_WINDOW_MS=60000`}</pre>
           <li>
             In /integrations/webchat, use Add Current Origin and Save Config.
           </li>
-          <li>
-            Launch Test Widget from dashboard to use the internal harness page.
-          </li>
+          <li>Launch Test Widget from dashboard to open the preview page.</li>
           <li>
             Check Diagnostics for blocked-origin events and exact timestamps.
           </li>

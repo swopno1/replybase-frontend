@@ -164,7 +164,7 @@ export default function QuickStartDoc() {
           <li>
             3. Paste the bot token from BotFather (usually number:secret).
           </li>
-          <li>4. Optionally set a friendly internal channel name.</li>
+          <li>4. Optionally set a friendly channel name.</li>
           <li>5. Click Connect Bot.</li>
           <li>
             Keep your token private. ReplyBase stores it encrypted at rest.

@@ -24,7 +24,8 @@ export default function ModularDashboardDoc() {
             Workspace Navigation Guide
           </h1>
           <p className="text-lg text-slate-400 mb-8">
-            Learn where to do what in ReplyBase as a workspace owner or operator
+            Learn where to do what in ReplyBase as a workspace owner or team
+            admin
           </p>
 
           <section className="mb-12">

@@ -10,7 +10,7 @@ export default function AdminPanelDoc() {
     >
       <section className="mb-10">
         <p className="text-slate-300">
-          This area is intended for account owners and trusted operators who
+          This area is intended for account owners and trusted team admins who
           manage tenant-level operations.
         </p>
         <p className="text-slate-300 mt-3">

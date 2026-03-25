@@ -161,7 +161,7 @@ export default function WebchatProgressDoc() {
           </li>
           <li>
             Remaining gap: live pilot promotion and staged enablement still
-            require operator action in deployed environment.
+            require tenant admin action in deployed environment.
           </li>
         </ul>
       </section>

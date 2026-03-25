@@ -115,7 +115,7 @@ export default function WebchatImplementationGuideDoc() {
           <li>theme and widget configuration</li>
           <li>public/secret key reveal, copy, and rotation</li>
           <li>allowed domain management and diagnostics</li>
-          <li>internal harness launch and live preview</li>
+          <li>test widget launch and live preview</li>
           <li>embed snippet generation and copy</li>
         </ul>
       </section>
@@ -156,9 +156,8 @@ export default function WebchatImplementationGuideDoc() {
           Test Harness Behavior
         </h2>
         <p className="text-slate-300 mb-3">
-          The Launch Test Widget action opens an internal harness page that
-          loads the production embed script with your selected site key and
-          visual config.
+          The Launch Test Widget action opens a preview page that loads the
+          production embed script with your selected site key and visual config.
         </p>
         <ul className="space-y-2 text-slate-300">
           <li>
