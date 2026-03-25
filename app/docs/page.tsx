@@ -21,8 +21,11 @@ export default function DocsPage() {
         "Create your workspace, connect sources, and launch with confidence",
       docs: [
         { name: "Quick Start Guide", href: "/docs/quick-start" },
-        { name: "Deployment Plan", href: "/docs/deployment-plan" },
-        { name: "Deployment Checklist", href: "/docs/deployment-checklist" },
+        { name: "Onboarding Overview", href: "/docs/onboarding" },
+        {
+          name: "Onboarding Technical Notes",
+          href: "/docs/onboarding-implementation",
+        },
       ],
     },
     {
@@ -69,11 +72,8 @@ export default function DocsPage() {
         "Guidance for workspace owners, onboarding, and account-level operations",
       docs: [
         { name: "Workspace Owner Guide", href: "/docs/admin-panel" },
-        { name: "Onboarding Overview", href: "/docs/onboarding" },
-        {
-          name: "Onboarding Technical Notes",
-          href: "/docs/onboarding-implementation",
-        },
+        { name: "Plans And Limits", href: "/docs/features" },
+        { name: "Security Model", href: "/docs/security" },
       ],
     },
   ];

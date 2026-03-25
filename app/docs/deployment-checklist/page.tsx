@@ -73,8 +73,15 @@ export default function DeploymentChecklistDoc() {
             Production Deployment Checklist
           </h1>
           <p className="text-lg text-slate-400 mb-8">
-            Use this checklist to track deployment readiness
+            Internal developer runbook for production deployment readiness
           </p>
+
+          <div className="bg-amber-900/20 border border-amber-700/50 p-4 rounded-lg mb-8">
+            <p className="text-amber-200 text-sm m-0">
+              Internal note: this page is for engineering deployment operations,
+              not tenant or end-user documentation.
+            </p>
+          </div>
 
           <div className="space-y-6">
             {checklistSections.map((section) => (
