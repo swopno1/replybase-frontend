@@ -25,7 +25,7 @@ export default function ModularDashboardDoc() {
           </h1>
           <p className="text-lg text-slate-400 mb-8">
             Learn where to do what in ReplyBase as a workspace owner or team
-            admin
+            user
           </p>
 
           <section className="mb-12">
@@ -87,7 +87,8 @@ export default function ModularDashboardDoc() {
               Need owner controls guidance?
             </h3>
             <p className="text-slate-300 mb-4">
-              Review the workspace owner guide for account-level management.
+              Review the workspace owner guide for account-level management and
+              security routines.
             </p>
             <Link
               href="/docs/admin-panel"

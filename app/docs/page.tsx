@@ -88,8 +88,8 @@ export default function DocsPage() {
             Documentation
           </h1>
           <p className="text-lg text-slate-400 max-w-2xl mx-auto">
-            Practical product documentation for the current ReplyBase SaaS
-            application
+            MVP production documentation for ReplyBase users and tenant
+            workspace owners
           </p>
           <p className="text-sm text-slate-500 max-w-2xl mx-auto mt-3">
             This documentation is written for users and tenant workspace owners.

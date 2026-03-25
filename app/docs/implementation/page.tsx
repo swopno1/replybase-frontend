@@ -6,11 +6,11 @@ export default function ImplementationDoc() {
   return (
     <DocLayout
       title="Implementation Summary"
-      description="Honest summary of what is implemented, what is polished, and what is still MVP-level in ReplyBase SaaS"
+      description="MVP production summary for tenant users: what works now, what is reliable, and what is still evolving"
     >
       <p className="text-slate-300 mb-8">
-        This summary is based on the current application routes, APIs, schema,
-        and test suite.
+        This page is written for workspace owners and team users who want a
+        practical understanding of current MVP production readiness.
       </p>
 
       <section className="mb-10">
@@ -26,10 +26,6 @@ export default function ImplementationDoc() {
           <li>webchat setup, embed generation, and rollout controls</li>
           <li>Stripe-backed checkout and billing portal flow</li>
           <li>core webchat API hardening and test coverage</li>
-          <li>
-            legacy Facebook and WhatsApp integrations remain preserved
-            internally
-          </li>
         </ul>
       </section>
 
@@ -38,42 +34,41 @@ export default function ImplementationDoc() {
           Core Platform Capabilities
         </h2>
         <ul className="space-y-2 text-slate-300">
-          <li>multi-tenant workspace isolation</li>
           <li>
-            bot, channel, contact, conversation, lead, plan, and subscription
-            data models
+            multi-tenant workspace isolation and subscription-aware access
+          </li>
+          <li>Telegram and Webchat as active setup surfaces for tenants</li>
+          <li>
+            conversations, contacts, and leads workflow for daily operations
           </li>
           <li>
-            Telegram and Webchat are the primary active public setup surfaces
+            flows plus AI fallback for structured and open-ended responses
           </li>
-          <li>
-            legacy Facebook and WhatsApp logic remains implemented but is hidden
-            from the current product UI
-          </li>
-          <li>conversations and contacts views</li>
-          <li>admin screens for revenue, subscribers, and rollout</li>
+          <li>billing visibility with plan and upgrade controls</li>
         </ul>
       </section>
 
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-white mb-4">
-          Areas That Are Still MVP-Level
+          Areas Still Evolving In MVP
         </h2>
         <ul className="space-y-2 text-slate-300">
           <li>
             Activity currently uses mock data, not a full live event feed.
           </li>
           <li>Settings are limited to basic account information.</li>
-          <li>Usage accounting is still conservative/mocked in places.</li>
+          <li>Some analytics and usage views are still conservative.</li>
           <li>
-            Some internal models and analytics still reference legacy channel
-            names.
+            Some management screens are operationally useful but not yet fully
+            streamlined.
           </li>
         </ul>
       </section>
 
       <section className="mb-10">
-        <h2 className="text-2xl font-bold text-white mb-4">Testing Snapshot</h2>
+        <h2 className="text-2xl font-bold text-white mb-4">
+          MVP Reliability Snapshot
+        </h2>
         <ul className="space-y-2 text-slate-300">
           <li>Vitest suite: 128 passing tests across 9 files.</li>
           <li>
@@ -89,7 +84,7 @@ export default function ImplementationDoc() {
 
       <section>
         <h2 className="text-2xl font-bold text-white mb-4">
-          Recommended Product Cleanup
+          Recommended Next Improvements
         </h2>
         <ul className="space-y-2 text-slate-300">
           <li>replace mock activity data with real tenant event history</li>

@@ -187,12 +187,12 @@ export default function QuickStartDoc() {
         </ul>
         <div className="bg-slate-800 border border-slate-700 rounded-lg p-4 mt-4 text-sm text-slate-300">
           <p className="font-semibold text-white mb-1">
-            Legacy integration note
+            Recommended setup path
           </p>
           <p>
-            Legacy Facebook and WhatsApp integrations are retained internally,
-            but they are hidden from the current product UI. Prefer Telegram or
-            Webchat for new setup guidance.
+            For MVP production deployment, start with Telegram or Webchat,
+            validate message flow end-to-end, then expand only after stable
+            weekly performance.
           </p>
         </div>
       </section>

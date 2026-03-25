@@ -6,13 +6,13 @@ export default function WebchatQaRolloutDoc() {
   return (
     <DocLayout
       title="Webchat QA and Rollout Guide"
-      description="Quality gates, test plan, and rollout sequence for ReplyBase Webchat"
+      description="Tenant-facing quality gates and rollout sequence for MVP production webchat deployments"
     >
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-white mb-4">Objective</h2>
         <p className="text-slate-300">
-          Define the minimum quality and operations process before broad webchat
-          rollout.
+          Define the minimum quality and operational checks before broad
+          customer-facing webchat rollout.
         </p>
       </section>
 
@@ -63,18 +63,18 @@ export default function WebchatQaRolloutDoc() {
 
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-white mb-4">
-          Monitoring Dashboard
+          Monitoring Guidance
         </h2>
         <p className="text-slate-300 mb-3">
-          Admin monitoring is available at /admin/webchat-monitoring and should
-          be reviewed before broadening rollout.
+          Use your available monitoring and diagnostics surfaces before
+          broadening rollout to additional domains and campaigns.
         </p>
         <ul className="space-y-2 text-slate-300">
           <li>active sites and sites with live traffic</li>
-          <li>sessions, conversations, messages, widget events</li>
-          <li>error-event rate and last-activity freshness</li>
-          <li>incident counts by blocked-origin, token, rate-limit, rollout</li>
-          <li>pilot-tenant summaries and rollout recommendation card</li>
+          <li>sessions, conversations, messages, and widget events</li>
+          <li>error-event rate and activity freshness</li>
+          <li>blocked-origin, token, and rate-limit incidents</li>
+          <li>site-level readiness before larger rollouts</li>
         </ul>
       </section>
 
@@ -82,7 +82,7 @@ export default function WebchatQaRolloutDoc() {
         <h2 className="text-2xl font-bold text-white mb-4">Rollout Sequence</h2>
         <ol className="space-y-2 text-slate-300 list-decimal list-inside">
           <li>Enable behind webchat_enabled feature flag.</li>
-          <li>Internal validation tenants only.</li>
+          <li>Validate on one low-risk production domain.</li>
           <li>Pilot 1 to 2 external tenants.</li>
           <li>Expand by plan tier when SLO targets are stable.</li>
           <li>Run post-rollout hardening and update playbook.</li>
