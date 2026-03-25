@@ -21,32 +21,33 @@ export default function ModularDashboardDoc() {
 
         <article className="prose prose-invert max-w-none">
           <h1 className="text-4xl font-bold text-white mb-4">
-            Modular Dashboard Guide
+            Workspace Navigation Guide
           </h1>
           <p className="text-lg text-slate-400 mb-8">
-            Add new dashboard sections safely with error boundaries
+            Learn where to do what in ReplyBase as a workspace owner or operator
           </p>
 
           <section className="mb-12">
             <div className="bg-slate-800 p-6 rounded-lg border border-slate-700">
               <p className="text-slate-300">
-                The dashboard uses a modular architecture where each section is
-                wrapped with an error boundary. This ensures one broken section
-                doesn&apos;t crash the entire dashboard.
+                This guide is focused on practical navigation: where to setup
+                sources, monitor conversations, optimize flows, and control
+                subscription outcomes.
               </p>
             </div>
           </section>
 
           <section className="mb-12">
             <h2 className="text-2xl font-bold text-white mb-6">
-              How to Add a New Section
+              Where To Work In The Dashboard
             </h2>
             <div className="space-y-3">
               {[
-                "Create a new component in components/dashboard",
-                "Fetch data in the page and pass it as props",
-                "Wrap the component with DashboardErrorBoundary",
-                "Keep the component presentational (no data fetching)",
+                "Inbox and Conversations: monitor unresolved customer messages",
+                "Contacts and Leads: track customer records and follow-up status",
+                "Bots and Flows: define response behavior and fallback strategy",
+                "Integrations: connect Telegram or Webchat and review diagnostics",
+                "Billing: monitor plan usage and upgrade only when needed",
               ].map((item) => (
                 <div
                   key={item}
@@ -61,28 +62,37 @@ export default function ModularDashboardDoc() {
 
           <section className="mb-12">
             <h2 className="text-2xl font-bold text-white mb-6">
-              Best Practices
+              Navigation Best Practices
             </h2>
             <div className="bg-slate-800 p-6 rounded-lg border border-slate-700">
               <ul className="space-y-2 text-sm text-slate-300">
-                <li>• Keep components stateless when possible</li>
-                <li>• Pass immutable props only</li>
-                <li>• Avoid fetching data inside error boundaries</li>
-                <li>• Provide useful fallback UI for errors</li>
+                <li>
+                  • Start each day in Conversations to catch unresolved messages
+                </li>
+                <li>
+                  • Review flow performance weekly and refine low-conversion
+                  steps
+                </li>
+                <li>• Check source diagnostics before major campaigns</li>
+                <li>
+                  • Review subscription usage before billing cycle boundaries
+                </li>
               </ul>
             </div>
           </section>
 
           <div className="bg-indigo-900/20 border border-indigo-700/50 p-6 rounded-lg">
-            <h3 className="text-white font-bold mb-2">Need admin guidance?</h3>
+            <h3 className="text-white font-bold mb-2">
+              Need owner controls guidance?
+            </h3>
             <p className="text-slate-300 mb-4">
-              Review the admin panel documentation for management features.
+              Review the workspace owner guide for account-level management.
             </p>
             <Link
               href="/docs/admin-panel"
               className="inline-flex items-center gap-2 px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg transition-colors"
             >
-              Admin Panel Docs
+              Workspace Owner Guide
             </Link>
           </div>
         </article>

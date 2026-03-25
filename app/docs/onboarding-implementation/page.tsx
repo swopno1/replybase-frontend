@@ -21,19 +21,18 @@ export default function OnboardingImplementationDoc() {
 
         <article className="prose prose-invert max-w-none">
           <h1 className="text-4xl font-bold text-white mb-4">
-            Onboarding Implementation Guide
+            Onboarding Technical Notes
           </h1>
           <p className="text-lg text-slate-400 mb-8">
-            Technical setup summary for onboarding-related systems in the
-            current codebase
+            Technical notes for tenant teams and implementation partners
           </p>
 
           <section className="mb-12">
             <div className="bg-slate-800 p-6 rounded-lg border border-slate-700">
               <p className="text-slate-300 text-sm">
-                This page documents legacy onboarding-related implementation
-                patterns that still exist in the codebase. It is not the primary
-                public setup path for new customers.
+                Use this page only if your team is implementing custom
+                onboarding telemetry or guided setup behavior on top of the
+                standard tenant onboarding flow.
               </p>
             </div>
           </section>
@@ -45,14 +44,10 @@ export default function OnboardingImplementationDoc() {
             <div className="bg-slate-800 p-6 rounded-lg border border-slate-700">
               <ul className="space-y-2 text-sm text-slate-300">
                 <li>
-                  • OnboardingSession: tracks user progress and collected data
+                  • OnboardingSession: tracks setup progression and completion
                 </li>
-                <li>
-                  • DemoTemplate: stores pre-built flow templates per industry
-                </li>
-                <li>
-                  • OnboardingMetrics: conversion and performance tracking
-                </li>
+                <li>• DemoTemplate: stores reusable flow templates</li>
+                <li>• OnboardingMetrics: activation and conversion tracking</li>
               </ul>
             </div>
           </section>
@@ -65,7 +60,7 @@ export default function OnboardingImplementationDoc() {
               {[
                 "Onboarding service to manage session state",
                 "Flow handler to process messages and transitions",
-                "Legacy assisted-flow webhook integration for message routing",
+                "Webhook integration for setup event routing",
                 "Dashboard analytics for onboarding metrics",
               ].map((item) => (
                 <div
@@ -87,9 +82,8 @@ export default function OnboardingImplementationDoc() {
               <div className="flex items-start gap-3">
                 <Webhook className="text-indigo-400 mt-1" size={18} />
                 <div className="text-sm text-slate-300">
-                  Older assisted onboarding flows route messages into the
-                  onboarding flow handler for qualification-style session
-                  tracking.
+                  Webhook-connected onboarding events can feed setup analytics,
+                  milestone tracking, and troubleshooting workflows.
                 </div>
               </div>
             </div>
@@ -100,13 +94,14 @@ export default function OnboardingImplementationDoc() {
               Need the high-level flow?
             </h3>
             <p className="text-slate-300 mb-4">
-              Go back to the onboarding overview for the business journey.
+              Go back to the tenant onboarding guide for the practical setup
+              journey.
             </p>
             <Link
               href="/docs/onboarding"
               className="inline-flex items-center gap-2 px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg transition-colors"
             >
-              Onboarding Overview
+              Tenant Onboarding Guide
             </Link>
           </div>
         </article>

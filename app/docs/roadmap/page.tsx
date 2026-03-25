@@ -29,7 +29,9 @@ export default function RoadmapDoc() {
           <li>webchat embed setup, diagnostics, and rollout controls</li>
           <li>conversations, contacts, and leads views</li>
           <li>billing and Stripe portal flow</li>
-          <li>internal admin screens for subscribers and rollout</li>
+          <li>
+            workspace owner controls for subscription and operational visibility
+          </li>
         </ul>
       </section>
 

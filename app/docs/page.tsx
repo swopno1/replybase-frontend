@@ -18,7 +18,7 @@ export default function DocsPage() {
       title: "Launch And Setup",
       icon: Rocket,
       description:
-        "Start quickly, deploy safely, and verify production readiness",
+        "Create your workspace, connect sources, and launch with confidence",
       docs: [
         { name: "Quick Start Guide", href: "/docs/quick-start" },
         { name: "Deployment Plan", href: "/docs/deployment-plan" },
@@ -29,7 +29,7 @@ export default function DocsPage() {
       title: "Product Snapshot",
       icon: BookOpen,
       description:
-        "Understand the current product direction, plans, and shipped capability",
+        "Understand features, plan value, and what is available today",
       docs: [
         { name: "Current Direction", href: "/docs/roadmap" },
         { name: "Plans And Limits", href: "/docs/features" },
@@ -37,12 +37,12 @@ export default function DocsPage() {
       ],
     },
     {
-      title: "Platform And Security",
+      title: "Workspace And Security",
       icon: Database,
       description:
-        "Technical structure, access control, and builder configuration",
+        "Daily workspace usage guidance, security posture, and configuration",
       docs: [
-        { name: "Dashboard Architecture", href: "/docs/modular-dashboard" },
+        { name: "Workspace Navigation Guide", href: "/docs/modular-dashboard" },
         { name: "Security Model", href: "/docs/security" },
         { name: "Typebot Configuration", href: "/docs/typebot-config" },
       ],
@@ -64,15 +64,15 @@ export default function DocsPage() {
       ],
     },
     {
-      title: "Internal Operations",
+      title: "Tenant Operations",
       icon: Settings,
       description:
-        "Internal admin and onboarding-system context for operators and support",
+        "Guidance for workspace owners, onboarding, and account-level operations",
       docs: [
-        { name: "Admin Panel Guide", href: "/docs/admin-panel" },
+        { name: "Workspace Owner Guide", href: "/docs/admin-panel" },
         { name: "Onboarding Overview", href: "/docs/onboarding" },
         {
-          name: "Onboarding Implementation",
+          name: "Onboarding Technical Notes",
           href: "/docs/onboarding-implementation",
         },
       ],
@@ -93,8 +93,8 @@ export default function DocsPage() {
             application
           </p>
           <p className="text-sm text-slate-500 max-w-2xl mx-auto mt-3">
-            This area is the public documentation source. Internal planning,
-            roadmap, and production notes live in
+            This documentation is written for users and tenant workspace owners.
+            Internal planning, roadmap, and production notes live in
             replybase-saas/Product_Details.
           </p>
         </div>

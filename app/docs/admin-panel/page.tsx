@@ -5,82 +5,92 @@ import DocLayout from "../_components/DocLayout";
 export default function AdminPanelDoc() {
   return (
     <DocLayout
-      title="Admin Panel"
-      description="Internal admin tools for operations, rollout control, and subscription oversight"
+      title="Workspace Owner Guide"
+      description="How tenant owners can manage subscription visibility, rollout awareness, and account operations"
     >
       <section className="mb-10">
         <p className="text-slate-300">
-          The admin panel is an internal operational area, not a
-          customer-facing workspace section.
+          This area is intended for account owners and trusted operators who
+          manage tenant-level operations.
         </p>
         <p className="text-slate-300 mt-3">
-          Access is enforced server-side and is currently limited to a single
-          allowlisted admin identity in code.
+          Access is controlled server-side. Use least-privilege access and avoid
+          sharing owner credentials across team members.
         </p>
       </section>
 
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-white mb-4">
-          Key Features
+          What You Can Manage
         </h2>
         <ul className="space-y-2 text-slate-300">
           <li>
-            Business Status: users, tenants, subscriptions, bots, contacts,
-            conversations, and onboarding conversion.
+            Workspace health signals: subscriptions, bots, contacts, and
+            conversation activity indicators.
           </li>
-          <li>Subscribers: plan changes and subscription lifecycle operations.</li>
-          <li>
-            Onboarding: sessions, stage distribution, abandonment, and
-            conversion.
-          </li>
-          <li>
-            Webchat Monitoring: SLA dashboard, pilot telemetry, and rollout
-            recommendations.
-          </li>
-          <li>Webchat Rollout: staged rollout mode controls.</li>
+          <li>Subscription lifecycle visibility and billing flow readiness.</li>
+          <li>Onboarding and activation visibility for your workspace.</li>
+          <li>Webchat rollout and reliability indicators.</li>
+          <li>Operational review before large customer-facing changes.</li>
         </ul>
       </section>
 
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-white mb-4">
-          Security Controls
+          Owner Security Checklist
         </h2>
         <ul className="space-y-2 text-slate-300">
-          <li>admin layout access is guarded server-side</li>
-          <li>admin APIs independently verify operators before returning data</li>
-          <li>non-admin users are redirected or receive 403 responses</li>
+          <li>
+            Use a unique strong password and MFA on your identity provider.
+          </li>
+          <li>Do not share owner credentials across team members.</li>
+          <li>
+            Review webhook and integration logs after configuration changes.
+          </li>
+          <li>Rotate secrets and tokens whenever access risk is suspected.</li>
         </ul>
       </section>
 
       <section className="mb-10">
-        <h2 className="text-2xl font-bold text-white mb-4">Current Admin Navigation</h2>
+        <h2 className="text-2xl font-bold text-white mb-4">
+          Operational Routine
+        </h2>
         <ul className="space-y-2 text-slate-300">
-          <li>Business Status</li>
-          <li>Subscribers</li>
-          <li>Onboarding</li>
-          <li>Webchat Monitoring</li>
-          <li>Webchat Rollout</li>
+          <li>Weekly: review subscription and usage trends.</li>
+          <li>
+            Before campaigns: validate Telegram/Webchat connection health.
+          </li>
+          <li>
+            After deploys: run smoke checks on inbound and outbound replies.
+          </li>
+          <li>Monthly: audit tokens, plans, and workflow performance.</li>
         </ul>
       </section>
 
       <section className="mb-10">
-        <h2 className="text-2xl font-bold text-white mb-4">What Admin Can See Today</h2>
+        <h2 className="text-2xl font-bold text-white mb-4">
+          Best Value Practices
+        </h2>
         <ul className="space-y-2 text-slate-300">
-          <li>monthly revenue from active and trialing subscriptions</li>
-          <li>recent subscription signups</li>
-          <li>onboarding completion and abandonment metrics</li>
-          <li>webchat rollout decision support across rollout stages</li>
-          <li>staged release settings for off, pilot, tiered, and ga modes</li>
+          <li>Start with one high-volume source before expanding setup.</li>
+          <li>Use Flows for repeatable FAQ and qualification workflows.</li>
+          <li>
+            Use AI fallback for long-tail queries instead of overbuilding flows.
+          </li>
+          <li>Track first-response and conversion outcomes per source.</li>
+          <li>Upgrade plans only when usage patterns justify higher limits.</li>
         </ul>
       </section>
 
       <section>
         <h2 className="text-2xl font-bold text-white mb-4">Notes</h2>
         <ul className="space-y-2 text-slate-300">
-          <li>The admin area is intentionally separate from customer nav.</li>
           <li>
-            This area is for internal operations and rollout management, not
-            end-user self-service.
+            The owner area is intentionally separate from day-to-day inbox use.
+          </li>
+          <li>
+            For product planning and roadmap decisions, refer to
+            replybase-saas/Product_Details.
           </li>
         </ul>
       </section>

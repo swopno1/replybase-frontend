@@ -84,7 +84,7 @@ export default function FeaturesDoc() {
             status, and recent message timing
           </li>
         </ul>
-        <h3 className="text-xl font-semibold text-white mb-3 mt-6">Channels</h3>
+        <h3 className="text-xl font-semibold text-white mb-3 mt-6">Sources</h3>
         <ul className="space-y-2 text-slate-300">
           <li>Telegram Bot integration</li>
           <li>Webchat Widget integration</li>
@@ -113,6 +113,31 @@ export default function FeaturesDoc() {
           <li>
             Settings and Activity exist, but are lighter than integration and
             webchat areas.
+          </li>
+        </ul>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-white mb-4">
+          How To Get Best Value From Your Plan
+        </h2>
+        <ul className="space-y-2 text-slate-300">
+          <li>
+            Start with one high-volume source before expanding integrations.
+          </li>
+          <li>
+            Use Flows for repetitive questions to reduce manual response time.
+          </li>
+          <li>
+            Use AI fallback for long-tail queries instead of building oversized
+            flows.
+          </li>
+          <li>
+            Review lead conversion and reply time weekly to spot bottlenecks.
+          </li>
+          <li>
+            Upgrade only when message and flow limits consistently approach plan
+            caps.
           </li>
         </ul>
       </section>

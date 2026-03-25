@@ -6,38 +6,38 @@ import DocLayout from "../_components/DocLayout";
 export default function OnboardingDoc() {
   return (
     <DocLayout
-      title="Client Onboarding System"
-      description="Current onboarding flows in ReplyBase for new workspaces and legacy assisted qualification workflows"
+      title="Tenant Onboarding Guide"
+      description="How new users and workspace owners should onboard, connect sources, and reach first value quickly"
     >
       <p className="text-slate-300 mb-8">
-        ReplyBase currently has two different onboarding concepts in the
-        codebase, and it helps to keep them separate.
+        This guide focuses on the onboarding path that gives tenant teams the
+        fastest path to useful outcomes.
       </p>
 
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-white mb-4">
-          Two Onboarding Paths
+          Onboarding Outcomes
         </h2>
         <ul className="space-y-2 text-slate-300">
+          <li>Create and secure your workspace account.</li>
+          <li>Connect at least one active source (Telegram or Webchat).</li>
+          <li>Configure one practical flow and one AI fallback path.</li>
           <li>
-            Workspace onboarding: account creation and first login into the SaaS
-            app.
-          </li>
-          <li>
-            Assisted onboarding sessions: structured qualification flow captured
-            in older operational workflows and surfaced in admin.
+            Validate that messages become conversations, contacts, and leads.
           </li>
         </ul>
       </section>
 
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-white mb-4">
-          Workspace Onboarding
+          Recommended First-Week Path
         </h2>
         <ul className="space-y-2 text-slate-300">
-          <li>Collect first name, last name, email, and password.</li>
-          <li>Create workspace automatically and sign user in.</li>
-          <li>Redirect user into dashboard.</li>
+          <li>Day 1: complete signup and open your dashboard.</li>
+          <li>Day 1-2: create your first bot and assign an Entry Flow.</li>
+          <li>Day 2: connect Telegram or Webchat.</li>
+          <li>Day 3: run test messages and verify lead capture.</li>
+          <li>Day 4-7: tune responses from real conversations.</li>
         </ul>
         <p className="text-slate-300 mt-4 mb-2">
           Expected setup path after signup:
@@ -50,41 +50,47 @@ export default function OnboardingDoc() {
       </section>
 
       <section className="mb-10">
-        <h2 className="text-2xl font-bold text-white mb-4">
-          Legacy Assisted Onboarding Sessions
-        </h2>
-        <p className="text-slate-300">
-          ReplyBase also tracks legacy onboarding sessions from older guided
-          qualification flows for operational visibility and historical context.
-        </p>
-      </section>
-
-      <section className="mb-10">
-        <h2 className="text-2xl font-bold text-white mb-4">
-          Onboarding Flow Stages
-        </h2>
-        <p className="text-slate-300 mb-2">
-          Typical data captured in the current onboarding session model:
-        </p>
+        <h2 className="text-2xl font-bold text-white mb-4">Setup Priorities</h2>
         <ul className="space-y-2 text-slate-300">
-          <li>contact name</li>
-          <li>business name</li>
-          <li>business type</li>
-          <li>email or contact details</li>
-          <li>selected plan</li>
-          <li>stage and completion status</li>
+          <li>
+            Prioritize one source that gives the highest conversation volume.
+          </li>
+          <li>
+            Define a clear fallback mode: Flow-first with AI fallback is common.
+          </li>
+          <li>
+            Use concise welcome and qualification prompts before scaling
+            complexity.
+          </li>
+          <li>Review conversations daily during your first week.</li>
         </ul>
       </section>
 
       <section className="mb-10">
-        <h2 className="text-2xl font-bold text-white mb-4">Admin Visibility</h2>
+        <h2 className="text-2xl font-bold text-white mb-4">
+          What To Track During Onboarding
+        </h2>
+        <p className="text-slate-300 mb-2">
+          Track these metrics to make sure onboarding is working:
+        </p>
+        <ul className="space-y-2 text-slate-300">
+          <li>time to first connected source</li>
+          <li>time to first automated reply</li>
+          <li>first week message volume</li>
+          <li>lead capture completion rate</li>
+          <li>manual takeover rate for unresolved messages</li>
+        </ul>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-white mb-4">
+          Common Mistakes To Avoid
+        </h2>
         <ul className="space-y-2 text-slate-300 mb-6">
-          <li>total sessions</li>
-          <li>completed sessions</li>
-          <li>abandoned sessions</li>
-          <li>stage distribution</li>
-          <li>drop-off by stage</li>
-          <li>recent session details and linked plan data</li>
+          <li>connecting sources before assigning an Entry Flow</li>
+          <li>using long, complex first prompts that lower completion rates</li>
+          <li>skipping webhook or diagnostics checks after setup</li>
+          <li>upgrading plan before validating actual usage patterns</li>
         </ul>
       </section>
 
@@ -94,24 +100,15 @@ export default function OnboardingDoc() {
         </h2>
         <ul className="space-y-2 text-slate-300 mb-6">
           <li>
-            Treat workspace signup as the primary product onboarding path for
-            customers.
-          </li>
-          <li>
-            Treat assisted onboarding as an operational or sales-assist flow,
-            not the primary customer setup path.
-          </li>
-          <li>
-            Document onboarding primarily around Telegram and Webchat setup,
-            because older assisted flows do not match the current product
-            direction.
+            Keep onboarding practical: one source, one flow, one measurable goal
+            at a time.
           </li>
         </ul>
         <Link
           href="/docs/onboarding-implementation"
           className="inline-flex items-center gap-2 px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg transition-colors"
         >
-          Onboarding Implementation
+          Onboarding Technical Notes
         </Link>
       </section>
     </DocLayout>
