@@ -26,7 +26,10 @@ export default function ImplementationDoc() {
           <li>webchat setup, embed generation, and rollout controls</li>
           <li>Stripe-backed checkout and billing portal flow</li>
           <li>core webchat API hardening and test coverage</li>
-          <li>legacy Facebook integration surface remains in the app</li>
+          <li>
+            legacy Facebook and WhatsApp integrations remain preserved
+            internally
+          </li>
         </ul>
       </section>
 
@@ -44,8 +47,8 @@ export default function ImplementationDoc() {
             Telegram and Webchat are the primary active public setup surfaces
           </li>
           <li>
-            Facebook integration remains implemented but is not the primary
-            product direction
+            legacy Facebook and WhatsApp logic remains implemented but is hidden
+            from the current product UI
           </li>
           <li>conversations and contacts views</li>
           <li>admin screens for revenue, subscribers, and rollout</li>
@@ -63,8 +66,8 @@ export default function ImplementationDoc() {
           <li>Settings are limited to basic account information.</li>
           <li>Usage accounting is still conservative/mocked in places.</li>
           <li>
-            Some older UI surfaces still use channel-centric or Facebook-centric
-            terminology.
+            Some internal models and analytics still reference legacy channel
+            names.
           </li>
         </ul>
       </section>

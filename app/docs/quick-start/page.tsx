@@ -146,13 +146,11 @@ export default function QuickStartDoc() {
           Step 5: Connect Your First Source
         </h2>
         <p className="text-slate-300 mb-4">
-          ReplyBase currently exposes two primary setup paths for active use,
-          plus one legacy integration surface still present in the dashboard:
+          ReplyBase currently exposes two primary setup paths for active use:
         </p>
         <ul className="space-y-2 text-slate-300 mb-4">
           <li>Telegram Bot</li>
           <li>Webchat Widget</li>
-          <li>Facebook Pages (legacy surface still present in app)</li>
         </ul>
         <h3 className="text-xl font-semibold text-white mb-3">
           Option A: Telegram Bot
@@ -192,9 +190,9 @@ export default function QuickStartDoc() {
             Legacy integration note
           </p>
           <p>
-            Facebook Pages is still present in the current dashboard, but it is
-            not the primary public setup path in current product direction.
-            Prefer Telegram or Webchat for new setup guidance.
+            Legacy Facebook and WhatsApp integrations are retained internally,
+            but they are hidden from the current product UI. Prefer Telegram or
+            Webchat for new setup guidance.
           </p>
         </div>
       </section>
@@ -243,9 +241,6 @@ export default function QuickStartDoc() {
           <li>Flows: flow lifecycle and assignment.</li>
           <li>Telegram Bot: token setup and webhook logs.</li>
           <li>Webchat Widget: setup, keys, embed, diagnostics.</li>
-          <li>
-            Facebook Pages: legacy integration surface still available in app.
-          </li>
           <li>Billing: plan state and customer portal.</li>
           <li>Settings: basic account details only right now.</li>
         </ul>

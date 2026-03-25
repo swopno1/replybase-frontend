@@ -115,10 +115,11 @@ export default function LandingPage() {
                   <Zap size={24} />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">
-                  Multi-Channel Messaging
+                  Instant Lead Notifications
                 </h3>
                 <p className="text-slate-400">
-                  Integrate Facebook, Telegram, and Webchat.{" "}
+                  Capture enquiries from your website and alert your team in
+                  Telegram or email.{" "}
                   <Link
                     href="/docs/product-roadmap"
                     className="text-indigo-400 underline hover:text-indigo-300"
@@ -236,7 +237,7 @@ export default function LandingPage() {
                   Connect Your Channels
                 </h3>
                 <p className="text-slate-400 text-center">
-                  Connect Facebook, Telegram, and Webchat in minutes.
+                  Launch Webchat and Telegram notifications in minutes.
                 </p>
               </div>
               <div className="bg-slate-800 p-6 rounded-2xl shadow-xl border border-slate-700/50 flex flex-col items-center motion-safe:animate-fade-in">
@@ -442,9 +443,9 @@ export default function LandingPage() {
                 Simple, Transparent Pricing
               </h2>
               <p className="mt-4 text-slate-400 max-w-2xl mx-auto">
-                Start free, upgrade as you grow. All plans support Facebook,
-                Telegram, and Webchat with flow-first runtime and optional AI
-                fallback.
+                Start free, upgrade as you grow. All plans support Telegram,
+                Webchat, and website lead capture with flow-first runtime and
+                optional AI fallback.
               </p>
               <div className="mt-6 inline-flex items-center gap-2 bg-indigo-900/30 border border-indigo-500/50 rounded-full px-6 py-3">
                 <span className="text-indigo-400 font-bold text-lg">
@@ -523,16 +524,16 @@ export default function LandingPage() {
                       Supported Channels
                     </td>
                     <td className="p-4 text-center text-slate-400">
-                      Facebook, Telegram, Webchat
+                      Telegram, Webchat, Website Forms
                     </td>
                     <td className="p-4 text-center text-slate-400">
-                      Facebook, Telegram, Webchat
+                      Telegram, Webchat, Website Forms
                     </td>
                     <td className="p-4 text-center text-slate-400">
-                      Facebook, Telegram, Webchat
+                      Telegram, Webchat, Website Forms
                     </td>
                     <td className="p-4 text-center text-slate-400">
-                      Facebook, Telegram, Webchat
+                      Telegram, Webchat, Website Forms
                     </td>
                   </tr>
                   <tr>
