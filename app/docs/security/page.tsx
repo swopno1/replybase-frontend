@@ -17,7 +17,7 @@ export default function SecurityDoc() {
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-white mb-4">
           1. Authentication And Tenant Isolation
-          <li>legacy third-party deletion utilities remain part of compliance tooling</li>
+        </h2>
         <ul className="space-y-2 text-slate-300">
           <li>users authenticate through NextAuth-backed flows</li>
           <li>
@@ -28,6 +28,10 @@ export default function SecurityDoc() {
             association
           </li>
           <li>tenant ownership checks gate tenant-scoped resources</li>
+          <li>
+            legacy third-party deletion utilities remain part of compliance
+            tooling
+          </li>
         </ul>
       </section>
 
@@ -60,9 +64,13 @@ export default function SecurityDoc() {
       </section>
 
       <section className="mb-10">
-        <h2 className="text-2xl font-bold text-white mb-4">4. Owner Access Controls</h2>
+        <h2 className="text-2xl font-bold text-white mb-4">
+          4. Owner Access Controls
+        </h2>
         <ul className="space-y-2 text-slate-300">
-          <li>owner and restricted management surfaces are guarded server-side</li>
+          <li>
+            owner and restricted management surfaces are guarded server-side
+          </li>
           <li>management APIs perform independent authorization checks</li>
           <li>non-authorized requests are redirected or rejected with 403</li>
           <li>use least-privilege access for day-to-day team operations</li>
@@ -101,7 +109,10 @@ export default function SecurityDoc() {
           <li>
             account data deletion requests are recorded via dedicated APIs
           </li>
-          <li>legacy third-party deletion support remains part of compliance utilities</li>
+          <li>
+            legacy third-party deletion support remains part of compliance
+            utilities
+          </li>
         </ul>
       </section>
 
