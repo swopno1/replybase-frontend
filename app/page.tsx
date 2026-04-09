@@ -21,12 +21,12 @@ export default function LandingPage() {
           <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top,var(--tw-gradient-stops))] from-indigo-900/20 via-slate-900 to-slate-900 -z-10 animate-fade-in"></div>
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight tracking-tight drop-shadow-lg motion-safe:animate-fade-in">
-              Empower Your Conversations with{" "}
-              <span className="text-indigo-500">ReplyBase</span>
+              Never Miss Another Lead — Reply Instantly with{" "}
+              <span className="text-indigo-500">AI</span>
             </h1>
             <p className="mt-6 text-lg md:text-xl text-slate-400 max-w-3xl mx-auto motion-safe:animate-fade-in">
-              The all-in-one SaaS platform for automated lead capture, CRM, and
-              intelligent messaging—built for modern businesses.
+              Capture every lead, reply instantly, and manage your
+              conversations—all in one simple platform.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
               <Link
@@ -52,13 +52,15 @@ export default function LandingPage() {
         >
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 motion-safe:animate-fade-in">
-              Why Choose ReplyBase?
+              Why Businesses Choose ReplyBase
             </h2>
-            <p className="text-slate-400 max-w-2xl mx-auto mb-8">
-              Built for reliability, security, and transparency. Trusted by
-              businesses in finance, real estate, and professional services. No
-              hidden fees, real human support, and GDPR compliance from day one.
-            </p>
+            <ul className="text-slate-400 max-w-2xl mx-auto mb-8 space-y-2 text-left list-disc list-inside">
+              <li>Never miss a lead — reply instantly to every enquiry</li>
+              <li>Turn more conversations into paying customers</li>
+              <li>Save hours of manual replies every week</li>
+              <li>Simple setup, no technical skills needed</li>
+              <li>Real human support when you need it</li>
+            </ul>
             <div className="flex flex-wrap justify-center gap-6 motion-safe:animate-fade-in">
               <div className="bg-slate-800 rounded-xl px-6 py-3 flex items-center gap-2 shadow hover:shadow-indigo-500/30 transition-all duration-300">
                 <span className="text-green-400 font-bold">GDPR</span> Compliant
@@ -84,8 +86,8 @@ export default function LandingPage() {
                 Everything You Need to Grow
               </h2>
               <p className="mt-4 text-slate-400 max-w-2xl mx-auto">
-                From automated lead capture to GDPR compliance, ReplyBase is
-                your all-in-one solution for customer engagement and growth.
+                Capture every lead, reply instantly, and manage your
+                conversations without the usual manual back-and-forth.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

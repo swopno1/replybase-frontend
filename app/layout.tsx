@@ -14,16 +14,16 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://replybase.co.uk"),
-  title: "ReplyBase - Build Smarter Chatbots",
+  title: "ReplyBase - Never Miss Another Lead",
   description:
-    "The ultimate open-source, visual chatbot builder designed for performance and scale.",
+    "Capture every lead, reply instantly, and manage your conversations—all in one simple platform.",
   other: {
     "facebook-domain-verification": "4yq6iobk3tkzyrnvh8ktaimneauxkp",
   },
   openGraph: {
-    title: "ReplyBase - Build Smarter Chatbots",
+    title: "ReplyBase - Never Miss Another Lead",
     description:
-      "The ultimate open-source, visual chatbot builder designed for performance and scale.",
+      "Capture every lead, reply instantly, and manage your conversations—all in one simple platform.",
     url: "https://replybase.co.uk",
     siteName: "ReplyBase",
     locale: "en_US",
