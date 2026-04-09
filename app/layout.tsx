@@ -36,6 +36,7 @@ export const metadata: Metadata = {
 };
 
 import CookieConsent from "@/components/CookieConsent";
+import Script from "next/script";
 
 export default function RootLayout({
   children,
@@ -55,6 +56,16 @@ export default function RootLayout({
       >
         {children}
         <CookieConsent />
+
+        <Script
+          src="https://app.replybase.co.uk/embed/replybase-webchat.js"
+          data-base-url="https://app.replybase.co.uk"
+          data-public-key="wpk_5e81eeb7b8b4ecd8b895447014ddeb93"
+          data-title="Chat with us"
+          data-primary-color="#4f39f6"
+          data-position="right"
+          defer
+        />
       </body>
     </html>
   );
