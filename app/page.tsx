@@ -556,27 +556,40 @@ export default function LandingPage() {
                       Supported Channels
                     </td>
                     <td className="p-4 text-center text-slate-400">
-                      Telegram, Webchat, Website Forms
+                      Telegram, Webchat, Facebook, WhatsApp, Website Forms
                     </td>
                     <td className="p-4 text-center text-slate-400">
-                      Telegram, Webchat, Website Forms
+                      Telegram, Webchat, Facebook, WhatsApp, Website Forms
                     </td>
                     <td className="p-4 text-center text-slate-400">
-                      Telegram, Webchat, Website Forms
+                      Telegram, Webchat, Facebook, WhatsApp, Website Forms
                     </td>
                     <td className="p-4 text-center text-slate-400">
-                      Telegram, Webchat, Website Forms
+                      Telegram, Webchat, Facebook, WhatsApp, Website Forms
                     </td>
                   </tr>
                   <tr>
-                    <td className="p-4 font-semibold text-white">
-                      CRM / API Access
-                    </td>
+                    <td className="p-4 font-semibold text-white">CRM Access</td>
                     <td className="p-4 text-center text-red-500">
                       <XIcon className="mx-auto" size={16} />
                     </td>
                     <td className="p-4 text-center text-green-500">
                       <Check className="mx-auto" size={16} />
+                    </td>
+                    <td className="p-4 text-center text-green-500">
+                      <Check className="mx-auto" size={16} />
+                    </td>
+                    <td className="p-4 text-center text-green-500">
+                      <Check className="mx-auto" size={16} />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="p-4 font-semibold text-white">API Access</td>
+                    <td className="p-4 text-center text-red-500">
+                      <XIcon className="mx-auto" size={16} />
+                    </td>
+                    <td className="p-4 text-center text-red-500">
+                      <XIcon className="mx-auto" size={16} />
                     </td>
                     <td className="p-4 text-center text-green-500">
                       <Check className="mx-auto" size={16} />
