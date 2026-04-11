@@ -449,13 +449,13 @@ export default function LandingPage() {
                 Webchat, and website lead capture with flow-first runtime and
                 optional AI fallback.
               </p>
-              {/* Future pricing model kept here for later reactivation: £29 / £89 / £249 */}
+              {/* Strategic pricing after the launch campaign: £29 / £89 / £249 */}
               <div className="mt-6 inline-flex items-center gap-2 bg-indigo-900/30 border border-indigo-500/50 rounded-full px-6 py-3">
                 <span className="text-indigo-400 font-bold text-lg">
-                  🎁 14-Day Free Trial
+                  🎁 Founding Customer Offer
                 </span>
                 <span className="text-slate-300 text-sm">
-                  • No card charged until trial ends • Cancel anytime
+                  • First 20 customers • Cancel anytime
                 </span>
               </div>
             </div>
@@ -487,40 +487,69 @@ export default function LandingPage() {
                       Monthly Price
                     </td>
                     <td className="p-4 text-center text-white">£0</td>
-                    <td className="p-4 text-center text-white">£29</td>
-                    <td className="p-4 text-center text-indigo-400 font-bold">
-                      £99
+                    <td className="p-4 text-center text-white">
+                      <div>£19</div>
+                      <div className="text-xs text-slate-500 line-through">
+                        regular £29
+                      </div>
                     </td>
-                    <td className="p-4 text-center text-white">£299</td>
+                    <td className="p-4 text-center text-indigo-400 font-bold">
+                      <div>£49</div>
+                      <div className="text-xs text-slate-500 line-through">
+                        regular £89
+                      </div>
+                    </td>
+                    <td className="p-4 text-center text-white">
+                      <div>£149</div>
+                      <div className="text-xs text-slate-500 line-through">
+                        regular £249
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="p-4 font-semibold text-white">AI Role</td>
+                    <td className="p-4 text-center text-slate-400">
+                      Basic AI Assist
+                    </td>
+                    <td className="p-4 text-center text-slate-400">
+                      Smart Automation
+                    </td>
+                    <td className="p-4 text-center text-slate-400">
+                      AI Co-Pilot
+                    </td>
+                    <td className="p-4 text-center text-slate-400">AI Agent</td>
+                  </tr>
+                  <tr>
+                    <td className="p-4 font-semibold text-white">
+                      Automations / Month
+                    </td>
+                    <td className="p-4 text-center text-slate-400">250</td>
+                    <td className="p-4 text-center text-slate-400">1,500</td>
+                    <td className="p-4 text-center text-slate-400">10,000</td>
+                    <td className="p-4 text-center text-slate-400">40,000</td>
+                  </tr>
+                  <tr>
+                    <td className="p-4 font-semibold text-white">
+                      AI Responses / Month
+                    </td>
+                    <td className="p-4 text-center text-slate-400">150</td>
+                    <td className="p-4 text-center text-slate-400">1,000</td>
+                    <td className="p-4 text-center text-slate-400">7,500</td>
+                    <td className="p-4 text-center text-slate-400">25,000</td>
+                  </tr>
+                  <tr>
+                    <td className="p-4 font-semibold text-white">AI Overage</td>
+                    <td className="p-4 text-center text-slate-400">Upgrade</td>
+                    <td className="p-4 text-center text-slate-400">£12 / 1k</td>
+                    <td className="p-4 text-center text-slate-400">£10 / 1k</td>
+                    <td className="p-4 text-center text-slate-400">£8 / 1k</td>
                   </tr>
                   <tr>
                     <td className="p-4 font-semibold text-white">Bots</td>
                     <td className="p-4 text-center text-slate-400">1</td>
-                    <td className="p-4 text-center text-slate-400">5</td>
+                    <td className="p-4 text-center text-slate-400">3</td>
+                    <td className="p-4 text-center text-slate-400">10</td>
                     <td className="p-4 text-center text-slate-400">25</td>
-                    <td className="p-4 text-center text-slate-400">
-                      Unlimited
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="p-4 font-semibold text-white">
-                      Daily Messages
-                    </td>
-                    <td className="p-4 text-center text-slate-400">100</td>
-                    <td className="p-4 text-center text-slate-400">1,000</td>
-                    <td className="p-4 text-center text-slate-400">5,000</td>
-                    <td className="p-4 text-center text-slate-400">
-                      Unlimited
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="p-4 font-semibold text-white">
-                      AI Features
-                    </td>
-                    <td className="p-4 text-center text-slate-400">Limited</td>
-                    <td className="p-4 text-center text-slate-400">Basic</td>
-                    <td className="p-4 text-center text-slate-400">Advanced</td>
-                    <td className="p-4 text-center text-slate-400">Premium</td>
                   </tr>
                   <tr>
                     <td className="p-4 font-semibold text-white">
@@ -540,7 +569,9 @@ export default function LandingPage() {
                     </td>
                   </tr>
                   <tr>
-                    <td className="p-4 font-semibold text-white">API Access</td>
+                    <td className="p-4 font-semibold text-white">
+                      CRM / API Access
+                    </td>
                     <td className="p-4 text-center text-red-500">
                       <XIcon className="mx-auto" size={16} />
                     </td>
@@ -560,8 +591,10 @@ export default function LandingPage() {
                       Community
                     </td>
                     <td className="p-4 text-center text-slate-400">Email</td>
-                    <td className="p-4 text-center text-slate-400">24h Chat</td>
-                    <td className="p-4 text-center text-slate-400">1h Phone</td>
+                    <td className="p-4 text-center text-slate-400">Priority</td>
+                    <td className="p-4 text-center text-slate-400">
+                      Priority +
+                    </td>
                   </tr>
                   <tr>
                     <td className="p-4 font-semibold text-white">

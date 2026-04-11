@@ -58,10 +58,17 @@ export default function TermsPage() {
             <ul className="list-disc ml-6 space-y-2 text-slate-400">
               <li>
                 The Service offers four subscription tiers: Free (£0), Starter
-                (£29/month), Pro (£99/month), and Business (£299/month).
+                (£19/month), Pro (£49/month), and Business (£149/month) during
+                the current founding customer launch offer.
               </li>
               <li>
                 You agree to pay the fees associated with your selected plan.
+              </li>
+              <li>
+                Promotional launch pricing may be limited to a founding customer
+                campaign for the first 20 customers. Our standard pricing may
+                later move to Starter (£29/month), Pro (£89/month), and Business
+                (£249/month) with notice.
               </li>
               <li>
                 Payments are processed securely via Stripe. We do not store
