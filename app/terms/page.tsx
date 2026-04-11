@@ -95,19 +95,20 @@ export default function TermsPage() {
             <ul className="list-disc ml-6 space-y-2 text-slate-400">
               <li>
                 <strong className="text-slate-200">Free:</strong> 1 bot, 100
-                daily messages.
+                daily messages, limited AI features.
               </li>
               <li>
                 <strong className="text-slate-200">Starter:</strong> 5 bots,
-                1,000 daily messages, API access.
+                1,000 daily messages, basic AI features.
               </li>
               <li>
                 <strong className="text-slate-200">Pro:</strong> 25 bots, 5,000
-                daily messages, Advanced AI.
+                daily messages, advanced AI features, API access.
               </li>
               <li>
-                <strong className="text-slate-200">Business:</strong> Unlimited
-                bots, Unlimited messages, Premium AI.
+                <strong className="text-slate-200">Business:</strong>
+                unlimited bots, unlimited messages, premium AI features, and
+                priority phone support.
               </li>
             </ul>
             <p className="mt-4 text-slate-400">
@@ -320,18 +321,18 @@ export default function TermsPage() {
               <p className="text-slate-300">
                 <strong>Email:</strong>{" "}
                 <a
-                  href="mailto:support@replybase.co.uk"
+                  href="mailto:admin@replybase.co.uk"
                   className="text-indigo-400 hover:text-indigo-300"
                 >
-                  support@replybase.co.uk
+                  admin@replybase.co.uk
                 </a>
                 <br />
                 <strong>Legal:</strong>{" "}
                 <a
-                  href="mailto:legal@replybase.co.uk"
+                  href="mailto:admin@replybase.co.uk"
                   className="text-indigo-400 hover:text-indigo-300"
                 >
-                  legal@replybase.co.uk
+                  admin@replybase.co.uk
                 </a>
                 <br />
                 <strong>Company:</strong> ReplyBase, operated by ViveScript

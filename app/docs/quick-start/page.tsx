@@ -70,18 +70,18 @@ export default function QuickStartDoc() {
             Free: GBP0/mo
           </div>
           <div className="bg-slate-800 border border-slate-700 rounded p-3">
-            Starter: GBP19/mo
+            Starter: GBP29/mo
           </div>
           <div className="bg-slate-800 border border-slate-700 rounded p-3">
-            Pro: GBP49/mo
+            Pro: GBP99/mo
           </div>
           <div className="bg-slate-800 border border-slate-700 rounded p-3">
-            Business: GBP99/mo
+            Business: GBP299/mo
           </div>
         </div>
         <p className="text-slate-300 text-sm mt-4">
-          Paid plans currently advertise a 14-day free trial in the UI. You can
-          upgrade from the Billing page or start from the Pricing page.
+          Paid plans include a 14-day free trial. Start free, then upgrade as
+          you grow with Telegram, Webchat, and website lead capture support.
         </p>
       </section>
 

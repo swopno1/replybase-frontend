@@ -187,7 +187,7 @@ export default function PrivacyPage() {
             </p>
             <ul className="list-disc ml-6 space-y-2 text-slate-400">
               <li>Via account settings in your dashboard</li>
-              <li>By contacting support@replybase.co.uk</li>
+              <li>By contacting admin@replybase.co.uk</li>
             </ul>
             <p className="mt-6 mb-4 text-slate-400">
               In accordance with GDPR, you have the right to request deletion of your personal data. You can submit a request directly below:
@@ -280,7 +280,7 @@ export default function PrivacyPage() {
               </li>
             </ul>
             <p className="mt-4 text-slate-400">
-              To exercise these rights, contact us at privacy@replybase.co.uk
+              To exercise these rights, contact us at admin@replybase.co.uk
             </p>
           </section>
 
@@ -335,18 +335,18 @@ export default function PrivacyPage() {
               <p className="text-slate-300">
                 <strong>Email:</strong>{" "}
                 <a
-                  href="mailto:privacy@replybase.co.uk"
+                  href="mailto:admin@replybase.co.uk"
                   className="text-indigo-400 hover:text-indigo-300"
                 >
-                  privacy@replybase.co.uk
+                  admin@replybase.co.uk
                 </a>
                 <br />
                 <strong>Support:</strong>{" "}
                 <a
-                  href="mailto:support@replybase.co.uk"
+                  href="mailto:admin@replybase.co.uk"
                   className="text-indigo-400 hover:text-indigo-300"
                 >
-                  support@replybase.co.uk
+                  admin@replybase.co.uk
                 </a>
                 <br />
                 <strong>Address:</strong> ReplyBase, operated by ViveScript

@@ -101,7 +101,7 @@ function DeletionStatusContent() {
                 Need help or have questions?
               </p>
               <a
-                href="mailto:privacy@replybase.co.uk"
+                href="mailto:admin@replybase.co.uk"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg transition-colors"
               >
                 Contact Privacy Team

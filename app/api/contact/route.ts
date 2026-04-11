@@ -16,12 +16,12 @@ export async function POST(request: Request) {
     if (!name || !email || !message) {
       return NextResponse.json(
         { error: "Name, email, and message are required." },
-        { status: 400 }
+        { status: 400 },
       );
     }
 
     await resend.emails.send({
-      from: "Contact Form <noreply@replybase.co.uk>",
+      from: "ReplyBase <admin@replybase.co.uk>",
       to: email as string,
       cc: "replybase1@gmail.com",
       replyTo: email,
@@ -45,13 +45,13 @@ export async function POST(request: Request) {
 
     return NextResponse.json(
       { message: "Email sent successfully!" },
-      { status: 200 }
+      { status: 200 },
     );
   } catch (error) {
     console.error("Error sending email:", error);
     return NextResponse.json(
       { error: "Failed to send email." },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }

@@ -2,30 +2,31 @@
 
 import DocLayout from "../_components/DocLayout";
 
+// Future pricing model kept here for later reactivation: GBP29 / GBP89 / GBP249.
 const plans = [
   {
     name: "Free",
     price: "GBP0",
     limits:
-      "Best for testing and first setup: 1 bot, 100 daily messages, 3,000 monthly messages, 1 source connection per bot, 100 max conversations",
+      "Best for testing and first setup: 1 bot, 100 daily messages, limited AI features, 1 source connection per bot, community support",
   },
   {
     name: "Starter",
-    price: "GBP19",
+    price: "GBP29",
     limits:
-      "Best for small live deployments: 3 bots, 1,000 daily messages, 30,000 monthly messages, 3 source connections per bot, 1,000 max conversations",
+      "Best for early live deployments: 5 bots, 1,000 daily messages, basic AI features, API access, email support",
   },
   {
     name: "Pro",
-    price: "GBP49",
+    price: "GBP99",
     limits:
-      "Best for growing teams and agencies: 10 bots, 5,000 daily messages, 150,000 monthly messages, 5 source connections per bot, 5,000 max conversations",
+      "Best for growing teams and agencies: 25 bots, 5,000 daily messages, advanced AI features, API access, 24h chat support",
   },
   {
     name: "Business",
-    price: "GBP99",
+    price: "GBP299",
     limits:
-      "Best for high-volume deployments: 50 bots, 20,000 daily messages, 600,000 monthly messages, 10 source connections per bot, 20,000 max conversations",
+      "Best for high-volume deployments: unlimited bots, unlimited messages, premium AI features, full API access, 1h phone support",
   },
 ];
 
@@ -136,8 +137,8 @@ export default function FeaturesDoc() {
             Review lead conversion and reply time weekly to spot bottlenecks.
           </li>
           <li>
-            Upgrade only when message and flow limits consistently approach plan
-            caps.
+            Upgrade when automation volume or AI usage consistently approaches
+            your plan caps.
           </li>
         </ul>
       </section>
@@ -157,11 +158,11 @@ export default function FeaturesDoc() {
       <section>
         <h2 className="text-2xl font-bold text-white mb-4">Billing Notes</h2>
         <ul className="space-y-2 text-slate-300">
+          <li>Paid plans present a 14-day free trial in the pricing UI.</li>
           <li>
-            Paid plans currently present a 14-day free trial in pricing UI.
+            Plan-aware checks enforce bot, automation, and AI usage limits.
           </li>
-          <li>Plan-aware checks enforce bot and usage limits.</li>
-          <li>Billing is centered in Billing screen, not Settings.</li>
+          <li>Billing is centered in the Billing screen, not Settings.</li>
         </ul>
         <p className="text-slate-300 mt-4">
           Canonical product planning and feature strategy are maintained in

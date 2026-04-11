@@ -444,11 +444,12 @@ export default function LandingPage() {
               <h2 className="text-3xl md:text-4xl font-bold text-white">
                 Simple, Transparent Pricing
               </h2>
-              <p className="mt-4 text-slate-400 max-w-2xl mx-auto">
+              <p className="mt-4 text-slate-400 max-w-3xl mx-auto">
                 Start free, upgrade as you grow. All plans support Telegram,
                 Webchat, and website lead capture with flow-first runtime and
                 optional AI fallback.
               </p>
+              {/* Future pricing model kept here for later reactivation: £29 / £89 / £249 */}
               <div className="mt-6 inline-flex items-center gap-2 bg-indigo-900/30 border border-indigo-500/50 rounded-full px-6 py-3">
                 <span className="text-indigo-400 font-bold text-lg">
                   🎁 14-Day Free Trial
@@ -563,7 +564,9 @@ export default function LandingPage() {
                     <td className="p-4 text-center text-slate-400">1h Phone</td>
                   </tr>
                   <tr>
-                    <td className="p-4"></td>
+                    <td className="p-4 font-semibold text-white">
+                      Get Started
+                    </td>
                     <td className="p-4 text-center">
                       <a
                         href="https://app.replybase.co.uk/auth/register"
@@ -603,37 +606,34 @@ export default function LandingPage() {
               </table>
             </div>
 
-            {/* Trial Information */}
-            <div className="mt-8 max-w-3xl mx-auto">
-              <div className="bg-slate-800/50 border border-slate-700 rounded-xl p-6">
-                <h3 className="text-white font-semibold mb-3 text-center">
-                  💳 Risk-Free Trial Policy
-                </h3>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
-                  <div>
-                    <div className="text-indigo-400 font-bold mb-1">
-                      14 Days Free
-                    </div>
-                    <p className="text-xs text-slate-400">
-                      Full access to all features during trial
-                    </p>
-                  </div>
-                  <div>
-                    <div className="text-green-400 font-bold mb-1">
-                      No Charge Until Trial Ends
-                    </div>
-                    <p className="text-xs text-slate-400">
-                      Your card won&apos;t be charged during the trial period
-                    </p>
-                  </div>
-                  <div>
-                    <div className="text-yellow-400 font-bold mb-1">
-                      Cancel Anytime
-                    </div>
-                    <p className="text-xs text-slate-400">
-                      Cancel before trial ends with no charge at all
-                    </p>
-                  </div>
+            <div className="mt-8 rounded-2xl border border-slate-800 bg-slate-800/70 p-6">
+              <h3 className="text-xl font-semibold text-white mb-4">
+                💳 Risk-Free Trial Policy
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+                <div className="bg-slate-900 border border-slate-700 rounded-xl p-6">
+                  <h4 className="text-lg font-semibold text-white mb-2">
+                    14 Days Free
+                  </h4>
+                  <p className="text-slate-400 text-sm">
+                    Full access to all features during trial.
+                  </p>
+                </div>
+                <div className="bg-slate-900 border border-slate-700 rounded-xl p-6">
+                  <h4 className="text-lg font-semibold text-white mb-2">
+                    No Charge Until Trial Ends
+                  </h4>
+                  <p className="text-slate-400 text-sm">
+                    Your card won&apos;t be charged during the trial period.
+                  </p>
+                </div>
+                <div className="bg-slate-900 border border-slate-700 rounded-xl p-6">
+                  <h4 className="text-lg font-semibold text-white mb-2">
+                    Cancel Anytime
+                  </h4>
+                  <p className="text-slate-400 text-sm">
+                    Cancel before trial ends with no charge at all.
+                  </p>
                 </div>
               </div>
             </div>
