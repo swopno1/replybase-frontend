@@ -1,31 +1,41 @@
-import fs from 'fs';
-import path from 'path';
-import matter from 'gray-matter';
-import Link from 'next/link';
-import LandingNavbar from '@/components/LandingNavbar';
-import LandingFooter from '@/components/LandingFooter';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Metadata } from 'next';
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
+import Link from "next/link";
+import LandingNavbar from "@/components/LandingNavbar";
+import LandingFooter from "@/components/LandingFooter";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
   alternates: {
-    canonical: '/blog',
+    canonical: "/blog",
   },
 };
 
-const postsDirectory = path.join(process.cwd(), '_posts');
+const postsDirectory = path.join(process.cwd(), "_posts");
 
 function getSortedPostsData() {
   const fileNames = fs.readdirSync(postsDirectory);
   const allPostsData = fileNames.map((fileName) => {
-    const id = fileName.replace(/\.md$/, '');
+    const id = fileName.replace(/\.md$/, "");
     const fullPath = path.join(postsDirectory, fileName);
-    const fileContents = fs.readFileSync(fullPath, 'utf8');
+    const fileContents = fs.readFileSync(fullPath, "utf8");
     const matterResult = matter(fileContents);
 
     return {
       id,
-      ...(matterResult.data as { title: string; date: string; excerpt: string }),
+      ...(matterResult.data as {
+        title: string;
+        date: string;
+        excerpt: string;
+      }),
     };
   });
 
@@ -57,20 +67,26 @@ export default function BlogPage() {
 
           <div className="space-y-8">
             {allPostsData.map(({ id, date, title, excerpt }) => (
-              <Link href={`/blog/${id}`} key={id} legacyBehavior>
-                <a className="block">
-                  <Card className="bg-slate-800/50 border-slate-700/50 hover:border-indigo-500/50 transition-colors duration-300">
-                    <CardHeader>
-                      <CardTitle className="text-2xl font-bold text-white">{title}</CardTitle>
-                      <CardDescription className="text-slate-400">
-                        <time dateTime={date}>{new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
-                      </CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-slate-400">{excerpt}</p>
-                    </CardContent>
-                  </Card>
-                </a>
+              <Link href={`/blog/${id}`} key={id} className="block">
+                <Card className="bg-slate-800/50 border-slate-700/50 hover:border-indigo-500/50 transition-colors duration-300">
+                  <CardHeader>
+                    <CardTitle className="text-2xl font-bold text-white">
+                      {title}
+                    </CardTitle>
+                    <CardDescription className="text-slate-400">
+                      <time dateTime={date}>
+                        {new Date(date).toLocaleDateString("en-US", {
+                          year: "numeric",
+                          month: "long",
+                          day: "numeric",
+                        })}
+                      </time>
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-slate-400">{excerpt}</p>
+                  </CardContent>
+                </Card>
               </Link>
             ))}
           </div>
