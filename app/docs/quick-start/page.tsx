@@ -70,18 +70,18 @@ export default function QuickStartDoc() {
             Free: GBP0/mo
           </div>
           <div className="bg-slate-800 border border-slate-700 rounded p-3">
-            Starter: GBP19/mo (regularly GBP29)
+            Starter: GBP29/mo
           </div>
           <div className="bg-slate-800 border border-slate-700 rounded p-3">
-            Pro: GBP49/mo (regularly GBP89)
+            Pro: GBP89/mo
           </div>
           <div className="bg-slate-800 border border-slate-700 rounded p-3">
-            Business: GBP149/mo (regularly GBP249)
+            Business: GBP249/mo
           </div>
         </div>
         <p className="text-slate-300 text-sm mt-4">
-          Paid plans currently include a 14-day free trial and founding customer
-          launch pricing for the first 20 customers.
+          Paid plans include a 14-day free trial before standard monthly billing
+          begins.
         </p>
       </section>
 

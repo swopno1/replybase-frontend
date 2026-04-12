@@ -2,7 +2,6 @@
 
 import DocLayout from "../_components/DocLayout";
 
-// Strategic pricing after the launch campaign: GBP29 / GBP89 / GBP249.
 const plans = [
   {
     name: "Free",
@@ -12,21 +11,21 @@ const plans = [
   },
   {
     name: "Starter",
-    price: "GBP19",
+    price: "GBP29",
     limits:
-      "Founding offer: 5 bots, 1,000 daily messages, basic AI features, API access, email support (regularly GBP29)",
+      "Smart Automation: 3 bots, 1,500 automations/month, 1,000 AI responses/month, CRM access, email support",
   },
   {
     name: "Pro",
-    price: "GBP49",
+    price: "GBP89",
     limits:
-      "Founding offer: 25 bots, 5,000 daily messages, advanced AI features, API access, 24h chat support (regularly GBP89)",
+      "AI Co-Pilot: 10 bots, 10,000 automations/month, 7,500 AI responses/month, CRM access, API access, priority support",
   },
   {
     name: "Business",
-    price: "GBP149",
+    price: "GBP249",
     limits:
-      "Founding offer: unlimited bots, unlimited messages, premium AI features, full API access, 1h phone support (regularly GBP249)",
+      "AI Agent: 25 bots, 40,000 automations/month, 25,000 AI responses/month, CRM access, API access, priority plus support",
   },
 ];
 

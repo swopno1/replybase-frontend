@@ -58,17 +58,14 @@ export default function TermsPage() {
             <ul className="list-disc ml-6 space-y-2 text-slate-400">
               <li>
                 The Service offers four subscription tiers: Free (£0), Starter
-                (£19/month), Pro (£49/month), and Business (£149/month) during
-                the current founding customer launch offer.
+                (£29/month), Pro (£89/month), and Business (£249/month).
               </li>
               <li>
                 You agree to pay the fees associated with your selected plan.
               </li>
               <li>
-                Promotional launch pricing may be limited to a founding customer
-                campaign for the first 20 customers. Our standard pricing may
-                later move to Starter (£29/month), Pro (£89/month), and Business
-                (£249/month) with notice.
+                Paid plans may include a 14-day free trial before monthly
+                billing begins.
               </li>
               <li>
                 Payments are processed securely via Stripe. We do not store
@@ -105,17 +102,19 @@ export default function TermsPage() {
                 daily messages, limited AI features.
               </li>
               <li>
-                <strong className="text-slate-200">Starter:</strong> 5 bots,
-                1,000 daily messages, basic AI features.
+                <strong className="text-slate-200">Starter:</strong> 3 bots,
+                1,500 automations per month, 1,000 AI responses per month, CRM
+                access, and email support.
               </li>
               <li>
-                <strong className="text-slate-200">Pro:</strong> 25 bots, 5,000
-                daily messages, advanced AI features, API access.
+                <strong className="text-slate-200">Pro:</strong> 10 bots, 10,000
+                automations per month, 7,500 AI responses per month, CRM access,
+                API access, and priority support.
               </li>
               <li>
-                <strong className="text-slate-200">Business:</strong>
-                unlimited bots, unlimited messages, premium AI features, and
-                priority phone support.
+                <strong className="text-slate-200">Business:</strong> 25 bots,
+                40,000 automations per month, 25,000 AI responses per month, CRM
+                access, API access, and priority plus support.
               </li>
             </ul>
             <p className="mt-4 text-slate-400">

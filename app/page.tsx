@@ -449,13 +449,12 @@ export default function LandingPage() {
                 Webchat, and website lead capture with flow-first runtime and
                 optional AI fallback.
               </p>
-              {/* Strategic pricing after the launch campaign: £29 / £89 / £249 */}
               <div className="mt-6 inline-flex items-center gap-2 bg-indigo-900/30 border border-indigo-500/50 rounded-full px-6 py-3">
                 <span className="text-indigo-400 font-bold text-lg">
-                  🎁 Founding Customer Offer
+                  🎁 14-Day Free Trial
                 </span>
                 <span className="text-slate-300 text-sm">
-                  • First 20 customers • Cancel anytime
+                  • No card charged until trial ends • Cancel anytime
                 </span>
               </div>
             </div>
@@ -487,24 +486,11 @@ export default function LandingPage() {
                       Monthly Price
                     </td>
                     <td className="p-4 text-center text-white">£0</td>
-                    <td className="p-4 text-center text-white">
-                      <div>£19</div>
-                      <div className="text-xs text-slate-500 line-through">
-                        regular £29
-                      </div>
-                    </td>
+                    <td className="p-4 text-center text-white">£29</td>
                     <td className="p-4 text-center text-indigo-400 font-bold">
-                      <div>£49</div>
-                      <div className="text-xs text-slate-500 line-through">
-                        regular £89
-                      </div>
+                      £89
                     </td>
-                    <td className="p-4 text-center text-white">
-                      <div>£149</div>
-                      <div className="text-xs text-slate-500 line-through">
-                        regular £249
-                      </div>
-                    </td>
+                    <td className="p-4 text-center text-white">£249</td>
                   </tr>
                   <tr>
                     <td className="p-4 font-semibold text-white">AI Role</td>
@@ -523,7 +509,7 @@ export default function LandingPage() {
                     <td className="p-4 font-semibold text-white">
                       Automations / Month
                     </td>
-                    <td className="p-4 text-center text-slate-400">250</td>
+                    <td className="p-4 text-center text-slate-400">200</td>
                     <td className="p-4 text-center text-slate-400">1,500</td>
                     <td className="p-4 text-center text-slate-400">10,000</td>
                     <td className="p-4 text-center text-slate-400">40,000</td>
@@ -532,7 +518,7 @@ export default function LandingPage() {
                     <td className="p-4 font-semibold text-white">
                       AI Responses / Month
                     </td>
-                    <td className="p-4 text-center text-slate-400">150</td>
+                    <td className="p-4 text-center text-slate-400">100</td>
                     <td className="p-4 text-center text-slate-400">1,000</td>
                     <td className="p-4 text-center text-slate-400">7,500</td>
                     <td className="p-4 text-center text-slate-400">25,000</td>
@@ -556,7 +542,7 @@ export default function LandingPage() {
                       Supported Channels
                     </td>
                     <td className="p-4 text-center text-slate-400">
-                      Telegram, Webchat, Facebook, WhatsApp, Website Forms
+                      Webchat, Facebook, Website Forms
                     </td>
                     <td className="p-4 text-center text-slate-400">
                       Telegram, Webchat, Facebook, WhatsApp, Website Forms
