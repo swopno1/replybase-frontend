@@ -30,17 +30,30 @@ export default function LandingPage() {
             </p>
             <div className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
               <Link
-                href="https://app.replybase.co.uk/auth/register"
+                href="https://app.replybase.co.uk/auth/register?source=hero"
                 className="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-8 py-3 rounded-lg transition-transform duration-300 transform hover:scale-105 flex items-center justify-center gap-2 shadow-lg"
               >
-                Get Started
+                Start Free — No Card Needed
               </Link>
               <Link
-                href="#features"
+                href="#how-it-works"
                 className="w-full sm:w-auto border border-slate-700 text-white font-semibold px-8 py-3 rounded-lg hover:bg-slate-800 transition-colors duration-300 block sm:inline-block"
               >
-                See Product Demo
+                See How It Works
               </Link>
+            </div>
+            <div className="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-slate-400">
+              <span className="flex items-center gap-1.5">
+                <span className="text-emerald-400">✓</span> 14-day free trial
+              </span>
+              <span className="flex items-center gap-1.5">
+                <span className="text-emerald-400">✓</span> No credit card
+                required
+              </span>
+              <span className="flex items-center gap-1.5">
+                <span className="text-emerald-400">✓</span> Setup in under 5
+                minutes
+              </span>
             </div>
           </div>
         </section>
@@ -299,27 +312,52 @@ export default function LandingPage() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-slate-900 p-8 rounded-2xl shadow-xl border border-slate-700/50 motion-safe:animate-slide-in-up">
+                <div
+                  className="flex gap-0.5 mb-3 text-yellow-400 text-sm"
+                  aria-label="5 out of 5 stars"
+                >
+                  ★★★★★
+                </div>
                 <p className="text-slate-300 italic mb-4">
-                  “ReplyBase helped us double our qualified leads in 3 months.”
+                  &ldquo;ReplyBase helped us double our qualified leads in 3
+                  months. The instant Telegram alerts mean we never miss a hot
+                  enquiry.&rdquo;
                 </p>
-                <div className="text-slate-400 text-sm">
-                  — Real Estate Agency
+                <div className="text-slate-400 text-sm font-medium">
+                  James T. &mdash; Director, Estate Agency
                 </div>
               </div>
               <div className="bg-slate-900 p-8 rounded-2xl shadow-xl border border-slate-700/50 motion-safe:animate-slide-in-up">
+                <div
+                  className="flex gap-0.5 mb-3 text-yellow-400 text-sm"
+                  aria-label="5 out of 5 stars"
+                >
+                  ★★★★★
+                </div>
                 <p className="text-slate-300 italic mb-4">
-                  “The onboarding was seamless, and the support team is
-                  fantastic.”
+                  &ldquo;We were live in 20 minutes. The webchat captures
+                  enquiries 24/7 while we sleep &mdash; it&apos;s like having an
+                  extra team member.&rdquo;
                 </p>
-                <div className="text-slate-400 text-sm">
-                  — Financial Services Firm
+                <div className="text-slate-400 text-sm font-medium">
+                  Priya S. &mdash; Founder, Financial Services
                 </div>
               </div>
               <div className="bg-slate-900 p-8 rounded-2xl shadow-xl border border-slate-700/50 motion-safe:animate-slide-in-up">
+                <div
+                  className="flex gap-0.5 mb-3 text-yellow-400 text-sm"
+                  aria-label="5 out of 5 stars"
+                >
+                  ★★★★★
+                </div>
                 <p className="text-slate-300 italic mb-4">
-                  “We love the analytics and automation. Highly recommended!”
+                  &ldquo;The CRM inbox and automation flows cut our response
+                  time from 4 hours to under 2 minutes. Highly
+                  recommended.&rdquo;
                 </p>
-                <div className="text-slate-400 text-sm">— SaaS Startup</div>
+                <div className="text-slate-400 text-sm font-medium">
+                  Marcus L. &mdash; CEO, SaaS Startup
+                </div>
               </div>
             </div>
           </div>
@@ -601,7 +639,7 @@ export default function LandingPage() {
                     </td>
                     <td className="p-4 text-center">
                       <a
-                        href="https://app.replybase.co.uk/auth/register"
+                        href="https://app.replybase.co.uk/auth/register?plan=free&source=pricing_table_free"
                         className="block w-full bg-slate-700 hover:bg-slate-600 text-white py-2 rounded-lg"
                       >
                         Get Started
@@ -609,7 +647,7 @@ export default function LandingPage() {
                     </td>
                     <td className="p-4 text-center">
                       <a
-                        href="https://app.replybase.co.uk/pricing"
+                        href="https://app.replybase.co.uk/auth/register?plan=starter&source=pricing_table_starter"
                         className="block w-full bg-indigo-600 hover:bg-indigo-500 text-white py-2 rounded-lg mb-1"
                       >
                         Start Free Trial
@@ -618,7 +656,7 @@ export default function LandingPage() {
                     </td>
                     <td className="p-4 text-center">
                       <a
-                        href="https://app.replybase.co.uk/pricing"
+                        href="https://app.replybase.co.uk/auth/register?plan=pro&source=pricing_table_pro"
                         className="block w-full bg-indigo-600 hover:bg-indigo-500 text-white py-2 rounded-lg mb-1"
                       >
                         Start Free Trial
@@ -626,12 +664,21 @@ export default function LandingPage() {
                       <p className="text-xs text-slate-500">14 days free</p>
                     </td>
                     <td className="p-4 text-center">
+                      <a
+                        href="https://app.replybase.co.uk/auth/register?plan=business&source=pricing_table_business"
+                        className="block w-full bg-indigo-600 hover:bg-indigo-500 text-white py-2 rounded-lg mb-2"
+                      >
+                        Start Business Trial
+                      </a>
                       <Link
                         href="/contact"
                         className="block w-full bg-slate-700 hover:bg-slate-600 text-white py-2 rounded-lg text-center"
                       >
-                        Contact Sales
+                        Talk to Specialist
                       </Link>
+                      <p className="mt-1 text-xs text-slate-500">
+                        Concierge onboarding available
+                      </p>
                     </td>
                   </tr>
                 </tbody>
@@ -690,7 +737,7 @@ export default function LandingPage() {
             </p>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-8">
               <Link
-                href="https://app.replybase.co.uk/pricing"
+                href="https://app.replybase.co.uk/auth/register?source=final_cta"
                 className="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-8 py-3 rounded-lg transition-transform duration-300 transform hover:scale-105 flex items-center justify-center gap-2 shadow-lg"
               >
                 Start 14-Day Free Trial

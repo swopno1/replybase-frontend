@@ -52,9 +52,17 @@ export default function LandingNavbar() {
           <li>
             <Link
               href="https://app.replybase.co.uk/auth/login"
-              className="text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-500 rounded-lg px-4 py-2 transition-colors"
+              className="text-sm font-medium text-slate-300 hover:text-white transition-colors"
             >
               Login
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://app.replybase.co.uk/auth/register?source=navbar_desktop"
+              className="text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-500 rounded-lg px-4 py-2 transition-colors"
+            >
+              Get Started Free
             </Link>
           </li>
         </ul>
@@ -94,10 +102,17 @@ export default function LandingNavbar() {
           </Link>
           <Link
             href="https://app.replybase.co.uk/auth/login"
-            className="block w-full text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-500 rounded-lg px-4 py-2 text-center"
+            className="block text-sm font-medium text-slate-300 hover:text-white"
             onClick={() => setIsOpen(false)}
           >
             Login
+          </Link>
+          <Link
+            href="https://app.replybase.co.uk/auth/register?source=navbar_mobile"
+            className="block w-full text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-500 rounded-lg px-4 py-2 text-center"
+            onClick={() => setIsOpen(false)}
+          >
+            Get Started Free
           </Link>
         </div>
       )}

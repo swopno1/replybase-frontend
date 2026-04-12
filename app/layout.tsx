@@ -37,6 +37,8 @@ export const metadata: Metadata = {
 
 import CookieConsent from "@/components/CookieConsent";
 import Script from "next/script";
+import { AnalyticsScripts } from "@/components/analytics/analytics-scripts";
+import { MarketingFunnelTracker } from "@/components/analytics/marketing-funnel-tracker";
 
 export default function RootLayout({
   children,
@@ -55,7 +57,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <MarketingFunnelTracker />
         <CookieConsent />
+        <AnalyticsScripts />
 
         <Script
           src="https://app.replybase.co.uk/embed/replybase-webchat.js"
