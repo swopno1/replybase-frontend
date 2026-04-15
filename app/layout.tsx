@@ -64,7 +64,7 @@ export default function RootLayout({
         <Script
           src="https://app.replybase.co.uk/embed/replybase-webchat.js"
           data-base-url="https://app.replybase.co.uk"
-          data-public-key="wpk_5e81eeb7b8b4ecd8b895447014ddeb93"
+          data-public-key="wpk_0fb79b939aedd3f67786bd147c8a92a4"
           data-title="Chat with us"
           data-primary-color="#4f39f6"
           data-position="right"
