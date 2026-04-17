@@ -1,16 +1,16 @@
 import LandingNavbar from "@/components/LandingNavbar";
 import LandingFooter from "@/components/LandingFooter";
 import { DataDeletionForm } from "@/components/DataDeletionForm";
-import { Metadata } from 'next';
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
   alternates: {
-    canonical: '/privacy',
+    canonical: "/privacy",
   },
 };
 
 export default function PrivacyPage() {
-  const lastUpdated = "February 16, 2026";
+  const lastUpdated = "April 17, 2026";
 
   return (
     <div className="bg-slate-900 text-slate-300 min-h-screen font-inter selection:bg-indigo-500/20">
@@ -26,10 +26,11 @@ export default function PrivacyPage() {
 
         <div className="space-y-8 text-slate-300">
           <p>
-            Welcome to ReplyBase (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;). We are committed to
-            protecting your privacy. This Privacy Policy explains how your
-            personal information is collected, used, and disclosed by ReplyBase,
-            an AI-powered conversation management platform.
+            Welcome to ReplyBase (&quot;we,&quot; &quot;our,&quot; or
+            &quot;us&quot;). We are committed to protecting your privacy. This
+            Privacy Policy explains how your personal information is collected,
+            used, and disclosed by ReplyBase, an AI-powered conversation
+            management platform.
           </p>
 
           <section>
@@ -75,17 +76,27 @@ export default function PrivacyPage() {
               2. AI Data Processing
             </h2>
             <p className="mb-4">
-              ReplyBase uses third-party AI providers (such as OpenAI and Anthropic) to power our automated conversation features.
+              ReplyBase uses third-party AI providers (such as OpenAI and
+              Anthropic) to power our automated conversation features.
             </p>
             <ul className="list-disc ml-6 space-y-2 text-slate-400">
               <li>
-                <strong className="text-slate-200">Real-time Processing:</strong> Conversation data is sent to these providers in real-time to generate intelligent responses.
+                <strong className="text-slate-200">
+                  Real-time Processing:
+                </strong>{" "}
+                Conversation data is sent to these providers in real-time to
+                generate intelligent responses.
               </li>
               <li>
-                <strong className="text-slate-200">No Model Training:</strong> We ensure that our agreements with AI providers prohibit the use of your data or your customers&apos; data for training their global models.
+                <strong className="text-slate-200">No Model Training:</strong>{" "}
+                We ensure that our agreements with AI providers prohibit the use
+                of your data or your customers&apos; data for training their
+                global models.
               </li>
               <li>
-                <strong className="text-slate-200">Data Minimization:</strong> We only send the minimum necessary context to AI providers to fulfill the specific automation request.
+                <strong className="text-slate-200">Data Minimization:</strong>{" "}
+                We only send the minimum necessary context to AI providers to
+                fulfill the specific automation request.
               </li>
             </ul>
           </section>
@@ -107,13 +118,15 @@ export default function PrivacyPage() {
               </li>
               <li>
                 <strong className="text-slate-200">pages_messaging:</strong> To
-                send and receive messages on behalf of your connected Pages.
+                send and receive messages on behalf of your connected Pages,
+                enabling automated replies and human agent responses.
               </li>
               <li>
                 <strong className="text-slate-200">
-                  pages_read_engagement:
+                  pages_manage_metadata:
                 </strong>{" "}
-                To track message delivery and engagement metrics.
+                To subscribe your Page to webhook events so our system receives
+                and processes incoming messages in real time.
               </li>
               <li>
                 <strong className="text-slate-200">
@@ -127,20 +140,61 @@ export default function PrivacyPage() {
 
           <section>
             <h2 className="text-xl font-bold text-white mb-4">
-              4. Newsletter & Marketing
+              3b. Meta Data Deletion
             </h2>
             <p className="mb-4">
-              If you choose to subscribe to our newsletter, we collect your email address to send you updates, product news, and marketing communications.
+              If you disconnect ReplyBase from your Facebook account or request
+              data deletion, we will remove all associated Page access tokens,
+              connected Page records, conversation history, and contact data
+              from our systems. You can trigger this at any time via:
             </p>
             <ul className="list-disc ml-6 space-y-2 text-slate-400">
               <li>
-                <strong className="text-slate-200">Consent:</strong> We only send marketing emails to users who have explicitly opted in.
+                The &quot;Disconnect All&quot; button in{" "}
+                <strong className="text-slate-200">
+                  Integrations → Facebook
+                </strong>{" "}
+                (also revokes app permissions from facebook.com/settings)
+              </li>
+              <li>The data deletion request form below (section 6)</li>
+              <li>
+                The Meta-initiated deletion callback at{" "}
+                <code className="text-slate-300 bg-slate-800 px-1 rounded text-xs">
+                  app.replybase.co.uk/api/facebook/data-deletion
+                </code>{" "}
+                — when you remove ReplyBase from{" "}
+                <em>Facebook Settings → Business Integrations</em>, Meta
+                automatically notifies this endpoint and we begin immediate
+                deletion.
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-bold text-white mb-4">
+              4. Newsletter & Marketing
+            </h2>
+            <p className="mb-4">
+              If you choose to subscribe to our newsletter, we collect your
+              email address to send you updates, product news, and marketing
+              communications.
+            </p>
+            <ul className="list-disc ml-6 space-y-2 text-slate-400">
+              <li>
+                <strong className="text-slate-200">Consent:</strong> We only
+                send marketing emails to users who have explicitly opted in.
               </li>
               <li>
-                <strong className="text-slate-200">Unsubscribe:</strong> You can opt-out of marketing communications at any time by clicking the &quot;unsubscribe&quot; link in our emails.
+                <strong className="text-slate-200">Unsubscribe:</strong> You can
+                opt-out of marketing communications at any time by clicking the
+                &quot;unsubscribe&quot; link in our emails.
               </li>
               <li>
-                <strong className="text-slate-200">Third-party Services:</strong> We may use reputable third-party email service providers to manage and deliver our newsletter.
+                <strong className="text-slate-200">
+                  Third-party Services:
+                </strong>{" "}
+                We may use reputable third-party email service providers to
+                manage and deliver our newsletter.
               </li>
             </ul>
           </section>
@@ -190,7 +244,8 @@ export default function PrivacyPage() {
               <li>By contacting admin@replybase.co.uk</li>
             </ul>
             <p className="mt-6 mb-4 text-slate-400">
-              In accordance with GDPR, you have the right to request deletion of your personal data. You can submit a request directly below:
+              In accordance with GDPR, you have the right to request deletion of
+              your personal data. You can submit a request directly below:
             </p>
             <div className="bg-slate-800 p-6 rounded-xl border border-slate-700 mb-6">
               <DataDeletionForm />
@@ -214,7 +269,8 @@ export default function PrivacyPage() {
                 Stripe processes payments on our behalf (PCI DSS compliant).
               </li>
               <li>
-                <strong className="text-slate-200">AI Processing:</strong> Third-party AI providers for conversation automation.
+                <strong className="text-slate-200">AI Processing:</strong>{" "}
+                Third-party AI providers for conversation automation.
               </li>
               <li>
                 <strong className="text-slate-200">Messaging Platforms:</strong>{" "}
@@ -290,15 +346,17 @@ export default function PrivacyPage() {
             </h2>
             <p className="text-slate-400">
               We use essential cookies for authentication and session
-              management. Functional cookies help us remember your preferences. Analytics cookies (optional) help us understand how
-              you use our platform. You can manage cookie preferences through
-              our cookie consent banner or view our dedicated{" "}
+              management. Functional cookies help us remember your preferences.
+              Analytics cookies (optional) help us understand how you use our
+              platform. You can manage cookie preferences through our cookie
+              consent banner or view our dedicated{" "}
               <a
                 href="/cookie-policy"
                 className="text-indigo-400 hover:text-indigo-300 underline"
               >
                 Cookie Policy
-              </a>.
+              </a>
+              .
             </p>
           </section>
 
