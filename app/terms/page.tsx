@@ -333,6 +333,16 @@ export default function TermsPage() {
                   admin@replybase.co.uk
                 </a>
                 <br />
+                <strong>WhatsApp:</strong>{" "}
+                <a
+                  href="https://wa.me/447822033580"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-green-400 hover:text-green-300"
+                >
+                  +44 7822 033580
+                </a>
+                <br />
                 <strong>Legal:</strong>{" "}
                 <a
                   href="mailto:admin@replybase.co.uk"

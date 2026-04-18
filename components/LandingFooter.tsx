@@ -75,6 +75,36 @@ export default function LandingFooter() {
             </ul>
           </div>
 
+          {/* Contact */}
+          <div>
+            <h4 className="text-white font-semibold mb-4">Contact</h4>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <a
+                  href="mailto:admin@replybase.co.uk"
+                  className="hover:text-white"
+                >
+                  admin@replybase.co.uk
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://wa.me/447822033580"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white"
+                >
+                  WhatsApp: +44 7822 033580
+                </a>
+              </li>
+              <li>
+                <Link href="/contact" className="hover:text-white">
+                  Contact Form
+                </Link>
+              </li>
+            </ul>
+          </div>
+
           {/* Legal */}
           <div>
             <h4 className="text-white font-semibold mb-4">Legal</h4>
