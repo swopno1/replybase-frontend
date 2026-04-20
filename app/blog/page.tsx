@@ -14,8 +14,18 @@ import {
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
+  title: "Blog — AI, Chatbots & Customer Engagement Insights",
+  description:
+    "Expert articles on AI chatbots, lead capture automation, and customer engagement strategies from the ReplyBase team.",
   alternates: {
     canonical: "/blog",
+  },
+  openGraph: {
+    title: "ReplyBase Blog — AI, Chatbots & Customer Engagement",
+    description:
+      "Expert articles on AI chatbots, lead capture, and customer engagement from the ReplyBase team.",
+    url: "https://replybase.co.uk/blog",
+    type: "website",
   },
 };
 

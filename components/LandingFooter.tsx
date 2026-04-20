@@ -135,7 +135,13 @@ export default function LandingFooter() {
 
         <div className="mt-12 pt-6 border-t border-slate-800 text-center">
           <p className="text-xs text-slate-500">
-            © {new Date().getFullYear()} ReplyBase. All rights reserved.
+            © {new Date().getFullYear()} ReplyBase. All rights reserved.{" "}
+            <Link
+              href="/credits"
+              className="hover:text-slate-400 transition-colors"
+            >
+              Credits
+            </Link>
           </p>
           <div className="mt-4 opacity-50 hover:opacity-80 transition-opacity">
             <p className="text-[10px] leading-tight text-slate-500">

@@ -14,20 +14,52 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://replybase.co.uk"),
-  title: "ReplyBase - Never Miss Another Lead",
+  title: {
+    default: "ReplyBase — AI Chatbot & Lead Capture Platform",
+    template: "%s | ReplyBase",
+  },
   description:
     "Capture every lead, reply instantly, and manage your conversations—all in one simple platform.",
+  keywords: [
+    "AI chatbot",
+    "lead capture",
+    "chatbot builder",
+    "customer messaging",
+    "telegram bot",
+    "webchat",
+    "AI customer support",
+    "lead generation",
+    "chatbot platform",
+    "AI inbox",
+  ],
+  authors: [{ name: "ReplyBase", url: "https://replybase.co.uk" }],
+  creator: "ReplyBase",
   other: {
     "facebook-domain-verification": "4yq6iobk3tkzyrnvh8ktaimneauxkp",
   },
   openGraph: {
-    title: "ReplyBase - Never Miss Another Lead",
+    title: "Never Miss Another Lead — Reply Instantly with AI",
     description:
       "Capture every lead, reply instantly, and manage your conversations—all in one simple platform.",
     url: "https://replybase.co.uk",
     siteName: "ReplyBase",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "ReplyBase — AI Chatbot & Lead Capture Platform",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Never Miss Another Lead — Reply Instantly with AI",
+    description:
+      "Capture every lead, reply instantly, and manage your conversations—all in one simple platform.",
+    images: ["/twitter-image.png"],
   },
   icons: {
     icon: "/icon.png",

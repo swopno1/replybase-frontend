@@ -5,14 +5,171 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
+  title: "AI Chatbot & Lead Capture Platform — 14-Day Free Trial",
+  description:
+    "ReplyBase captures leads 24/7, replies instantly with AI, and manages all customer conversations in one inbox. Webchat, Telegram, Facebook & WhatsApp. Start free — no card needed.",
   alternates: {
     canonical: "/",
   },
+  openGraph: {
+    title: "ReplyBase — Never Miss Another Lead with AI",
+    description:
+      "AI chatbot & lead capture platform. Reply instantly, manage every conversation, and grow your business. Free 14-day trial.",
+    url: "https://replybase.co.uk",
+    type: "website",
+  },
+};
+
+const softwareAppSchema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: "ReplyBase",
+  applicationCategory: "BusinessApplication",
+  operatingSystem: "Web",
+  url: "https://replybase.co.uk",
+  description:
+    "AI-powered chatbot and lead capture platform. Capture leads 24/7 via Webchat, Telegram, Facebook Messenger, and WhatsApp Business.",
+  screenshot: "https://replybase.co.uk/opengraph-image.png",
+  featureList:
+    "AI chatbot, Lead capture, CRM inbox, Telegram integration, Webchat, Facebook Messenger, WhatsApp Business, Visual flow builder, Analytics dashboard",
+  offers: [
+    {
+      "@type": "Offer",
+      name: "Free",
+      price: "0",
+      priceCurrency: "GBP",
+      description: "1 bot, Webchat & Facebook, 200 automations/month",
+    },
+    {
+      "@type": "Offer",
+      name: "Starter",
+      price: "29",
+      priceCurrency: "GBP",
+      description: "3 bots, all channels, 1,500 automations/month, CRM access",
+    },
+    {
+      "@type": "Offer",
+      name: "Pro",
+      price: "89",
+      priceCurrency: "GBP",
+      description:
+        "10 bots, all channels, 10,000 automations/month, API access",
+    },
+    {
+      "@type": "Offer",
+      name: "Business",
+      price: "249",
+      priceCurrency: "GBP",
+      description:
+        "25 bots, all channels, 40,000 automations/month, priority support",
+    },
+  ],
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "5",
+    ratingCount: "3",
+    bestRating: "5",
+  },
+};
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "ReplyBase",
+  url: "https://replybase.co.uk",
+  logo: "https://replybase.co.uk/icon.png",
+  description:
+    "ReplyBase is an AI chatbot and lead capture platform helping businesses reply instantly and never miss a lead.",
+  contactPoint: {
+    "@type": "ContactPoint",
+    contactType: "customer support",
+    url: "https://replybase.co.uk/contact",
+  },
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "ReplyBase",
+  url: "https://replybase.co.uk",
+  description:
+    "AI chatbot & lead capture platform for businesses — Webchat, Telegram, Facebook, WhatsApp.",
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "How do I get started with ReplyBase?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Sign up for free in minutes at app.replybase.co.uk — no credit card required. Follow the Quick Start Guide to connect your first channel (Webchat or Telegram) and go live in under 25 minutes.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is my data secure with ReplyBase?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. ReplyBase uses end-to-end encryption, role-based access controls, and regular security audits. The platform is GDPR and CCPA compliant from day one.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Can I cancel my ReplyBase subscription anytime?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. You can cancel or change your plan at any time. Cancel before your 14-day free trial ends and you will not be charged anything.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What channels does ReplyBase support?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "ReplyBase supports Webchat (embeddable chat widget), Telegram, Facebook Messenger, WhatsApp Business, and website lead capture forms. Free plan includes Webchat and Facebook.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How much does ReplyBase cost?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "ReplyBase offers four plans: Free (£0/month), Starter (£29/month), Pro (£89/month), and Business (£249/month). All paid plans include a 14-day free trial with no card charged until the trial ends.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Does ReplyBase support AI responses?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. All plans include AI-powered responses. The Free plan includes 100 AI responses/month. Starter includes 1,000, Pro includes 7,500, and Business includes 25,000 AI responses per month.",
+      },
+    },
+  ],
 };
 
 export default function LandingPage() {
   return (
     <div className="bg-slate-900 text-slate-300 antialiased selection:bg-indigo-500/20 font-inter">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareAppSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <LandingNavbar />
 
       <main>

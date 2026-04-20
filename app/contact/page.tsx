@@ -1,14 +1,22 @@
-import LandingNavbar from '@/components/LandingNavbar';
-import LandingFooter from '@/components/LandingFooter';
-import ContactForm from './ContactForm';
-import { Metadata } from 'next';
+import LandingNavbar from "@/components/LandingNavbar";
+import LandingFooter from "@/components/LandingFooter";
+import ContactForm from "./ContactForm";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
+  title: "Contact ReplyBase — Talk to Our Team",
+  description:
+    "Have a question, need a demo, or want to discuss a custom plan? Contact the ReplyBase team — we reply fast.",
   alternates: {
-    canonical: '/contact',
+    canonical: "/contact",
   },
-  title: 'Contact Us - ReplyBase',
-  description: 'Have a question or want to work with us? Contact the ReplyBase team today.',
+  openGraph: {
+    title: "Contact ReplyBase — Talk to Our Team",
+    description:
+      "Get in touch with the ReplyBase team for support, demos, or sales enquiries.",
+    url: "https://replybase.co.uk/contact",
+    type: "website",
+  },
 };
 
 export default function ContactPage() {

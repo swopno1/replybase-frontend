@@ -3,6 +3,9 @@ import LandingFooter from "@/components/LandingFooter";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
+  title: "Terms of Service",
+  description:
+    "Read the ReplyBase Terms of Service — your rights, responsibilities, and our commitments when you use the platform.",
   alternates: {
     canonical: "/terms",
   },

@@ -4,6 +4,9 @@ import { DataDeletionForm } from "@/components/DataDeletionForm";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description:
+    "How ReplyBase collects, uses, and protects your personal data. GDPR & CCPA compliant — your privacy is our priority.",
   alternates: {
     canonical: "/privacy",
   },

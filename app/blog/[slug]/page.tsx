@@ -39,7 +39,11 @@ async function getPostData(slug: string) {
     return {
       slug,
       contentHtml,
-      ...(matterResult.data as { title: string; date: string; excerpt?: string }),
+      ...(matterResult.data as {
+        title: string;
+        date: string;
+        excerpt?: string;
+      }),
     };
   } catch (error) {
     console.error(`Error fetching post data for slug "${slug}":`, error);
@@ -56,10 +60,17 @@ export async function generateMetadata({
   try {
     const postData = await getPostData(slug);
     return {
-      title: `${postData.title} | ReplyBase Blog`,
+      title: postData.title,
       description: postData.excerpt,
       alternates: {
         canonical: `/blog/${slug}`,
+      },
+      openGraph: {
+        title: postData.title,
+        description: postData.excerpt,
+        url: `https://replybase.co.uk/blog/${slug}`,
+        type: "article",
+        publishedTime: postData.date,
       },
     };
   } catch (_error) {
@@ -104,6 +115,32 @@ export default async function BlogPostPage({
 
   return (
     <div className="bg-slate-900 text-slate-300 antialiased selection:bg-indigo-500/20 font-inter">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline: postData.title,
+            description: postData.excerpt,
+            datePublished: postData.date,
+            url: `https://replybase.co.uk/blog/${slug}`,
+            publisher: {
+              "@type": "Organization",
+              name: "ReplyBase",
+              logo: {
+                "@type": "ImageObject",
+                url: "https://replybase.co.uk/icon.png",
+              },
+            },
+            author: {
+              "@type": "Organization",
+              name: "ReplyBase",
+              url: "https://replybase.co.uk",
+            },
+          }),
+        }}
+      />
       <LandingNavbar />
       <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
         <article className="prose prose-invert prose-lg mx-auto">

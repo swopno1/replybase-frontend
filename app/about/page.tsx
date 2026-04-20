@@ -1,11 +1,21 @@
-import LandingNavbar from '@/components/LandingNavbar';
-import LandingFooter from '@/components/LandingFooter';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Metadata } from 'next';
+import LandingNavbar from "@/components/LandingNavbar";
+import LandingFooter from "@/components/LandingFooter";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
+  title: "About ReplyBase — Our Mission & Story",
+  description:
+    "ReplyBase was built to help businesses capture leads and reply instantly with AI. Learn about our mission, story, and the team behind the platform.",
   alternates: {
-    canonical: '/about',
+    canonical: "/about",
+  },
+  openGraph: {
+    title: "About ReplyBase — Our Mission & Story",
+    description:
+      "Learn about ReplyBase — built to help businesses capture leads and reply instantly with AI.",
+    url: "https://replybase.co.uk/about",
+    type: "website",
   },
 };
 
@@ -20,20 +30,30 @@ export default function AboutPage() {
               About ReplyBase
             </h1>
             <p className="mt-4 text-lg md:text-xl text-slate-400">
-              Our mission is to empower businesses with intelligent and intuitive chatbot solutions.
+              Our mission is to empower businesses with intelligent and
+              intuitive chatbot solutions.
             </p>
           </header>
 
           <Card className="bg-slate-800/50 border-slate-700/50">
             <CardHeader>
-              <CardTitle className="text-2xl font-bold text-white">Our Story</CardTitle>
+              <CardTitle className="text-2xl font-bold text-white">
+                Our Story
+              </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4 text-slate-400">
               <p>
-                Founded in 2023, ReplyBase was born out of a passion for artificial intelligence and a desire to simplify customer interactions. We saw a need for a powerful, yet easy-to-use chatbot builder that could be adopted by businesses of all sizes.
+                Founded in 2023, ReplyBase was born out of a passion for
+                artificial intelligence and a desire to simplify customer
+                interactions. We saw a need for a powerful, yet easy-to-use
+                chatbot builder that could be adopted by businesses of all
+                sizes.
               </p>
               <p>
-                Our team is made up of experienced developers, designers, and AI enthusiasts who are dedicated to creating the best possible chatbot platform. We believe in the power of open-source and are committed to building a strong community around our product.
+                Our team is made up of experienced developers, designers, and AI
+                enthusiasts who are dedicated to creating the best possible
+                chatbot platform. We believe in the power of open-source and are
+                committed to building a strong community around our product.
               </p>
             </CardContent>
           </Card>
