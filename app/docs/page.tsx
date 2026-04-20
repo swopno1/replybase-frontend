@@ -10,32 +10,111 @@ import {
   Database,
   Settings,
   Globe,
+  Send,
+  MessageSquare,
+  Phone,
 } from "lucide-react";
 
 export default function DocsPage() {
   const docCategories = [
     {
-      title: "Launch And Setup",
+      title: "Get Started",
       icon: Rocket,
       description:
-        "Create your workspace, connect sources, and launch with confidence",
+        "Step-by-step guide from account creation to your first live AI-powered channel",
+      badge: "Start here",
       docs: [
-        { name: "Quick Start Guide", href: "/docs/quick-start" },
-        { name: "Onboarding Overview", href: "/docs/onboarding" },
+        { name: "Get Started Overview", href: "/docs/get-started" },
         {
-          name: "Onboarding Technical Notes",
-          href: "/docs/onboarding-implementation",
+          name: "Step 1 — Create Your Account",
+          href: "/docs/get-started/account-setup",
+        },
+        {
+          name: "Step 2 — Choose Your Channel",
+          href: "/docs/get-started/choose-channel",
+        },
+        {
+          name: "Step 3a — Set Up Webchat",
+          href: "/docs/get-started/webchat-setup",
+        },
+        {
+          name: "Step 3b — Set Up Telegram",
+          href: "/docs/get-started/telegram-setup",
+        },
+        {
+          name: "Step 3c — Set Up Facebook",
+          href: "/docs/get-started/facebook-setup",
+        },
+        {
+          name: "Step 4 — Test Your Channel",
+          href: "/docs/get-started/live-test",
+        },
+        { name: "Step 5 — Next Steps", href: "/docs/get-started/next-steps" },
+      ],
+    },
+    {
+      title: "Webchat",
+      icon: Globe,
+      description:
+        "Embed the ReplyBase chat widget on your website — setup, API reference, and diagnostics",
+      badge: null,
+      docs: [
+        { name: "Webchat Embed Quickstart", href: "/docs/webchat-embed" },
+        {
+          name: "Webchat Implementation Guide",
+          href: "/docs/webchat-implementation-guide",
+        },
+        { name: "Webchat API Reference", href: "/docs/webchat-api-reference" },
+        { name: "Webchat QA And Rollout", href: "/docs/webchat-qa-rollout" },
+      ],
+    },
+    {
+      title: "Telegram",
+      icon: Send,
+      description:
+        "Connect a Telegram bot to your workspace — setup, management, and troubleshooting",
+      badge: null,
+      docs: [
+        {
+          name: "Telegram Setup Guide",
+          href: "/docs/get-started/telegram-setup",
+        },
+        { name: "Telegram Channel Reference", href: "/docs/telegram-delivery" },
+      ],
+    },
+    {
+      title: "Facebook Messenger",
+      icon: MessageSquare,
+      description:
+        "Connect your Facebook Page to automatically reply to Messenger enquiries",
+      badge: null,
+      docs: [
+        {
+          name: "Facebook Setup Guide",
+          href: "/docs/get-started/facebook-setup",
+        },
+        {
+          name: "Facebook Messenger Reference",
+          href: "/docs/facebook-delivery",
         },
       ],
+    },
+    {
+      title: "WhatsApp",
+      icon: Phone,
+      description: "WhatsApp Business Cloud API integration — launching soon",
+      badge: "Coming Soon",
+      docs: [{ name: "WhatsApp Overview", href: "/docs/whatsapp-delivery" }],
     },
     {
       title: "Product Snapshot",
       icon: BookOpen,
       description:
-        "Understand features, plan value, and what is available today",
+        "Understand current features, plan limits, and what is available today",
+      badge: null,
       docs: [
-        { name: "Current Direction", href: "/docs/roadmap" },
         { name: "Plans And Limits", href: "/docs/features" },
+        { name: "Current Direction", href: "/docs/roadmap" },
         { name: "Implementation Snapshot", href: "/docs/implementation" },
       ],
     },
@@ -44,32 +123,18 @@ export default function DocsPage() {
       icon: Database,
       description:
         "Daily workspace usage guidance, security posture, and configuration",
+      badge: null,
       docs: [
         { name: "Workspace Navigation Guide", href: "/docs/modular-dashboard" },
         { name: "Security Model", href: "/docs/security" },
       ],
     },
     {
-      title: "Webchat Delivery",
-      icon: Globe,
-      description:
-        "Implementation, API, rollout status, and embed guidance for webchat",
-      docs: [
-        { name: "Webchat Status", href: "/docs/webchat-progress" },
-        {
-          name: "Webchat Implementation Guide",
-          href: "/docs/webchat-implementation-guide",
-        },
-        { name: "Webchat API Reference", href: "/docs/webchat-api-reference" },
-        { name: "Webchat QA And Rollout", href: "/docs/webchat-qa-rollout" },
-        { name: "Webchat Embed Quickstart", href: "/docs/webchat-embed" },
-      ],
-    },
-    {
       title: "Tenant Operations",
       icon: Settings,
       description:
-        "Guidance for workspace owners, onboarding, and account-level operations",
+        "Guidance for workspace owners, billing, and account-level operations",
+      badge: null,
       docs: [
         { name: "Workspace Owner Guide", href: "/docs/admin-panel" },
         { name: "Plans And Limits", href: "/docs/features" },
@@ -88,31 +153,58 @@ export default function DocsPage() {
             Documentation
           </h1>
           <p className="text-lg text-slate-400 max-w-2xl mx-auto">
-            MVP production documentation for ReplyBase users and tenant
-            workspace owners
+            Everything you need to set up ReplyBase, connect your channels, and
+            start capturing leads automatically.
           </p>
-          <p className="text-sm text-slate-500 max-w-2xl mx-auto mt-3">
-            This documentation is written for users and tenant workspace owners.
-            Internal planning, roadmap, and production notes live in
-            replybase-saas/Product_Details.
-          </p>
+          <div className="mt-6">
+            <Link
+              href="/docs/get-started"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg font-medium transition-colors"
+            >
+              Start Here — Get Started Guide
+            </Link>
+          </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
           {docCategories.map((category) => {
             const Icon = category.icon;
+            const isComingSoon = category.badge === "Coming Soon";
             return (
               <div
                 key={category.title}
-                className="bg-slate-800 p-6 rounded-2xl border border-slate-700 hover:border-indigo-500/50 transition-all"
+                className={`bg-slate-800 p-6 rounded-2xl border transition-all ${
+                  isComingSoon
+                    ? "border-slate-700 opacity-70"
+                    : category.badge === "Start here"
+                      ? "border-indigo-700/60 hover:border-indigo-500"
+                      : "border-slate-700 hover:border-indigo-500/50"
+                }`}
               >
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="flex items-center justify-center h-10 w-10 rounded-lg bg-indigo-600">
+                  <div
+                    className={`flex items-center justify-center h-10 w-10 rounded-lg ${
+                      isComingSoon ? "bg-slate-700" : "bg-indigo-600"
+                    }`}
+                  >
                     <Icon size={20} className="text-white" />
                   </div>
-                  <h2 className="text-xl font-bold text-white">
-                    {category.title}
-                  </h2>
+                  <div className="flex items-center gap-2">
+                    <h2 className="text-xl font-bold text-white">
+                      {category.title}
+                    </h2>
+                    {category.badge && (
+                      <span
+                        className={`text-xs px-2 py-0.5 rounded-full font-medium ${
+                          category.badge === "Start here"
+                            ? "bg-indigo-600/30 text-indigo-300"
+                            : "bg-slate-700 text-slate-400"
+                        }`}
+                      >
+                        {category.badge}
+                      </span>
+                    )}
+                  </div>
                 </div>
                 <p className="text-slate-400 text-sm mb-4">
                   {category.description}
@@ -124,7 +216,7 @@ export default function DocsPage() {
                         href={doc.href}
                         className="text-indigo-400 hover:text-indigo-300 flex items-center gap-2 text-sm"
                       >
-                        <FileText size={16} />
+                        <FileText size={14} />
                         {doc.name}
                       </Link>
                     </li>
