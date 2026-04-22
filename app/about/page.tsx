@@ -4,16 +4,16 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About ReplyBase — Our Mission & Story",
+  title: "About ReplyBase — Why Every Conversation Matters",
   description:
-    "ReplyBase was built to help businesses capture leads and reply instantly with AI. Learn about our mission, story, and the team behind the platform.",
+    "ReplyBase helps businesses capture every lead and reply instantly—so you never miss an opportunity. Discover how our platform turns conversations into customers.",
   alternates: {
     canonical: "/about",
   },
   openGraph: {
-    title: "About ReplyBase — Our Mission & Story",
+    title: "About ReplyBase — Why Every Conversation Matters",
     description:
-      "Learn about ReplyBase — built to help businesses capture leads and reply instantly with AI.",
+      "ReplyBase helps businesses capture every lead and reply instantly—so you never miss an opportunity.",
     url: "https://replybase.co.uk/about",
     type: "website",
   },
@@ -29,31 +29,36 @@ export default function AboutPage() {
             <h1 className="text-4xl md:text-5xl font-extrabold text-white leading-tight tracking-tight">
               About ReplyBase
             </h1>
+
             <p className="mt-4 text-lg md:text-xl text-slate-400">
-              Our mission is to empower businesses with intelligent and
-              intuitive chatbot solutions.
+              <strong className="text-white">ReplyBase</strong> was built to
+              solve a simple problem: businesses lose customers when they don’t
+              reply fast enough.
             </p>
           </header>
-
-          <Card className="bg-slate-800/50 border-slate-700/50">
-            <CardHeader>
-              <CardTitle className="text-2xl font-bold text-white">
-                Our Story
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-4 text-slate-400">
+          <Card className="bg-slate-800/50 border-slate-700/50 py-6">
+            <CardContent className="space-y-4 text-slate-400 text-lg md:text-xl text-justify">
               <p>
-                Founded in 2023, ReplyBase was born out of a passion for
-                artificial intelligence and a desire to simplify customer
-                interactions. We saw a need for a powerful, yet easy-to-use
-                chatbot builder that could be adopted by businesses of all
-                sizes.
+                Today, people expect instant responses. Every missed or delayed
+                reply can mean a lost opportunity. ReplyBase helps fix that by
+                allowing businesses to capture every lead, respond instantly,
+                and manage conversations in one place.
               </p>
               <p>
-                Our team is made up of experienced developers, designers, and AI
-                enthusiasts who are dedicated to creating the best possible
-                chatbot platform. We believe in the power of open-source and are
-                committed to building a strong community around our product.
+                Our platform combines automation with simplicity, making it easy
+                to stay responsive without increasing workload or hiring more
+                staff. No complexity, no hidden fees—just a system designed to
+                help you convert more enquiries into customers.
+              </p>
+              <p>
+                We work with businesses across industries, providing a reliable
+                and scalable solution that grows with you.
+              </p>
+              <p>
+                <strong className="text-white">
+                  Because every conversation matters
+                </strong>
+                —and with ReplyBase, you won’t miss it.
               </p>
             </CardContent>
           </Card>
