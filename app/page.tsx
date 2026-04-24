@@ -105,7 +105,7 @@ const faqSchema = {
       name: "How do I get started with ReplyBase?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Sign up for free in minutes at app.replybase.co.uk — no credit card required. Follow the Quick Start Guide to connect your first channel (Webchat or Telegram) and go live in under 25 minutes.",
+        text: "Sign up for free in minutes at app.replybase.co.uk - no credit card charged until trial ends. Follow the Quick Start Guide to connect your first channel (Webchat or Telegram) and go live in under 25 minutes.",
       },
     },
     {
@@ -202,10 +202,6 @@ export default function LandingPage() {
             <div className="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-slate-400">
               <span className="flex items-center gap-1.5">
                 <span className="text-emerald-400">✓</span> 14-day free trial
-              </span>
-              <span className="flex items-center gap-1.5">
-                <span className="text-emerald-400">✓</span> No credit card
-                required
               </span>
               <span className="flex items-center gap-1.5">
                 <span className="text-emerald-400">✓</span> Setup in under 5
