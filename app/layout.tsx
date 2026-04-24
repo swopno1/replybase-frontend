@@ -96,11 +96,11 @@ export default function RootLayout({
         <Script
           src="https://app.replybase.co.uk/embed/replybase-webchat.js"
           data-base-url="https://app.replybase.co.uk"
-          data-public-key="wpk_0fb79b939aedd3f67786bd147c8a92a4"
+          data-public-key="wpk_7f8171ce4788e60943bd710c26355dff"
           data-title="Chat with us"
           data-primary-color="#4f39f6"
           data-position="right"
-          defer
+          strategy="lazyOnload"
         />
       </body>
     </html>
