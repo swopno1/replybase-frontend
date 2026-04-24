@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Mail } from "lucide-react";
 import { subscribeToNewsletter } from "@/app/actions/replybase-api";
+import { trackEvent } from "@/lib/client-analytics";
 
 export default function NewsletterSubscribe({
   compact = false,
@@ -31,6 +32,11 @@ export default function NewsletterSubscribe({
         setStatus("success");
         setMessage(result.message || "Thanks for subscribing!");
         setEmail("");
+        trackEvent("newsletter_signup", {
+          properties: {
+            location: compact ? "footer" : "default",
+          },
+        });
       } else {
         setStatus("error");
         setMessage(result.error || "Something went wrong. Please try again.");

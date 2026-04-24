@@ -3,7 +3,9 @@
 export type TrackingEventName =
   | "get_started_click"
   | "pricing_viewed"
-  | "page_viewed";
+  | "page_viewed"
+  | "newsletter_signup"
+  | "contact_form_submission";
 
 type OnceScope = "memory" | "session" | "local";
 
@@ -36,7 +38,23 @@ const inMemoryEventKeys = new Set<string>();
 const plausibleGoalMap: Partial<Record<TrackingEventName, string>> = {
   get_started_click: "Get Started Click",
   pricing_viewed: "Pricing Viewed",
+  newsletter_signup: "Newsletter Signup",
+  contact_form_submission: "Contact Form Submission",
 };
+
+export function isProduction() {
+  return process.env.NODE_ENV === "production";
+}
+
+export function isMainDomain() {
+  if (typeof window === "undefined") {
+    return false;
+  }
+  return (
+    window.location.hostname === "replybase.co.uk" ||
+    window.location.hostname === "www.replybase.co.uk"
+  );
+}
 
 function hasWindow() {
   return typeof window !== "undefined";
@@ -99,34 +117,39 @@ export function trackEvent(
   eventName: TrackingEventName,
   options: TrackEventOptions = {},
 ) {
-  if (!hasWindow()) {
+  if (!hasWindow() || !isProduction() || !isMainDomain()) {
     return false;
   }
 
-  const onceKey = options.onceKey;
-  const onceScope = options.onceScope || "memory";
-  if (onceKey && hasBeenTracked(`tracking:${onceKey}`, onceScope)) {
+  try {
+    const onceKey = options.onceKey;
+    const onceScope = options.onceScope || "memory";
+    if (onceKey && hasBeenTracked(`tracking:${onceKey}`, onceScope)) {
+      return false;
+    }
+
+    const properties = cleanProperties({
+      ...options.properties,
+      origin: "marketing",
+      path: window.location.pathname,
+    });
+
+    const plausibleGoalName = plausibleGoalMap[eventName];
+    if (plausibleGoalName && typeof window.plausible === "function") {
+      window.plausible(plausibleGoalName, { props: properties });
+    }
+
+    if (typeof window.clarity === "function") {
+      window.clarity("event", eventName);
+    }
+
+    if (window.posthog?.capture) {
+      window.posthog.capture(eventName, properties);
+    }
+
+    return true;
+  } catch (error) {
+    console.error("Failed to track event:", eventName, error);
     return false;
   }
-
-  const properties = cleanProperties({
-    ...options.properties,
-    origin: "marketing",
-    path: window.location.pathname,
-  });
-
-  const plausibleGoalName = plausibleGoalMap[eventName];
-  if (plausibleGoalName && typeof window.plausible === "function") {
-    window.plausible(plausibleGoalName, { props: properties });
-  }
-
-  if (typeof window.clarity === "function") {
-    window.clarity("event", eventName);
-  }
-
-  if (window.posthog?.capture) {
-    window.posthog.capture(eventName, properties);
-  }
-
-  return true;
 }

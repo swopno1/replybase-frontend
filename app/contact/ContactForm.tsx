@@ -13,6 +13,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Check, Loader2 } from "lucide-react";
+import { trackEvent } from "@/lib/client-analytics";
 
 export default function ContactForm() {
   const [isPending, startTransition] = useTransition();
@@ -38,6 +39,7 @@ export default function ContactForm() {
         if (response.ok) {
           setSuccess(true);
           form.reset();
+          trackEvent("contact_form_submission");
         } else {
           const result = await response.json();
           setError(result.error || "Something went wrong. Please try again.");
