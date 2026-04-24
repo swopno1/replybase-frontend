@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Never Miss Another Lead — Reply Instantly with AI",
     description:
-      "Capture every lead, reply instantly, and manage your conversations—all in one simple platform.",
+      "Reply instantly to every enquiry and turn more messages into paying customers—all in one simple platform.",
     url: "https://replybase.co.uk",
     siteName: "ReplyBase",
     locale: "en_US",
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Never Miss Another Lead — Reply Instantly with AI",
     description:
-      "Capture every lead, reply instantly, and manage your conversations—all in one simple platform.",
+      "Reply instantly to every enquiry and turn more messages into paying customers—all in one simple platform.",
     images: ["/twitter-image.png"],
   },
   icons: {

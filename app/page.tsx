@@ -178,19 +178,18 @@ export default function LandingPage() {
           <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top,var(--tw-gradient-stops))] from-indigo-900/20 via-slate-900 to-slate-900 -z-10 animate-fade-in"></div>
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight tracking-tight drop-shadow-lg motion-safe:animate-fade-in">
-              Never Miss Another Lead — Reply Instantly with{" "}
-              <span className="text-indigo-500">AI</span>
+              Never Miss Another <span className="text-indigo-500">Lead</span>
             </h1>
             <p className="mt-6 text-lg md:text-xl text-slate-400 max-w-3xl mx-auto motion-safe:animate-fade-in">
-              Capture every lead, reply instantly, and manage your
-              conversations—all in one simple platform.
+              Reply instantly to every enquiry and turn more messages into
+              paying customers—all in one simple platform.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
               <Link
                 href="https://app.replybase.co.uk/auth/register?source=hero"
                 className="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-8 py-3 rounded-lg transition-transform duration-300 transform hover:scale-105 flex items-center justify-center gap-2 shadow-lg"
               >
-                Start Free — No Card Needed
+                Start Free
               </Link>
               <Link
                 href="#how-it-works"
