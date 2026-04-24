@@ -1,4 +1,8 @@
+"use client";
+
 import Script from "next/script";
+import { useEffect, useState } from "react";
+import { isMainDomain, isProduction } from "@/lib/client-analytics";
 
 const plausibleDomain =
   process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN || "replybase.co.uk";
@@ -10,6 +14,20 @@ const posthogKey = process.env.NEXT_PUBLIC_POSTHOG_KEY;
 const posthogHost = process.env.NEXT_PUBLIC_POSTHOG_HOST || ""; // "https://app.posthog.com";
 
 export function AnalyticsScripts() {
+  const [shouldRender, setShouldRender] = useState(false);
+
+  useEffect(() => {
+    if (isProduction() && isMainDomain()) {
+      setTimeout(() => {
+        setShouldRender(true);
+      }, 0);
+    }
+  }, []);
+
+  if (!shouldRender) {
+    return null;
+  }
+
   return (
     <>
       <Script
