@@ -349,7 +349,7 @@ export default function LandingPage() {
                   Real-time analytics, team management, and customizable
                   workflows.{" "}
                   <Link
-                    href="/docs/modular-dashboard-guide"
+                    href="/#pricing"
                     className="text-indigo-400 underline hover:text-indigo-300"
                   >
                     Dashboard Guide
@@ -404,7 +404,7 @@ export default function LandingPage() {
                   Connect Your Channels
                 </h3>
                 <p className="text-slate-400 text-center">
-                  Launch Webchat and Telegram notifications in minutes.
+                  Launch Webchat, Facebook Messenger, WhatsApp and Telegram notifications in minutes.
                 </p>
               </div>
               <div className="bg-slate-800 p-6 rounded-2xl shadow-xl border border-slate-700/50 flex flex-col items-center motion-safe:animate-fade-in">
