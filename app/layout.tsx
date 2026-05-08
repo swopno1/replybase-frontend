@@ -93,7 +93,11 @@ export default function RootLayout({
         <CookieConsent />
         <AnalyticsScripts />
 
-        <Script src="http://localhost:3000/embed/replybase-webchat.js" data-site-id="cmows6t1q0001yrig8ytilfyo" strategy="lazyOnload" />
+        <Script
+          src="https://app.replybase.co.uk/embed/replybase-webchat.js"
+          data-public-key="wpk_0e95761a11401db25747a1790c2aadcd"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
