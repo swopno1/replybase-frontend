@@ -133,6 +133,12 @@ export default function NextStepsDoc() {
               href: "/docs/get-started/facebook-setup",
               sub: "Connect your Page",
             },
+            {
+              name: "WhatsApp",
+              Icon: MessageSquare,
+              href: "/docs/whatsapp-delivery",
+              sub: "WhatsApp Business (Beta)",
+            },
           ].map(({ name, Icon, href, sub }) => (
             <Link
               key={name}

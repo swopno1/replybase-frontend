@@ -105,7 +105,7 @@ const faqSchema = {
       name: "How do I get started with ReplyBase?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Sign up for free in minutes at app.replybase.co.uk - no credit card charged until trial ends. Follow the Quick Start Guide to connect your first channel (Webchat or Telegram) and go live in under 25 minutes.",
+        text: "Sign up for free in minutes at app.replybase.co.uk - no credit card charged until trial ends. Follow the Quick Start Guide to connect your first channel (Webchat or Facebook) and go live in under 25 minutes.",
       },
     },
     {
@@ -129,7 +129,7 @@ const faqSchema = {
       name: "What channels does ReplyBase support?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "ReplyBase supports Webchat (embeddable chat widget), Telegram, Facebook Messenger, WhatsApp Business, and website lead capture forms. Free plan includes Webchat and Facebook.",
+        text: "ReplyBase supports Webchat (embeddable chat widget), Facebook Messenger, website lead capture forms, and soon WhatsApp and Telegram. Free plan includes Webchat and Facebook.",
       },
     },
     {
@@ -288,7 +288,7 @@ export default function LandingPage() {
                   Capture enquiries from your website and alert your team in
                   Telegram or email.{" "}
                   <Link
-                    href="/docs/product-roadmap"
+                    href="/docs/roadmap"
                     className="text-indigo-400 underline hover:text-indigo-300"
                   >
                     See roadmap
@@ -369,7 +369,7 @@ export default function LandingPage() {
                   Flexible plans for every stage—Free, Starter, Pro, and
                   Business.{" "}
                   <Link
-                    href="/docs/subscription-features"
+                    href="/docs/features"
                     className="text-indigo-400 underline hover:text-indigo-300"
                   >
                     Compare plans
@@ -404,7 +404,7 @@ export default function LandingPage() {
                   Connect Your Channels
                 </h3>
                 <p className="text-slate-400 text-center">
-                  Launch Webchat, Facebook Messenger, WhatsApp and Telegram notifications in minutes.
+                  Launch Webchat, Facebook Messenger, and website lead capture in minutes. WhatsApp and Telegram coming soon.
                 </p>
               </div>
               <div className="bg-slate-800 p-6 rounded-2xl shadow-xl border border-slate-700/50 flex flex-col items-center motion-safe:animate-fade-in">
@@ -531,7 +531,7 @@ export default function LandingPage() {
             </div>
             <div className="flex flex-wrap justify-center gap-6">
               <Link
-                href="/docs/security-model-application-level"
+                href="/docs/security"
                 className="bg-slate-800 rounded-xl px-6 py-3 text-indigo-400 font-semibold hover:bg-slate-700 transition-colors duration-300"
               >
                 Security Model
@@ -585,7 +585,7 @@ export default function LandingPage() {
                 <p className="text-slate-400">
                   Yes. See our{" "}
                   <Link
-                    href="/docs/security-model-application-level"
+                    href="/docs/security"
                     className="text-indigo-400 underline hover:text-indigo-300"
                   >
                     Security Model
@@ -600,7 +600,7 @@ export default function LandingPage() {
                 <p className="text-slate-400">
                   Yes, you can cancel or change your plan at any time. See{" "}
                   <Link
-                    href="/docs/subscription-features"
+                    href="/docs/features"
                     className="text-indigo-400 underline hover:text-indigo-300"
                   >
                     Subscription Features
@@ -635,9 +635,9 @@ export default function LandingPage() {
                 Simple, Transparent Pricing
               </h2>
               <p className="mt-4 text-slate-400 max-w-3xl mx-auto">
-                Start free, upgrade as you grow. All plans support Telegram,
-                Webchat, and website lead capture with flow-first runtime and
-                optional AI fallback.
+                Start free, upgrade as you grow. All plans support Webchat, Facebook Messenger,
+                and website lead capture with flow-first runtime and
+                optional AI fallback. WhatsApp and Telegram support arriving soon.
               </p>
               <div className="mt-6 inline-flex items-center gap-2 bg-indigo-900/30 border border-indigo-500/50 rounded-full px-6 py-3">
                 <span className="text-indigo-400 font-bold text-lg">

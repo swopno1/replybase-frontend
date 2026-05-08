@@ -107,10 +107,7 @@ export default function AccountSetupDoc() {
           </Link>
         </div>
 
-        <div className="bg-slate-800 border border-slate-700 rounded-lg p-4 mt-5 text-sm text-slate-400">
-          The Apple sign-in button is visible on the login screen but is not yet
-          active.
-        </div>
+
       </section>
 
       {/* Dashboard orientation */}
@@ -148,6 +145,8 @@ export default function AccountSetupDoc() {
               area: "Integrations",
               note: "Connect channels: Webchat, Facebook, WhatsApp, Telegram",
             },
+            { area: "Activity", note: "View recent tenant activity and onboarding milestones" },
+            { area: "Settings", note: "Manage bot configurations, notifications, and profile" },
             { area: "Billing", note: "Manage your plan and subscription" },
           ].map(({ area, note }) => (
             <div
@@ -177,8 +176,8 @@ export default function AccountSetupDoc() {
             { label: "Bots", value: "1 bot" },
             { label: "Automations", value: "200 / month" },
             { label: "AI responses", value: "100 / month" },
-            { label: "Channels", value: "Webchat, Facebook, Website Forms" },
-            { label: "CRM access", value: "Not included" },
+            { label: "Channels", value: "Webchat, Facebook" },
+            { label: "CRM access", value: "Included" },
             { label: "API access", value: "Not included" },
             { label: "Support", value: "Community" },
           ].map(({ label, value }) => (

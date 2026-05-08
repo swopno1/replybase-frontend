@@ -6,7 +6,7 @@ export default function WebchatQaRolloutDoc() {
   return (
     <DocLayout
       title="Webchat QA and Rollout Guide"
-      description="Tenant-facing quality gates and rollout sequence for MVP production webchat deployments"
+      description="Tenant-facing quality gates and rollout sequence for professional production webchat deployments"
     >
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-white mb-4">Objective</h2>

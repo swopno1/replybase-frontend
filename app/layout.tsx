@@ -93,15 +93,7 @@ export default function RootLayout({
         <CookieConsent />
         <AnalyticsScripts />
 
-        <Script
-          src="https://app.replybase.co.uk/embed/replybase-webchat.js"
-          data-base-url="https://app.replybase.co.uk"
-          data-public-key="wpk_7f8171ce4788e60943bd710c26355dff"
-          data-title="Chat with us"
-          data-primary-color="#4f39f6"
-          data-position="right"
-          strategy="lazyOnload"
-        />
+        <Script src="http://localhost:3000/embed/replybase-webchat.js" data-site-id="cmows6t1q0001yrig8ytilfyo" strategy="lazyOnload" />
       </body>
     </html>
   );

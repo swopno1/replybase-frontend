@@ -11,6 +11,19 @@ interface ApiResponse<T> {
 }
 
 /**
+ * Common headers for API requests
+ */
+const getHeaders = () => {
+  const headers: Record<string, string> = {
+    "Content-Type": "application/json",
+  };
+  if (API_SECRET) {
+    headers["Authorization"] = `Bearer ${API_SECRET}`;
+  }
+  return headers;
+};
+
+/**
  * Subscribe an email to the ReplyBase newsletter
  */
 export async function subscribeToNewsletter(
@@ -19,10 +32,7 @@ export async function subscribeToNewsletter(
   try {
     const response = await fetch(`${API_URL}/api/newsletter/subscribe`, {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${API_SECRET}`,
-      },
+      headers: getHeaders(),
       body: JSON.stringify({ email }),
       cache: "no-store",
     });
@@ -62,10 +72,7 @@ export async function unsubscribeFromNewsletter(
   try {
     const response = await fetch(`${API_URL}/api/newsletter/unsubscribe`, {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${API_SECRET}`,
-      },
+      headers: getHeaders(),
       body: JSON.stringify({ email }),
       cache: "no-store",
     });
@@ -102,10 +109,7 @@ export async function requestDataDeletion(
   try {
     const response = await fetch(`${API_URL}/api/data-deletion/request`, {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${API_SECRET}`,
-      },
+      headers: getHeaders(),
       body: JSON.stringify({ email }),
       cache: "no-store",
     });

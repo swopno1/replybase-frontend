@@ -139,11 +139,10 @@ export default function TelegramDeliveryDoc() {
             </p>
           </div>
           <div className="bg-slate-800 border border-slate-700 rounded-lg p-4">
-            <h3 className="text-white font-semibold mb-2">Disconnect</h3>
+            <h3 className="text-white font-semibold mb-2">Reconnect</h3>
             <p className="text-slate-300 text-sm">
-              Click <strong className="text-white">Disconnect</strong> in the
-              integration page to remove the channel. ReplyBase will attempt to
-              deregister the webhook with Telegram automatically.
+              If your webhook connection is lost or your token needs refreshing, click <strong className="text-white">Reconnect</strong> in the
+              integration page. ReplyBase will automatically re-verify the token and re-register the webhook with Telegram.
             </p>
           </div>
         </div>
@@ -205,8 +204,8 @@ export default function TelegramDeliveryDoc() {
             <p className="text-slate-300">
               If you used{" "}
               <code className="bg-slate-700 px-1 rounded">/revoke</code> in
-              BotFather to regenerate the token, disconnect the channel in
-              ReplyBase and reconnect with the new token.
+              BotFather to regenerate the token, use the <strong className="text-white">Reconnect</strong> button in
+              ReplyBase and provide the new token to instantly restore service.
             </p>
           </div>
         </div>

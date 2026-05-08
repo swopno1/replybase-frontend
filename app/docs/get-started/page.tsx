@@ -59,6 +59,12 @@ const steps = [
         Icon: MessageSquare,
         sub: "Connect your Page",
       },
+      {
+        name: "WhatsApp",
+        href: "/docs/whatsapp-delivery",
+        Icon: MessageSquare,
+        sub: "WhatsApp Business (Beta)",
+      },
     ],
     color: "bg-indigo-600",
   },

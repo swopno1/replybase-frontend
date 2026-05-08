@@ -49,12 +49,12 @@ const channels = [
     id: "whatsapp",
     name: "WhatsApp",
     Icon: MessageSquare,
-    tagline: "WhatsApp Business integration — coming soon",
+    tagline: "WhatsApp Business integration — Beta",
     description:
-      "WhatsApp Business Cloud API integration is currently in development. Join the waitlist to be notified when it launches.",
-    requirements: [],
-    href: null,
-    badge: "Coming Soon",
+      "Connect your WhatsApp Business number via Meta Cloud API. Handle customer enquiries on the world's most popular messaging app.",
+    requirements: ["A Meta Developer account", "A WhatsApp Business number"],
+    href: "/docs/whatsapp-delivery",
+    badge: "Beta",
   },
 ];
 

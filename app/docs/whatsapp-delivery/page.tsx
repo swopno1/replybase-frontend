@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import DocLayout from "../_components/DocLayout";
-import { Clock, Bell } from "lucide-react";
+import { MessageSquare, Rocket } from "lucide-react";
 
 export default function WhatsAppDeliveryDoc() {
   return (
@@ -10,25 +10,24 @@ export default function WhatsAppDeliveryDoc() {
       title="WhatsApp"
       description="WhatsApp Business integration for ReplyBase — coming soon"
     >
-      {/* Coming soon banner */}
-      <div className="not-prose bg-linear-to-r from-slate-800 to-slate-800/60 border border-slate-700 rounded-2xl p-8 mb-10 text-center">
+      {/* Beta banner */}
+      <div className="not-prose bg-linear-to-r from-slate-800 to-indigo-900/20 border border-indigo-700/50 rounded-2xl p-8 mb-10 text-center">
         <div className="flex justify-center mb-4">
-          <div className="flex items-center justify-center w-14 h-14 rounded-full bg-slate-700">
-            <Clock size={26} className="text-slate-400" />
+          <div className="flex items-center justify-center w-14 h-14 rounded-full bg-indigo-600/30">
+            <MessageSquare size={26} className="text-indigo-400" />
           </div>
         </div>
-        <h2 className="text-2xl font-bold text-white mb-3">Coming Soon</h2>
+        <h2 className="text-2xl font-bold text-white mb-3">WhatsApp Business (Beta)</h2>
         <p className="text-slate-300 text-sm max-w-lg mx-auto mb-6">
-          WhatsApp Business Cloud API integration is currently in development.
-          When it launches, you will be able to connect your WhatsApp Business
-          number directly to ReplyBase and handle conversations the same way you
-          do with Webchat and Telegram today.
+          WhatsApp Business Cloud API integration is now available in Beta. 
+          Connect your WhatsApp Business number to ReplyBase to handle customer 
+          enquiries with AI-powered automation.
         </p>
         <Link
-          href="/contact"
+          href="https://app.replybase.co.uk/integrations/whatsapp"
           className="inline-flex items-center gap-2 px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg text-sm font-medium transition-colors"
         >
-          <Bell size={16} /> Join the waitlist
+          <Rocket size={16} /> Open WhatsApp Integration
         </Link>
       </div>
 

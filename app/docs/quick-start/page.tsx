@@ -48,10 +48,6 @@ export default function QuickStartDoc() {
         </ul>
         <div className="bg-slate-800 border border-slate-700 rounded-lg p-4 mt-4 text-sm text-slate-300">
           <p>
-            Notes: The login UI currently shows Apple as a placeholder, but it
-            is not active.
-          </p>
-          <p className="mt-2">
             Registration requires first name, last name, email, and a password
             with at least 8 characters.
           </p>
@@ -66,18 +62,30 @@ export default function QuickStartDoc() {
           ReplyBase currently shows four plans in the pricing and billing flow:
         </p>
         <div className="grid grid-cols-2 gap-3 text-sm">
-          <div className="bg-slate-800 border border-slate-700 rounded p-3">
+          <Link
+            href="https://app.replybase.co.uk/settings?tab=billing"
+            className="bg-slate-800 border border-slate-700 rounded p-3 hover:border-indigo-500 transition-colors"
+          >
             Free: GBP0/mo
-          </div>
-          <div className="bg-slate-800 border border-slate-700 rounded p-3">
+          </Link>
+          <Link
+            href="https://app.replybase.co.uk/settings?tab=billing"
+            className="bg-slate-800 border border-slate-700 rounded p-3 hover:border-indigo-500 transition-colors"
+          >
             Starter: GBP29/mo
-          </div>
-          <div className="bg-slate-800 border border-slate-700 rounded p-3">
+          </Link>
+          <Link
+            href="https://app.replybase.co.uk/settings?tab=billing"
+            className="bg-slate-800 border border-slate-700 rounded p-3 hover:border-indigo-500 transition-colors"
+          >
             Pro: GBP89/mo
-          </div>
-          <div className="bg-slate-800 border border-slate-700 rounded p-3">
+          </Link>
+          <Link
+            href="https://app.replybase.co.uk/settings?tab=billing"
+            className="bg-slate-800 border border-slate-700 rounded p-3 hover:border-indigo-500 transition-colors"
+          >
             Business: GBP249/mo
-          </div>
+          </Link>
         </div>
         <p className="text-slate-300 text-sm mt-4">
           Paid plans include a 14-day free trial before standard monthly billing
@@ -102,11 +110,12 @@ export default function QuickStartDoc() {
         </ul>
         <div className="bg-slate-800 border border-slate-700 rounded-lg p-4 mt-4 text-sm text-slate-300">
           <p>
-            Important: Builder access is intentionally launched through
-            ReplyBase.
+            Important: Flow building is integrated directly into the ReplyBase
+            dashboard for a seamless experience.
           </p>
           <p className="mt-2">
-            Subscription status is checked before builder access is granted.
+            An active subscription is required to activate and assign flows to
+            your bots.
           </p>
         </div>
       </section>
@@ -146,30 +155,21 @@ export default function QuickStartDoc() {
           Step 5: Connect Your First Source
         </h2>
         <p className="text-slate-300 mb-4">
-          ReplyBase currently exposes two primary setup paths for active use:
+          ReplyBase currently offers two primary setup paths for active use:
         </p>
         <ul className="space-y-2 text-slate-300 mb-4">
-          <li>Telegram Bot</li>
           <li>Webchat Widget</li>
+          <li>Facebook Page</li>
         </ul>
+        <div className="bg-indigo-900/20 border border-indigo-700/50 p-4 rounded-lg mb-6 text-sm text-slate-300">
+          <p>
+            <strong>Note:</strong> WhatsApp and Telegram integrations are
+            currently in development and will be available soon.
+          </p>
+        </div>
+
         <h3 className="text-xl font-semibold text-white mb-3">
-          Option A: Telegram Bot
-        </h3>
-        <ul className="space-y-2 text-slate-300">
-          <li>Prerequisite: create at least one bot in Bots first.</li>
-          <li>1. Open Telegram Bot from the sidebar.</li>
-          <li>2. Select which ReplyBase bot should power Telegram replies.</li>
-          <li>
-            3. Paste the bot token from BotFather (usually number:secret).
-          </li>
-          <li>4. Optionally set a friendly channel name.</li>
-          <li>5. Click Connect Bot.</li>
-          <li>
-            Keep your token private. ReplyBase stores it encrypted at rest.
-          </li>
-        </ul>
-        <h3 className="text-xl font-semibold text-white mb-3 mt-6">
-          Option B: Webchat Widget
+          Option A: Webchat Widget
         </h3>
         <ul className="space-y-2 text-slate-300">
           <li>1. Open Webchat Widget from the sidebar.</li>
@@ -185,14 +185,31 @@ export default function QuickStartDoc() {
           <li>6. Copy embed snippet into your website.</li>
           <li>7. Use the built-in test harness before going live.</li>
         </ul>
+
+        <h3 className="text-xl font-semibold text-white mb-3 mt-6">
+          Option B: Facebook Page
+        </h3>
+        <ul className="space-y-2 text-slate-300">
+          <li>Prerequisite: create at least one bot in Bots first.</li>
+          <li>1. Open Facebook Pages from the sidebar.</li>
+          <li>2. Click Sign In with Facebook and authorize ReplyBase.</li>
+          <li>3. Select the Page(s) you want to connect from the list.</li>
+          <li>4. Click Connect Page.</li>
+          <li>
+            5. Use the Assign Flow dropdown to select which ReplyBase bot powers
+            this page.
+          </li>
+          <li>6. Click Save.</li>
+        </ul>
+
         <div className="bg-slate-800 border border-slate-700 rounded-lg p-4 mt-4 text-sm text-slate-300">
           <p className="font-semibold text-white mb-1">
-            Recommended setup path
+            Professional Deployment Strategy
           </p>
           <p>
-            For MVP production deployment, start with Telegram or Webchat,
-            validate message flow end-to-end, then expand only after stable
-            weekly performance.
+            For professional production use, we recommend starting with Webchat or Facebook
+            Messenger to validate your core conversation flows before scaling to
+            additional communication channels.
           </p>
         </div>
       </section>
@@ -213,18 +230,19 @@ export default function QuickStartDoc() {
         </ul>
         <div className="bg-slate-800 border border-slate-700 rounded-lg p-4 mt-4 text-sm text-slate-300">
           <p className="font-semibold text-white mb-2">
-            Telegram-specific checks
+            Facebook-specific checks
           </p>
-          <p>1. In Telegram, send /start (or any message) to your bot.</p>
+          <p>1. Open your Facebook Page and send a message as a visitor.</p>
           <p className="mt-1">
-            2. Confirm a reply is returned within a few seconds.
-          </p>
-          <p className="mt-1">
-            3. In ReplyBase, verify webhook status is active in Telegram Bot.
+            2. Confirm the bot replies according to your assigned flow.
           </p>
           <p className="mt-1">
-            4. If no reply appears, check Recent Webhook Activity and reconnect
-            webhook.
+            3. In ReplyBase, verify the conversation appears in the
+            Conversations tab.
+          </p>
+          <p className="mt-1">
+            4. If no reply appears, check the Facebook integration page to
+            ensure your Page is still connected and a flow is assigned.
           </p>
         </div>
       </section>
@@ -239,7 +257,7 @@ export default function QuickStartDoc() {
           </li>
           <li>Bots: bot list and builder launch.</li>
           <li>Flows: flow lifecycle and assignment.</li>
-          <li>Telegram Bot: token setup and webhook logs.</li>
+          <li>Facebook Pages: account connection and flow assignment.</li>
           <li>Webchat Widget: setup, keys, embed, diagnostics.</li>
           <li>Billing: plan state and customer portal.</li>
           <li>Settings: basic account details only right now.</li>
@@ -247,7 +265,7 @@ export default function QuickStartDoc() {
       </section>
 
       <section className="mb-10">
-        <h2 className="text-2xl font-bold text-white mb-4">Known MVP Limits</h2>
+        <h2 className="text-2xl font-bold text-white mb-4">Current Platform Constraints</h2>
         <ul className="space-y-2 text-slate-300">
           <li>
             The Activity page is not backed by a full real event feed yet.
@@ -273,7 +291,7 @@ export default function QuickStartDoc() {
           href="/docs/webchat-progress"
           className="bg-slate-800 hover:bg-slate-700 p-4 rounded-lg border border-slate-700 transition-colors"
         >
-          Webchat Progress
+          Webchat Status
         </Link>
       </div>
     </DocLayout>

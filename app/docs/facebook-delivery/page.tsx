@@ -132,13 +132,10 @@ export default function FacebookDeliveryDoc() {
           </div>
           <div className="bg-slate-800 border border-slate-700 rounded-lg p-4">
             <h3 className="text-white font-semibold mb-2">
-              Reconnect Your Facebook Account
+              Reconnect Your Facebook Account / Fix Connection
             </h3>
             <p className="text-slate-300 text-sm">
-              Click <strong className="text-white">Disconnect</strong> on the
-              integration page to revoke the current OAuth session, then sign in
-              again with Facebook. This is necessary if you need to authorize
-              additional Pages or switch accounts.
+              If your Page access token expires or webhooks become unsubscribed, a <strong className="text-white">Reconnect / Fix</strong> button will appear in the dashboard after running a connection check. Clicking this will attempt to auto-repair webhooks or prompt you to sign in again to refresh your OAuth session.
             </p>
           </div>
         </div>
@@ -211,8 +208,7 @@ export default function FacebookDeliveryDoc() {
             <p className="text-white font-medium mb-1">OAuth token expired</p>
             <p className="text-slate-300">
               Facebook Page access tokens can expire. If messages stop being
-              processed, disconnect and reconnect your Facebook account to
-              refresh the token.
+              processed, use the <strong className="text-white">Check Connection</strong> shield icon in your dashboard. If an issue is found, click the <strong className="text-white">Reconnect / Fix</strong> button to repair it or refresh your OAuth token.
             </p>
           </div>
         </div>

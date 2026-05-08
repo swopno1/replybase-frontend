@@ -243,7 +243,7 @@ export default function CreditsPage() {
                 },
                 {
                   title: "SaaS Product Engineering",
-                  desc: "Full end-to-end SaaS product design, development, and launch — from MVP to production-ready platform.",
+                  desc: "Full end-to-end SaaS product design, development, and launch — from initial concept to professional production-ready platform.",
                 },
                 {
                   title: "Workflow Automation",

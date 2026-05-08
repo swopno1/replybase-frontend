@@ -47,7 +47,8 @@ export default function ModularDashboardDoc() {
                 "Inbox and Conversations: monitor unresolved customer messages",
                 "Contacts and Leads: track customer records and follow-up status",
                 "Bots and Flows: define response behavior and fallback strategy",
-                "Integrations: connect Telegram or Webchat and review diagnostics",
+                "Channels (Facebook, Telegram, Webchat, WhatsApp): connect and manage individual platform integrations",
+                "Activity Log: monitor tenant-wide events and system signals",
                 "Billing: monitor plan usage and upgrade only when needed",
               ].map((item) => (
                 <div

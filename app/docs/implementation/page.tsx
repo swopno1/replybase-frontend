@@ -6,11 +6,11 @@ export default function ImplementationDoc() {
   return (
     <DocLayout
       title="Implementation Summary"
-      description="MVP production summary for tenant users: what works now, what is reliable, and what is still evolving"
+      description="Production summary for tenant users: what works now, what is reliable, and what is still evolving"
     >
       <p className="text-slate-300 mb-8">
         This page is written for workspace owners and team users who want a
-        practical understanding of current MVP production readiness.
+        practical understanding of current professional production readiness.
       </p>
 
       <section className="mb-10">
@@ -50,7 +50,7 @@ export default function ImplementationDoc() {
 
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-white mb-4">
-          Areas Still Evolving In MVP
+          Areas Still Evolving
         </h2>
         <ul className="space-y-2 text-slate-300">
           <li>
@@ -67,7 +67,7 @@ export default function ImplementationDoc() {
 
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-white mb-4">
-          MVP Reliability Snapshot
+          Platform Reliability Snapshot
         </h2>
         <ul className="space-y-2 text-slate-300">
           <li>Vitest suite: 128 passing tests across 9 files.</li>

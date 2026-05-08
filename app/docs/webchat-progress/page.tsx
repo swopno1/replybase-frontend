@@ -5,7 +5,7 @@ import DocLayout from "../_components/DocLayout";
 export default function WebchatProgressDoc() {
   return (
     <DocLayout
-      title="Webchat MVP Production Status"
+      title="Webchat Production Status"
       description="Current production readiness of ReplyBase Webchat for tenant deployment"
     >
       <p className="text-slate-300 mb-8">

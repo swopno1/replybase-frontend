@@ -25,8 +25,10 @@ export default function RoadmapDoc() {
           <li>account registration and sign-in</li>
           <li>tenant-based workspace model</li>
           <li>bot management and secure builder launch</li>
-          <li>Telegram bot connection flow</li>
+          <li>Telegram bot and Facebook Messenger connection flows</li>
+          <li>WhatsApp Business (Beta) integration</li>
           <li>webchat embed setup, diagnostics, and rollout controls</li>
+          <li>real-time activity log and system event stream</li>
           <li>conversations, contacts, and leads views</li>
           <li>billing and Stripe portal flow</li>
           <li>
@@ -41,7 +43,6 @@ export default function RoadmapDoc() {
         </h2>
         <ul className="space-y-2 text-slate-300">
           <li>stabilize Playwright-based webchat E2E coverage</li>
-          <li>Replace placeholder activity data with a real event stream.</li>
           <li>Complete usage accounting and plan-usage visibility.</li>
           <li>
             Improve first-run UX across active sources and lead workflows.

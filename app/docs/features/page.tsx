@@ -87,8 +87,9 @@ export default function FeaturesDoc() {
         <h3 className="text-xl font-semibold text-white mb-3 mt-6">Sources</h3>
         <ul className="space-y-2 text-slate-300">
           <li>Telegram Bot integration</li>
+          <li>Facebook Messenger integration</li>
           <li>Webchat Widget integration</li>
-          <li>Email and contact-form intake are planned adapters</li>
+          <li>WhatsApp Business (Beta)</li>
         </ul>
         <h3 className="text-xl font-semibold text-white mb-3 mt-6">
           Flow Management
@@ -106,7 +107,7 @@ export default function FeaturesDoc() {
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-white mb-4">Current UX Notes</h2>
         <ul className="space-y-2 text-slate-300">
-          <li>Telegram and Webchat have dedicated setup pages.</li>
+          <li>Telegram, Facebook, and Webchat have dedicated setup pages.</li>
           <li>
             Unified inbox language is being standardized across product UI.
           </li>
@@ -147,8 +148,6 @@ export default function FeaturesDoc() {
           What Is Not Fully Mature Yet
         </h2>
         <ul className="space-y-2 text-slate-300">
-          <li>activity history is still placeholder/mock in current UI</li>
-          <li>some usage analytics are still mocked behind API layer</li>
           <li>advanced workspace settings are minimal</li>
           <li>full self-serve team or role management is not present</li>
         </ul>

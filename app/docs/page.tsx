@@ -102,8 +102,8 @@ export default function DocsPage() {
     {
       title: "WhatsApp",
       icon: Phone,
-      description: "WhatsApp Business Cloud API integration — launching soon",
-      badge: "Coming Soon",
+      description: "WhatsApp Business Cloud API integration — now in Beta",
+      badge: "Beta",
       docs: [{ name: "WhatsApp Overview", href: "/docs/whatsapp-delivery" }],
     },
     {
