@@ -1,23 +1,34 @@
-# Agent Instructions: Marketing Site API Integration
+# Marketing Site API Integration Guide
 
-## Context
+## Overview
 
-You are implementing newsletter subscription and data deletion features on the ReplyBase marketing site (https://replybase.co.uk/). The marketing site needs to communicate with the SaaS application's APIs (https://app.replybase.co.uk) using secure API key authentication.
+This document serves as a reference for the API integration between the ReplyBase marketing site (https://replybase.co.uk/) and the SaaS application (https://app.replybase.co.uk). These features are **already implemented** and utilize secure API key authentication to handle newsletter subscriptions and GDPR data deletion requests.
 
 ---
 
-## Your Tasks
+---
 
-### 1. Environment Setup
+## Current Implementation Status
 
-Create or update the `.env.local` file in the marketing site project:
+- [x] **Newsletter Subscription**: Handled via `subscribeToNewsletter` action.
+- [x] **Newsletter Unsubscribe**: Handled via `unsubscribeFromNewsletter` action.
+- [x] **Data Deletion Request**: Handled via `requestDataDeletion` action.
+- [x] **Environment Security**: All calls are routed through Next.js Server Actions.
+
+---
+
+## Setup & Configuration
+
+### 1. Environment Variables
+
+Ensure the following are set in the `.env.local` (local) or deployment platform (production):
 
 ```bash
 REPLYBASE_API_URL=https://app.replybase.co.uk
-REPLYBASE_API_SECRET=<OBTAIN_FROM_SAAS_TEAM>
+REPLYBASE_API_SECRET=your_secret_key
 ```
 
-**Note:** The `REPLYBASE_API_SECRET` must match the `API_SECRET_KEY` set on the SaaS application.
+**Security Note:** The `REPLYBASE_API_SECRET` must match the `API_SECRET_KEY` configured in the SaaS application's environment.
 
 ---
 

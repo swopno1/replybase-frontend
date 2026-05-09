@@ -595,6 +595,15 @@ export default function LandingPage() {
                     <td className="p-4 text-center text-slate-400">25,000</td>
                   </tr>
                   <tr>
+                    <td className="p-4 font-semibold text-white">
+                      Monthly Automations
+                    </td>
+                    <td className="p-4 text-center text-slate-400">200</td>
+                    <td className="p-4 text-center text-slate-400">1,500</td>
+                    <td className="p-4 text-center text-slate-400">10,000</td>
+                    <td className="p-4 text-center text-slate-400">40,000</td>
+                  </tr>
+                  <tr>
                     <td className="p-4 font-semibold text-white">AI Overage</td>
                     <td className="p-4 text-center text-slate-400">Upgrade</td>
                     <td className="p-4 text-center text-slate-400">£12 / 1k</td>
