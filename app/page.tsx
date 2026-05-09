@@ -55,11 +55,10 @@ export default function LandingPage() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight tracking-tight drop-shadow-lg motion-safe:animate-fade-in">
-                Never Miss Another Lead —{" "}
+                Never Miss Another {" "}
                 <span className="text-transparent bg-clip-text bg-linear-to-r from-indigo-400 to-purple-400">
-                  Reply Instantly
-                </span>{" "}
-                with AI
+                  Lead
+                </span>
               </h1>
               <p className="mt-6 text-lg md:text-xl text-slate-300 max-w-2xl mx-auto motion-safe:animate-fade-in">
                 Reply instantly to every enquiry and turn more messages into

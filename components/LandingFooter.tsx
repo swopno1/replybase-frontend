@@ -6,11 +6,11 @@ export default function LandingFooter() {
   return (
     <footer className="bg-slate-900 text-slate-300 border-t border-slate-800">
       <div className="container mx-auto px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-10">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-12 gap-x-8 gap-y-12">
           {/* Brand + Newsletter */}
-          <div className="md:col-span-1 flex flex-col gap-3">
+          <div className="col-span-2 md:col-span-4 lg:col-span-4 flex flex-col gap-5">
             <div>
-              <div className="flex items-center gap-2 mb-2">
+              <div className="flex items-center gap-3 mb-3">
                 <Image
                   src="/image/logo.png"
                   alt="ReplyBase - AI-powered conversation automation platform"
@@ -20,33 +20,32 @@ export default function LandingFooter() {
                 />
                 <span className="font-bold text-xl text-white">ReplyBase</span>
               </div>
-              <p className="text-sm text-slate-400 mb-2">
-                AI-powered conversation automation platform for modern
-                businesses.
+              <p className="text-sm text-slate-400 max-w-[280px] leading-relaxed">
+                AI-powered conversation automation for modern businesses. Turn messages into revenue with ReplyBase.
               </p>
             </div>
             {/* NewsletterSubscribe: compact, integrated */}
-            <div className="bg-slate-800/60 rounded-lg px-3 py-3 border border-slate-700/60">
+            <div className="bg-slate-800/40 rounded-xl px-4 py-4 border border-slate-700/50 max-w-[340px]">
               <NewsletterSubscribe compact />
             </div>
           </div>
 
           {/* Product */}
-          <div>
-            <h4 className="text-white font-semibold mb-4">Product</h4>
-            <ul className="space-y-2 text-sm">
+          <div className="col-span-1 md:col-span-1 lg:col-span-2">
+            <h4 className="text-white font-semibold mb-5 text-sm uppercase tracking-wider">Product</h4>
+            <ul className="space-y-3 text-sm">
               <li>
-                <Link href="/#features" className="hover:text-white">
+                <Link href="/#features" className="hover:text-white transition-colors">
                   Features
                 </Link>
               </li>
               <li>
-                <Link href="/#pricing" className="hover:text-white">
+                <Link href="/#pricing" className="hover:text-white transition-colors">
                   Pricing
                 </Link>
               </li>
               <li>
-                <Link href="/docs" className="hover:text-white">
+                <Link href="/docs" className="hover:text-white transition-colors">
                   Documentation
                 </Link>
               </li>
@@ -54,21 +53,21 @@ export default function LandingFooter() {
           </div>
 
           {/* Company */}
-          <div>
-            <h4 className="text-white font-semibold mb-4">Company</h4>
-            <ul className="space-y-2 text-sm">
+          <div className="col-span-1 md:col-span-1 lg:col-span-2">
+            <h4 className="text-white font-semibold mb-5 text-sm uppercase tracking-wider">Company</h4>
+            <ul className="space-y-3 text-sm">
               <li>
-                <Link href="/about" className="hover:text-white">
+                <Link href="/about" className="hover:text-white transition-colors">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="hover:text-white">
+                <Link href="/blog" className="hover:text-white transition-colors">
                   Blog
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-white">
+                <Link href="/contact" className="hover:text-white transition-colors">
                   Contact
                 </Link>
               </li>
@@ -76,15 +75,15 @@ export default function LandingFooter() {
           </div>
 
           {/* Contact */}
-          <div>
-            <h4 className="text-white font-semibold mb-4">Contact</h4>
-            <ul className="space-y-2 text-sm">
+          <div className="col-span-1 md:col-span-1 lg:col-span-2">
+            <h4 className="text-white font-semibold mb-5 text-sm uppercase tracking-wider">Contact</h4>
+            <ul className="space-y-3 text-sm">
               <li>
                 <a
                   href="mailto:admin@replybase.co.uk"
-                  className="hover:text-white"
+                  className="hover:text-white transition-colors"
                 >
-                  admin@replybase.co.uk
+                  Email Support
                 </a>
               </li>
               <li>
@@ -92,40 +91,30 @@ export default function LandingFooter() {
                   href="https://wa.me/447822033580"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-white"
+                  className="hover:text-white transition-colors"
                 >
-                  WhatsApp: +44 7822 033580
+                  WhatsApp
                 </a>
-              </li>
-              <li>
-                <Link href="/contact" className="hover:text-white">
-                  Contact Form
-                </Link>
               </li>
             </ul>
           </div>
 
           {/* Legal */}
-          <div>
-            <h4 className="text-white font-semibold mb-4">Legal</h4>
-            <ul className="space-y-2 text-sm">
+          <div className="col-span-1 md:col-span-1 lg:col-span-2">
+            <h4 className="text-white font-semibold mb-5 text-sm uppercase tracking-wider">Legal</h4>
+            <ul className="space-y-3 text-sm">
               <li>
-                <Link href="/privacy" className="hover:text-white">
+                <Link href="/privacy" className="hover:text-white transition-colors">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="/cookie-policy" className="hover:text-white">
-                  Cookie Policy
-                </Link>
-              </li>
-              <li>
-                <Link href="/terms" className="hover:text-white">
+                <Link href="/terms" className="hover:text-white transition-colors">
                   Terms of Service
                 </Link>
               </li>
               <li>
-                <Link href="/deletion-status" className="hover:text-white">
+                <Link href="/deletion-status" className="hover:text-white transition-colors">
                   Data Deletion
                 </Link>
               </li>
