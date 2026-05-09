@@ -4,11 +4,10 @@
 The site uses a responsive layout that scales well. The mobile menu is functional.
 
 ## Areas for Improvement
-- **Touch Targets:** Some footer links and pricing table cells may be too small for easy tapping.
-- **Scroll Fatigue:** The homepage is long; section markers or a back-to-top button might improve navigation.
-- **Mobile Navigation:** The mobile menu is a simple list. Could be enhanced with category headings.
-- **Image Optimization:** Ensure logo and visual assets don't cause layout shifts on mobile load.
+- **Touch Targets:** Links in the footer and the "Credits" section are small (below 44x44px).
+- **Mobile Menu:** Simple list implementation. Needs `aria-label` for accessibility.
+- **Pricing on Mobile:** The large table is horizontally scrollable but difficult to compare plans. Recommendation: Switch to a vertical card stack for screens < 768px.
 
 ## Optimization Plan
-1. **Native Feel:** Implement haptic-style feedback for button taps (via CSS/JS).
-2. **CTA Visibility:** Ensure a "Get Started" button is always accessible (perhaps a sticky mobile sub-header).
+1. **Sticky Header:** The header is sticky, which is good for navigation.
+2. **CTA Visibility:** The "Get Started" button is prominent in the mobile menu but could be added as a floating action button on long scroll.

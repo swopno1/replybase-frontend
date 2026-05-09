@@ -1,24 +1,23 @@
 # UI/UX Audit Report - ReplyBase Marketing Site
 
 ## Executive Summary
-The ReplyBase marketing site presents a clean, modern aesthetic using a dark theme (slate/indigo). However, there are significant opportunities to elevate it from "standard SaaS" to "Premium AI-Native Brand."
+The ReplyBase marketing site is a solid foundation, featuring a modern dark-theme aesthetic and high performance (LCP optimized). To reach a "Premium AI SaaS" level, the focus must shift from standard Tailwind implementations to custom design tokens, enhanced social proof, and rigorous accessibility compliance.
 
 ## Visual Perception & Brand Identity
-- **Current State:** Professional but somewhat generic. Relies heavily on standard Tailwind colors (slate-900, indigo-600).
-- **Issue:** The brand identity doesn't fully communicate "Technical Excellence" or "Innovation" at a glance.
-- **Recommendation:** Introduce subtle gradients, noise textures, and glassmorphism to create depth. Transition to custom primary colors beyond default Tailwind palettes.
+- **Current State:** Professional dark theme using Slate and Indigo.
+- **Issue:** Lacks unique "brand identifiers" beyond the logo. High reliance on default Tailwind palettes.
+- **Recommendation:** Introduce custom primary colors and "glassmorphism" effects for cards.
 
 ## UI Consistency
-- **Issue:** Border radii vary between components (e.g., pricing cards vs. buttons).
-- **Issue:** Hardcoded color values (e.g., `text-slate-400`) used instead of theme-level semantic tokens.
-- **Recommendation:** Implement a unified design token system using Tailwind 4 theme variables.
+- **Status:** **IN PROGRESS.**
+- **Findings:** Heading hierarchy is consistent. Spacing (py-12 vs py-20) remains inconsistent across sections. Border radii are mostly standardized via Shadcn/UI but hardcoded in some custom components.
 
 ## User Experience & Navigation
-- **Issue:** The "Get Started Free" CTA in the navbar is prominent, but the transition from landing to signup feels abrupt.
-- **Issue:** Pricing section is a large table which may be overwhelming on initial scan.
-- **Recommendation:** Use progressive disclosure for detailed pricing features.
+- **Issue:** Mobile menu button lacks accessibility attributes.
+- **Issue:** Pricing table is overwhelming on mobile and high-load on desktop.
+- **Recommendation:** Implement a mobile-specific pricing view and reduce repetition of "Risk-Free" messaging.
 
-## Critical Improvements
-1. **CTA Contrast:** Enhance button hover states and shadow depth.
-2. **Reading Hierarchy:** Improve line-height and letter-spacing for better readability in long-form sections.
-3. **Trust Architecture:** Add more prominent social proof or "as seen in" logos.
+## Critical Improvements (Short Term)
+1. **Accessibility:** Add ARIA labels to the mobile menu and newsletter forms.
+2. **Social Proof:** Add a "Trusted By" or "Features" bar below the Hero section.
+3. **Motion:** Add hover transitions to interactive cards.
