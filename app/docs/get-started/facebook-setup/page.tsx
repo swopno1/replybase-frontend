@@ -1,4 +1,14 @@
-"use client";
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Facebook Setup Guide',
+  description: 'Step-by-step guide to connecting your Facebook Page to ReplyBase.',
+  alternates: {
+    canonical: '/docs/get-started/facebook-setup',
+  },
+};
+
+
 
 import Link from "next/link";
 import DocLayout from "../../_components/DocLayout";
@@ -93,7 +103,7 @@ export default function FacebookSetupDoc() {
               2
             </span>
             Click <strong className="text-white">New Bot</strong>, name it (e.g.
-            "Facebook Bot"), and save.
+            &quot;Facebook Bot&quot;), and save.
           </li>
           <li className="flex gap-3">
             <span className="flex items-center justify-center w-6 h-6 rounded-full bg-slate-700 text-xs font-bold shrink-0 mt-0.5">

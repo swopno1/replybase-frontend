@@ -1,4 +1,14 @@
-"use client";
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Account Setup Guide',
+  description: 'How to create and configure your ReplyBase workspace account.',
+  alternates: {
+    canonical: '/docs/get-started/account-setup',
+  },
+};
+
+
 
 import Link from "next/link";
 import DocLayout from "../../_components/DocLayout";

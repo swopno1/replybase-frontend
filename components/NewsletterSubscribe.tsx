@@ -41,7 +41,7 @@ export default function NewsletterSubscribe({
         setStatus("error");
         setMessage(result.error || "Something went wrong. Please try again.");
       }
-    } catch (_error) {
+    } catch {
       setStatus("error");
       setMessage("Failed to subscribe. Please try again later.");
     }

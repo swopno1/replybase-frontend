@@ -1,9 +1,16 @@
-"use client";
-
+import { Metadata } from "next";
 import LandingNavbar from "@/components/LandingNavbar";
 import LandingFooter from "@/components/LandingFooter";
 import { ArrowLeft, Database, Webhook } from "lucide-react";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Onboarding Technical Notes",
+  description: "Technical documentation for ReplyBase onboarding implementation and telemetry.",
+  alternates: {
+    canonical: "/docs/onboarding-implementation",
+  },
+};
 
 export default function OnboardingImplementationDoc() {
   return (

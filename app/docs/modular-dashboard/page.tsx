@@ -1,9 +1,16 @@
-"use client";
-
+import { Metadata } from "next";
 import LandingNavbar from "@/components/LandingNavbar";
 import LandingFooter from "@/components/LandingFooter";
 import { ArrowLeft, LayoutGrid } from "lucide-react";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Workspace Navigation Guide",
+  description: "Learn how to navigate the ReplyBase dashboard, from conversations to billing.",
+  alternates: {
+    canonical: "/docs/modular-dashboard",
+  },
+};
 
 export default function ModularDashboardDoc() {
   return (
