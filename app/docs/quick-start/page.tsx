@@ -1,57 +1,30 @@
-"use client";
-
+import { Metadata } from "next";
 import Link from "next/link";
 import DocLayout from "../_components/DocLayout";
+
+export const metadata: Metadata = {
+  title: "Quick Start Guide",
+  description: "Get up and running with ReplyBase in minutes. Follow this guide for a professional setup.",
+  alternates: {
+    canonical: "/docs/quick-start",
+  },
+};
 
 export default function QuickStartDoc() {
   return (
     <DocLayout
       title="Quick Start Guide"
-      description="Get from account creation to a working ReplyBase inbox source with the current dashboard flow"
+      description="Professional setup journey for ReplyBase workspace owners"
     >
-      <div className="bg-indigo-900/20 border border-indigo-700/50 p-6 rounded-lg mb-8">
-        <p className="text-white font-semibold mb-2">
-          Estimated time: 15 to 25 minutes
-        </p>
-        <p className="text-slate-300 text-sm">
-          This guide follows the product flow that is currently implemented in
-          the ReplyBase SaaS dashboard.
-        </p>
-      </div>
-
-      <section className="mb-10">
-        <h2 className="text-2xl font-bold text-white mb-4">By The End</h2>
-        <ul className="space-y-2 text-slate-300">
-          <li>created your workspace</li>
-          <li>opened the bot builder from ReplyBase</li>
-          <li>connected at least one live source</li>
-          <li>
-            confirmed where conversations, contacts, and leads appear in the
-            dashboard
-          </li>
-        </ul>
-      </section>
-
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-white mb-4">
-          Step 1: Create Your Account
+          Step 1: Workspace Activation
         </h2>
-        <ul className="space-y-2 text-slate-300">
-          <li>1. Visit app.replybase.co.uk.</li>
-          <li>2. Open Sign Up.</li>
-          <li>3. Choose Google sign-in or Email and password registration.</li>
-          <li>
-            4. If you register with email and password, ReplyBase creates a new
-            tenant workspace automatically.
-          </li>
-          <li>5. After sign-in, you land in the main dashboard.</li>
-        </ul>
-        <div className="bg-slate-800 border border-slate-700 rounded-lg p-4 mt-4 text-sm text-slate-300">
-          <p>
-            Registration requires first name, last name, email, and a password
-            with at least 8 characters.
-          </p>
-        </div>
+        <p className="text-slate-300 mb-4">
+          After registration, your workspace is initialized with seed data
+          (contacts, conversations, bots). This allows you to explore the
+          dashboard immediately.
+        </p>
       </section>
 
       <section className="mb-10">

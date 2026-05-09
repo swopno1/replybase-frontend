@@ -1,6 +1,13 @@
-"use client";
-
+import { Metadata } from "next";
 import DocLayout from "../_components/DocLayout";
+
+export const metadata: Metadata = {
+  title: "Subscription Features",
+  description: "Detailed breakdown of ReplyBase plans, bot limits, and feature availability.",
+  alternates: {
+    canonical: "/docs/features",
+  },
+};
 
 const plans = [
   {

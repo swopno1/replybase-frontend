@@ -1,4 +1,14 @@
-"use client";
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Webchat Implementation',
+  description: 'Detailed guide for implementing the ReplyBase webchat widget.',
+  alternates: {
+    canonical: '/docs/webchat-implementation-guide',
+  },
+};
+
+
 
 import DocLayout from "../_components/DocLayout";
 

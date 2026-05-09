@@ -1,4 +1,14 @@
-"use client";
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Next Steps',
+  description: 'What to do after setting up your first ReplyBase chatbot channel.',
+  alternates: {
+    canonical: '/docs/get-started/next-steps',
+  },
+};
+
+
 
 import Link from "next/link";
 import DocLayout from "../../_components/DocLayout";

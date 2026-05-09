@@ -80,7 +80,7 @@ export default function BlogPage() {
               <Link href={`/blog/${id}`} key={id} className="block">
                 <Card className="bg-slate-800/50 border-slate-700/50 hover:border-indigo-500/50 transition-colors duration-300">
                   <CardHeader>
-                    <CardTitle className="text-2xl font-bold text-white">
+                    <CardTitle as="h2" className="text-2xl font-bold text-white">
                       {title}
                     </CardTitle>
                     <CardDescription className="text-slate-400">

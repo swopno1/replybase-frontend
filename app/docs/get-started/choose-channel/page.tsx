@@ -1,4 +1,14 @@
-"use client";
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Choose Your Channel',
+  description: 'How to select the right messaging channel for your business on ReplyBase.',
+  alternates: {
+    canonical: '/docs/get-started/choose-channel',
+  },
+};
+
+
 
 import Link from "next/link";
 import DocLayout from "../../_components/DocLayout";
@@ -222,7 +232,7 @@ export default function ChooseChannelDoc() {
           <ArrowLeft size={16} /> Step 1 — Account Setup
         </Link>
         <span className="text-slate-600 text-sm">
-          Then follow your channel's setup guide above →
+          Then follow your channel&apos;s setup guide above →
         </span>
       </div>
     </DocLayout>

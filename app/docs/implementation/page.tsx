@@ -1,4 +1,14 @@
-"use client";
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Implementation Snapshot',
+  description: 'Technical overview of the ReplyBase platform implementation and architecture.',
+  alternates: {
+    canonical: '/docs/implementation',
+  },
+};
+
+
 
 import DocLayout from "../_components/DocLayout";
 

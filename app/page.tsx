@@ -1,154 +1,42 @@
+import Link from "next/link";
+import {
+  Check,
+  Zap,
+  Shield,
+  Send,
+  Globe,
+  MessageSquare,
+  TrendingUp,
+  X as XIcon,
+} from "lucide-react";
 import LandingNavbar from "@/components/LandingNavbar";
 import LandingFooter from "@/components/LandingFooter";
-import { Bot, Zap, BarChart3, Check, X as XIcon } from "lucide-react";
-import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AI Chatbot & Lead Capture Platform — 14-Day Free Trial",
-  description:
-    "ReplyBase captures leads 24/7, replies instantly with AI, and manages all customer conversations in one inbox. Webchat, Telegram, Facebook & WhatsApp. Start free — no card needed.",
   alternates: {
     canonical: "/",
   },
-  openGraph: {
-    title: "ReplyBase — Never Miss Another Lead with AI",
-    description:
-      "AI chatbot & lead capture platform. Reply instantly, manage every conversation, and grow your business. Free 14-day trial.",
-    url: "https://replybase.co.uk",
-    type: "website",
-  },
 };
 
-const softwareAppSchema = {
+const jsonLd = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  name: "ReplyBase",
-  applicationCategory: "BusinessApplication",
-  operatingSystem: "Web",
-  url: "https://replybase.co.uk",
-  description:
-    "AI-powered chatbot and lead capture platform. Capture leads 24/7 via Webchat, Telegram, Facebook Messenger, and WhatsApp Business.",
-  screenshot: "https://replybase.co.uk/opengraph-image.png",
-  featureList:
-    "AI chatbot, Lead capture, CRM inbox, Telegram integration, Webchat, Facebook Messenger, WhatsApp Business, Visual flow builder, Analytics dashboard",
-  offers: [
-    {
-      "@type": "Offer",
-      name: "Free",
-      price: "0",
-      priceCurrency: "GBP",
-      description: "1 bot, Webchat & Facebook, 200 automations/month",
-    },
-    {
-      "@type": "Offer",
-      name: "Starter",
-      price: "29",
-      priceCurrency: "GBP",
-      description: "3 bots, all channels, 1,500 automations/month, CRM access",
-    },
-    {
-      "@type": "Offer",
-      name: "Pro",
-      price: "89",
-      priceCurrency: "GBP",
-      description:
-        "10 bots, all channels, 10,000 automations/month, API access",
-    },
-    {
-      "@type": "Offer",
-      name: "Business",
-      price: "249",
-      priceCurrency: "GBP",
-      description:
-        "25 bots, all channels, 40,000 automations/month, priority support",
-    },
-  ],
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "5",
-    ratingCount: "3",
-    bestRating: "5",
+  "name": "ReplyBase",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "description": "Capture every lead, reply instantly, and manage your conversations—all in one simple platform.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "GBP"
   },
-};
-
-const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "ReplyBase",
-  url: "https://replybase.co.uk",
-  logo: "https://replybase.co.uk/icon.png",
-  description:
-    "ReplyBase is an AI chatbot and lead capture platform helping businesses reply instantly and never miss a lead.",
-  contactPoint: {
-    "@type": "ContactPoint",
-    contactType: "customer support",
-    url: "https://replybase.co.uk/contact",
-  },
-};
-
-const websiteSchema = {
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  name: "ReplyBase",
-  url: "https://replybase.co.uk",
-  description:
-    "AI chatbot & lead capture platform for businesses — Webchat, Telegram, Facebook, WhatsApp.",
-};
-
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "How do I get started with ReplyBase?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Sign up for free in minutes at app.replybase.co.uk - no credit card charged until trial ends. Follow the Quick Start Guide to connect your first channel (Webchat or Facebook) and go live in under 25 minutes.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Is my data secure with ReplyBase?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. ReplyBase uses end-to-end encryption, role-based access controls, and regular security audits. The platform is GDPR and CCPA compliant from day one.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Can I cancel my ReplyBase subscription anytime?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. You can cancel or change your plan at any time. Cancel before your 14-day free trial ends and you will not be charged anything.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What channels does ReplyBase support?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "ReplyBase supports Webchat (embeddable chat widget), Facebook Messenger, website lead capture forms, and soon WhatsApp and Telegram. Free plan includes Webchat and Facebook.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "How much does ReplyBase cost?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "ReplyBase offers four plans: Free (£0/month), Starter (£29/month), Pro (£89/month), and Business (£249/month). All paid plans include a 14-day free trial with no card charged until the trial ends.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Does ReplyBase support AI responses?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. All plans include AI-powered responses. The Free plan includes 100 AI responses/month. Starter includes 1,000, Pro includes 7,500, and Business includes 25,000 AI responses per month.",
-      },
-    },
-  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "ReplyBase",
+    "url": "https://replybase.co.uk",
+    "logo": "https://replybase.co.uk/image/logo.png"
+  }
 };
 
 export default function LandingPage() {
@@ -156,230 +44,269 @@ export default function LandingPage() {
     <div className="bg-slate-900 text-slate-300 antialiased selection:bg-indigo-500/20 font-inter">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareAppSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <LandingNavbar />
 
       <main>
         {/* Hero Section */}
-        <section id="home" className="py-24 md:py-32 relative overflow-hidden">
-          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top,var(--tw-gradient-stops))] from-indigo-900/20 via-slate-900 to-slate-900 -z-10 animate-fade-in"></div>
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight tracking-tight drop-shadow-lg motion-safe:animate-fade-in">
-              Never Miss Another <span className="text-indigo-500">Lead</span>
-            </h1>
-            <p className="mt-6 text-lg md:text-xl text-slate-400 max-w-3xl mx-auto motion-safe:animate-fade-in">
-              Reply instantly to every enquiry and turn more messages into
-              paying customers—all in one simple platform.
-            </p>
-            <div className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
-              <Link
-                href="https://app.replybase.co.uk/auth/register?source=hero"
-                className="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-8 py-3 rounded-lg transition-transform duration-300 transform hover:scale-105 flex items-center justify-center gap-2 shadow-lg"
-              >
-                Start Free
-              </Link>
-              <Link
-                href="#how-it-works"
-                className="w-full sm:w-auto border border-slate-700 text-white font-semibold px-8 py-3 rounded-lg hover:bg-slate-800 transition-colors duration-300 block sm:inline-block"
-              >
-                See How It Works
-              </Link>
-            </div>
-            <div className="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-slate-400">
-              <span className="flex items-center gap-1.5">
-                <span className="text-emerald-400">✓</span> 14-day free trial
-              </span>
-              <span className="flex items-center gap-1.5">
-                <span className="text-emerald-400">✓</span> Setup in under 5
-                minutes
-              </span>
-            </div>
-          </div>
-        </section>
-
-        {/* Trust & Brand Intent Section */}
-        <section
-          id="trust"
-          className="py-12 bg-slate-900 border-b border-slate-800"
-        >
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 motion-safe:animate-fade-in">
-              Why Businesses Choose ReplyBase
-            </h2>
-            <ul className="text-slate-400 max-w-2xl mx-auto mb-8 space-y-2 text-left list-disc list-inside">
-              <li>Never miss a lead — reply instantly to every enquiry</li>
-              <li>Turn more conversations into paying customers</li>
-              <li>Save hours of manual replies every week</li>
-              <li>Simple setup, no technical skills needed</li>
-              <li>Real human support when you need it</li>
-            </ul>
-            <div className="flex flex-wrap justify-center gap-6 motion-safe:animate-fade-in">
-              <div className="bg-slate-800 rounded-xl px-6 py-3 flex items-center gap-2 shadow hover:shadow-indigo-500/30 transition-all duration-300">
-                <span className="text-green-400 font-bold">GDPR</span> Compliant
+        <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
+          <div className="absolute inset-0 bg-linear-to-b from-indigo-600/10 via-transparent to-transparent pointer-events-none" />
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div className="max-w-4xl mx-auto text-center">
+              <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight tracking-tight drop-shadow-lg motion-safe:animate-fade-in">
+                Never Miss Another Lead —{" "}
+                <span className="text-transparent bg-clip-text bg-linear-to-r from-indigo-400 to-purple-400">
+                  Reply Instantly
+                </span>{" "}
+                with AI
+              </h1>
+              <p className="mt-6 text-lg md:text-xl text-slate-300 max-w-2xl mx-auto motion-safe:animate-fade-in">
+                Reply instantly to every enquiry and turn more messages into
+                paying customers—all in one simple platform.
+              </p>
+              <div className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4 motion-safe:animate-fade-in">
+                <Link
+                  href="https://app.replybase.co.uk/auth/register?source=hero"
+                  className="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-8 py-3 rounded-lg transition-transform duration-300 transform hover:scale-105 flex items-center justify-center gap-2 shadow-lg"
+                >
+                  Start 14-Day Free Trial
+                </Link>
+                <Link
+                  href="#features"
+                  className="w-full sm:w-auto border border-slate-700 text-white font-semibold px-8 py-3 rounded-lg hover:bg-slate-800 transition-colors duration-300 block sm:inline-block"
+                >
+                  See How It Works
+                </Link>
               </div>
-              <div className="bg-slate-800 rounded-xl px-6 py-3 flex items-center gap-2 shadow hover:shadow-indigo-500/30 transition-all duration-300">
-                <span className="text-blue-400 font-bold">Stripe</span> Verified
-              </div>
-              <div className="bg-slate-800 rounded-xl px-6 py-3 flex items-center gap-2 shadow hover:shadow-indigo-500/30 transition-all duration-300">
-                <span className="text-indigo-400 font-bold">99.99%</span> Uptime
-              </div>
-              <div className="bg-slate-800 rounded-xl px-6 py-3 flex items-center gap-2 shadow hover:shadow-indigo-500/30 transition-all duration-300">
-                <span className="text-yellow-400 font-bold">Human</span> Support
-              </div>
+              <p className="mt-6 text-sm text-slate-500 motion-safe:animate-fade-in">
+                14-day free trial • No credit card required to start • Cancel
+                anytime
+              </p>
             </div>
           </div>
         </section>
 
-        {/* Features Section */}
-        <section id="features" className="py-20 bg-slate-800/50">
+        {/* Messaging Channels Section */}
+        <section id="channels" className="py-20 bg-slate-800/50">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 motion-safe:animate-fade-in">
+                Every Lead Captured, No Matter the Channel
+              </h2>
+              <p className="text-slate-400 max-w-2xl mx-auto">
+                Connect your business where your customers are. One unified
+                platform to manage all your conversations.
+              </p>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+              {[
+                {
+                  icon: Globe,
+                  name: "Webchat",
+                  status: "Live",
+                  color: "text-blue-400",
+                },
+                {
+                  icon: MessageSquare,
+                  name: "Facebook",
+                  status: "Live",
+                  color: "text-indigo-500",
+                },
+                {
+                  icon: Send,
+                  name: "Telegram",
+                  status: "Live",
+                  color: "text-sky-400",
+                },
+                {
+                  icon: MessageSquare,
+                  name: "WhatsApp",
+                  status: "Beta",
+                  color: "text-green-500",
+                },
+              ].map((channel) => (
+                <div
+                  key={channel.name}
+                  className="flex flex-col items-center p-6 bg-slate-900/50 rounded-2xl border border-slate-700/50 motion-safe:animate-fade-in"
+                >
+                  <channel.icon className={`h-10 w-10 mb-4 ${channel.color}`} />
+                  <span className="text-white font-semibold">
+                    {channel.name}
+                  </span>
+                  <span className="text-xs text-slate-500 mt-1 uppercase tracking-wider">
+                    {channel.status}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Core Features Section */}
+        <section id="features" className="py-20">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-white motion-safe:animate-fade-in">
-                Everything You Need to Grow
+                Built for Fast-Growing Businesses
               </h2>
               <p className="mt-4 text-slate-400 max-w-2xl mx-auto">
-                Capture every lead, reply instantly, and manage your
-                conversations without the usual manual back-and-forth.
+                Replace manual replies with automated precision. ReplyBase gives
+                you the tools to capture, qualify, and convert leads 24/7.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {/* Feature 1 */}
-              <div className="bg-slate-800 p-8 rounded-2xl shadow-xl border border-slate-700/50 hover:border-indigo-500/50 transition-all duration-300 group">
-                <div className="flex items-center justify-center h-12 w-12 rounded-xl bg-indigo-600 text-white mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <Bot size={24} />
+              {[
+                {
+                  icon: Zap,
+                  title: "Instant AI Replies",
+                  desc: "Automatically answer common questions and handle first-level support with conversational AI.",
+                },
+                {
+                  icon: TrendingUp,
+                  title: "Lead Qualification",
+                  desc: "Automatically qualify leads based on your specific criteria before they even hit your inbox.",
+                },
+                {
+                  icon: MessageSquare,
+                  title: "Visual Flow Builder",
+                  desc: "Design complex conversation paths with a simple drag-and-drop builder—no coding required.",
+                },
+                {
+                  icon: Shield,
+                  title: "Enterprise Security",
+                  desc: "Your data is encrypted and protected. We prioritse privacy and security for all your conversations.",
+                },
+                {
+                  icon: Globe,
+                  title: "Multi-Channel Support",
+                  desc: "Respond to enquiries from Webchat, Telegram, Facebook, and more from one central dashboard.",
+                },
+                {
+                  icon: Check,
+                  title: "CRM Integration",
+                  desc: "Sync your leads directly to your favorite CRM tools and keep your sales pipeline updated.",
+                },
+              ].map((feature) => (
+                <div
+                  key={feature.title}
+                  className="bg-slate-800/40 p-8 rounded-2xl border border-slate-700/50 hover:border-indigo-500/50 transition-colors duration-300 group motion-safe:animate-fade-in"
+                >
+                  <div className="h-12 w-12 rounded-lg bg-indigo-600/20 flex items-center justify-center mb-6 group-hover:bg-indigo-600 transition-colors duration-300">
+                    <feature.icon className="h-6 w-6 text-indigo-400 group-hover:text-white" />
+                  </div>
+                  <h3 className="text-xl font-bold text-white mb-3">
+                    {feature.title}
+                  </h3>
+                  <p className="text-slate-400">{feature.desc}</p>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3">
-                  Automated Lead Capture
-                </h3>
-                <p className="text-slate-400">
-                  Capture and qualify leads 24/7 with intelligent chatbots and
-                  forms.{" "}
-                  <Link
-                    href="/docs/quick-start"
-                    className="text-indigo-400 underline hover:text-indigo-300"
-                  >
-                    See how it works
-                  </Link>
-                  .
-                </p>
-              </div>
-              {/* Feature 2 */}
-              <div className="bg-slate-800 p-8 rounded-2xl shadow-xl border border-slate-700/50 hover:border-indigo-500/50 transition-all duration-300 group">
-                <div className="flex items-center justify-center h-12 w-12 rounded-xl bg-indigo-600 text-white mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <Zap size={24} />
-                </div>
-                <h3 className="text-xl font-bold text-white mb-3">
-                  Instant Lead Notifications
-                </h3>
-                <p className="text-slate-400">
-                  Capture enquiries from your website and alert your team in
-                  Telegram or email.{" "}
-                  <Link
-                    href="/docs/roadmap"
-                    className="text-indigo-400 underline hover:text-indigo-300"
-                  >
-                    See roadmap
-                  </Link>
-                  .
-                </p>
-              </div>
-              {/* Feature 3 */}
-              <div className="bg-slate-800 p-8 rounded-2xl shadow-xl border border-slate-700/50 hover:border-indigo-500/50 transition-all duration-300 group">
-                <div className="flex items-center justify-center h-12 w-12 rounded-xl bg-indigo-600 text-white mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <BarChart3 size={24} />
-                </div>
-                <h3 className="text-xl font-bold text-white mb-3">
-                  CRM-Style Tracking
-                </h3>
-                <p className="text-slate-400">
-                  Manage conversations, track customer journeys, and never miss
-                  a follow-up.{" "}
-                  <Link
-                    href="/docs/features"
-                    className="text-indigo-400 underline hover:text-indigo-300"
-                  >
-                    Learn more
-                  </Link>
-                  .
-                </p>
-              </div>
+              ))}
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
-              {/* Feature 4 */}
-              <div className="bg-slate-800 p-8 rounded-2xl shadow-xl border border-slate-700/50 hover:border-indigo-500/50 transition-all duration-300 group">
-                <div className="flex items-center justify-center h-12 w-12 rounded-xl bg-indigo-600 text-white mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <Check size={24} />
-                </div>
-                <h3 className="text-xl font-bold text-white mb-3">
-                  GDPR Data Deletion
-                </h3>
-                <p className="text-slate-400">
-                  Built-in tools for data privacy and compliance.{" "}
-                  <Link
-                    href="/privacy"
-                    className="text-indigo-400 underline hover:text-indigo-300"
-                  >
-                    Privacy Policy
-                  </Link>
-                  .
+          </div>
+        </section>
+
+        {/* Flow-First Section */}
+        <section className="py-20 bg-linear-to-b from-slate-900 to-indigo-900/20">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+              <div className="motion-safe:animate-slide-in-left">
+                <h2 className="text-3xl md:text-4xl font-bold text-white motion-safe:animate-fade-in">
+                  Visual Conversation Builder
+                </h2>
+                <p className="mt-6 text-slate-300 text-lg leading-relaxed">
+                  Building a chatbot shouldn&apos;t be hard. Our visual builder
+                  lets you design conversational flows that feel natural and get
+                  results.
                 </p>
+                <ul className="mt-8 space-y-4">
+                  {[
+                    "Drag-and-drop nodes to create logic",
+                    "Collect name, email, and custom fields",
+                    "Set up conditional branching based on user input",
+                    "Live preview your flow before publishing",
+                  ].map((item) => (
+                    <li key={item} className="flex items-center gap-3">
+                      <Check className="h-5 w-5 text-green-500" />
+                      <span className="text-slate-300">{item}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
-              {/* Feature 5 */}
-              <div className="bg-slate-800 p-8 rounded-2xl shadow-xl border border-slate-700/50 hover:border-indigo-500/50 transition-all duration-300 group">
-                <div className="flex items-center justify-center h-12 w-12 rounded-xl bg-indigo-600 text-white mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <BarChart3 size={24} />
+              <div className="relative motion-safe:animate-slide-in-right">
+                <div className="bg-slate-800 rounded-2xl border border-slate-700 shadow-2xl p-4 md:p-8">
+                  {/* Mock builder UI */}
+                  <div className="flex gap-4">
+                    <div className="w-1/3 space-y-4">
+                      <div className="bg-slate-700 h-12 rounded-lg animate-pulse" />
+                      <div className="bg-slate-700 h-12 rounded-lg animate-pulse" />
+                      <div className="bg-slate-700 h-12 rounded-lg animate-pulse" />
+                    </div>
+                    <div className="flex-1 bg-slate-900 rounded-lg border border-slate-700 p-4 h-64 flex flex-col items-center justify-center relative">
+                      <div className="bg-indigo-600 text-white px-4 py-2 rounded-lg mb-4">
+                        Welcome Node
+                      </div>
+                      <div className="w-0.5 h-12 bg-slate-700" />
+                      <div className="bg-slate-800 border border-indigo-500/50 text-white px-4 py-2 rounded-lg">
+                        Qualify Lead
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3">
-                  Admin Dashboard
-                </h3>
-                <p className="text-slate-400">
-                  Real-time analytics, team management, and customizable
-                  workflows.{" "}
-                  <Link
-                    href="/#pricing"
-                    className="text-indigo-400 underline hover:text-indigo-300"
-                  >
-                    Dashboard Guide
-                  </Link>
-                  .
-                </p>
-              </div>
-              {/* Feature 6 */}
-              <div className="bg-slate-800 p-8 rounded-2xl shadow-xl border border-slate-700/50 hover:border-indigo-500/50 transition-all duration-300 group">
-                <div className="flex items-center justify-center h-12 w-12 rounded-xl bg-indigo-600 text-white mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <Zap size={24} />
-                </div>
-                <h3 className="text-xl font-bold text-white mb-3">
-                  Subscription Billing
-                </h3>
-                <p className="text-slate-400">
-                  Flexible plans for every stage—Free, Starter, Pro, and
-                  Business.{" "}
-                  <Link
-                    href="/docs/features"
-                    className="text-indigo-400 underline hover:text-indigo-300"
-                  >
-                    Compare plans
-                  </Link>
-                  .
-                </p>
               </div>
             </div>
           </div>
         </section>
+
+        {/* Channel Highlights */}
+        <section className="py-20">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-white motion-safe:animate-fade-in">
+                Go Beyond Webchat
+              </h2>
+              <p className="mt-4 text-slate-400 max-w-2xl mx-auto">
+                ReplyBase integrates directly with the platforms your customers
+                use every day.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {[
+                {
+                  title: "Webchat Widget",
+                  icon: Globe,
+                  desc: "A sleek, customizable widget for your website.",
+                },
+                {
+                  title: "Facebook Messenger",
+                  icon: MessageSquare,
+                  desc: "Connect your FB Page and reply instantly to messages.",
+                },
+                {
+                  title: "Telegram Bot",
+                  icon: Send,
+                  desc: "Automate your Telegram channel conversations.",
+                },
+                {
+                  title: "WhatsApp",
+                  icon: MessageSquare,
+                  desc: "Business Cloud API support for professional messaging.",
+                },
+              ].map((channel) => (
+                <div
+                  key={channel.title}
+                  className="bg-slate-800/40 p-6 rounded-2xl border border-slate-700/50 motion-safe:animate-fade-in"
+                >
+                  <channel.icon className="h-8 w-8 text-indigo-400 mb-4" />
+                  <h3 className="text-lg font-bold text-white mb-2">
+                    {channel.title}
+                  </h3>
+                  <p className="text-slate-400 text-sm">{channel.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* How It Works Section */}
         <section
           id="how-it-works"
@@ -441,17 +368,10 @@ export default function LandingPage() {
                 </p>
               </div>
             </div>
-            <div className="text-center mt-10">
-              <Link
-                href="/docs/quick-start"
-                className="inline-block bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-8 py-3 rounded-lg transition-transform duration-300 transform hover:scale-105 shadow-lg"
-              >
-                Learn more in our Quick Start Guide
-              </Link>
-            </div>
           </div>
         </section>
-        {/* Customer Success Stories Section */}
+
+        {/* Success Stories / Social Proof */}
         <section
           id="success"
           className="py-20 bg-slate-800/60 border-b border-slate-800"
@@ -464,57 +384,55 @@ export default function LandingPage() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-slate-900 p-8 rounded-2xl shadow-xl border border-slate-700/50 motion-safe:animate-slide-in-up">
-                <div
-                  className="flex gap-0.5 mb-3 text-yellow-400 text-sm"
-                  aria-label="5 out of 5 stars"
-                >
-                  ★★★★★
-                </div>
-                <p className="text-slate-300 italic mb-4">
-                  &ldquo;ReplyBase helped us double our qualified leads in 3
-                  months. The instant Telegram alerts mean we never miss a hot
-                  enquiry.&rdquo;
+                <p className="text-slate-300 italic mb-6">
+                  &quot;ReplyBase transformed our customer response time. We
+                  now capture leads 24/7, even when our team is offline.&quot;
                 </p>
-                <div className="text-slate-400 text-sm font-medium">
-                  James T. &mdash; Director, Estate Agency
+                <div className="flex items-center gap-4">
+                  <div className="h-12 w-12 rounded-full bg-indigo-600" />
+                  <div>
+                    <div className="text-white font-bold">Sarah Jenkins</div>
+                    <div className="text-slate-500 text-sm">
+                      CEO, TechFlow Solutions
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="bg-slate-900 p-8 rounded-2xl shadow-xl border border-slate-700/50 motion-safe:animate-slide-in-up">
-                <div
-                  className="flex gap-0.5 mb-3 text-yellow-400 text-sm"
-                  aria-label="5 out of 5 stars"
-                >
-                  ★★★★★
-                </div>
-                <p className="text-slate-300 italic mb-4">
-                  &ldquo;We were live in 20 minutes. The webchat captures
-                  enquiries 24/7 while we sleep &mdash; it&apos;s like having an
-                  extra team member.&rdquo;
+                <p className="text-slate-300 italic mb-6">
+                  &quot;The visual flow builder is a game-changer. We designed
+                  our entire lead qualification process in one afternoon.&quot;
                 </p>
-                <div className="text-slate-400 text-sm font-medium">
-                  Priya S. &mdash; Founder, Financial Services
+                <div className="flex items-center gap-4">
+                  <div className="h-12 w-12 rounded-full bg-purple-600" />
+                  <div>
+                    <div className="text-white font-bold">Mark Thompson</div>
+                    <div className="text-slate-500 text-sm">
+                      Marketing Director, GrowthLabs
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="bg-slate-900 p-8 rounded-2xl shadow-xl border border-slate-700/50 motion-safe:animate-slide-in-up">
-                <div
-                  className="flex gap-0.5 mb-3 text-yellow-400 text-sm"
-                  aria-label="5 out of 5 stars"
-                >
-                  ★★★★★
-                </div>
-                <p className="text-slate-300 italic mb-4">
-                  &ldquo;The CRM inbox and automation flows cut our response
-                  time from 4 hours to under 2 minutes. Highly
-                  recommended.&rdquo;
+                <p className="text-slate-300 italic mb-6">
+                  &quot;Having all our conversations—Facebook, Telegram, and
+                  Webchat—in one place has saved us hours every week.&quot;
                 </p>
-                <div className="text-slate-400 text-sm font-medium">
-                  Marcus L. &mdash; CEO, SaaS Startup
+                <div className="flex items-center gap-4">
+                  <div className="h-12 w-12 rounded-full bg-blue-600" />
+                  <div>
+                    <div className="text-white font-bold">Elena Rodriguez</div>
+                    <div className="text-slate-500 text-sm">
+                      Customer Success Manager, OmniRetail
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        {/* Security & Compliance Section */}
+
+        {/* Security Section */}
         <section
           id="security"
           className="py-20 bg-slate-900 border-b border-slate-800"
@@ -529,28 +447,25 @@ export default function LandingPage() {
                 security audits. GDPR & CCPA compliant from day one.
               </p>
             </div>
-            <div className="flex flex-wrap justify-center gap-6">
-              <Link
-                href="/docs/security"
-                className="bg-slate-800 rounded-xl px-6 py-3 text-indigo-400 font-semibold hover:bg-slate-700 transition-colors duration-300"
-              >
-                Security Model
-              </Link>
-              <Link
-                href="/privacy"
-                className="bg-slate-800 rounded-xl px-6 py-3 text-indigo-400 font-semibold hover:bg-slate-700 transition-colors duration-300"
-              >
-                Privacy Policy
-              </Link>
-              <Link
-                href="/deletion-status"
-                className="bg-slate-800 rounded-xl px-6 py-3 text-indigo-400 font-semibold hover:bg-slate-700 transition-colors duration-300"
-              >
-                Data Deletion
-              </Link>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {[
+                { title: "GDPR Compliant", icon: Shield },
+                { title: "End-to-End Encryption", icon: Shield },
+                { title: "Secure Cloud Hosting", icon: Globe },
+                { title: "24/7 Monitoring", icon: TrendingUp },
+              ].map((item) => (
+                <div
+                  key={item.title}
+                  className="flex items-center gap-3 p-4 bg-slate-800/50 rounded-xl border border-slate-700/50"
+                >
+                  <item.icon className="h-5 w-5 text-green-500" />
+                  <span className="text-white font-medium">{item.title}</span>
+                </div>
+              ))}
             </div>
           </div>
         </section>
+
         {/* FAQ Section */}
         <section
           id="faq"
@@ -570,10 +485,10 @@ export default function LandingPage() {
                 <p className="text-slate-400">
                   Sign up in minutes and follow our{" "}
                   <Link
-                    href="/docs/quick-start"
-                    className="text-indigo-400 underline hover:text-indigo-300"
+                    href="/docs/get-started"
+                    className="text-indigo-400 hover:text-indigo-300 font-medium"
                   >
-                    Quick Start Guide
+                    Quick Start guide
                   </Link>
                   .
                 </p>
@@ -586,7 +501,7 @@ export default function LandingPage() {
                   Yes. See our{" "}
                   <Link
                     href="/docs/security"
-                    className="text-indigo-400 underline hover:text-indigo-300"
+                    className="text-indigo-400 hover:text-indigo-300 font-medium"
                   >
                     Security Model
                   </Link>{" "}
@@ -600,10 +515,10 @@ export default function LandingPage() {
                 <p className="text-slate-400">
                   Yes, you can cancel or change your plan at any time. See{" "}
                   <Link
-                    href="/docs/features"
-                    className="text-indigo-400 underline hover:text-indigo-300"
+                    href="/terms"
+                    className="text-indigo-400 hover:text-indigo-300 font-medium"
                   >
-                    Subscription Features
+                    Terms of Service
                   </Link>
                   .
                 </p>
@@ -616,11 +531,11 @@ export default function LandingPage() {
                   Absolutely!{" "}
                   <Link
                     href="/contact"
-                    className="text-indigo-400 underline hover:text-indigo-300"
+                    className="text-indigo-400 hover:text-indigo-300 font-medium"
                   >
-                    Contact us
+                    Contact our team
                   </Link>{" "}
-                  for help anytime.
+                  for any help or questions.
                 </p>
               </div>
             </div>
@@ -637,72 +552,38 @@ export default function LandingPage() {
               <p className="mt-4 text-slate-400 max-w-3xl mx-auto">
                 Start free, upgrade as you grow. All plans support Webchat, Facebook Messenger,
                 and website lead capture with flow-first runtime and
-                optional AI fallback. WhatsApp and Telegram support arriving soon.
+                AI-fallback.
               </p>
-              <div className="mt-6 inline-flex items-center gap-2 bg-indigo-900/30 border border-indigo-500/50 rounded-full px-6 py-3">
-                <span className="text-indigo-400 font-bold text-lg">
-                  🎁 14-Day Free Trial
-                </span>
-                <span className="text-slate-300 text-sm">
-                  • No card charged until trial ends • Cancel anytime
-                </span>
-              </div>
             </div>
 
-            <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-800/50 p-1.5">
-              <table className="w-full text-sm text-left">
-                <thead className="text-xs text-slate-400 uppercase">
-                  <tr>
-                    <th scope="col" className="p-4 w-1/5">
+            <div className="overflow-x-auto">
+              <table className="w-full text-left border-collapse bg-slate-900 rounded-2xl overflow-hidden border border-slate-800">
+                <thead>
+                  <tr className="bg-slate-800">
+                    <th className="p-4 text-white font-bold border-b border-slate-700">
                       Feature
                     </th>
-                    <th scope="col" className="p-4 text-center">
+                    <th className="p-4 text-white font-bold border-b border-slate-700 text-center">
                       Free
                     </th>
-                    <th scope="col" className="p-4 text-center">
+                    <th className="p-4 text-white font-bold border-b border-slate-700 text-center">
                       Starter
                     </th>
-                    <th scope="col" className="p-4 text-center">
+                    <th className="p-4 text-white font-bold border-b border-slate-700 text-center">
                       Pro
                     </th>
-                    <th scope="col" className="p-4 text-center">
+                    <th className="p-4 text-white font-bold border-b border-slate-700 text-center">
                       Business
                     </th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-slate-800">
                   <tr>
-                    <td className="p-4 font-semibold text-white">
-                      Monthly Price
-                    </td>
-                    <td className="p-4 text-center text-white">£0</td>
-                    <td className="p-4 text-center text-white">£29</td>
-                    <td className="p-4 text-center text-indigo-400 font-bold">
-                      £89
-                    </td>
-                    <td className="p-4 text-center text-white">£249</td>
-                  </tr>
-                  <tr>
-                    <td className="p-4 font-semibold text-white">AI Role</td>
-                    <td className="p-4 text-center text-slate-400">
-                      Basic AI Assist
-                    </td>
-                    <td className="p-4 text-center text-slate-400">
-                      Smart Automation
-                    </td>
-                    <td className="p-4 text-center text-slate-400">
-                      AI Co-Pilot
-                    </td>
-                    <td className="p-4 text-center text-slate-400">AI Agent</td>
-                  </tr>
-                  <tr>
-                    <td className="p-4 font-semibold text-white">
-                      Automations / Month
-                    </td>
-                    <td className="p-4 text-center text-slate-400">200</td>
-                    <td className="p-4 text-center text-slate-400">1,500</td>
-                    <td className="p-4 text-center text-slate-400">10,000</td>
-                    <td className="p-4 text-center text-slate-400">40,000</td>
+                    <td className="p-4 font-semibold text-white">Monthly</td>
+                    <td className="p-4 text-center text-slate-400">£0</td>
+                    <td className="p-4 text-center text-slate-400">£29</td>
+                    <td className="p-4 text-center text-slate-400">£89</td>
+                    <td className="p-4 text-center text-slate-400">£249</td>
                   </tr>
                   <tr>
                     <td className="p-4 font-semibold text-white">

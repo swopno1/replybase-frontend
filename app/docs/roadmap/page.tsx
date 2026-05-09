@@ -1,94 +1,59 @@
-"use client";
-
+import { Metadata } from "next";
 import DocLayout from "../_components/DocLayout";
+
+export const metadata: Metadata = {
+  title: "Product Roadmap",
+  description: "Explore the future of ReplyBase, including upcoming features and channel integrations.",
+  alternates: {
+    canonical: "/docs/roadmap",
+  },
+};
 
 export default function RoadmapDoc() {
   return (
     <DocLayout
       title="Product Roadmap"
-      description="Current product direction summary. Canonical planning lives in replybase-saas/Product_Details."
+      description="The future direction of ReplyBase — what we are building next"
     >
-      <section className="mb-10">
-        <h2 className="text-2xl font-bold text-white mb-4">Current Status</h2>
-        <p className="text-slate-300">
-          ReplyBase is focused on a Unified Business Inbox model: one place to
-          receive and respond to customer messages, with practical automation
-          and lead capture.
-        </p>
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold text-white mb-6">Upcoming Channels</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="bg-slate-800 p-5 rounded-xl border border-slate-700">
+            <h3 className="text-white font-semibold mb-2">WhatsApp Business</h3>
+            <p className="text-slate-400 text-sm">Full support for WhatsApp Business API with automated lead capture and qualification.</p>
+          </div>
+          <div className="bg-slate-800 p-5 rounded-xl border border-slate-700">
+            <h3 className="text-white font-semibold mb-2">Instagram DM</h3>
+            <p className="text-slate-400 text-sm">Automate your Instagram Direct Messages and never miss a social media lead.</p>
+          </div>
+        </div>
       </section>
 
-      <section className="mb-10">
-        <h2 className="text-2xl font-bold text-white mb-4">
-          Live And Usable Today
-        </h2>
-        <ul className="space-y-2 text-slate-300">
-          <li>account registration and sign-in</li>
-          <li>tenant-based workspace model</li>
-          <li>bot management and secure builder launch</li>
-          <li>Telegram bot and Facebook Messenger connection flows</li>
-          <li>WhatsApp Business (Beta) integration</li>
-          <li>webchat embed setup, diagnostics, and rollout controls</li>
-          <li>real-time activity log and system event stream</li>
-          <li>conversations, contacts, and leads views</li>
-          <li>billing and Stripe portal flow</li>
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold text-white mb-6">Enhanced AI Capabilities</h2>
+        <ul className="space-y-4 text-slate-300">
           <li>
-            workspace owner controls for subscription and operational visibility
+            <strong className="text-white block">Multi-Model Support</strong>
+            Choose between different AI models (GPT-4, Claude 3, etc.) to power your chatbot&apos;s personality and intelligence.
+          </li>
+          <li>
+            <strong className="text-white block">Sentiment Analysis</strong>
+            Automatically detect customer mood and escalate negative interactions to human agents.
+          </li>
+          <li>
+            <strong className="text-white block">Knowledge Base Sync</strong>
+            Automatically train your AI on your existing help articles, PDFs, and website content.
           </li>
         </ul>
       </section>
 
-      <section className="mb-10">
-        <h2 className="text-2xl font-bold text-white mb-4">
-          Highest-Value Near-Term Improvements
-        </h2>
-        <ul className="space-y-2 text-slate-300">
-          <li>stabilize Playwright-based webchat E2E coverage</li>
-          <li>Complete usage accounting and plan-usage visibility.</li>
-          <li>
-            Improve first-run UX across active sources and lead workflows.
-          </li>
-          <li>Expand settings into true workspace management.</li>
-        </ul>
-      </section>
-
-      <section className="mb-10">
-        <h2 className="text-2xl font-bold text-white mb-4">
-          Operational Priorities
-        </h2>
-        <ul className="space-y-2 text-slate-300">
-          <li>finalize webchat rollout playbooks and monitoring</li>
-          <li>continue hardening public source endpoints</li>
-          <li>improve onboarding conversion and source health visibility</li>
-          <li>reduce mismatch between dashboard copy and capability</li>
-        </ul>
-      </section>
-
-      <section className="mb-10">
-        <h2 className="text-2xl font-bold text-white mb-4">
-          Longer-Term Opportunities
-        </h2>
-        <ul className="space-y-2 text-slate-300">
-          <li>richer analytics and reporting</li>
-          <li>stronger workspace administration tooling</li>
-          <li>broader source coverage after consistency goals are met</li>
-          <li>better collaboration and role-based workflows</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2 className="text-2xl font-bold text-white mb-4">
-          Roadmap Principle
-        </h2>
-        <p className="text-slate-300">
-          The best next investments for ReplyBase are product consistency,
-          source parity, observability, and deployment reliability before major
-          expansion work.
-        </p>
-        <p className="text-slate-300 mt-3">
-          For canonical planning detail, use replybase-saas/Product_Details and
-          replybase-saas/Product_Details/todo.
-        </p>
-      </section>
+      <div className="bg-indigo-900/20 border border-indigo-700/50 p-6 rounded-lg">
+        <h3 className="text-white font-bold mb-2">Have a feature request?</h3>
+        <p className="text-slate-300 mb-4">We build ReplyBase for you. If there is a feature or integration you need, let us know.</p>
+        <a href="/contact" className="inline-flex items-center gap-2 px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg transition-colors">
+          Submit Feature Request
+        </a>
+      </div>
     </DocLayout>
   );
 }

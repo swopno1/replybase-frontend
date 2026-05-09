@@ -1,5 +1,4 @@
-"use client";
-
+import { Metadata } from "next";
 import Link from "next/link";
 import LandingNavbar from "@/components/LandingNavbar";
 import LandingFooter from "@/components/LandingFooter";
@@ -12,6 +11,14 @@ import {
   Zap,
   Clock,
 } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Get Started Guide",
+  description: "Step-by-step guide to setting up your ReplyBase workspace and connecting your first AI chatbot channel.",
+  alternates: {
+    canonical: "/docs/get-started",
+  },
+};
 
 const steps = [
   {

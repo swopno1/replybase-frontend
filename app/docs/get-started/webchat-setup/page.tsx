@@ -1,4 +1,14 @@
-"use client";
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Webchat Setup Guide',
+  description: 'Step-by-step guide to setting up the webchat widget on your site.',
+  alternates: {
+    canonical: '/docs/get-started/webchat-setup',
+  },
+};
+
+
 
 import Link from "next/link";
 import DocLayout from "../../_components/DocLayout";
@@ -78,7 +88,7 @@ export default function WebchatSetupDoc() {
             <span className="flex items-center justify-center w-6 h-6 rounded-full bg-slate-700 text-xs font-bold shrink-0 mt-0.5">
               3
             </span>
-            Give your bot a name (e.g. "Website Assistant") and save.
+            Give your bot a name (e.g. &quot;Website Assistant&quot;) and save.
           </li>
           <li className="flex gap-3">
             <span className="flex items-center justify-center w-6 h-6 rounded-full bg-slate-700 text-xs font-bold shrink-0 mt-0.5">
@@ -128,7 +138,7 @@ export default function WebchatSetupDoc() {
             <span className="flex items-center justify-center w-6 h-6 rounded-full bg-slate-700 text-xs font-bold shrink-0 mt-0.5">
               4
             </span>
-            Go to your bot's settings page (Bots → select your bot) and set the{" "}
+            Go to your bot&apos;s settings page (Bots → select your bot) and set the{" "}
             <strong className="text-white">Entry Flow</strong> to the flow you
             just created.
           </li>

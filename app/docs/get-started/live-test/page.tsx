@@ -1,4 +1,14 @@
-"use client";
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Live Test Guide',
+  description: 'How to perform a live test of your ReplyBase chatbot connection.',
+  alternates: {
+    canonical: '/docs/get-started/live-test',
+  },
+};
+
+
 
 import Link from "next/link";
 import DocLayout from "../../_components/DocLayout";

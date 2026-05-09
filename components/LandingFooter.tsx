@@ -13,7 +13,7 @@ export default function LandingFooter() {
               <div className="flex items-center gap-2 mb-2">
                 <Image
                   src="/image/logo.png"
-                  alt="ReplyBase Logo"
+                  alt="ReplyBase - AI-powered conversation automation platform"
                   width={32}
                   height={32}
                   className="h-8 w-auto bg-white rounded-full"

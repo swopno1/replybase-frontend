@@ -15,7 +15,7 @@ export default function LandingNavbar() {
         <Link href="/" className="flex items-center gap-3">
           <Image
             src="/image/logo.png"
-            alt="ReplyBase Logo"
+            alt="ReplyBase - AI-powered conversation automation platform" priority={true}
             width={40}
             height={40}
             className="h-10 w-auto bg-white rounded-full"

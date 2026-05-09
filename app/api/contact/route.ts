@@ -1,168 +1,104 @@
-import { NextResponse } from "next/server";
-import { Resend } from "resend";
+import { NextResponse } from 'next/server';
+import { Resend } from 'resend';
 
-// const resend = new Resend(process.env.RESEND_API_KEY);
+// Initialize Resend lazily or handle missing API key to avoid build errors
+const getResend = () => {
+  const apiKey = process.env.RESEND_API_KEY;
+  if (!apiKey && process.env.NODE_ENV === 'production') {
+    console.warn('RESEND_API_KEY is missing in production environment');
+  }
+  return new Resend(apiKey || 're_placeholder');
+};
 
-const REPLYBASE_SITE_URL = "https://replybase.co.uk";
-const REPLYBASE_LOGO_URL = `${REPLYBASE_SITE_URL}/image/logo.png`;
-const REPLYBASE_FROM = "ReplyBase <admin@replybase.co.uk>";
+const REPLYBASE_LOGO_URL = 'https://replybase.co.uk/image/logo.png';
 
-function escapeHtml(value: string) {
-  return value
+function escapeHtml(unsafe: string) {
+  return unsafe
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;")
-    .replace(/\"/g, "&quot;")
-    .replace(/'/g, "&#39;");
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
 }
 
-function formatMessageHtml(value: string) {
-  return escapeHtml(value).replace(/\r?\n/g, "<br />");
-}
-
-function buildContactEmailHtml({
-  name,
-  email,
-  company,
-  message,
-}: {
-  name: string;
-  email: string;
-  company: string;
-  message: string;
-}) {
-  return `
-    <div style="margin:0; padding:32px 16px; background:linear-gradient(180deg, #f4efe7 0%, #ffffff 100%); font-family:Arial, Helvetica, sans-serif; color:#1f2937;">
-      <div style="max-width:640px; margin:0 auto; background:#ffffff; border:1px solid #eadfce; border-radius:24px; overflow:hidden; box-shadow:0 18px 45px rgba(15, 23, 42, 0.08);">
-        <div style="padding:28px 32px; background:linear-gradient(135deg, #0f172a 0%, #1d4ed8 100%); color:#ffffff;">
-          <img src="${REPLYBASE_LOGO_URL}" alt="ReplyBase" width="160" style="display:block; max-width:160px; height:auto; margin:0 0 20px;" />
-          <div style="font-size:12px; letter-spacing:0.12em; text-transform:uppercase; opacity:0.76; margin-bottom:10px;">Message Received</div>
-          <h1 style="margin:0; font-size:28px; line-height:1.25; font-weight:700;">Thanks for contacting ReplyBase, ${escapeHtml(name)}.</h1>
-          <p style="margin:14px 0 0; font-size:15px; line-height:1.7; color:rgba(255,255,255,0.88);">We have received your message and our team is reviewing it now. We will follow up from admin@replybase.co.uk as soon as possible.</p>
-        </div>
-
-        <div style="padding:32px;">
-          <p style="margin:0 0 18px; font-size:15px; line-height:1.75;">Hello ${escapeHtml(name)},</p>
-          <p style="margin:0 0 18px; font-size:15px; line-height:1.75;">Thank you for reaching out to ReplyBase. We appreciate the time you took to share your inquiry. This email confirms that your message has been received successfully.</p>
-          <p style="margin:0 0 24px; font-size:15px; line-height:1.75;">Below is a copy of the information you submitted for your reference.</p>
-
-          <div style="border:1px solid #e5e7eb; border-radius:20px; background:#f8fafc; padding:22px 24px;">
-            <div style="margin:0 0 14px; font-size:13px; letter-spacing:0.08em; text-transform:uppercase; color:#64748b;">Contact Summary</div>
-            <table role="presentation" width="100%" style="border-collapse:collapse; font-size:14px; line-height:1.65;">
-              <tr>
-                <td style="padding:0 0 10px; width:120px; color:#64748b; vertical-align:top;">Name</td>
-                <td style="padding:0 0 10px; color:#0f172a; font-weight:600; vertical-align:top;">${escapeHtml(name)}</td>
-              </tr>
-              <tr>
-                <td style="padding:0 0 10px; width:120px; color:#64748b; vertical-align:top;">Email</td>
-                <td style="padding:0 0 10px; color:#0f172a; font-weight:600; vertical-align:top;">${escapeHtml(email)}</td>
-              </tr>
-              <tr>
-                <td style="padding:0 0 10px; width:120px; color:#64748b; vertical-align:top;">Company</td>
-                <td style="padding:0 0 10px; color:#0f172a; font-weight:600; vertical-align:top;">${escapeHtml(company)}</td>
-              </tr>
-              <tr>
-                <td style="padding:0; width:120px; color:#64748b; vertical-align:top;">Message</td>
-                <td style="padding:0; color:#0f172a; font-weight:600; vertical-align:top;">${formatMessageHtml(message)}</td>
-              </tr>
-            </table>
-          </div>
-
-          <p style="margin:24px 0 0; font-size:15px; line-height:1.75;">If you want to add anything else, simply reply to this email and our team will pick it up directly.</p>
-        </div>
-
-        <div style="padding:24px 32px 32px; border-top:1px solid #e5e7eb; background:#fcfcfd;">
-          <p style="margin:0 0 6px; font-size:15px; font-weight:700; color:#0f172a;">The ReplyBase Team</p>
-          <p style="margin:0 0 6px; font-size:14px; color:#475569;">AI-powered conversations for teams that do not want to miss a lead.</p>
-          <p style="margin:0; font-size:14px; color:#475569;">
-            <a href="mailto:admin@replybase.co.uk" style="color:#1d4ed8; text-decoration:none;">admin@replybase.co.uk</a>
-            &nbsp;|&nbsp;
-            <a href="${REPLYBASE_SITE_URL}" style="color:#1d4ed8; text-decoration:none;">replybase.co.uk</a>
-          </p>
-        </div>
-      </div>
-    </div>
-  `;
-}
-
-function buildContactEmailText({
-  name,
-  email,
-  company,
-  message,
-}: {
-  name: string;
-  email: string;
-  company: string;
-  message: string;
-}) {
-  return [
-    `Hello ${name},`,
-    "",
-    "Thank you for contacting ReplyBase.",
-    "",
-    "We have received your message and our team is reviewing it now. We will follow up from admin@replybase.co.uk as soon as possible.",
-    "",
-    "Here is a copy of the information you submitted:",
-    `Name: ${name}`,
-    `Email: ${email}`,
-    `Company: ${company}`,
-    `Message: ${message}`,
-    "",
-    "If you want to add anything else, simply reply to this email.",
-    "",
-    "The ReplyBase Team",
-    "admin@replybase.co.uk",
-    REPLYBASE_SITE_URL,
-  ].join("\n");
-}
-
-export async function POST(request: Request) {
+export async function POST(req: Request) {
   try {
-    if (!process.env.RESEND_API_KEY) {
-      return new Response("Email disabled", { status: 503 });
-    }
-
-    const resend = new Resend(process.env.RESEND_API_KEY);
-
-    const { name, email, company, message } = await request.json();
-    const normalizedCompany = company?.trim() || "Not provided";
+    const { name, email, company, message } = await req.json();
 
     if (!name || !email || !message) {
       return NextResponse.json(
-        { error: "Name, email, and message are required." },
-        { status: 400 },
+        { error: 'Missing required fields' },
+        { status: 400 }
       );
     }
 
+    const resend = getResend();
+
+    // 1. Send internal notification email
     await resend.emails.send({
-      from: REPLYBASE_FROM,
-      to: email as string,
-      bcc: REPLYBASE_FROM,
-      subject: `We received your message, ${name}`,
-      html: buildContactEmailHtml({
-        name,
-        email,
-        company: normalizedCompany,
-        message,
-      }),
-      text: buildContactEmailText({
-        name,
-        email,
-        company: normalizedCompany,
-        message,
-      }),
+      from: 'ReplyBase Contact <system@vivescript.com>',
+      to: 'admin@replybase.co.uk',
+      subject: `New Contact Form Submission: ${name}`,
+      replyTo: email,
+      html: `
+        <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; color: #1e293b;">
+          <h2 style="color: #4f46e5; border-bottom: 1px solid #e2e8f0; padding-bottom: 10px;">New Contact Form Submission</h2>
+          <p><strong>Name:</strong> ${escapeHtml(name)}</p>
+          <p><strong>Email:</strong> ${escapeHtml(email)}</p>
+          <p><strong>Company:</strong> ${escapeHtml(company || 'Not provided')}</p>
+          <div style="background-color: #f8fafc; padding: 20px; border-radius: 8px; border: 1px solid #e2e8f0; margin-top: 20px;">
+            <p style="margin-top: 0; font-weight: bold; color: #64748b; font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em;">Message:</p>
+            <p style="margin-bottom: 0; white-space: pre-wrap; line-height: 1.5;">${escapeHtml(message)}</p>
+          </div>
+          <p style="margin-top: 30px; font-size: 12px; color: #94a3b8; text-align: center;">
+            Sent from ReplyBase Marketing Site
+          </p>
+        </div>
+      `,
     });
 
-    return NextResponse.json(
-      { message: "Email sent successfully!" },
-      { status: 200 },
-    );
+    // 2. Send auto-reply to the user
+    await resend.emails.send({
+      from: 'ReplyBase <admin@replybase.co.uk>',
+      to: email,
+      subject: 'We received your message — ReplyBase',
+      html: `
+        <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; max-width: 600px; margin: 0 auto; background-color: #ffffff; color: #111827; border: 1px solid #e5e7eb; border-radius: 12px; overflow: hidden;">
+          <div style="padding: 40px;">
+            <img src="${REPLYBASE_LOGO_URL}" alt="ReplyBase Logo" width="160" style="display:block; max-width:160px; height:auto; margin:0 0 20px;" />
+            <h1 style="margin:0; font-size:28px; line-height:1.25; font-weight:700;">Thanks for contacting ReplyBase, ${escapeHtml(name)}.</h1>
+            <p style="margin: 24px 0; font-size: 16px; line-height: 1.6; color: #374151;">
+              We've received your message and our team is already looking into it. We reply to all enquiries within one business day (usually much faster).
+            </p>
+            <div style="margin: 32px 0; padding: 24px; background-color: #f9fafb; border-radius: 8px;">
+              <h2 style="margin:0 0 12px 0; font-size:14px; font-weight:600; text-transform:uppercase; color: #6b7280; letter-spacing: 0.05em;">Your Enquiry</h2>
+              <p style="margin:0; font-size:15px; color: #4b5563; line-height: 1.5; white-space: pre-wrap;">${escapeHtml(message)}</p>
+            </div>
+            <p style="margin: 24px 0; font-size: 16px; line-height: 1.6; color: #374151;">
+              While you wait, feel free to explore our <a href="https://replybase.co.uk/docs" style="color: #4f46e5; text-decoration: none; font-weight: 500;">documentation</a> or sign up for a <a href="https://app.replybase.co.uk/auth/register" style="color: #4f46e5; text-decoration: none; font-weight: 500;">free trial</a>.
+            </p>
+            <hr style="border:0; border-top: 1px solid #e5e7eb; margin: 32px 0;" />
+            <p style="margin:0; font-size:14px; color: #6b7280;">
+              Best regards,<br />
+              <strong>The ReplyBase Team</strong>
+            </p>
+          </div>
+          <div style="background-color: #f9fafb; padding: 24px; text-align: center;">
+            <p style="margin:0; font-size:12px; color: #9ca3af;">
+              &copy; ${new Date().getFullYear()} ReplyBase. All rights reserved.<br />
+              AI-powered conversation automation for modern businesses.
+            </p>
+          </div>
+        </div>
+      `,
+    });
+
+    return NextResponse.json({ success: true });
   } catch (error) {
-    console.error("Error sending email:", error);
+    console.error('Contact form error:', error);
     return NextResponse.json(
-      { error: "Failed to send email." },
-      { status: 500 },
+      { error: 'Failed to send message. Please try again later.' },
+      { status: 500 }
     );
   }
 }
