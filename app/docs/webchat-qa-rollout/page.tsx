@@ -1,4 +1,14 @@
-"use client";
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Webchat QA & Rollout',
+  description: 'Quality assurance and deployment checklist for the webchat integration.',
+  alternates: {
+    canonical: '/docs/webchat-qa-rollout',
+  },
+};
+
+
 
 import DocLayout from "../_components/DocLayout";
 

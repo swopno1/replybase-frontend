@@ -1,5 +1,4 @@
-"use client";
-
+import { Metadata } from "next";
 import Link from "next/link";
 import LandingNavbar from "@/components/LandingNavbar";
 import LandingFooter from "@/components/LandingFooter";
@@ -14,6 +13,14 @@ import {
   MessageSquare,
   Phone,
 } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Documentation",
+  description: "Complete guides for setting up and using ReplyBase — Webchat, Telegram, Facebook Messenger, and more.",
+  alternates: {
+    canonical: "/docs",
+  },
+};
 
 export default function DocsPage() {
   const docCategories = [

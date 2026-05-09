@@ -50,7 +50,7 @@ export const metadata: Metadata = {
         url: "/opengraph-image.png",
         width: 1200,
         height: 630,
-        alt: "ReplyBase — AI Chatbot & Lead Capture Platform",
+        alt: "ReplyBase — AI Chatbot & Lead Capture Platform Interface Overview",
       },
     ],
   },

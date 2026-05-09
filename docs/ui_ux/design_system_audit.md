@@ -1,20 +1,20 @@
 # Design System Audit
 
 ## Typography
-- **Current:** Geist Sans (inherited from layout).
-- **Assessment:** Excellent choice for a modern SaaS.
-- **Improvement:** Better defined font-weight scales for headings.
+- **Current:** Geist Sans.
+- **Assessment:** Excellent choice.
+- **Improvement:** Heading weights are mostly `font-bold`. Consider using `font-extrabold` for H1 and `font-semibold` for H3 to create better contrast.
 
 ## Color System
 - **Current:** Primarily `slate` and `indigo`.
-- **Issue:** High reliance on hardcoded `slate-*` classes.
-- **Recommendation:** Map these to semantic tokens like `--brand-surface`, `--brand-text-muted`.
+- **Issue:** Still uses hardcoded classes (e.g., `bg-slate-900`, `border-slate-800`) in components.
+- **Recommendation:** Transition to semantic tokens in `globals.css` (e.g., `--card-background`, `--border-subtle`) to allow for easier theme adjustments.
 
 ## Spacing & Grid
 - **Current:** Standard Tailwind spacing.
-- **Assessment:** Generally consistent but lacks a "rhythm" in section padding (e.g., some py-12 vs py-20).
-- **Recommendation:** Define standard section spacing tokens (e.g., `section-padding-y`).
+- **Issue:** Inconsistent section padding. Some sections use `py-20`, others `py-12`.
+- **Recommendation:** Standardize on `py-24` for major landing sections and `py-12` for secondary sections.
 
 ## Components
-- **Buttons:** Need more "premium" feel (e.g., subtle borders, internal glows).
-- **Cards:** Border colors (`border-slate-800`) are slightly too harsh in some areas.
+- **Buttons:** Functional but lack "premium" feel. Recommendation: Add subtle inner shadows or a 1px border with a slightly lighter shade than the background.
+- **Cards:** Usage of `bg-slate-800/50` and `border-slate-700` is consistent across the features and pricing sections.

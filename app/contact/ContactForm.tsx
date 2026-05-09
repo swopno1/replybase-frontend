@@ -53,7 +53,7 @@ export default function ContactForm() {
   return (
     <Card className="bg-slate-800/50 border-slate-700/50">
       <CardHeader className="text-center">
-        <CardTitle className="text-3xl font-bold text-white">
+        <CardTitle as="h1" className="text-3xl font-bold text-white">
           Contact Us
         </CardTitle>
         <CardDescription className="text-slate-400">

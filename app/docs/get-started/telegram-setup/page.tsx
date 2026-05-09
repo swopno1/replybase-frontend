@@ -1,4 +1,14 @@
-"use client";
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Telegram Setup Guide',
+  description: 'Step-by-step guide to connecting your Telegram bot to ReplyBase.',
+  alternates: {
+    canonical: '/docs/get-started/telegram-setup',
+  },
+};
+
+
 
 import Link from "next/link";
 import DocLayout from "../../_components/DocLayout";

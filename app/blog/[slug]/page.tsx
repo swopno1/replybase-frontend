@@ -73,7 +73,7 @@ export async function generateMetadata({
         publishedTime: postData.date,
       },
     };
-  } catch (_error) {
+  } catch {
     return {
       title: "Post Not Found",
     };
@@ -101,7 +101,7 @@ export default async function BlogPostPage({
         <LandingNavbar />
         <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
           <div className="text-center">
-            <h1 className="text-2xl font-bold">Post Not Found</h1>
+            <h2 className="text-2xl font-bold">Post Not Found</h2>
             <p className="text-slate-400">
               The post you are looking for does not exist or could not be
               loaded.

@@ -1,4 +1,14 @@
-"use client";
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Tenant Onboarding',
+  description: 'Guide for new users to reach first value quickly with ReplyBase.',
+  alternates: {
+    canonical: '/docs/onboarding',
+  },
+};
+
+
 
 import Link from "next/link";
 import DocLayout from "../_components/DocLayout";
