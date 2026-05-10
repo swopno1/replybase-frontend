@@ -95,8 +95,8 @@ export default function RootLayout({
 
         <Script
           src="https://app.replybase.co.uk/embed/replybase-webchat.js"
-          data-public-key="wpk_0e95761a11401db25747a1790c2aadcd"
-          strategy="afterInteractive"
+          data-site-id="cmox71v1i000514r77qgm4bot"
+          strategy="lazyOnload"
         />
       </body>
     </html>
