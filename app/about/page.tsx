@@ -140,23 +140,6 @@ export default function AboutPage() {
             </div>
           </section>
 
-          {/* CTA */}
-          <div className="bg-slate-800/60 border border-indigo-700/30 rounded-2xl p-8 text-center">
-            <p className="text-slate-400 text-sm mb-1">
-              Need a chatbot, automation system, or SaaS product?
-            </p>
-            <p className="text-white font-bold text-xl mb-5">
-              Work with ViveScript Solutions
-            </p>
-            <a
-              href="https://www.vivescriptsolutions.com/"
-              target="_blank"
-              rel="noopener"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl font-semibold text-sm transition-colors"
-            >
-              Visit vivescriptsolutions.com
-            </a>
-          </div>
         </div>
       </main>
 
