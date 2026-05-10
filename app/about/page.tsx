@@ -50,48 +50,47 @@ export default function AboutPage() {
             </p>
           </section>
 
-          {/* History / Engineering */}
+          {/* Platform */}
           <section className="mb-12">
             <h2 className="text-2xl font-bold text-white mb-6">
-              Engineering & Development
+              The Platform
             </h2>
             <p className="text-slate-300 leading-relaxed mb-4">
               ReplyBase was engineered from the ground up to be modular,
-              fast, and easy to deploy. Our platform handles everything from
-              complex webchat architecture and backend engineering to UX
-              design and deployment infrastructure.
+              fast, and easy to deploy. From intelligent webchat widgets to
+              multi-channel automation, every component is built for
+              performance and reliability at scale.
             </p>
-            <p className="text-slate-400 leading-relaxed">
-              ReplyBase — including the chatbot engine, multi-channel delivery
-              layer, flow builder, AI response system, and this marketing site —
-              was designed and developed by ViveScript Solutions as the
-              contracted development agency. ReplyBase is owned and operated
-              independently.
+            <p className="text-slate-300 leading-relaxed">
+              Our platform brings together AI-powered responses, a visual
+              flow builder, multi-channel delivery, and a built-in CRM —
+              everything your team needs to capture, qualify, and convert
+              leads automatically.
             </p>
           </section>
 
-          {/* Services */}
+          {/* Capabilities */}
           <section className="mb-12">
             <h2 className="text-2xl font-bold text-white mb-6">
-              What ViveScript Solutions Builds
+              What ReplyBase Does
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {[
                 {
-                  title: "AI Chatbot Development",
-                  desc: "Custom conversational AI and chatbot platforms for any channel — web, Telegram, Facebook Messenger, WhatsApp, and more.",
+                  title: "AI Conversation Automation",
+                  desc: "Intelligent, context-aware AI responses that engage leads and answer customer questions around the clock.",
                 },
                 {
-                  title: "SaaS Product Engineering",
-                  desc: "Full end-to-end SaaS product design, development, and launch — from initial concept to professional production-ready platform.",
+                  title: "Multi-Channel Messaging",
+                  desc: "Connect with customers on Webchat, Telegram, Facebook Messenger, WhatsApp — all from a single unified inbox.",
                 },
                 {
-                  title: "Workflow Automation",
-                  desc: "Business process automation using AI models, integration platforms, and custom-built automation pipelines.",
+                  title: "Visual Flow Builder",
+                  desc: "Design custom conversation flows with an intuitive drag-and-drop builder — no coding required.",
                 },
                 {
-                  title: "Google Workspace Automation",
-                  desc: "Productivity and automation solutions built on top of Google Workspace — Sheets, Docs, Gmail, and Drive.",
+                  title: "Built-in CRM & Lead Capture",
+                  desc: "Automatically capture, qualify, and organise leads from every conversation across every channel.",
                 },
               ].map(({ title, desc }) => (
                 <div
@@ -109,6 +108,31 @@ export default function AboutPage() {
             </div>
           </section>
 
+          {/* Why ReplyBase */}
+          <section className="mb-12">
+            <h2 className="text-2xl font-bold text-white mb-6">
+              Why Businesses Choose ReplyBase
+            </h2>
+            <ul className="space-y-3 text-slate-300 leading-relaxed">
+              <li className="flex items-start gap-3">
+                <span className="mt-1.5 h-2 w-2 rounded-full bg-indigo-500 shrink-0" />
+                <span><strong className="text-white">Never miss a lead.</strong> AI responds instantly, 24/7 — even when your team is offline.</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="mt-1.5 h-2 w-2 rounded-full bg-indigo-500 shrink-0" />
+                <span><strong className="text-white">One platform, every channel.</strong> Manage Webchat, Telegram, Messenger, and WhatsApp in one place.</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="mt-1.5 h-2 w-2 rounded-full bg-indigo-500 shrink-0" />
+                <span><strong className="text-white">Easy to set up.</strong> Go live in minutes with pre-built templates and a no-code flow builder.</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="mt-1.5 h-2 w-2 rounded-full bg-indigo-500 shrink-0" />
+                <span><strong className="text-white">Built for growth.</strong> Scales from a single-person business to large enterprise teams without missing a beat.</span>
+              </li>
+            </ul>
+          </section>
+
           {/* FAQ — AEO signals */}
           <section className="mb-12">
             <h2 className="text-2xl font-bold text-white mb-6">
@@ -117,16 +141,20 @@ export default function AboutPage() {
             <div className="space-y-5">
               {[
                 {
-                  q: "Who built ReplyBase?",
-                  a: "ReplyBase was designed and developed by ViveScript Solutions, the development agency engaged to engineer the platform. The agency built the full stack — chatbot engine, flow builder, multi-channel integrations (Webchat, Telegram, Facebook Messenger, WhatsApp), CRM, and the marketing site. ReplyBase is owned and operated independently of ViveScript Solutions.",
+                  q: "What is ReplyBase?",
+                  a: "ReplyBase is an AI-powered conversation automation platform that helps businesses capture leads, answer customer questions, and automate support across Webchat, Telegram, Facebook Messenger, and WhatsApp.",
                 },
                 {
-                  q: "Can ViveScript Solutions build a chatbot for my business?",
-                  a: "Yes. ViveScript Solutions builds custom AI chatbots and conversation automation platforms for businesses of all sizes. Visit vivescriptsolutions.com to learn more or get in touch.",
+                  q: "How does ReplyBase use AI?",
+                  a: "ReplyBase uses advanced AI models to understand customer messages and generate context-aware responses. The AI works alongside structured conversation flows so you always stay in control of the customer experience.",
                 },
                 {
-                  q: "Does ViveScript Solutions take on SaaS product projects?",
-                  a: "Yes. ViveScript Solutions specialises in building SaaS products from scratch — architecture, development, design, and deployment. Their work on ReplyBase is an example of the type of product they can engineer for clients.",
+                  q: "What channels does ReplyBase support?",
+                  a: "ReplyBase supports Webchat, Telegram, Facebook Messenger, and WhatsApp — with more channels on the roadmap. All conversations are managed from a single unified dashboard.",
+                },
+                {
+                  q: "Do I need technical skills to use ReplyBase?",
+                  a: "No. ReplyBase includes a visual, no-code flow builder and pre-built templates so you can design and deploy conversation automations without any programming knowledge.",
                 },
               ].map(({ q, a }) => (
                 <div
