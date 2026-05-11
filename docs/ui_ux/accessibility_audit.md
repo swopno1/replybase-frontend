@@ -12,7 +12,10 @@
 - **Focus States:** Basic browser defaults are active. Recommendation: Implement custom `ring-indigo-500` focus states for all buttons and inputs.
 - **ARIA Labels:**
   - **Issue:** The mobile menu toggle in `LandingNavbar.tsx` lacks `aria-label`, `aria-expanded`, and `aria-controls` attributes.
-  - **Issue:** Newsletter subscription inputs in `NewsletterSubscribe.tsx` lack associated `<label>` tags or `aria-label`. The "Subscribe" button needs a more descriptive label when in "loading" state (e.g., "Subscribing...").
+    - *Required:* `aria-label="Toggle menu"`, `aria-expanded={isOpen}`, `aria-controls="mobile-menu"`.
+  - **Issue:** Newsletter subscription inputs in `NewsletterSubscribe.tsx` lack associated `<label>` tags or `aria-label`.
+    - *Required:* `aria-label="Email address for newsletter"` on the input.
+    - *Required:* The "Subscribe" button needs a more descriptive label when in "loading" state (e.g., "Subscribing...").
 - **Navigation:** Skip-to-content link is currently missing and should be added for keyboard users to bypass the navbar.
 
 ## Forms & Inputs

@@ -24,3 +24,4 @@ The ReplyBase marketing site is a solid foundation, featuring a modern dark-them
 2. **Social Proof:** Add a "Trusted By" or "Features" bar below the Hero section.
 3. **Motion:** Add hover transitions to interactive cards and staggered entry animations for features.
 4. **Visual Trust:** Upgrade mockups from CSS boxes to high-fidelity product representations.
+   - *Target:* Replace the animated CSS divs in the "Visual Conversation Builder" section with a high-fidelity SVG or Image mockup of the actual dashboard.

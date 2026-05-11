@@ -10,7 +10,8 @@ The site uses a responsive layout that scales well. The mobile menu is functiona
   - **UX:** The menu covers content abruptly. A staggered fade-in for links would feel more premium.
 - **Pricing on Mobile:**
   - **Issue:** The large table is horizontally scrollable but difficult to compare plans because the first column (features) disappears on scroll.
-  - **Recommendation:** Switch to a vertical card stack for screens < 768px.
+  - **UX Friction:** Users lose track of which feature they are looking at while scrolling right to see the Business plan.
+  - **Recommendation:** Switch to a vertical card stack for screens < 768px. Implement a "Compare All" toggle that reveals the full table if needed, but default to cards.
 - **Hero Section:** On small devices, the "No credit card required" subtext is quite small. Consider increasing contrast.
 
 ## Optimization Plan
