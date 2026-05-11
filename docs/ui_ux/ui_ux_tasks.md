@@ -11,3 +11,6 @@
 | UX-007 | PENDING | HIGH | Abstract mockups | Increase Trust | High-fidelity Dashboard Preview component |
 | UX-008 | PENDING | MEDIUM | Mobile pricing table | Improve Mobile UX | Responsive Pricing Card component |
 | UX-009 | PENDING | MEDIUM | Brand identity | Premium Positioning | Define and implement "Signature Glow" visual style |
+| UX-010 | PENDING | HIGH | Decision fatigue on pricing | Increase conversion | Redesign pricing section with visual hierarchy and highlights |
+| UX-011 | PENDING | MEDIUM | Mobile menu feels abrupt | Improve mobile UX | Staggered fade-in for mobile menu links |
+| UX-012 | PENDING | LOW | Missing keyboard navigation | Accessibility | Add skip-to-content link |
