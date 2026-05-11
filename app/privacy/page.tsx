@@ -420,8 +420,8 @@ export default function PrivacyPage() {
                   admin@replybase.co.uk
                 </a>
                 <br />
-                <strong>Address:</strong> ReplyBase, operated by ViveScript
-                Solutions LLC
+                <strong>Address:</strong> ReplyBase
+
               </p>
             </div>
           </section>

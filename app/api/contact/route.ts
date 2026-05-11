@@ -36,7 +36,7 @@ export async function POST(req: Request) {
 
     // 1. Send internal notification email
     await resend.emails.send({
-      from: 'ReplyBase Contact <system@vivescript.com>',
+      from: 'ReplyBase Contact <system@replybase.co.uk>',
       to: 'admin@replybase.co.uk',
       subject: `New Contact Form Submission: ${name}`,
       replyTo: email,

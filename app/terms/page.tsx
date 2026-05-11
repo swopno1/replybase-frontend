@@ -354,8 +354,8 @@ export default function TermsPage() {
                   admin@replybase.co.uk
                 </a>
                 <br />
-                <strong>Company:</strong> ReplyBase, operated by ViveScript
-                Solutions LLC
+                <strong>Company:</strong> ReplyBase
+
               </p>
             </div>
           </section>
