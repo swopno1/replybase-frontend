@@ -14,3 +14,6 @@
 | UX-010 | PENDING | HIGH | Decision fatigue on pricing | Increase conversion | Redesign pricing section with visual hierarchy and highlights |
 | UX-011 | PENDING | MEDIUM | Mobile menu feels abrupt | Improve mobile UX | Staggered fade-in for mobile menu links |
 | UX-012 | PENDING | LOW | Missing keyboard navigation | Accessibility | Add skip-to-content link |
+| UX-013 | PENDING | HIGH | Mobile pricing is unreadable | Vertical card stack for pricing on mobile | Vertical Pricing Card component |
+| UX-014 | PENDING | MEDIUM | Abstract pulse animations | AI-native motion identity | Draw-path animations for node connections |
+| UX-015 | PENDING | HIGH | Missing screen reader feedback | ARIA live regions for forms | Implement aria-live on Newsletter status |

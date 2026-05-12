@@ -16,3 +16,7 @@
 ## Guidelines
 - **Performance:** All current animations are GPU-friendly (opacity, transform).
 - **Accessibility:** Continued use of `motion-safe` prefix is mandatory to respect user preferences. Avoid any motion that exceeds 200ms for navigation elements.
+
+## Feb 2024 Inspection Notes
+- **Identified Opportunity:** The "Visual Builder" mockups on the homepage currently use `animate-pulse`. This should be replaced with more "intelligent" motion (e.g., node connections appearing via drawing path animations) to feel more "AI-native."
+- **Hover States:** Unified card hover interactions (`hover:shadow-indigo-500/10`) are needed across the board.

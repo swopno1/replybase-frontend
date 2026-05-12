@@ -18,6 +18,10 @@
     - *Required:* The "Subscribe" button needs a more descriptive label when in "loading" state (e.g., "Subscribing...").
 - **Navigation:** Skip-to-content link is currently missing and should be added for keyboard users to bypass the navbar.
 
+## Feb 2024 Additions
+- **ARIA Verification:** Confirmed that `LandingNavbar.tsx` needs `aria-expanded` and `aria-label` for the mobile toggle.
+- **Form Feedback:** The `NewsletterSubscribe` component needs `aria-live="polite"` on the status message to inform screen reader users of success/error states.
+
 ## Forms & Inputs
 - **Contact Form:** Needs better error state accessibility (e.g., `aria-invalid`, `aria-describedby` for error messages).
 - **Newsletter:** Ensure the success/error message is announced by screen readers using `role="alert"` or `aria-live="polite"`.
