@@ -14,3 +14,6 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 | T008 | MEDIUM | PENDING | MOBILE | Unusable mobile pricing | Conversion friction | Implement vertical card stack for pricing on mobile |
 | T009 | HIGH | PENDING | CONVERSION | Pricing Table Overwhelm | Decision fatigue | Design and propose a simplified pricing section with popular-plan highlight |
 | T010 | MEDIUM | PENDING | MOTION | Basic navigation transitions | Low perceived quality | Implement staggered entry animations for mobile menu links |
+| T011 | HIGH | PENDING | UI/UX | Missing ARIA attributes in Navbar/Newsletter | Accessibility failure | Implement aria-label and aria-expanded |
+| T012 | MEDIUM | PENDING | MOBILE | Staggered mobile menu entry | Poor mobile UX | Implement staggered Framer Motion transitions for mobile links |
+| T013 | HIGH | PENDING | BRAND | Missing "Signature Glow" identity | Generic brand perception | Implement linear-gradient glow effects on Pro card and Hero CTA |

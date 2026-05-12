@@ -25,3 +25,11 @@ The ReplyBase marketing site is a solid foundation, featuring a modern dark-them
 3. **Motion:** Add hover transitions to interactive cards and staggered entry animations for features.
 4. **Visual Trust:** Upgrade mockups from CSS boxes to high-fidelity product representations.
    - *Target:* Replace the animated CSS divs in the "Visual Conversation Builder" section with a high-fidelity SVG or Image mockup of the actual dashboard.
+
+## Daily Inspection - February 2024
+- **Focus:** Accessibility and Mobile Conversion.
+- **Findings:**
+    - Mobile pricing table remains a significant friction point for conversion.
+    - Missing `aria-label` on the mobile menu button in `LandingNavbar.tsx`.
+    - `NewsletterSubscribe.tsx` requires `aria-label` on inputs and better screen reader feedback (`aria-live`).
+- **Strategic Update:** Transitioning from "Inspection" to "Actionable Proposals" for major components (Pricing & Mockups).

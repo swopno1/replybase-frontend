@@ -18,3 +18,5 @@ The site uses a responsive layout that scales well. The mobile menu is functiona
 1. **Sticky Header:** The header is sticky, which is good for navigation. Ensure the blur effect doesn't cause lag on lower-end mobile devices.
 2. **CTA Visibility:** The "Get Started" button is prominent in the mobile menu. Consider a "sticky footer" CTA for mobile users once they scroll past the Hero.
 3. **Ergonomics:** Ensure all buttons have at least 12px of spacing between them to prevent accidental taps.
+4. **Motion Refinement:** The mobile menu should implement a staggered entry for its links to improve perceived performance and quality.
+5. **Vertical Pricing:** Priority task to replace the horizontal table with a vertical card stack on mobile to reduce decision fatigue.
