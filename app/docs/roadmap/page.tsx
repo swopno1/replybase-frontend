@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { ArrowUpRight, Clock, CheckCircle2, Star, Calendar } from "lucide-react";
-import Callout from "./_components/Callout";
+import Callout from "../_components/Callout";
 
 export const metadata: Metadata = {
   title: "Product Roadmap",
