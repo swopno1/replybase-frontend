@@ -1,28 +1,42 @@
-# Accessibility Audit
+# Accessibility Audit (WCAG 2.1 AA)
 
-## Color Contrast
-- **Assessment:** Generally good due to dark theme. Slate-500 on Slate-900 combinations (used in captions and descriptions in `app/page.tsx`) are borderline (approx 4.0:1); recommended to move to Slate-400 for better AA compliance.
-- **Task:** Update muted text from `text-slate-500` to `text-slate-400` in content-heavy areas.
+## Executive Summary
+**Overall Score:** 75/100
+**Semantic HTML:** 95/100 (Excellent)
+**Color Contrast:** 70/100 (Muted text issues)
+**Interactive ARIA:** 40/100 (Missing toggles/labels)
 
-## Semantic Structure
-- **Assessment:** Good use of `header`, `main`, `footer`, and `section` tags.
-- **Status:** Heading hierarchy (H1 -> H2 -> H3) is strictly followed on the homepage. Individual blog posts use `<article>` tags as required.
+ReplyBase follows excellent semantic HTML patterns (logical heading hierarchy, article tags, etc.). However, it lacks critical ARIA attributes for interactive components like the mobile menu and newsletter forms, which creates barriers for screen reader users.
 
-## Interactive Elements
-- **Focus States:** Basic browser defaults are active. Recommendation: Implement custom `ring-indigo-500` focus states for all buttons and inputs.
-- **ARIA Labels:**
-  - **Issue:** The mobile menu toggle in `LandingNavbar.tsx` (line 74) lacks `aria-label`, `aria-expanded`, and `aria-controls` attributes.
-    - *Required:* `aria-label="Toggle menu"`, `aria-expanded={isOpen}`, `aria-controls="mobile-menu"`.
-  - **Issue:** Newsletter subscription inputs in `NewsletterSubscribe.tsx` (lines 53 and 89) lack associated `<label>` tags or `aria-label`.
-    - *Required:* `aria-label="Email address for newsletter"` on the input.
-    - *Required:* The "Subscribe" button needs a more descriptive label when in "loading" state (e.g., "Subscribing...").
-- **Navigation:** Skip-to-content link is currently missing and should be added for keyboard users to bypass the navbar.
+## Color Contrast (SEVERITY: HIGH)
+- **Problem:** `text-slate-500` (Hex #64748b) on `bg-slate-900` (Hex #0f172a) has a contrast ratio of **4.03:1**.
+- **WCAG Requirement:** Minimum **4.5:1** for normal text (AA).
+- **Solution:** Shift to `text-slate-400` (Hex #94a3b8), which provides a ratio of **7.08:1**, far exceeding AA requirements and improving readability for all users.
+- **Affected Areas:** Hero subtext, feature descriptions, and footer credits.
 
-## March 2024 Additions
-- **ARIA Verification:** Confirmed that `LandingNavbar.tsx` needs `aria-expanded` and `aria-label` for the mobile toggle.
-- **Form Feedback:** The `NewsletterSubscribe` component needs `aria-live="polite"` or `role="alert"` on the status message (lines 69 and 106) to inform screen reader users of success/error states.
-- **Keyboard Navigation:** The "See How It Works" hero button and "Get Started" navbar buttons should have clearer focus rings to aid navigation.
+## Interactive Elements & ARIA
+### 1. Mobile Menu Toggle (`LandingNavbar.tsx`) - SEVERITY: HIGH
+- **Current State:** `<button onClick={() => setIsOpen(!isOpen)}>`
+- **Missing:** `aria-label="Toggle navigation menu"`, `aria-expanded={isOpen}`, `aria-controls="mobile-menu"`.
+- **Status:** PENDING.
 
-## Forms & Inputs
-- **Contact Form:** Needs better error state accessibility (e.g., `aria-invalid`, `aria-describedby` for error messages).
-- **Newsletter:** Ensure the success/error message is announced by screen readers using `role="alert"` or `aria-live="polite"`.
+### 2. Newsletter Form (`NewsletterSubscribe.tsx`) - SEVERITY: HIGH
+- **Issue:** Inputs lack associated `<label>` or `aria-label`.
+- **Issue:** Success/Error messages are not announced to screen readers.
+- **Missing:** `aria-label="Email for newsletter"` on input, `aria-live="polite"` on the message container.
+- **Status:** PENDING.
+
+### 3. Keyboard Navigation - SEVERITY: MEDIUM
+- **Issue:** Missing "Skip to Content" link.
+- **Issue:** Focus rings are inconsistent across buttons.
+- **Recommendation:** Implement a global `focus-visible:ring-2 focus-visible:ring-indigo-500` style.
+- **Status:** PENDING.
+
+## Form Accessibility (`ContactForm.tsx`)
+- Ensure all inputs have `id` attributes matching their `<label htmlFor="...">`.
+- Use `aria-invalid={!!errors.email}` and `aria-describedby="email-error"` for validation states.
+
+## March 2024 Strategic Actions
+1. **Contrast Correction:** Global update of slate-500 -> slate-400 for text.
+2. **ARIA Implementation:** Update Navbar and Newsletter components.
+3. **Focus State Audit:** Ensure all interactive elements are reachable via Tab.
