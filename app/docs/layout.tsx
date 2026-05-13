@@ -1,4 +1,7 @@
 import type { Metadata } from "next";
+import LandingNavbar from "@/components/LandingNavbar";
+import LandingFooter from "@/components/LandingFooter";
+import DocsContentWrapper from "./_components/DocsContentWrapper";
 
 export const metadata: Metadata = {
   title: {
@@ -24,5 +27,13 @@ export default function DocsLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return children;
+  return (
+    <div className="bg-slate-900 text-slate-300 min-h-screen font-inter selection:bg-indigo-500/20 flex flex-col">
+      <LandingNavbar />
+      <DocsContentWrapper>
+        {children}
+      </DocsContentWrapper>
+      <LandingFooter />
+    </div>
+  );
 }

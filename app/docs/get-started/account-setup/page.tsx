@@ -1,242 +1,110 @@
-import { Metadata } from 'next';
+import { Metadata } from "next";
+import Link from "next/link";
+import { 
+  UserPlus, 
+  CheckCircle2, 
+  ArrowRight, 
+  Layout, 
+  ShieldCheck,
+  Mail,
+  Zap
+} from "lucide-react";
+import Callout from "../../_components/Callout";
 
 export const metadata: Metadata = {
-  title: 'Account Setup Guide',
-  description: 'How to create and configure your ReplyBase workspace account.',
-  alternates: {
-    canonical: '/docs/get-started/account-setup',
-  },
+  title: "Account Setup Guide",
+  description: "Learn how to create and configure your ReplyBase workspace.",
 };
 
-
-
-import Link from "next/link";
-import DocLayout from "../../_components/DocLayout";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
-
-export default function AccountSetupDoc() {
+export default function AccountSetupPage() {
   return (
-    <DocLayout
-      title="Step 1 — Create Your Account"
-      description="Register at app.replybase.co.uk and get your workspace ready in under two minutes"
-    >
-      {/* Step indicator */}
-      <div className="flex items-center gap-3 mb-8 bg-slate-800 border border-slate-700 rounded-xl p-4 not-prose">
-        <div className="flex items-center justify-center w-8 h-8 rounded-full bg-indigo-600 text-white font-bold text-sm shrink-0">
-          1
-        </div>
-        <div>
-          <div className="text-white font-semibold text-sm">
-            Part of: Get Started Guide
+    <div className="max-w-4xl">
+      <div className="mb-10">
+        <div className="flex items-center gap-3 mb-4">
+          <div className="flex items-center justify-center h-12 w-12 rounded-xl bg-indigo-600">
+            <UserPlus size={24} className="text-white" />
           </div>
-          <div className="text-slate-400 text-xs">Step 1 of 5 · ~2 minutes</div>
+          <h1 className="text-4xl font-bold text-white tracking-tight">Create Your Account</h1>
         </div>
-        <Link
-          href="/docs/get-started"
-          className="ml-auto text-indigo-400 hover:text-indigo-300 text-xs"
+        <p className="text-lg text-slate-400 leading-relaxed">
+          Get started with ReplyBase by creating your workspace. It takes less than two minutes and gives you immediate access to all core features.
+        </p>
+      </div>
+
+      <h2 className="text-2xl font-bold text-white mb-6">Registration Options</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+        <div className="bg-slate-800/40 p-6 rounded-2xl border border-slate-700">
+          <div className="flex items-center gap-3 mb-4">
+            <div className="flex items-center justify-center h-10 w-10 rounded-lg bg-white/10">
+              <img src="https://www.google.com/favicon.ico" alt="Google" className="w-5 h-5" />
+            </div>
+            <h3 className="font-bold text-white">Google Auth</h3>
+          </div>
+          <p className="text-slate-400 text-sm mb-4">Fastest way to get started. No passwords to remember.</p>
+          <ul className="text-xs text-slate-500 space-y-2">
+            <li className="flex items-center gap-2"><CheckCircle2 size={12} className="text-emerald-500" /> One-click login</li>
+            <li className="flex items-center gap-2"><CheckCircle2 size={12} className="text-emerald-500" /> Instant workspace creation</li>
+          </ul>
+        </div>
+        <div className="bg-slate-800/40 p-6 rounded-2xl border border-slate-700">
+          <div className="flex items-center gap-3 mb-4">
+            <div className="flex items-center justify-center h-10 w-10 rounded-lg bg-indigo-600/10 text-indigo-400">
+              <Mail size={20} />
+            </div>
+            <h3 className="font-bold text-white">Email & Password</h3>
+          </div>
+          <p className="text-slate-400 text-sm mb-4">Standard registration for those who prefer email logins.</p>
+          <ul className="text-xs text-slate-500 space-y-2">
+            <li className="flex items-center gap-2"><CheckCircle2 size={12} className="text-emerald-500" /> Secure password auth</li>
+            <li className="flex items-center gap-2"><CheckCircle2 size={12} className="text-emerald-500" /> Team email support</li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="not-prose mb-16">
+        <Link 
+          href="https://app.replybase.co.uk/auth/register"
+          className="inline-flex items-center gap-2 px-8 py-3 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl font-bold transition-all shadow-lg shadow-indigo-600/20"
         >
-          View all steps
+          Go to Registration <ArrowRight size={18} />
         </Link>
       </div>
 
-      {/* What you'll do */}
-      <section className="mb-10">
-        <h2 className="text-2xl font-bold text-white mb-4">What You Will Do</h2>
-        <ul className="space-y-2 text-slate-300">
-          <li className="flex items-start gap-2">
-            <CheckCircle2 size={16} className="text-indigo-400 mt-1 shrink-0" />
-            Register a new account at app.replybase.co.uk
-          </li>
-          <li className="flex items-start gap-2">
-            <CheckCircle2 size={16} className="text-indigo-400 mt-1 shrink-0" />
-            Your tenant workspace is created automatically on registration
-          </li>
-          <li className="flex items-start gap-2">
-            <CheckCircle2 size={16} className="text-indigo-400 mt-1 shrink-0" />
-            Land in the dashboard and orient yourself
-          </li>
-        </ul>
-      </section>
+      <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+        <Layout size={24} className="text-indigo-400" />
+        Workspace Overview
+      </h2>
+      <p className="text-slate-400 mb-8 leading-relaxed">
+        Once you've registered, you'll land in your personal dashboard. Here's a quick tour of the key areas you'll be using:
+      </p>
 
-      {/* Register */}
-      <section className="mb-10">
-        <h2 className="text-2xl font-bold text-white mb-4">
-          1. Register Your Account
-        </h2>
-        <p className="text-slate-400 text-sm mb-5">
-          You can register with your{" "}
-          <strong className="text-white">Google account</strong> (one click, no
-          form to fill) or with{" "}
-          <strong className="text-white">email and password</strong>. Both
-          methods create a workspace automatically.
-        </p>
-
-        <div className="not-prose grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
-          <div className="bg-slate-800 border border-indigo-700/50 rounded-xl p-4">
-            <p className="text-white font-semibold text-sm mb-1">
-              Option A — Google
-            </p>
-            <p className="text-slate-400 text-xs mb-3">
-              Fastest — no form required
-            </p>
-            <ol className="space-y-1.5 text-slate-300 text-xs">
-              <li>1. Open the register page.</li>
-              <li>
-                2. Click{" "}
-                <strong className="text-white">Continue with Google</strong>.
-              </li>
-              <li>3. Select your Google account.</li>
-              <li>4. You land in the dashboard — workspace is ready.</li>
-            </ol>
-          </div>
-          <div className="bg-slate-800 border border-slate-700 rounded-xl p-4">
-            <p className="text-white font-semibold text-sm mb-1">
-              Option B — Email &amp; Password
-            </p>
-            <p className="text-slate-400 text-xs mb-3">Fill in a short form</p>
-            <ol className="space-y-1.5 text-slate-300 text-xs">
-              <li>1. Open the register page.</li>
-              <li>
-                2. Enter First Name, Last Name, Email, and a Password (min. 8
-                characters).
-              </li>
-              <li>
-                3. Click <strong className="text-white">Create Account</strong>.
-              </li>
-              <li>4. You land in the dashboard — workspace is ready.</li>
-            </ol>
-          </div>
-        </div>
-
-        <div className="not-prose">
-          <Link
-            href="https://app.replybase.co.uk/auth/register"
-            className="inline-flex items-center gap-2 px-5 py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg text-sm font-medium transition-colors"
-          >
-            Open Registration Page
-          </Link>
-        </div>
-
-
-      </section>
-
-      {/* Dashboard orientation */}
-      <section className="mb-10">
-        <h2 className="text-2xl font-bold text-white mb-4">
-          2. Orient Yourself in the Dashboard
-        </h2>
-        <p className="text-slate-300 mb-4">
-          After logging in you land on the main dashboard. The left sidebar
-          gives you access to every area:
-        </p>
-        <div className="space-y-2">
-          {[
-            {
-              area: "Conversations",
-              note: "All incoming messages from every connected channel",
-            },
-            {
-              area: "Contacts",
-              note: "People who have messaged you, with identity and history",
-            },
-            {
-              area: "Leads",
-              note: "Contacts captured through your conversation flows",
-            },
-            {
-              area: "Bots",
-              note: "Your AI agents — create and manage bots here",
-            },
-            {
-              area: "Flows",
-              note: "Conversation flow editor for structured automation",
-            },
-            {
-              area: "Integrations",
-              note: "Connect channels: Webchat, Facebook, WhatsApp, Telegram",
-            },
-            { area: "Activity", note: "View recent tenant activity and onboarding milestones" },
-            { area: "Settings", note: "Manage bot configurations, notifications, and profile" },
-            { area: "Billing", note: "Manage your plan and subscription" },
-          ].map(({ area, note }) => (
-            <div
-              key={area}
-              className="flex items-start gap-3 bg-slate-800 border border-slate-700 rounded-lg p-3 text-sm"
-            >
-              <span className="text-indigo-400 font-semibold w-28 shrink-0">
-                {area}
-              </span>
-              <span className="text-slate-400">{note}</span>
+      <div className="space-y-4">
+        {[
+          { title: "Conversations", desc: "The central hub for all incoming customer messages." },
+          { title: "Flows", desc: "Where you build the logic and automated paths for your bots." },
+          { title: "Integrations", desc: "Connect your WhatsApp, Telegram, and Facebook channels." },
+          { title: "Knowledge Base", desc: "Upload docs to train your AI on your specific business data." }
+        ].map((item) => (
+          <div key={item.title} className="bg-slate-800/20 border border-slate-700/50 p-5 rounded-xl flex gap-4">
+            <div className="mt-1 h-2 w-2 rounded-full bg-indigo-500 shrink-0" />
+            <div>
+              <h4 className="font-bold text-white text-sm mb-1">{item.title}</h4>
+              <p className="text-slate-400 text-xs">{item.desc}</p>
             </div>
-          ))}
-        </div>
-      </section>
+          </div>
+        ))}
+      </div>
 
-      {/* Choose a plan */}
-      <section className="mb-10">
-        <h2 className="text-2xl font-bold text-white mb-4">
-          3. Your Starting Plan
-        </h2>
-        <p className="text-slate-300 mb-4">
-          New accounts start on the{" "}
-          <strong className="text-white">Free plan</strong>, which includes:
-        </p>
-        <div className="space-y-2 mb-5">
-          {[
-            { label: "Bots", value: "1 bot" },
-            { label: "Automations", value: "200 / month" },
-            { label: "AI responses", value: "100 / month" },
-            { label: "Channels", value: "Webchat, Facebook" },
-            { label: "CRM access", value: "Included" },
-            { label: "API access", value: "Not included" },
-            { label: "Support", value: "Community" },
-          ].map(({ label, value }) => (
-            <div
-              key={label}
-              className="flex items-center justify-between bg-slate-800 border border-slate-700 rounded-lg px-4 py-2.5 text-sm"
-            >
-              <span className="text-slate-400">{label}</span>
-              <span className="text-slate-300 font-medium">{value}</span>
-            </div>
-          ))}
-        </div>
-        <div className="bg-slate-800 border border-slate-700 rounded-lg p-4 text-sm text-slate-300 mb-4">
-          <p className="text-white font-medium mb-1">
-            Free plan — pick one channel
-          </p>
-          <p>
-            Free users can connect{" "}
-            <strong className="text-white">one channel</strong> — either Webchat
-            or Facebook Messenger. Telegram and WhatsApp require a paid plan
-            (Starter £29/mo or higher).
-          </p>
-        </div>
-        <p className="text-slate-300 text-sm">
-          Upgrade at any time from{" "}
-          <Link
-            href="https://app.replybase.co.uk/pricing"
-            className="text-indigo-400 hover:text-indigo-300"
-          >
-            Billing &gt; Plans
-          </Link>
-          . Paid plans include a 14-day free trial — no card charged until the
-          trial ends.
-        </p>
-      </section>
+      <Callout type="info" title="Security First">
+        ReplyBase uses enterprise-grade encryption (AES-256) for all stored credentials and message history. Your data is isolated in your own tenant database.
+      </Callout>
 
-      {/* Next step */}
-      <div className="not-prose bg-indigo-900/20 border border-indigo-700/50 rounded-xl p-6">
-        <p className="text-white font-semibold mb-1">Account created?</p>
-        <p className="text-slate-400 text-sm mb-4">
-          Next, choose which channel you want to set up first.
-        </p>
-        <Link
-          href="/docs/get-started/choose-channel"
-          className="inline-flex items-center gap-2 px-5 py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg text-sm font-medium transition-colors"
-        >
-          Step 2 — Choose Your Channel <ArrowRight size={16} />
+      <div className="mt-16 pt-8 border-t border-slate-800 flex justify-between">
+        <span className="text-slate-500 text-sm">Step 1 of 4</span>
+        <Link href="/docs/get-started/choose-channel" className="flex items-center gap-2 text-indigo-400 hover:text-indigo-300 font-bold transition-colors">
+          Step 2: Choose Your Channel <ArrowRight size={18} />
         </Link>
       </div>
-    </DocLayout>
+    </div>
   );
 }

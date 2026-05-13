@@ -14,10 +14,8 @@ export const metadata: Metadata = {
 
 export default function OnboardingImplementationDoc() {
   return (
-    <div className="bg-slate-900 text-slate-300 min-h-screen font-inter selection:bg-indigo-500/20">
-      <LandingNavbar />
-
-      <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 max-w-4xl">
+    <div className="bg-slate-900 text-slate-300 min-h-screen font-inter selection:bg-indigo-500/20 py-16 px-4">
+      <div className="max-w-4xl mx-auto">
         <Link
           href="/docs"
           className="inline-flex items-center gap-2 text-indigo-400 hover:text-indigo-300 mb-8"
@@ -112,9 +110,7 @@ export default function OnboardingImplementationDoc() {
             </Link>
           </div>
         </article>
-      </main>
-
-      <LandingFooter />
+      </div>
     </div>
   );
 }
