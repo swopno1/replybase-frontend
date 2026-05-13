@@ -17,3 +17,5 @@ This is a refined view of UI/UX and Brand tasks from the master TASKS.md file.
 | UX-015 | PENDING | LOW | Keyboard accessibility | WCAG Compliance | Skip-to-content link (T013) |
 | UX-016 | PENDING | MEDIUM | Flat surfaces | Visual Depth | Glassmorphism utility classes (T019) |
 | UX-017 | PENDING | LOW | Scroll rhythm | Content Pacing | Vertical spacing standardization (T015) |
+| UX-021 | PENDING | HIGH | Repeating trial text | Reduced load | Refined Pricing Risk-Reversal (T021) |
+| UX-022 | PENDING | MEDIUM | Newsletter radius mismatch | Design Consistency | Standardized radii for newsletter elements (T023) |

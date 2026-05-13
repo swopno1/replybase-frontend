@@ -23,3 +23,7 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 | T017 | MEDIUM | PENDING | SEO | Basic Schema.org | AI Search Discovery | Expand JSON-LD with GBP currency, Offers, and FAQ schema |
 | T018 | HIGH | PENDING | GROWTH | Missing AEO Content | AI Discovery gap | Implement high-intent FAQ section optimized for LLM extraction |
 | T019 | MEDIUM | PENDING | BRAND | Flat surfaces | Lack of depth | Create Tailwind glassmorphism utilities (backdrop-blur + opacity) |
+| T020 | HIGH | PENDING | SEO/AEO | Missing Tech Fact Blocks | AI Discoverability | Implement JSON-like specification tables for AI crawlers |
+| T021 | HIGH | PENDING | CONVERSION | Repeating trial text | Cognitive load | Consolidate risk-reversal messaging in pricing section |
+| T022 | MEDIUM | PENDING | BRAND | Non-vibrant Indigo | Brand soul | Transition to custom high-saturation "ReplyBase Indigo" |
+| T023 | MEDIUM | PENDING | UI/UX | Radius mismatch in Newsletter | Design inconsistency | Standardize Newsletter input/button radii to match Shadcn defaults |
