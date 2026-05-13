@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import DocLayout from "../_components/DocLayout";
+import DocLayout from "../../_components/DocLayout";
 
 export const metadata: Metadata = {
   title: "Quick Start Guide",

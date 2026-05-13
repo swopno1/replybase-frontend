@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 
 import Link from "next/link";
-import DocLayout from "../_components/DocLayout";
+import DocLayout from "../../_components/DocLayout";
 
 export default function OnboardingDoc() {
   return (

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 
 
-import DocLayout from "../_components/DocLayout";
+import DocLayout from "../../_components/DocLayout";
 
 export default function WebchatImplementationGuideDoc() {
   return (

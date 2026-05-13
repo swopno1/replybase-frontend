@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import DocLayout from "../_components/DocLayout";
+import DocLayout from "../../_components/DocLayout";
 import Link from "next/link";
 
 export const metadata: Metadata = {
