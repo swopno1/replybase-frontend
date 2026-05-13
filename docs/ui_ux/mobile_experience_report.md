@@ -1,22 +1,36 @@
 # Mobile Experience Report
 
-## Overall Impression
-The site uses a responsive layout that scales well. The mobile menu is functional but lacks motion refinement.
+## Executive Summary
+**Mobile UX Quality:** 55/100
+**Mobile Conversion Readiness:** 45/100
+**Mobile Performance:** 90/100 (Excellent LCP/FCP)
 
-## Areas for Improvement
-- **Touch Targets:** Links in the footer (`LandingFooter.tsx`) and the "Credits" section are small (below 44x44px). The close (X) icon in the mobile menu should have a larger hit area for ergonomic accessibility.
-- **Mobile Menu:** Simple list implementation in `LandingNavbar.tsx`.
-  - **Issue:** Lacks `aria-label` for accessibility.
-  - **UX:** The menu covers content abruptly. A staggered fade-in for links using Framer Motion or CSS transitions would feel more premium.
-- **Pricing on Mobile:**
-  - **Issue:** The large table in `app/page.tsx` (line 514) is horizontally scrollable but difficult to compare plans because the first column (features) disappears on scroll.
-  - **UX Friction:** Users lose track of which feature they are looking at while scrolling right to see the Business plan.
-  - **Recommendation:** Switch to a vertical card stack for screens < 768px. Implement a "Compare All" toggle that reveals the full table if needed, but default to cards.
-- **Hero Section:** On small devices, the "No credit card required" subtext is quite small. Consider increasing contrast (switching from `text-slate-500` to `text-slate-400`).
+The mobile experience is functional but lacks the "premium app-like" feel required for a high-ticket AI SaaS. The primary friction point is the pricing table, which is unusable on small screens.
+
+## Critical Issues
+### 1. Horizontal Pricing Table (SEVERITY: CRITICAL)
+- **Problem:** The pricing table in `app/page.tsx` uses horizontal scrolling. On devices < 375px, the row labels disappear, making feature comparison impossible.
+- **Impact:** Users cannot make informed decisions on mobile, leading to bounce at the most critical stage of the funnel.
+- **Recommendation:** Implement a vertical card stack (`flex-col`) for mobile, showing only the most critical 4-5 features per card, with a "View full comparison" button that opens a modal or expands the table.
+
+### 2. Mobile Menu Interaction (SEVERITY: MEDIUM)
+- **Problem:** The menu in `LandingNavbar.tsx` appears abruptly. It lacks motion-guided attention.
+- **Impact:** Perceived quality is lower than competitors like Intercom or Framer-built sites.
+- **Recommendation:** Use Framer Motion `AnimatePresence` with staggered `y` offset and opacity transitions for menu items.
+
+### 3. Touch Targets & Ergonomics (SEVERITY: HIGH)
+- **Problem:** Footer links (`LandingFooter.tsx`) and social icons have hit areas smaller than 44x44px.
+- **Problem:** The mobile menu close (X) button is too close to the edge of the screen.
+- **Impact:** Frustration for users with larger hands or motor impairments.
+- **Recommendation:** Increase padding on all interactive elements in the footer to a minimum of 12px.
+
+### 4. Text Contrast (SEVERITY: MEDIUM)
+- **Problem:** Muted text (`text-slate-500`) in the Hero subtext and feature descriptions is hard to read under direct sunlight on mobile devices.
+- **Impact:** Reduced readability of the value proposition.
+- **Recommendation:** Update all `text-slate-500` body text to `text-slate-400`.
 
 ## Optimization Plan
-1. **Sticky Header:** The header is sticky, which is good for navigation. Ensure the blur effect doesn't cause lag on lower-end mobile devices.
-2. **CTA Visibility:** The "Get Started" button is prominent in the mobile menu. Consider a "sticky footer" CTA for mobile users once they scroll past the Hero.
-3. **Ergonomics:** Ensure all buttons have at least 12px of spacing between them to prevent accidental taps, especially in the footer.
-4. **Motion Refinement:** The mobile menu should implement a staggered entry for its links to improve perceived performance and quality.
-5. **Vertical Pricing:** Priority task to replace the horizontal table with a vertical card stack on mobile to reduce decision fatigue and improve legibility.
+1. **Vertical Pricing:** Priority \#1. Redesign `PricingSection` to use a responsive grid that stacks vertically on mobile.
+2. **Motion Refinement:** Implement staggered entry for mobile menu links.
+3. **Sticky CTA:** Evaluate a "floating" mobile CTA that appears only when the user scrolls past the Hero section.
+4. **ARIA Implementation:** Add `aria-expanded` and `aria-label` to the toggle button.
