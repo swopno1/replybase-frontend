@@ -4,7 +4,7 @@ import NewsletterSubscribe from "./NewsletterSubscribe";
 
 export default function LandingFooter() {
   return (
-    <footer className="bg-slate-900 text-slate-300 border-t border-slate-800">
+    <footer className="bg-background text-foreground border-t border-border">
       <div className="container mx-auto px-6 py-12">
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-12 gap-x-8 gap-y-12">
           {/* Brand + Newsletter */}
@@ -20,12 +20,12 @@ export default function LandingFooter() {
                 />
                 <span className="font-bold text-xl text-white">ReplyBase</span>
               </div>
-              <p className="text-sm text-slate-400 max-w-[280px] leading-relaxed">
+              <p className="text-sm text-muted-foreground max-w-[280px] leading-relaxed">
                 AI-powered conversation automation for modern businesses. Turn messages into revenue with ReplyBase.
               </p>
             </div>
             {/* NewsletterSubscribe: compact, integrated */}
-            <div className="bg-slate-800/40 rounded-xl px-4 py-4 border border-slate-700/50 max-w-[340px]">
+            <div className="bg-card/40 rounded-xl px-4 py-4 border border-border/50 max-w-[340px]">
               <NewsletterSubscribe compact />
             </div>
           </div>
@@ -122,12 +122,12 @@ export default function LandingFooter() {
           </div>
         </div>
 
-        <div className="mt-12 pt-6 border-t border-slate-800 text-center">
-          <p className="text-xs text-slate-500">
+        <div className="mt-12 pt-6 border-t border-border text-center">
+          <p className="text-xs text-muted-foreground">
             © {new Date().getFullYear()} ReplyBase. All rights reserved.{" "}
             <Link
               href="/credits"
-              className="hover:text-slate-400 transition-colors"
+              className="hover:text-foreground transition-colors"
             >
               Credits
             </Link>
