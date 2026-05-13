@@ -41,7 +41,7 @@ const jsonLd = {
 
 export default function LandingPage() {
   return (
-    <div className="bg-slate-900 text-slate-300 antialiased selection:bg-indigo-500/20 font-inter">
+    <div className="bg-background text-foreground antialiased selection:bg-indigo-500/20 font-inter">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -78,7 +78,7 @@ export default function LandingPage() {
                   See How It Works
                 </Link>
               </div>
-              <p className="mt-6 text-sm text-slate-500 motion-safe:animate-fade-in">
+              <p className="mt-6 text-sm text-muted-foreground motion-safe:animate-fade-in">
                 14-day free trial • No credit card required to start • Cancel
                 anytime
               </p>
@@ -133,7 +133,7 @@ export default function LandingPage() {
                   <span className="text-white font-semibold">
                     {channel.name}
                   </span>
-                  <span className="text-xs text-slate-500 mt-1 uppercase tracking-wider">
+                  <span className="text-muted-foreground mt-1 uppercase tracking-wider text-[10px]">
                     {channel.status}
                   </span>
                 </div>
@@ -197,7 +197,7 @@ export default function LandingPage() {
                   <h3 className="text-xl font-bold text-white mb-3">
                     {feature.title}
                   </h3>
-                  <p className="text-slate-400">{feature.desc}</p>
+                  <p className="text-muted-foreground">{feature.desc}</p>
                 </div>
               ))}
             </div>
@@ -299,7 +299,7 @@ export default function LandingPage() {
                   <h3 className="text-lg font-bold text-white mb-2">
                     {channel.title}
                   </h3>
-                  <p className="text-slate-400 text-sm">{channel.desc}</p>
+                  <p className="text-muted-foreground text-sm">{channel.desc}</p>
                 </div>
               ))}
             </div>
@@ -362,7 +362,7 @@ export default function LandingPage() {
                 <h3 className="text-lg font-bold text-white mb-2">
                   Manage & Convert
                 </h3>
-                <p className="text-slate-400 text-center">
+                <p className="text-muted-foreground text-center">
                   Track, nurture, and convert leads from a unified dashboard.
                 </p>
               </div>
@@ -496,7 +496,7 @@ export default function LandingPage() {
                 <h3 className="text-lg font-bold text-white mb-2">
                   Is my data secure?
                 </h3>
-                <p className="text-slate-400">
+                <p className="text-muted-foreground">
                   Yes. See our{" "}
                   <Link
                     href="/docs/security"
@@ -693,7 +693,7 @@ export default function LandingPage() {
                       >
                         Start Free Trial
                       </a>
-                      <p className="text-xs text-slate-500">14 days free</p>
+                      <p className="text-xs text-muted-foreground">14 days free</p>
                     </td>
                     <td className="p-4 text-center">
                       <a
@@ -702,7 +702,7 @@ export default function LandingPage() {
                       >
                         Start Free Trial
                       </a>
-                      <p className="text-xs text-slate-500">14 days free</p>
+                      <p className="text-xs text-muted-foreground">14 days free</p>
                     </td>
                     <td className="p-4 text-center">
                       <a
@@ -717,7 +717,7 @@ export default function LandingPage() {
                       >
                         Talk to Specialist
                       </Link>
-                      <p className="mt-1 text-xs text-slate-500">
+                      <p className="mt-1 text-xs text-muted-foreground">
                         Concierge onboarding available
                       </p>
                     </td>
@@ -773,7 +773,7 @@ export default function LandingPage() {
               Start your 14-day free trial today — No credit card charged until
               trial ends
             </p>
-            <p className="text-slate-400 text-sm mb-6">
+            <p className="text-muted-foreground text-sm mb-6">
               Cancel anytime before trial ends with zero charges
             </p>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-8">
