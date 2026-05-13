@@ -17,3 +17,5 @@
 | UX-013 | PENDING | HIGH | Mobile pricing is unreadable | Vertical card stack for pricing on mobile | Vertical Pricing Card component |
 | UX-014 | PENDING | MEDIUM | Abstract pulse animations | AI-native motion identity | Draw-path animations for node connections |
 | UX-015 | PENDING | HIGH | Missing screen reader feedback | ARIA live regions for forms | Implement aria-live on Newsletter status |
+| UX-016 | PENDING | MEDIUM | Small touch targets | Ergonomic Mobile UX | Increase footer link padding to min 44x44px |
+| UX-017 | PENDING | HIGH | Muted text contrast | AA Compliance | Shift Hero subtext and feature descriptions to slate-400 |

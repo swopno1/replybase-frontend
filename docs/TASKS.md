@@ -17,3 +17,5 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 | T011 | HIGH | PENDING | UI/UX | Missing ARIA attributes in Navbar/Newsletter | Accessibility failure | Implement aria-label and aria-expanded |
 | T012 | MEDIUM | PENDING | MOBILE | Staggered mobile menu entry | Poor mobile UX | Implement staggered Framer Motion transitions for mobile links |
 | T013 | HIGH | PENDING | BRAND | Missing "Signature Glow" identity | Generic brand perception | Implement linear-gradient glow effects on Pro card and Hero CTA |
+| T014 | MEDIUM | PENDING | MOBILE | Small touch targets | Ergonomic Mobile UX | Increase footer link padding and mobile menu close hit area |
+| T015 | HIGH | PENDING | ACCESSIBILITY | Muted text contrast | AA Compliance | Shift slate-500 text to slate-400 in Hero and feature blocks |
