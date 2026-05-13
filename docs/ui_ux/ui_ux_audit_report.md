@@ -21,7 +21,7 @@ The ReplyBase marketing site is a solid foundation, featuring a modern dark-them
 - **UX Quality:** 75/100
 - **Conversion Readiness:** 60/100
 - **SEO Readiness:** 85/100
-- **AI Discoverability:** 70/100
+- **AI Discoverability:** 75/100
 - **Mobile Quality:** 55/100
 - **Startup Positioning:** 65/100
 - **Trust Perception:** 60/100
@@ -52,6 +52,6 @@ The ReplyBase marketing site is a solid foundation, featuring a modern dark-them
 ## Inspection Update - March 2024
 - **Focus:** Accessibility, Mobile Conversion, and Signature Glow.
 - **Findings:**
-    - **Mobile Pricing:** Horizontal scroll table is the \#1 conversion leak on mobile. Needs vertical stack.
+    - **Mobile Pricing:** Horizontal scroll table is the #1 conversion leak on mobile. Needs vertical stack.
     - **Accessibility Gaps:** `aria-label` and `aria-expanded` missing in Navbar. `aria-live` missing for Newsletter status.
     - **Brand Evolution:** The "Signature Glow" (linear-gradients + blur) is missing from the Hero and primary CTAs.

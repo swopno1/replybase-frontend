@@ -30,7 +30,7 @@ The mobile experience is functional but lacks the "premium app-like" feel requir
 - **Recommendation:** Update all `text-slate-500` body text to `text-slate-400`.
 
 ## Optimization Plan
-1. **Vertical Pricing:** Priority \#1. Redesign `PricingSection` to use a responsive grid that stacks vertically on mobile.
+1. **Vertical Pricing:** Priority #1. Redesign `PricingSection` to use a responsive grid that stacks vertically on mobile.
 2. **Motion Refinement:** Implement staggered entry for mobile menu links.
 3. **Sticky CTA:** Evaluate a "floating" mobile CTA that appears only when the user scrolls past the Hero section.
 4. **ARIA Implementation:** Add `aria-expanded` and `aria-label` to the toggle button.
