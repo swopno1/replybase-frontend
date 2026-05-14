@@ -7,8 +7,8 @@
 
 ## Color System
 - **Current:** Primarily `slate` and `indigo`.
-- **Issue:** Still uses hardcoded classes (e.g., `bg-slate-900`, `border-slate-800`) in components.
-- **Recommendation:** Transition to semantic tokens in `globals.css` (e.g., `--card-background`, `--border-subtle`) to allow for easier theme adjustments.
+- **Issue:** Inconsistent usage of theme variables. `app/page.tsx` uses `bg-background` (which is slate-900), but `app/about/page.tsx` and `app/blog/page.tsx` use hardcoded `bg-slate-900`.
+- **Recommendation:** Standardize on `bg-background` across all page-level containers. Transition to semantic tokens in `globals.css` (e.g., `--card-background`, `--border-subtle`) to allow for easier theme adjustments.
 
 ## Spacing & Grid
 - **Current:** Standard Tailwind spacing.
