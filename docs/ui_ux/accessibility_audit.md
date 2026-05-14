@@ -16,15 +16,15 @@ ReplyBase follows excellent semantic HTML patterns (logical heading hierarchy, a
 
 ## Interactive Elements & ARIA
 ### 1. Mobile Menu Toggle (`LandingNavbar.tsx`) - SEVERITY: HIGH
-- **Current State:** `<button onClick={() => setIsOpen(!isOpen)}>`
-- **Missing:** `aria-label="Toggle navigation menu"`, `aria-expanded={isOpen}`, `aria-controls="mobile-menu"`.
-- **Status:** PENDING.
+- **Current State:** `<button aria-expanded={isOpen} aria-label="...">`
+- **Missing:** `aria-controls="mobile-menu"`. The mobile menu container also needs a matching `id="mobile-menu"`.
+- **Status:** PARTIALLY IMPLEMENTED (T005).
 
 ### 2. Newsletter Form (`NewsletterSubscribe.tsx`) - SEVERITY: HIGH
-- **Issue:** Inputs lack associated `<label>` or `aria-label`.
+- **Issue:** Inputs have `aria-label` but lack associated visible `<label>` or `id`.
 - **Issue:** Success/Error messages are not announced to screen readers.
-- **Missing:** `aria-label="Email for newsletter"` on input, `aria-live="polite"` on the message container.
-- **Status:** PENDING.
+- **Missing:** `aria-live="polite"` on the message container to ensure status updates are announced.
+- **Status:** PENDING (T005).
 
 ### 3. Keyboard Navigation - SEVERITY: MEDIUM
 - **Issue:** Missing "Skip to Content" link.

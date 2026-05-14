@@ -27,3 +27,51 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 | T021 | HIGH | PENDING | CONVERSION | Repeating trial text | Cognitive load | Consolidate risk-reversal messaging in pricing section |
 | T022 | MEDIUM | PENDING | BRAND | Non-vibrant Indigo | Brand soul | Transition to custom high-saturation "ReplyBase Indigo" |
 | T023 | MEDIUM | PENDING | UI/UX | Radius mismatch in Newsletter | Design inconsistency | Standardize Newsletter input/button radii to match Shadcn defaults |
+
+---
+
+### T024: WhatsApp Status Conflict
+- **Task Number:** T024
+- **Priority:** HIGH
+- **Status:** PENDING
+- **Category:** CONVERSION
+- **Issue:** Messaging inconsistency between the "How It Works" section (WhatsApp listed as "Coming Soon") and the "Channels" section (WhatsApp listed as "Beta").
+- **UX/Business Impact:** Erodes user trust and creates confusion about current product capabilities.
+- **Objective:** Align the status of WhatsApp across all landing page sections.
+- **Detailed Instructions:** Update `app/page.tsx`. In the "How It Works" step 1, change the mention from "WhatsApp and Telegram coming soon" to reflect the current live/beta status shown in the "Channels" grid.
+- **Expected Deliverables:** Consistent messaging for WhatsApp across the entire landing page.
+- **Conversion Impact:** HIGH (Trust building)
+- **Brand Impact:** MEDIUM (Professionalism)
+- **Notes:** Identified during March 2024 deep inspection.
+
+---
+
+### T025: Hardcoded bg-slate-900 Theming
+- **Task Number:** T025
+- **Priority:** MEDIUM
+- **Status:** PENDING
+- **Category:** UI/UX
+- **Issue:** Inconsistent usage of theme variables. `app/about/page.tsx` and `app/blog/page.tsx` use hardcoded `bg-slate-900` instead of the semantic `bg-background` token.
+- **UX/Business Impact:** Increases maintenance overhead and creates subtle visual inconsistencies if the background variable is updated in `globals.css`.
+- **Objective:** Standardize on `bg-background` for all page-level containers.
+- **Detailed Instructions:** Audit `app/about/page.tsx` and `app/blog/page.tsx`. Replace `className="bg-slate-900"` with `className="bg-background"`.
+- **Expected Deliverables:** Page containers correctly using Tailwind theme variables.
+- **Conversion Impact:** LOW
+- **Brand Impact:** MEDIUM (Consistency)
+- **Notes:** Essential for long-term design system health.
+
+---
+
+### T026: 150+ Technical Linting Errors
+- **Task Number:** T026
+- **Priority:** MEDIUM
+- **Status:** PENDING
+- **Category:** TECH
+- **Issue:** The project currently has 91 errors and 59 warnings during `npm run lint`, primarily related to unescaped entities and unused imports in the `app/docs` route.
+- **UX/Business Impact:** Reduced code quality, potential build instability, and hidden regressions in documentation pages.
+- **Objective:** Achieve a zero-lint-error state for the marketing site.
+- **Detailed Instructions:** Systematically fix unescaped entities (replace `'` with `&apos;`, etc.) and remove unused imports/variables in the `app/docs` directory.
+- **Expected Deliverables:** Clean `npm run lint` output.
+- **Conversion Impact:** LOW
+- **Brand Impact:** LOW
+- **Notes:** Identified as part of the technical health check during frontend inspection.

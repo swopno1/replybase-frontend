@@ -31,6 +31,7 @@ The website uses strong risk-reversal language ("No credit card required," "14-d
 
 ## Strategic Recommendations
 1. **The Authority Buffer:** Add quantitative stats to the Features section (e.g., "99.9% Uptime", "3ms AI Latency").
-2. **Social Proof Injection:** Move social proof from "Pending" to "Immediate Priority."
+2. **Social Proof Injection:** Move social proof from "Pending" to "Immediate Priority." (See T006)
 3. **Loss Aversion:** Reframing messaging from "Automate your support" to "Stop losing revenue to slow response times."
 4. **Simplification:** Create a "Simple vs. Detailed" toggle for the pricing table to reduce initial choice paralysis.
+5. **Messaging Alignment:** Resolve the conflict in `app/page.tsx` where WhatsApp is listed as "Coming Soon" in the How It Works section but "Beta" in the Channels section. Consistency builds trust.

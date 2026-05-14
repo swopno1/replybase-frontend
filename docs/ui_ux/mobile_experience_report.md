@@ -20,9 +20,9 @@ The mobile experience is functional but lacks the "premium app-like" feel requir
 
 ### 3. Touch Targets & Ergonomics (SEVERITY: HIGH)
 - **Problem:** Footer links (`LandingFooter.tsx`) and social icons have hit areas smaller than 44x44px.
-- **Problem:** The mobile menu close (X) button is too close to the edge of the screen.
-- **Impact:** Frustration for users with larger hands or motor impairments.
-- **Recommendation:** Increase padding on all interactive elements in the footer to a minimum of 12px.
+- **Problem:** The mobile menu close (X) button in `LandingNavbar.tsx` is positioned in the extreme top-right with minimal padding.
+- **Impact:** Frustration for users with larger hands or motor impairments. High cognitive friction during navigation.
+- **Recommendation:** Increase padding on all interactive elements in the footer to a minimum of 12px. Add `px-4` or `mr-2` to the mobile menu button to bring it into the "safe touch zone."
 
 ### 4. Text Contrast (SEVERITY: MEDIUM)
 - **Problem:** Muted text (`text-slate-500`) in the Hero subtext and feature descriptions is hard to read under direct sunlight on mobile devices.

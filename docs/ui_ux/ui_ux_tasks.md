@@ -19,3 +19,23 @@ This is a refined view of UI/UX and Brand tasks from the master TASKS.md file.
 | UX-017 | PENDING | LOW | Scroll rhythm | Content Pacing | Vertical spacing standardization (T015) |
 | UX-021 | PENDING | HIGH | Repeating trial text | Reduced load | Refined Pricing Risk-Reversal (T021) |
 | UX-022 | PENDING | MEDIUM | Newsletter radius mismatch | Design Consistency | Standardized radii for newsletter elements (T023) |
+
+---
+
+### UX-023: WhatsApp Status Mismatch
+- **Task Number:** UX-023
+- **Priority:** HIGH
+- **Status:** PENDING
+- **Issue:** Contradictory information regarding WhatsApp availability across landing page sections (T024).
+- **Objective:** Align WhatsApp status to "Beta" or "Live" globally to maintain trust.
+- **Expected Deliverables:** Unified messaging in `app/page.tsx`.
+
+---
+
+### UX-024: Hardcoded Page Backgrounds
+- **Task Number:** UX-024
+- **Priority:** MEDIUM
+- **Status:** PENDING
+- **Issue:** `app/about/page.tsx` and `app/blog/page.tsx` use hardcoded `bg-slate-900` instead of `bg-background` (T025).
+- **Objective:** Ensure all pages respect the global design tokens for consistency.
+- **Expected Deliverables:** Pages updated to use the semantic `bg-background` class.

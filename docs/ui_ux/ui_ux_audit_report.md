@@ -52,6 +52,8 @@ The ReplyBase marketing site is a solid foundation, featuring a modern dark-them
 ## Inspection Update - March 2024
 - **Focus:** Accessibility, Mobile Conversion, and Signature Glow.
 - **Findings:**
-    - **Mobile Pricing:** Horizontal scroll table is the #1 conversion leak on mobile. Needs vertical stack.
-    - **Accessibility Gaps:** `aria-label` and `aria-expanded` missing in Navbar. `aria-live` missing for Newsletter status.
-    - **Brand Evolution:** The "Signature Glow" (linear-gradients + blur) is missing from the Hero and primary CTAs.
+    - **Mobile Pricing:** Horizontal scroll table is the #1 conversion leak on mobile. Needs vertical stack (T008).
+    - **Accessibility Gaps:** `aria-label` and `aria-expanded` are now present in Navbar, but `aria-controls` is missing. `aria-live` missing for Newsletter status (T005).
+    - **Messaging Friction:** WhatsApp is listed as "Coming Soon" in the 'How It Works' section but "Beta" in 'Channels'.
+    - **Brand Evolution:** The "Signature Glow" (linear-gradients + blur) is missing from the Hero and primary CTAs (T010).
+    - **Low-Fidelity Mockups:** The animated CSS boxes in the Flow Builder section reduce perceived product maturity (T007).
