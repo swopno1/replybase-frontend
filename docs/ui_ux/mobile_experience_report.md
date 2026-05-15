@@ -29,8 +29,8 @@ The mobile experience is functional but lacks the "premium app-like" feel requir
 - **Impact:** Reduced readability of the value proposition.
 - **Recommendation:** Update all `text-slate-500` body text to `text-slate-400`.
 
-## Optimization Plan
-1. **Vertical Pricing:** Priority #1. Redesign `PricingSection` to use a responsive grid that stacks vertically on mobile.
-2. **Motion Refinement:** Implement staggered entry for mobile menu links.
+## Optimization Plan (May 2026 Update)
+1. **Vertical Pricing (T008):** Priority #1. Redesign `PricingSection` in `app/page.tsx` to use a responsive grid that stacks vertically on mobile.
+2. **Motion Refinement (T009):** Implement staggered Framer Motion entry for mobile menu links in `LandingNavbar.tsx`.
 3. **Sticky CTA:** Evaluate a "floating" mobile CTA that appears only when the user scrolls past the Hero section.
-4. **ARIA Implementation:** Add `aria-expanded` and `aria-label` to the toggle button.
+4. **Ergonomic Audit (T011):** Increase hit targets for footer links in `LandingFooter.tsx`.

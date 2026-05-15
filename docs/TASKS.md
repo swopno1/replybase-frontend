@@ -27,6 +27,13 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 | T021 | HIGH | PENDING | CONVERSION | Repeating trial text | Cognitive load | Consolidate risk-reversal messaging in pricing section |
 | T022 | MEDIUM | PENDING | BRAND | Non-vibrant Indigo | Brand soul | Transition to custom high-saturation "ReplyBase Indigo" |
 | T023 | MEDIUM | PENDING | UI/UX | Radius mismatch in Newsletter | Design inconsistency | Standardize Newsletter input/button radii to match Shadcn defaults |
+| T024 | HIGH | PENDING | CONVERSION | WhatsApp Status Conflict | Trust erosion | Align WhatsApp status globally to "Beta" |
+| T025 | MEDIUM | PENDING | UI/UX | Hardcoded bg-slate-900 | Theming debt | Standardize on bg-background token |
+| T026 | MEDIUM | PENDING | TECH | 150+ Linting Errors | Technical health | Achieve zero-lint-error state |
+| T027 | MEDIUM | PENDING | UI/UX | Inconsistent H1/H3 weights | Visual hierarchy | Unify on font-extrabold (H1) and font-semibold (H3) |
+| T028 | MEDIUM | PENDING | ACCESSIBILITY | No "Skip to Content" | Keyboard Accessibility | Skip link implementation |
+| T029 | HIGH | PENDING | BRAND | Generic Hero CTA | Brand Identity | Signature Glow for Hero CTA |
+| T030 | HIGH | PENDING | CONVERSION | Repetitive trial text | Cognitive Load | Consolidate Pricing Risk-Reversal |
 
 ---
 
@@ -75,3 +82,67 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 - **Conversion Impact:** LOW
 - **Brand Impact:** LOW
 - **Notes:** Identified as part of the technical health check during frontend inspection.
+
+---
+
+### T027: Standardize Heading Weights
+- **Task Number:** T027
+- **Priority:** MEDIUM
+- **Status:** PENDING
+- **Category:** UI/UX
+- **Issue:** Inconsistent font weights for headings across marketing pages (e.g., `app/page.tsx` vs `app/about/page.tsx`).
+- **UX/Business Impact:** Fragmented visual hierarchy.
+- **Objective:** Unify on `font-extrabold` for H1 and `font-semibold` for H3.
+- **Detailed Instructions:** Audit `app/page.tsx`, `app/about/page.tsx`, and `app/contact/page.tsx`. Update all H1 tags to `font-extrabold` and H3 tags to `font-semibold`.
+- **Expected Deliverables:** Consistent typographic hierarchy across all pages.
+- **Conversion Impact:** LOW
+- **Brand Impact:** MEDIUM
+- **Notes:** Identified May 2026.
+
+---
+
+### T028: Keyboard Accessibility - Skip to Content
+- **Task Number:** T028
+- **Priority:** MEDIUM
+- **Status:** PENDING
+- **Category:** ACCESSIBILITY
+- **Issue:** Keyboard users must tab through the entire navigation menu on every page load to reach the main content.
+- **UX/Business Impact:** Significant friction for accessibility-reliant users; fails WCAG 2.1 Bypass Blocks.
+- **Objective:** Implement a "Skip to Content" link.
+- **Detailed Instructions:** Add a hidden-until-focused link at the very top of `app/layout.tsx` that anchors to `#main-content`. Ensure all pages wrap their `<main>` content in an element with `id="main-content"`.
+- **Expected Deliverables:** Functional skip link visible only on focus.
+- **Conversion Impact:** LOW
+- **Brand Impact:** MEDIUM (Inclusivity)
+- **Notes:** Identified May 2026.
+
+---
+
+### T029: Apply Signature Glow to Hero CTA
+- **Task Number:** T029
+- **Priority:** HIGH
+- **Status:** PENDING
+- **Category:** BRAND
+- **Issue:** Primary Hero CTA feels generic and lacks the premium "AI-native" aesthetic proposed in the visual identity strategy.
+- **UX/Business Impact:** Lower perceived product value and brand differentiation.
+- **Objective:** Implement a saturation-boosted indigo glow on the Hero CTA.
+- **Detailed Instructions:** Update `app/page.tsx` Hero section. Apply a custom shadow and subtle animation to the "Start 14-Day Free Trial" button using the `signature-glow` patterns.
+- **Expected Deliverables:** Visually elite CTA with a vibrant, glowing border/shadow.
+- **Conversion Impact:** HIGH
+- **Brand Impact:** HIGH
+- **Notes:** Follows `docs/proposals_signature-glow/`.
+
+---
+
+### T030: Consolidate Risk-Reversal in Pricing
+- **Task Number:** T030
+- **Priority:** HIGH
+- **Status:** PENDING
+- **Category:** CONVERSION
+- **Issue:** The pricing table footer repeats "14 days free" in multiple columns, increasing cognitive load and visual clutter.
+- **UX/Business Impact:** Dilutes the impact of the risk-reversal message and makes the table harder to scan.
+- **Objective:** Consolidate trial messaging into a single trust banner.
+- **Detailed Instructions:** Update `app/page.tsx` pricing section. Remove repeating trial text from table columns and instead emphasize the "Risk-Free Trial Policy" block below the table.
+- **Expected Deliverables:** Cleaner pricing table with centralized risk-reversal messaging.
+- **Conversion Impact:** MEDIUM
+- **Brand Impact:** MEDIUM
+- **Notes:** Identified in Conversion Psychology audit May 2026.
