@@ -49,11 +49,11 @@ The ReplyBase marketing site is a solid foundation, featuring a modern dark-them
 4. **Visual Trust (HIGH):** Upgrade mockups from CSS boxes to high-fidelity product representations.
    - *Target:* Replace the animated CSS divs in the "Visual Conversation Builder" section with a high-fidelity SVG or Image mockup of the actual dashboard.
 
-## Inspection Update - March 2024
-- **Focus:** Accessibility, Mobile Conversion, and Signature Glow.
+## Inspection Update - May 2026
+- **Focus:** Design Consistency, Strategic Task Alignment, and Conversion Friction.
 - **Findings:**
-    - **Mobile Pricing:** Horizontal scroll table is the #1 conversion leak on mobile. Needs vertical stack (T008).
-    - **Accessibility Gaps:** `aria-label` and `aria-expanded` are now present in Navbar, but `aria-controls` is missing. `aria-live` missing for Newsletter status (T005).
-    - **Messaging Friction:** WhatsApp is listed as "Coming Soon" in the 'How It Works' section but "Beta" in 'Channels'.
-    - **Brand Evolution:** The "Signature Glow" (linear-gradients + blur) is missing from the Hero and primary CTAs (T010).
-    - **Low-Fidelity Mockups:** The animated CSS boxes in the Flow Builder section reduce perceived product maturity (T007).
+    - **Messaging Conflict (HIGH):** WhatsApp is listed as "Coming Soon" in the 'How It Works' section but "Beta" in 'Channels' and 'Pricing' (T024). This erodes perceived reliability.
+    - **Design Debt (MEDIUM):** Hardcoded `bg-slate-900` found in `about` and `blog` pages instead of `bg-background` token (T025).
+    - **Accessibility (HIGH):** Still missing "Skip to Content" link for keyboard users. `text-slate-500` contrast is below AA standards (T012).
+    - **Mobile UX (CRITICAL):** Pricing table remains unoptimized for small screens, causing major cognitive load.
+    - **Brand Identity:** The "Signature Glow" proposal remains unimplemented, leaving the site feeling slightly "generic Tailwind."

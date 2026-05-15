@@ -36,7 +36,10 @@ ReplyBase follows excellent semantic HTML patterns (logical heading hierarchy, a
 - Ensure all inputs have `id` attributes matching their `<label htmlFor="...">`.
 - Use `aria-invalid={!!errors.email}` and `aria-describedby="email-error"` for validation states.
 
-## March 2024 Strategic Actions
-1. **Contrast Correction:** Global update of slate-500 -> slate-400 for text.
-2. **ARIA Implementation:** Update Navbar and Newsletter components.
-3. **Focus State Audit:** Ensure all interactive elements are reachable via Tab.
+## May 2026 Strategic Actions
+1. **Contrast Correction (T012):** Global update of `text-slate-500` -> `text-slate-400` for text. Primary offenders in `app/docs` and `app/page.tsx`.
+2. **ARIA Implementation (T005):**
+   - `LandingNavbar.tsx`: Add `aria-controls="mobile-menu"` to toggle and `id="mobile-menu"` to the menu container.
+   - `NewsletterSubscribe.tsx`: Add `aria-live="polite"` to status message container.
+3. **Keyboard Accessibility (T028):** Implement "Skip to Content" link at the top of `app/layout.tsx`.
+4. **Focus State Audit:** Ensure all interactive elements in `LandingFooter.tsx` and `ContactForm.tsx` are reachable and have visible focus rings.
