@@ -7,15 +7,15 @@
 
 ## Phase 1: The Authority Foundation (Month 1-2)
 **Focus:** Search Intent & Technical Trust.
-- **Content Pillar 1:** "The 2024 Guide to AI Support Automation for UK Founders."
-- **Content Pillar 2:** "ReplyBase vs. Intercom: Why Startups are Switching to AI-Native."
-- **Content Pillar 3:** "How to Build a WhatsApp Lead Capture Flow in 5 Minutes."
-- **Asset:** "The AI Automation Checklist for SMBs" (Lead Magnet).
+- [x] **Content Pillar 1:** "The 2024 Guide to AI Support Automation for UK Founders."
+- [x] **Content Pillar 2:** "ReplyBase vs. Intercom: Why Startups are Switching to AI-Native."
+- [x] **Content Pillar 3:** "How to Build a WhatsApp Lead Capture Flow in 5 Minutes."
+- [ ] **Asset:** "The AI Automation Checklist for SMBs" (Lead Magnet).
 
 ## Phase 2: The Trust Bridge (Month 3-4)
 **Focus:** Social Proof & Vertical Expansion.
-- **Content Pillar 4:** Industry Deep Dives: "AI for Real Estate Agents", "AI for E-commerce Agencies."
-- **Content Pillar 5:** "Security First: Why ReplyBase is Safer than Generic Wrapper Bots."
+- [/] **Content Pillar 4:** Industry Deep Dives: [x] "AI for Real Estate Agents", [ ] "AI for E-commerce Agencies."
+- [ ] **Content Pillar 5:** "Security First: Why ReplyBase is Safer than Generic Wrapper Bots."
 - **Content Pillar 6:** Founder Interviews: "How [Company X] Scaled Support to 10k Users with 0 New Hires."
 - **Asset:** "The ROI of AI Support" (Calculator/Spreadsheet).
 
