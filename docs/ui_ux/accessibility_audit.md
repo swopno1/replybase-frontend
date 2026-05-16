@@ -36,10 +36,10 @@ ReplyBase follows excellent semantic HTML patterns (logical heading hierarchy, a
 - Ensure all inputs have `id` attributes matching their `<label htmlFor="...">`.
 - Use `aria-invalid={!!errors.email}` and `aria-describedby="email-error"` for validation states.
 
-## May 2026 Strategic Actions
-1. **Contrast Correction (T012):** Global update of `text-slate-500` -> `text-slate-400` for text. Primary offenders in `app/docs` and `app/page.tsx`.
-2. **ARIA Implementation (T005):**
-   - `LandingNavbar.tsx`: Add `aria-controls="mobile-menu"` to toggle and `id="mobile-menu"` to the menu container.
-   - `NewsletterSubscribe.tsx`: Add `aria-live="polite"` to status message container.
-3. **Keyboard Accessibility (T028):** Implement "Skip to Content" link at the top of `app/layout.tsx`.
-4. **Focus State Audit:** Ensure all interactive elements in `LandingFooter.tsx` and `ContactForm.tsx` are reachable and have visible focus rings.
+## Strategic Actions - May 24, 2026
+1. **Contrast Correction (T012):** Immediate priority. Audit and replace all instances of `text-slate-500` with `text-slate-400` in `app/page.tsx`, `app/about/page.tsx`, and `app/docs/page.tsx`.
+2. **ARIA Compliance (T005):**
+   - **Navbar:** Bind mobile toggle to menu using `aria-controls`.
+   - **Newsletter:** Implement `aria-live="polite"` for status messages and ensure all inputs have associated labels.
+3. **Keyboard Experience (T028):** Implement the "Skip to Content" link in `app/layout.tsx` to bypass repetitive navigation.
+4. **Focus Management:** Audit focus states for all interactive cards and ensure they are clearly visible during keyboard navigation.

@@ -23,6 +23,8 @@ This is a refined view of UI/UX and Brand tasks from the master TASKS.md file.
 | UX-026 | PENDING | HIGH | Generic Hero CTA | Brand Identity | Signature Glow for Hero CTA (T029) |
 | UX-027 | PENDING | MEDIUM | Inconsistent H1/H3 weights | Typographic Hierarchy | Standardized heading weights (T027) |
 | UX-028 | PENDING | HIGH | Repetitive trial text | Cognitive Load | Consolidate Pricing Risk-Reversal (T030) |
+| UX-029 | PENDING | MEDIUM | Icon size inconsistency | Visual Polish | Unified icon sizing (T031) |
+| UX-030 | PENDING | HIGH | Missing Hero Authority | Trust Building | Hero trust badge (T032) |
 
 ---
 
