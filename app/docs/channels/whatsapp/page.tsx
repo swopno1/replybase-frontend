@@ -1,16 +1,17 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { 
-  Phone, 
-  Zap, 
-  MessageCircle, 
-  ArrowRight, 
-  ShieldCheck, 
+import {
+  Phone,
+  Zap,
+  MessageCircle,
+  ArrowRight,
+  ShieldCheck,
   Clock,
   Layers,
   CheckCircle2
 } from "lucide-react";
 import Callout from "../../_components/Callout";
+import DocLayout from "../../_components/DocLayout";
 
 export const metadata: Metadata = {
   title: "WhatsApp Channel Guide",
@@ -19,19 +20,10 @@ export const metadata: Metadata = {
 
 export default function WhatsAppOverviewPage() {
   return (
-    <div className="max-w-4xl">
-      <div className="mb-10">
-        <div className="flex items-center gap-3 mb-4">
-          <div className="flex items-center justify-center h-12 w-12 rounded-xl bg-green-600">
-            <Phone size={24} className="text-white" />
-          </div>
-          <h1 className="text-4xl font-bold text-white tracking-tight">WhatsApp Business</h1>
-        </div>
-        <p className="text-lg text-slate-400 leading-relaxed">
-          ReplyBase integrates with the WhatsApp Business Cloud API to provide automated AI conversations, lead capture, and team collaboration.
-        </p>
-      </div>
-
+    <DocLayout
+      title="WhatsApp Business"
+      description="ReplyBase integrates with the WhatsApp Business Cloud API to provide automated AI conversations, lead capture, and team collaboration."
+    >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
         <div className="bg-slate-800/50 p-6 rounded-2xl border border-slate-700 hover:border-green-500/50 transition-all group">
           <div className="flex items-center justify-center h-10 w-10 rounded-lg bg-green-600/10 text-green-400 mb-4">
@@ -59,7 +51,7 @@ export default function WhatsAppOverviewPage() {
       </p>
 
       <div className="space-y-4 mb-12">
-        <Link 
+        <Link
           href="/docs/channels/whatsapp/raw-setup"
           className="block bg-slate-800/50 p-6 rounded-2xl border border-slate-700 hover:border-indigo-500 hover:bg-slate-800 transition-all group"
         >
@@ -81,7 +73,7 @@ export default function WhatsAppOverviewPage() {
           </div>
         </Link>
 
-        <Link 
+        <Link
           href="/docs/channels/whatsapp/managed-setup"
           className="block bg-slate-800/50 p-6 rounded-2xl border border-slate-700 hover:border-green-500 hover:bg-slate-800 transition-all group"
         >
@@ -125,6 +117,6 @@ export default function WhatsAppOverviewPage() {
       <Callout type="info" title="Important Policy Note">
         WhatsApp requires businesses to follow their <Link href="https://www.whatsapp.com/legal/business-policy" className="text-indigo-400 hover:underline">Business Policy</Link>. Failure to do so may result in your account being suspended by Meta.
       </Callout>
-    </div>
+    </DocLayout>
   );
 }

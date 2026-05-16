@@ -2,16 +2,11 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { 
   Send, 
-  CheckCircle2, 
   ArrowRight, 
-  Settings, 
   ExternalLink,
-  ShieldCheck,
-  AlertTriangle,
-  Zap,
-  Lock
 } from "lucide-react";
 import Callout from "../../_components/Callout";
+import DocLayout from "../../_components/DocLayout";
 
 export const metadata: Metadata = {
   title: "Telegram Bot Integration Guide",
@@ -20,19 +15,10 @@ export const metadata: Metadata = {
 
 export default function TelegramChannelPage() {
   return (
-    <div className="max-w-4xl">
-      <div className="mb-10">
-        <div className="flex items-center gap-3 mb-4">
-          <div className="flex items-center justify-center h-12 w-12 rounded-xl bg-sky-500">
-            <Send size={24} className="text-white" />
-          </div>
-          <h1 className="text-4xl font-bold text-white tracking-tight">Telegram Bot</h1>
-        </div>
-        <p className="text-lg text-slate-400 leading-relaxed">
-          Connect your Telegram bot to ReplyBase in seconds. Automate group chats or private messages with AI-powered responses and seamless lead capture.
-        </p>
-      </div>
-
+    <DocLayout
+      title="Telegram Bot"
+      description="Connect your Telegram bot to ReplyBase in seconds. Automate group chats or private messages with AI-powered responses and seamless lead capture."
+    >
       <h2 className="text-2xl font-bold text-white mb-6">Setup Process</h2>
       
       <div className="space-y-12">
@@ -121,6 +107,6 @@ export default function TelegramChannelPage() {
           Replace <code>{"<YOUR_TOKEN>"}</code> with your actual bot token. Look for <code>last_error_message</code> in the response.
         </p>
       </div>
-    </div>
+    </DocLayout>
   );
 }

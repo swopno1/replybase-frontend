@@ -3,14 +3,12 @@ import Link from "next/link";
 import { 
   Globe, 
   Code, 
-  Terminal, 
   Smartphone, 
   Palette, 
   ArrowRight,
-  CheckCircle2,
-  Cpu
 } from "lucide-react";
 import Callout from "../../_components/Callout";
+import DocLayout from "../../_components/DocLayout";
 
 export const metadata: Metadata = {
   title: "Webchat Integration Guide",
@@ -19,19 +17,10 @@ export const metadata: Metadata = {
 
 export default function WebchatChannelPage() {
   return (
-    <div className="max-w-4xl">
-      <div className="mb-10">
-        <div className="flex items-center gap-3 mb-4">
-          <div className="flex items-center justify-center h-12 w-12 rounded-xl bg-indigo-600">
-            <Globe size={24} className="text-white" />
-          </div>
-          <h1 className="text-4xl font-bold text-white tracking-tight">Webchat Widget</h1>
-        </div>
-        <p className="text-lg text-slate-400 leading-relaxed">
-          The ReplyBase webchat widget is a lightweight, customizable chat interface that you can embed on any website. It supports real-time AI conversations, lead capture forms, and custom styling.
-        </p>
-      </div>
-
+    <DocLayout
+      title="Webchat Widget"
+      description="The ReplyBase webchat widget is a lightweight, customizable chat interface that you can embed on any website. It supports real-time AI conversations, lead capture forms, and custom styling."
+    >
       <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
         <Code size={24} className="text-indigo-400" />
         Installation
@@ -137,6 +126,6 @@ export default function WebchatWidget() {
           View API Docs <ArrowRight size={16} />
         </Link>
       </div>
-    </div>
+    </DocLayout>
   );
 }

@@ -6,11 +6,8 @@ import {
   Database,
   Settings,
   Globe,
-  Send,
-  MessageSquare,
-  Phone,
-  BookOpen,
 } from "lucide-react";
+import DocLayout from "./_components/DocLayout";
 
 export const metadata: Metadata = {
   title: "Documentation Overview",
@@ -74,17 +71,12 @@ const docCategories = [
 
 export default function DocsPage() {
   return (
-    <div className="max-w-5xl">
-      <div className="mb-12">
-        <h1 className="text-4xl font-bold text-white mb-4">
-          Documentation
-        </h1>
-        <p className="text-lg text-slate-400 max-w-2xl">
-          Everything you need to set up ReplyBase, connect your channels, and
-          start capturing leads automatically.
-        </p>
-      </div>
-
+    <DocLayout
+      title="Documentation"
+      description="Everything you need to set up ReplyBase, connect your channels, and start capturing leads automatically."
+      videoUrl="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+      videoTitle="Introduction to ReplyBase"
+    >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
         {docCategories.map((category) => {
           const Icon = category.icon;
@@ -155,6 +147,6 @@ export default function DocsPage() {
         {/* Decorative background element */}
         <div className="absolute -right-8 -bottom-8 w-48 h-48 bg-indigo-600/10 rounded-full blur-3xl" />
       </div>
-    </div>
+    </DocLayout>
   );
 }

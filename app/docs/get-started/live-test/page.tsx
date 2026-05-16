@@ -6,12 +6,11 @@ import {
   ArrowRight, 
   Globe, 
   Send, 
-  MessageSquare, 
   Phone,
-  Zap,
   Activity
 } from "lucide-react";
 import Callout from "../../_components/Callout";
+import DocLayout from "../../_components/DocLayout";
 
 export const metadata: Metadata = {
   title: "Live Test Guide",
@@ -20,19 +19,10 @@ export const metadata: Metadata = {
 
 export default function LiveTestPage() {
   return (
-    <div className="max-w-4xl">
-      <div className="mb-10">
-        <div className="flex items-center gap-3 mb-4">
-          <div className="flex items-center justify-center h-12 w-12 rounded-xl bg-indigo-600">
-            <Activity size={24} className="text-white" />
-          </div>
-          <h1 className="text-4xl font-bold text-white tracking-tight">Test Your Channel</h1>
-        </div>
-        <p className="text-lg text-slate-400 leading-relaxed">
-          Before going live, it's essential to verify that your connection is stable and your AI responses are behaving as expected.
-        </p>
-      </div>
-
+    <DocLayout
+      title="Test Your Channel"
+      description="Before going live, it's essential to verify that your connection is stable and your AI responses are behaving as expected."
+    >
       <h2 className="text-2xl font-bold text-white mb-6">Verification Checklist</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
         {[
@@ -101,6 +91,6 @@ export default function LiveTestPage() {
           You're Live! View Roadmap <ArrowRight size={18} />
         </Link>
       </div>
-    </div>
+    </DocLayout>
   );
 }

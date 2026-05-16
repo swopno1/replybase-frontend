@@ -8,10 +8,10 @@ import {
   ArrowLeft, 
   ArrowRight, 
   Zap,
-  Lock,
   CheckCircle2
 } from "lucide-react";
 import Callout from "../../_components/Callout";
+import DocLayout from "../../_components/DocLayout";
 
 export const metadata: Metadata = {
   title: "Choose Your Channel",
@@ -63,19 +63,10 @@ const channels = [
 
 export default function ChooseChannelPage() {
   return (
-    <div className="max-w-4xl">
-      <div className="mb-10">
-        <div className="flex items-center gap-3 mb-4">
-          <div className="flex items-center justify-center h-12 w-12 rounded-xl bg-indigo-600">
-            <Zap size={24} className="text-white" />
-          </div>
-          <h1 className="text-4xl font-bold text-white tracking-tight">Choose Your Channel</h1>
-        </div>
-        <p className="text-lg text-slate-400 leading-relaxed">
-          ReplyBase supports multiple communication platforms. Select the one where your customers are most active to begin your integration.
-        </p>
-      </div>
-
+    <DocLayout
+      title="Choose Your Channel"
+      description="ReplyBase supports multiple communication platforms. Select the one where your customers are most active to begin your integration."
+    >
       <Callout type="warning" title="Plan Limits">
         Free plans include <strong>Webchat</strong> and <strong>Facebook Messenger</strong>. Telegram and WhatsApp require a paid subscription starting at £29/mo.
       </Callout>
@@ -123,6 +114,6 @@ export default function ChooseChannelPage() {
         </Link>
         <span className="text-slate-600 text-sm italic">Select a channel above to continue</span>
       </div>
-    </div>
+    </DocLayout>
   );
 }

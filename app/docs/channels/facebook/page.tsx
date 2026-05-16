@@ -4,13 +4,10 @@ import {
   MessageSquare, 
   CheckCircle2, 
   ArrowRight, 
-  Settings, 
-  ExternalLink,
-  ShieldCheck,
-  AlertTriangle,
   Zap
 } from "lucide-react";
 import Callout from "../../_components/Callout";
+import DocLayout from "../../_components/DocLayout";
 
 export const metadata: Metadata = {
   title: "Facebook Messenger Integration Guide",
@@ -19,19 +16,10 @@ export const metadata: Metadata = {
 
 export default function FacebookChannelPage() {
   return (
-    <div className="max-w-4xl">
-      <div className="mb-10">
-        <div className="flex items-center gap-3 mb-4">
-          <div className="flex items-center justify-center h-12 w-12 rounded-xl bg-blue-600">
-            <MessageSquare size={24} className="text-white" />
-          </div>
-          <h1 className="text-4xl font-bold text-white tracking-tight">Facebook Messenger</h1>
-        </div>
-        <p className="text-lg text-slate-400 leading-relaxed">
-          Connect your Facebook Page to ReplyBase to automatically respond to customer enquiries, capture leads, and provide 24/7 support via Messenger.
-        </p>
-      </div>
-
+    <DocLayout
+      title="Facebook Messenger"
+      description="Connect your Facebook Page to ReplyBase to automatically respond to customer enquiries, capture leads, and provide 24/7 support via Messenger."
+    >
       <div className="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 mb-12">
         <div className="flex items-center gap-3 mb-4">
           <div className="flex items-center justify-center h-10 w-10 rounded-xl bg-indigo-600 text-white font-bold">
@@ -111,6 +99,6 @@ export default function FacebookChannelPage() {
           </details>
         </div>
       </div>
-    </div>
+    </DocLayout>
   );
 }

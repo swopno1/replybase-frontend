@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { Layout, Users, Settings, CreditCard, Shield, BarChart, MessageSquare } from "lucide-react";
 import Callout from "../_components/Callout";
+import DocLayout from "../_components/DocLayout";
 
 export const metadata: Metadata = {
   title: "Dashboard Navigation Guide",
@@ -32,19 +33,10 @@ const sections = [
 
 export default function AdminPanelPage() {
   return (
-    <div className="max-w-4xl">
-      <div className="mb-10">
-        <div className="flex items-center gap-3 mb-4">
-          <div className="flex items-center justify-center h-12 w-12 rounded-xl bg-indigo-600">
-            <Layout size={24} className="text-white" />
-          </div>
-          <h1 className="text-4xl font-bold text-white tracking-tight">Dashboard Guide</h1>
-        </div>
-        <p className="text-lg text-slate-400 leading-relaxed">
-          The ReplyBase dashboard is designed to be intuitive and powerful. This guide covers the main sections you'll use to manage your AI automation.
-        </p>
-      </div>
-
+    <DocLayout
+      title="Dashboard Guide"
+      description="The ReplyBase dashboard is designed to be intuitive and powerful. This guide covers the main sections you'll use to manage your AI automation."
+    >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-12">
         {sections.map((section) => {
           const Icon = section.icon;
@@ -101,6 +93,6 @@ export default function AdminPanelPage() {
           </div>
         </div>
       </div>
-    </div>
+    </DocLayout>
   );
 }

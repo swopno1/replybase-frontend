@@ -12,9 +12,10 @@ import {
   CheckCircle2
 } from "lucide-react";
 import Callout from "../_components/Callout";
+import DocLayout from "../_components/DocLayout";
 
 export const metadata: Metadata = {
-  title: "Get Started Guide",
+  title: "Quick Start Guide",
   description: "Step-by-step guide to setting up your ReplyBase workspace and connecting your first AI chatbot channel.",
 };
 
@@ -87,26 +88,16 @@ const steps = [
 
 export default function GetStartedPage() {
   return (
-    <div className="max-w-4xl">
-      {/* Header */}
-      <div className="mb-12">
-        <div className="flex items-center gap-3 mb-4">
-          <div className="flex items-center justify-center h-12 w-12 rounded-xl bg-indigo-600">
-            <Zap size={22} className="text-white" />
-          </div>
-          <h1 className="text-4xl font-bold text-white tracking-tight">Quick Start Guide</h1>
-        </div>
-        <p className="text-lg text-slate-400 max-w-2xl mt-2 leading-relaxed">
-          From account creation to your first live AI-powered channel. Follow
-          each step in order — most users are live in under 20 minutes.
-        </p>
-        <div className="mt-4 flex items-center gap-2">
-          <Clock size={16} className="text-slate-500" />
-          <span className="text-sm text-slate-500">
-            Estimated total time:{" "}
-            <span className="text-indigo-400 font-medium">15 – 20 minutes</span>
-          </span>
-        </div>
+    <DocLayout
+      title="Quick Start Guide"
+      description="From account creation to your first live AI-powered channel. Follow each step in order — most users are live in under 20 minutes."
+    >
+      <div className="mt-4 mb-12 flex items-center gap-2">
+        <Clock size={16} className="text-slate-500" />
+        <span className="text-sm text-slate-500">
+          Estimated total time:{" "}
+          <span className="text-indigo-400 font-medium">15 – 20 minutes</span>
+        </span>
       </div>
 
       <Callout type="tip" title="Prerequisites">
@@ -195,6 +186,6 @@ export default function GetStartedPage() {
           </div>
         </div>
       </div>
-    </div>
+    </DocLayout>
   );
 }

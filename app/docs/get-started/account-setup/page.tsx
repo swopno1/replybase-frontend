@@ -5,11 +5,10 @@ import {
   CheckCircle2, 
   ArrowRight, 
   Layout, 
-  ShieldCheck,
-  Mail,
-  Zap
+  Mail
 } from "lucide-react";
 import Callout from "../../_components/Callout";
+import DocLayout from "../../_components/DocLayout";
 
 export const metadata: Metadata = {
   title: "Account Setup Guide",
@@ -18,19 +17,10 @@ export const metadata: Metadata = {
 
 export default function AccountSetupPage() {
   return (
-    <div className="max-w-4xl">
-      <div className="mb-10">
-        <div className="flex items-center gap-3 mb-4">
-          <div className="flex items-center justify-center h-12 w-12 rounded-xl bg-indigo-600">
-            <UserPlus size={24} className="text-white" />
-          </div>
-          <h1 className="text-4xl font-bold text-white tracking-tight">Create Your Account</h1>
-        </div>
-        <p className="text-lg text-slate-400 leading-relaxed">
-          Get started with ReplyBase by creating your workspace. It takes less than two minutes and gives you immediate access to all core features.
-        </p>
-      </div>
-
+    <DocLayout
+      title="Create Your Account"
+      description="Get started with ReplyBase by creating your workspace. It takes less than two minutes and gives you immediate access to all core features."
+    >
       <h2 className="text-2xl font-bold text-white mb-6">Registration Options</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
         <div className="bg-slate-800/40 p-6 rounded-2xl border border-slate-700">
@@ -105,6 +95,6 @@ export default function AccountSetupPage() {
           Step 2: Choose Your Channel <ArrowRight size={18} />
         </Link>
       </div>
-    </div>
+    </DocLayout>
   );
 }
