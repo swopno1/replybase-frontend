@@ -34,6 +34,8 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 | T028 | MEDIUM | PENDING | ACCESSIBILITY | No "Skip to Content" | Keyboard Accessibility | Skip link implementation |
 | T029 | HIGH | PENDING | BRAND | Generic Hero CTA | Brand Identity | Signature Glow for Hero CTA |
 | T030 | HIGH | PENDING | CONVERSION | Repetitive trial text | Cognitive Load | Consolidate Pricing Risk-Reversal |
+| T031 | MEDIUM | PENDING | UI/UX | Icon size inconsistency | Visual Fragmentation | Standardize Lucide icons to size 20 in lists |
+| T032 | HIGH | PENDING | CONVERSION | Missing Hero Authority | Low Trust | Add "Trusted by 100+ teams" badge above Hero H1 |
 
 ---
 
@@ -146,3 +148,35 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 - **Conversion Impact:** MEDIUM
 - **Brand Impact:** MEDIUM
 - **Notes:** Identified in Conversion Psychology audit May 2026.
+
+---
+
+### T031: Icon Size Standardization
+- **Task Number:** T031
+- **Priority:** MEDIUM
+- **Status:** PENDING
+- **Category:** UI/UX
+- **Issue:** Lucide icons in feature lists and checklists vary in size (14px, 16px, 20px) without clear semantic reason.
+- **UX/Business Impact:** Subtle visual fragmentation and reduced "polished" feel.
+- **Objective:** Standardize on `size={20}` for all main feature list icons.
+- **Detailed Instructions:** Audit `app/page.tsx`, `app/about/page.tsx`, and `app/docs/page.tsx`. Update Lucide icon `size` props in feature grids and lists to 20.
+- **Expected Deliverables:** Consistent icon scaling across all marketing pages.
+- **Conversion Impact:** LOW
+- **Brand Impact:** MEDIUM (Polish)
+- **Notes:** Identified May 24, 2026 deep inspection.
+
+---
+
+### T032: Hero Authority Badge
+- **Task Number:** T032
+- **Priority:** HIGH
+- **Status:** PENDING
+- **Category:** CONVERSION
+- **Issue:** Hero section lacks immediate quantitative authority, forcing users to scroll for validation.
+- **UX/Business Impact:** Higher bounce rate for skeptical visitors.
+- **Objective:** Add a small "Trusted by 100+ teams" text badge above the H1.
+- **Detailed Instructions:** Update `app/page.tsx` Hero section. Insert a subtle, muted text badge (e.g., `text-xs uppercase tracking-widest text-indigo-400/80`) above the main heading.
+- **Expected Deliverables:** Immediate trust signal at the entry point.
+- **Conversion Impact:** HIGH
+- **Brand Impact:** MEDIUM
+- **Notes:** Recommendation from Conversion Psychology Audit May 2024.

@@ -49,11 +49,13 @@ The ReplyBase marketing site is a solid foundation, featuring a modern dark-them
 4. **Visual Trust (HIGH):** Upgrade mockups from CSS boxes to high-fidelity product representations.
    - *Target:* Replace the animated CSS divs in the "Visual Conversation Builder" section with a high-fidelity SVG or Image mockup of the actual dashboard.
 
-## Inspection Update - May 2026
-- **Focus:** Design Consistency, Strategic Task Alignment, and Conversion Friction.
-- **Findings:**
-    - **Messaging Conflict (HIGH):** WhatsApp is listed as "Coming Soon" in the 'How It Works' section but "Beta" in 'Channels' and 'Pricing' (T024). This erodes perceived reliability.
-    - **Design Debt (MEDIUM):** Hardcoded `bg-slate-900` found in `about` and `blog` pages instead of `bg-background` token (T025).
-    - **Accessibility (HIGH):** Still missing "Skip to Content" link for keyboard users. `text-slate-500` contrast is below AA standards (T012).
-    - **Mobile UX (CRITICAL):** Pricing table remains unoptimized for small screens, causing major cognitive load.
-    - **Brand Identity:** The "Signature Glow" proposal remains unimplemented, leaving the site feeling slightly "generic Tailwind."
+## Inspection Update - May 24, 2026
+- **Focus:** Deep Frontend Inspection, Design Consistency, and Mobile Conversion Optimization.
+- **Current State:**
+    - **Confidence Score:** 68/100 (Unchanged, pending T008 and T010).
+    - **Messaging Conflict (HIGH):** WhatsApp status mismatch (Beta vs Coming Soon) remains the highest priority trust leak in `app/page.tsx` (T024).
+    - **Design System Debt (MEDIUM):** Inconsistent page backgrounds (`bg-slate-900` vs `bg-background`) in `app/about/page.tsx` and `app/blog/page.tsx` needs immediate standardization (T025).
+    - **Typography (MEDIUM):** Heading weight inconsistency confirmed. H1 should be `font-extrabold`, H3 should be `font-semibold`.
+    - **Accessibility (HIGH):** Global contrast correction (`text-slate-500` to `text-slate-400`) and "Skip to Content" link are essential for AA compliance.
+    - **Mobile UX (CRITICAL):** Horizontal scrolling pricing table in `app/page.tsx` confirmed as a primary conversion blocker for mobile traffic (T008).
+- **Strategic Recommendation:** Prioritize T024 (Messaging) and T008 (Mobile Pricing) as immediate conversion-critical fixes.
