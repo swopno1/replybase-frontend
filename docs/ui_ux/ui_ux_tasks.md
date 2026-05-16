@@ -19,6 +19,10 @@ This is a refined view of UI/UX and Brand tasks from the master TASKS.md file.
 | UX-017 | PENDING | LOW | Scroll rhythm | Content Pacing | Vertical spacing standardization (T015) |
 | UX-021 | PENDING | HIGH | Repeating trial text | Reduced load | Refined Pricing Risk-Reversal (T021) |
 | UX-022 | PENDING | MEDIUM | Newsletter radius mismatch | Design Consistency | Standardized radii for newsletter elements (T023) |
+| UX-025 | PENDING | MEDIUM | No "Skip to Content" | Keyboard Accessibility | Skip link implementation (T028) |
+| UX-026 | PENDING | HIGH | Generic Hero CTA | Brand Identity | Signature Glow for Hero CTA (T029) |
+| UX-027 | PENDING | MEDIUM | Inconsistent H1/H3 weights | Typographic Hierarchy | Standardized heading weights (T027) |
+| UX-028 | PENDING | HIGH | Repetitive trial text | Cognitive Load | Consolidate Pricing Risk-Reversal (T030) |
 
 ---
 
