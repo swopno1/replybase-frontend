@@ -1,20 +1,22 @@
 # Design System Audit
 
-## Typography
-- **Current:** Geist Sans.
-- **Assessment:** Excellent choice.
-- **Improvement:** Heading weights are mostly `font-bold`. Consider using `font-extrabold` for H1 and `font-semibold` for H3 to create better contrast.
+## Typography (Audit June 04, 2026)
+- **Current Font:** Geist Sans (variable).
+- **Assessment:** Excellent modern aesthetic, high readability.
+- **Finding (T027):** Inconsistent heading weights. Some H1s use `font-bold` while others use `font-extrabold`. H3s vary between `font-bold` and `font-semibold`.
+- **Standard:** Unify on `font-extrabold` for H1 and `font-semibold` for H3.
 
-## Color System
-- **Current:** Primarily `slate` and `indigo`.
-- **Issue:** Inconsistent usage of theme variables. `app/page.tsx` uses `bg-background` (which is slate-900), but `app/about/page.tsx` and `app/blog/page.tsx` use hardcoded `bg-slate-900`.
-- **Recommendation:** Standardize on `bg-background` across all page-level containers. Transition to semantic tokens in `globals.css` (e.g., `--card-background`, `--border-subtle`) to allow for easier theme adjustments.
+## Color System (Audit June 04, 2026)
+- **Primary:** `slate` (neutrals) and `indigo` (brand).
+- **Issue (T025):** Confirmed hardcoded `bg-slate-900` in `app/about/page.tsx` and `app/blog/page.tsx`. This bypasses the CSS variable system.
+- **Recommendation:** Standardize on `bg-background` across all page-level containers.
 
 ## Spacing & Grid
 - **Current:** Standard Tailwind spacing.
 - **Issue:** Inconsistent section padding. Some sections use `py-20`, others `py-12`.
 - **Recommendation:** Standardize on `py-24` for major landing sections and `py-12` for secondary sections.
 
-## Components
-- **Buttons:** Functional but lack "premium" feel. Recommendation: Add subtle inner shadows or a 1px border with a slightly lighter shade than the background.
-- **Cards:** Usage of `bg-slate-800/50` and `border-slate-700` is consistent across the features and pricing sections.
+## Components (Audit June 04, 2026)
+- **Buttons:** Functional. "Signature Glow" (T029) needed for primary Hero CTA to elevate brand perception.
+- **Cards:** Consistent `bg-slate-800/50` usage. Needs standard `hover:border-indigo-500/50` across all cards (T016).
+- **Iconography (T031):** Lucide icons vary in size from 14px to 24px. Standardize to 20px for all feature list items.

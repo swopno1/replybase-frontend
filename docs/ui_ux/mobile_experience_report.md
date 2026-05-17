@@ -29,8 +29,8 @@ The mobile experience is functional but lacks the "premium app-like" feel requir
 - **Impact:** Reduced readability of the value proposition.
 - **Recommendation:** Update all `text-slate-500` body text to `text-slate-400`.
 
-## Optimization Plan - May 24, 2026
-1. **Vertical Pricing (T008):** CRITICAL priority. Redesign the pricing table in `app/page.tsx` to stack as vertical cards. This is the single biggest conversion leak identified.
-2. **Interactive Hierarchy:** Ensure the "Pro" plan remains the visual anchor on mobile.
-3. **Motion Polish (T009):** Transition mobile menu entry from abrupt to staggered using Framer Motion.
-4. **Ergonomic Audit (T011):** Increase padding on all navigation and footer links to ensure 44px touch targets.
+## Optimization Plan - June 04, 2026
+1. **Vertical Pricing (T008):** CRITICAL. Redesign `app/page.tsx` pricing to stack as vertical cards. Highlight "Pro" as the popular choice.
+2. **Staggered Menu (T009):** Implement Framer Motion `AnimatePresence` for `LandingNavbar.tsx` mobile menu.
+3. **Touch Targets (T011):** Audit `LandingFooter.tsx` and `LandingNavbar.tsx` for 44px hit areas.
+4. **Contrast (T012):** Shift `text-slate-500` to `text-slate-400` globally for better sunlight readability.

@@ -29,9 +29,9 @@ The website uses strong risk-reversal language ("No credit card required," "14-d
 - **Observation:** The "supported channels" list is long and text-heavy.
 - **Recommendation:** Use channel icons (WhatsApp logo, Telegram logo) instead of text lists to speed up visual processing.
 
-## Strategic Recommendations (May 2026 Update)
-1. **The Authority Buffer:** Add quantitative stats to the Features section (e.g., "99.9% Uptime", "3ms AI Latency").
-2. **Social Proof Injection (T006):** Move social proof from "Pending" to "Immediate Priority." Implementation of a logo bar below the Hero section is critical.
-3. **Messaging Alignment (T024):** Resolve the conflict in `app/page.tsx` where WhatsApp is listed as "Coming Soon" in the 'How It Works' section but "Beta" in 'Channels' and 'Pricing'.
-4. **Risk-Reversal Consolidation (T030):** Reduce cognitive load in the pricing section by consolidating repeating "14-day free trial" text into a single, high-impact trust banner.
-5. **Loss Aversion:** Reframe messaging from "Automate your support" to "Stop losing revenue to slow response times."
+## Strategic Recommendations (June 2026 Update)
+1. **Hero Trust Badge (T032):** Add "Trusted by 100+ teams" above the Hero H1 to anchor authority immediately.
+2. **WhatsApp Alignment (T024):** Resolve the conflict in `app/page.tsx`. Currently "Coming Soon" in 'How It Works' and "Beta" in 'Channels'. Align all to "Beta".
+3. **Risk-Reversal Consolidation (T030):** Consolidate repeating "14 days free" in the pricing table into a single high-impact "Risk-Free Trial Policy" banner.
+4. **Signature Glow (T029):** Apply premium glow effects to the Hero CTA and the Pro pricing plan to guide attention to high-value actions.
+5. **Logo Bar (T006):** Implement the grayscale social proof bar below the Hero section.

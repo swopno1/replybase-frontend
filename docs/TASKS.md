@@ -51,7 +51,7 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 - **Expected Deliverables:** Consistent messaging for WhatsApp across the entire landing page.
 - **Conversion Impact:** HIGH (Trust building)
 - **Brand Impact:** MEDIUM (Professionalism)
-- **Notes:** Identified during March 2024 deep inspection.
+- **Notes:** Identified during March 2024 deep inspection. Confirmed as CRITICAL trust leak June 2026.
 
 ---
 
@@ -67,7 +67,7 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 - **Expected Deliverables:** Page containers correctly using Tailwind theme variables.
 - **Conversion Impact:** LOW
 - **Brand Impact:** MEDIUM (Consistency)
-- **Notes:** Essential for long-term design system health.
+- **Notes:** Essential for long-term design system health. Confirmed June 2026 audit.
 
 ---
 
