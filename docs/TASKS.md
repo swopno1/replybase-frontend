@@ -60,10 +60,10 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 - **Priority:** MEDIUM
 - **Status:** PENDING
 - **Category:** UI/UX
-- **Issue:** Inconsistent usage of theme variables. `app/about/page.tsx` and `app/blog/page.tsx` use hardcoded `bg-slate-900` instead of the semantic `bg-background` token.
+- **Issue:** Inconsistent usage of theme variables. `app/about/page.tsx`, `app/blog/page.tsx`, `app/blog/[slug]/page.tsx`, and `app/privacy/page.tsx` use hardcoded `bg-slate-900` instead of the semantic `bg-background` token.
 - **UX/Business Impact:** Increases maintenance overhead and creates subtle visual inconsistencies if the background variable is updated in `globals.css`.
 - **Objective:** Standardize on `bg-background` for all page-level containers.
-- **Detailed Instructions:** Audit `app/about/page.tsx` and `app/blog/page.tsx`. Replace `className="bg-slate-900"` with `className="bg-background"`.
+- **Detailed Instructions:** Audit `app/about/page.tsx`, `app/blog/page.tsx`, `app/blog/[slug]/page.tsx`, and `app/privacy/page.tsx`. Replace `className="bg-slate-900"` with `className="bg-background"`.
 - **Expected Deliverables:** Page containers correctly using Tailwind theme variables.
 - **Conversion Impact:** LOW
 - **Brand Impact:** MEDIUM (Consistency)
@@ -179,4 +179,20 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 - **Expected Deliverables:** Immediate trust signal at the entry point.
 - **Conversion Impact:** HIGH
 - **Brand Impact:** MEDIUM
-- **Notes:** Recommendation from Conversion Psychology Audit May 2024.
+- **Notes:** Recommendation from Conversion Psychology Audit May 2024. Confirmed June 2026.
+
+---
+
+### T033: Pro Plan Visual Distinction
+- **Task Number:** T033
+- **Priority:** HIGH
+- **Status:** PENDING
+- **Category:** CONVERSION
+- **Issue:** The 'Pro' plan in the pricing table is not visually differentiated, making it harder for users to identify the recommended option.
+- **UX/Business Impact:** Decision fatigue and lower conversion to the preferred tier.
+- **Objective:** Apply visual emphasis to the 'Pro' plan.
+- **Detailed Instructions:** Update `app/page.tsx` pricing section. Add a "Most Popular" badge or a custom border/shadow (Signature Glow) to the 'Pro' column.
+- **Expected Deliverables:** A visually distinct 'Pro' plan that guides user choice.
+- **Conversion Impact:** HIGH
+- **Brand Impact:** MEDIUM
+- **Notes:** Identified during June 2026 inspection.

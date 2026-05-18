@@ -25,6 +25,7 @@ This is a refined view of UI/UX and Brand tasks from the master TASKS.md file.
 | UX-028 | PENDING | HIGH | Repetitive trial text | Cognitive Load | Consolidate Pricing Risk-Reversal (T030) |
 | UX-029 | PENDING | MEDIUM | Icon size inconsistency | Visual Polish | Unified icon sizing (T031) |
 | UX-030 | PENDING | HIGH | Missing Hero Authority | Trust Building | Hero trust badge (T032) |
+| UX-031 | PENDING | HIGH | No Pro Plan highlight | Decision Flow | Pro tier visual emphasis (T033) |
 
 ---
 
@@ -43,7 +44,7 @@ This is a refined view of UI/UX and Brand tasks from the master TASKS.md file.
 - **Task Number:** UX-024 (T025)
 - **Priority:** MEDIUM
 - **Status:** PENDING
-- **Issue:** `app/about/page.tsx` and `app/blog/page.tsx` use hardcoded `bg-slate-900` instead of `bg-background` (T025).
+- **Issue:** `app/about/page.tsx`, `app/blog/page.tsx`, `app/blog/[slug]/page.tsx`, and `app/privacy/page.tsx` use hardcoded `bg-slate-900` instead of `bg-background` (T025).
 - **Objective:** Ensure all pages respect the global design tokens for consistency.
 - **Expected Deliverables:** Pages updated to use the semantic `bg-background` class.
 - **Notes:** Confirmed June 2026 audit.
