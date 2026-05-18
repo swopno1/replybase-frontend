@@ -38,8 +38,8 @@ ReplyBase follows excellent semantic HTML patterns (logical heading hierarchy, a
 
 ## Strategic Actions - June 04, 2026
 1. **ARIA Implementation (T005):**
-   - **Navbar:** Add `id="mobile-menu"` to the mobile menu container and `aria-controls="mobile-menu"` to the toggle button.
-   - **Newsletter:** Add `aria-live="polite"` to the status message paragraph in `NewsletterSubscribe.tsx`.
+   - **Navbar:** Confirmed missing `aria-controls`. Add `id="mobile-menu"` to the mobile menu container and `aria-controls="mobile-menu"` to the toggle button.
+   - **Newsletter:** Confirmed missing live region. Add `aria-live="polite"` to the status message paragraph in `NewsletterSubscribe.tsx`.
 2. **Contrast Correction (T012):** Replace `text-slate-500` with `text-slate-400` globally to meet WCAG AA standards.
-3. **Keyboard Accessibility (T028):** Add "Skip to Content" link to `app/layout.tsx`.
+3. **Keyboard Accessibility (T028):** Confirmed absence of skip link. Add "Skip to Content" link to `app/layout.tsx`.
 4. **Semantic Weights (T027):** Standardize H1 to `font-extrabold` and H3 to `font-semibold` for clear reading hierarchy.

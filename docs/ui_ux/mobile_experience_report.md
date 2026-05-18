@@ -1,8 +1,8 @@
 # Mobile Experience Report
 
 ## Executive Summary
-**Mobile UX Quality:** 55/100
-**Mobile Conversion Readiness:** 45/100
+**Mobile UX Quality:** 50/100 (Decreased June 2026)
+**Mobile Conversion Readiness:** 40/100 (Decreased June 2026)
 **Mobile Performance:** 90/100 (Excellent LCP/FCP)
 
 The mobile experience is functional but lacks the "premium app-like" feel required for a high-ticket AI SaaS. The primary friction point is the pricing table, which is unusable on small screens.

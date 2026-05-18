@@ -18,13 +18,13 @@ The ReplyBase marketing site is a solid foundation, featuring a modern dark-them
 - **OBSERVATION:** Minor note with no immediate action required.
 
 ## Confidence Scoring
-- **UX Quality:** 75/100
-- **Conversion Readiness:** 60/100
+- **UX Quality:** 70/100 (Slight decrease due to confirmed messaging conflicts)
+- **Conversion Readiness:** 55/100 (Decreased due to pricing friction on mobile)
 - **SEO Readiness:** 85/100
 - **AI Discoverability:** 75/100
-- **Mobile Quality:** 55/100
+- **Mobile Quality:** 50/100 (Decreased due to horizontal pricing table)
 - **Startup Positioning:** 65/100
-- **Trust Perception:** 60/100
+- **Trust Perception:** 55/100 (Decreased due to WhatsApp status mismatch)
 
 ## Visual Perception & Brand Identity
 - **Current State:** Professional dark theme using Slate and Indigo.
@@ -54,7 +54,7 @@ The ReplyBase marketing site is a solid foundation, featuring a modern dark-them
 - **Current State:**
     - **Confidence Score:** 65/100 (Slight decrease due to confirmed messaging conflicts and mobile friction).
     - **Messaging Conflict (HIGH):** Confirmed WhatsApp status mismatch in `app/page.tsx`. "Beta" in Channels vs "Coming Soon" in How It Works (T024). This is a critical trust leak.
-    - **Design System Debt (MEDIUM):** Hardcoded `bg-slate-900` confirmed in `app/about/page.tsx` and `app/blog/page.tsx` (T025). Needs transition to `bg-background`.
+    - **Design System Debt (MEDIUM):** Hardcoded `bg-slate-900` confirmed in `app/about/page.tsx`, `app/blog/page.tsx`, `app/blog/[slug]/page.tsx`, and `app/privacy/page.tsx` (T025). Needs transition to `bg-background`.
     - **Typography (MEDIUM):** H3 weights vary between `font-bold` and `font-semibold`. Unification on `font-semibold` required (T027).
     - **Iconography (MEDIUM):** Lucide icon sizes are inconsistent (14px to 24px) across lists. Standardization to 20px recommended (T031).
     - **Accessibility (HIGH):** Missing `aria-controls` on mobile menu (T005) and missing "Skip to Content" link (T028).

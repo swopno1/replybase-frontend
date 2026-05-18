@@ -36,6 +36,6 @@ The "Signature Glow" involves a specific combination of:
 - **Mitigation:** Strict hierarchy—only ONE "Intense Glow" per viewport.
 
 ## 5. Execution Roadmap (AI-Readable)
-- **Task 1:** Update `tailwind.config.ts` to include the `signature-glow` utility class using `box-shadow` and `linear-gradient`.
-- **Task 2:** Apply `bg-linear-to-r from-indigo-500 to-purple-500 hover:shadow-[0_0_20px_rgba(99,102,241,0.5)]` to the Hero CTA.
-- **Task 3:** Create a `GlowCard` wrapper component for the Pro pricing plan.
+- **Task 1:** Update `app/globals.css`. Define the `--signature-glow` and `--signature-glow-intense` variables within the `@theme` block.
+- **Task 2:** Apply `bg-linear-to-r from-indigo-500 to-purple-500 hover:shadow-indigo-500/50 hover:shadow-lg transition-all duration-300` to the Hero CTA in `app/page.tsx`.
+- **Task 3:** Create a `GlowCard` wrapper component using `backdrop-blur-md` and a 1px border with `border-indigo-500/30` for the Pro pricing plan.
