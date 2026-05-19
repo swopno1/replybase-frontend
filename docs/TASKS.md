@@ -36,6 +36,11 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 | T030 | HIGH | PENDING | CONVERSION | Repetitive trial text | Cognitive Load | Consolidate Pricing Risk-Reversal |
 | T031 | MEDIUM | PENDING | UI/UX | Icon size inconsistency | Visual Fragmentation | Standardize Lucide icons to size 20 in lists |
 | T032 | HIGH | PENDING | CONVERSION | Missing Hero Authority | Low Trust | Add "Trusted by 100+ teams" badge above Hero H1 |
+| T033 | HIGH | PENDING | CONVERSION | No Pro Plan highlight | Decision Flow | Pro tier visual emphasis |
+| T034 | MEDIUM | PENDING | MOBILE | Ergonomic Friction | Reduced Usability | Move mobile menu button 8px inward |
+| T035 | LOW | PENDING | MOTION | Abrupt Loading | Low Perceived Quality | Implement high-fidelity skeleton loaders for blog/channels |
+| T036 | MEDIUM | PENDING | BRAND | CTA Weight Variance | Brand Inconsistency | Standardize all primary CTAs to font-semibold |
+| T037 | MEDIUM | PENDING | ACCESSIBILITY | Silent Form Errors | Barrier for screen readers | Implement aria-describedby for form error messages |
 
 ---
 
@@ -180,6 +185,71 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 - **Conversion Impact:** HIGH
 - **Brand Impact:** MEDIUM
 - **Notes:** Recommendation from Conversion Psychology Audit May 2024. Confirmed June 2026.
+
+---
+
+### T034: Mobile Menu Ergonomics
+- **Task Number:** T034
+- **Priority:** MEDIUM
+- **Status:** PENDING
+- **Category:** MOBILE
+- **Issue:** Mobile menu button in `LandingNavbar.tsx` is placed too close to the screen edge, causing thumb-reach friction on larger devices.
+- **UX/Business Impact:** Reduced navigation comfort and perceived polish.
+- **Objective:** Improve thumb ergonomics for mobile users.
+- **Detailed Instructions:** Update `components/LandingNavbar.tsx`. Adjust the mobile menu button container to include `pr-6` or `mr-2` to move the trigger inward.
+- **Expected Deliverables:** More accessible mobile menu trigger.
+- **Conversion Impact:** LOW
+- **Brand Impact:** MEDIUM (Ergonomic Polish)
+- **Notes:** Identified June 05, 2026 inspection.
+
+---
+
+### T035: High-Fidelity Skeleton Loaders
+- **Task Number:** T035
+- **Priority:** LOW
+- **Status:** PENDING
+- **Category:** MOTION
+- **Issue:** Content hydration (especially blog and channel grids) is abrupt, creating "Perceived Latency."
+- **UX/Business Impact:** Lower perceived platform intelligence and quality.
+- **Objective:** Smooth the transition from "Loading" to "Ready" state.
+- **Detailed Instructions:** Create a `SkeletonLoader` component. Apply to `app/blog/page.tsx` and the `Channels` grid in `app/page.tsx`.
+- **Expected Deliverables:** Smooth, "shimmer-effect" loading states for dynamic sections.
+- **Conversion Impact:** LOW
+- **Brand Impact:** HIGH (Premium feel)
+- **Notes:** Strategic motion improvement June 2026.
+
+---
+
+### T036: CTA Typography Standardization
+- **Task Number:** T036
+- **Priority:** MEDIUM
+- **Status:** PENDING
+- **Category:** BRAND
+- **Issue:** Primary CTAs use varying weights (`font-semibold` in Hero vs `font-medium` in Navbar/Footer).
+- **UX/Business Impact:** Subtle brand fragmentation.
+- **Objective:** Unify all action points under a consistent typographic weight.
+- **Detailed Instructions:** Audit `LandingNavbar.tsx`, `LandingFooter.tsx`, and `app/page.tsx`. Set all primary buttons to `font-semibold`.
+- **Expected Deliverables:** Consistent "Action Weight" across the entire site.
+- **Conversion Impact:** LOW
+- **Brand Impact:** MEDIUM
+- **Notes:** Identified June 05, 2026 inspection.
+
+---
+
+### T037: Accessible Form Feedback
+- **Task Number:** T037
+- **Priority:** MEDIUM
+- **Status:** PENDING
+- **Category:** ACCESSIBILITY
+- **Issue:** Error and success messages in `ContactForm.tsx` and `NewsletterSubscribe.tsx` are not semantically linked to the input fields.
+- **UX/Business Impact:** Screen reader users may not realize a form submission has failed or succeeded.
+- **Objective:** Ensure WCAG 2.1 compliance for form status reporting.
+- **Detailed Instructions:** Implement `aria-describedby` linking input IDs to message IDs. Add `aria-live="polite"` to message containers.
+- **Expected Deliverables:** Fully accessible feedback loops for all public forms.
+- **Conversion Impact:** LOW
+- **Brand Impact:** MEDIUM (Inclusivity)
+- **Notes:** Strategic accessibility alignment June 2026.
+
 
 ---
 
