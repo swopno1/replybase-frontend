@@ -36,10 +36,11 @@ ReplyBase follows excellent semantic HTML patterns (logical heading hierarchy, a
 - Ensure all inputs have `id` attributes matching their `<label htmlFor="...">`.
 - Use `aria-invalid={!!errors.email}` and `aria-describedby="email-error"` for validation states.
 
-## Strategic Actions - June 04, 2026
+## Strategic Actions - June 05, 2026
 1. **ARIA Implementation (T005):**
-   - **Navbar:** Confirmed missing `aria-controls`. Add `id="mobile-menu"` to the mobile menu container and `aria-controls="mobile-menu"` to the toggle button.
-   - **Newsletter:** Confirmed missing live region. Add `aria-live="polite"` to the status message paragraph in `NewsletterSubscribe.tsx`.
+   - **Navbar:** Verified missing `aria-controls` for mobile menu. Add `id="mobile-menu"` to container and `aria-controls` to trigger.
+   - **Newsletter:** Verified missing `aria-live="polite"` for status messages.
 2. **Contrast Correction (T012):** Replace `text-slate-500` with `text-slate-400` globally to meet WCAG AA standards.
-3. **Keyboard Accessibility (T028):** Confirmed absence of skip link. Add "Skip to Content" link to `app/layout.tsx`.
+3. **Keyboard Accessibility (T028):** Verified absence of skip link in `app/layout.tsx`.
 4. **Semantic Weights (T027):** Standardize H1 to `font-extrabold` and H3 to `font-semibold` for clear reading hierarchy.
+5. **Form Feedback (T037):** Implement `aria-describedby` for `ContactForm.tsx` error states to ensure screen reader clarity.

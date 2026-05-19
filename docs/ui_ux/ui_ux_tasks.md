@@ -26,6 +26,10 @@ This is a refined view of UI/UX and Brand tasks from the master TASKS.md file.
 | UX-029 | PENDING | MEDIUM | Icon size inconsistency | Visual Polish | Unified icon sizing (T031) |
 | UX-030 | PENDING | HIGH | Missing Hero Authority | Trust Building | Hero trust badge (T032) |
 | UX-031 | PENDING | HIGH | No Pro Plan highlight | Decision Flow | Pro tier visual emphasis (T033) |
+| UX-032 | PENDING | MEDIUM | Mobile thumb friction | Ergonomics | Ergonomic menu trigger (T034) |
+| UX-033 | PENDING | LOW | Abrupt content load | Motion Perception | High-fidelity skeletons (T035) |
+| UX-034 | PENDING | MEDIUM | Action weight variance | Brand Consistency | Semibold CTA standardization (T036) |
+| UX-035 | PENDING | MEDIUM | Silent form feedback | Inclusivity | Aria-describedby for forms (T037) |
 
 ---
 

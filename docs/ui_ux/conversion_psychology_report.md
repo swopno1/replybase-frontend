@@ -35,3 +35,4 @@ The website uses strong risk-reversal language ("No credit card required," "14-d
 3. **Risk-Reversal Consolidation (T030):** Consolidate repeating "14 days free" in the pricing table into a single high-impact "Risk-Free Trial Policy" banner.
 4. **Signature Glow (T029):** Apply premium glow effects to the Hero CTA and the Pro pricing plan to guide attention to high-value actions.
 5. **Logo Bar (T006):** Implement the grayscale social proof bar below the Hero section.
+6. **Feature Skeleton Loaders (T035):** Implement custom skeleton loaders for blog and channel grids to reduce "Perceived Latency" during hydration.
