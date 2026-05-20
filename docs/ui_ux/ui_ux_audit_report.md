@@ -59,3 +59,12 @@ The ReplyBase marketing site is a solid foundation, featuring a modern dark-them
     - **Motion (LOW):** Lack of "Intelligent" skeleton loaders during dynamic transitions (e.g., Blog loading). Current transitions are abrupt.
     - **Accessibility (HIGH):** Missing `aria-controls` for `LandingNavbar.tsx` and status message announcements in `NewsletterSubscribe.tsx` (T005).
 - **Strategic Recommendation:** Prioritize T024 (WhatsApp Sync) and T032 (Hero Authority) to immediate stabilize trust before initiating brand-heavy "Signature Glow" updates.
+
+## Inspection Update - June 06, 2026
+- **Focus:** Micro-Interactions & Narrative Pacing.
+- **Current State:**
+    - **Confidence Score:** 60/100 (Decreased due to identification of pricing comparison friction on mobile and lack of interactive feedback in the pricing table).
+    - **Pricing Friction (HIGH):** The pricing table rows lack hover states, making it difficult to track features across columns on desktop (T039).
+    - **Mobile UX (HIGH):** The mobile menu overlaps content without a sufficiently dark backdrop, reducing legibility of menu items against busy hero sections (T038).
+    - **Empty States (LOW):** The blog index lacks a graceful "No posts found" state, which could impact user perception if the directory is empty or filters are added (T040).
+- **Strategic Recommendation:** Implement T039 (Pricing Row Hover) immediately to improve desktop scanability, and T038 (Mobile Backdrop) to ensure mobile menu accessibility.

@@ -41,6 +41,9 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 | T035 | LOW | PENDING | MOTION | Abrupt Loading | Low Perceived Quality | Implement high-fidelity skeleton loaders for blog/channels |
 | T036 | MEDIUM | PENDING | BRAND | CTA Weight Variance | Brand Inconsistency | Standardize all primary CTAs to font-semibold |
 | T037 | MEDIUM | PENDING | ACCESSIBILITY | Silent Form Errors | Barrier for screen readers | Implement aria-describedby for form error messages |
+| T038 | HIGH | PENDING | MOBILE | Mobile Menu Visual Noise | Reduced Readability | Implement Backdrop for Mobile Menu |
+| T039 | MEDIUM | PENDING | UI/UX | Static Pricing Table | Reduced Tracking Ease | Implement Row Hover for Pricing Table |
+| T040 | LOW | PENDING | UI/UX | Missing Blog Empty State | Continuity Gap | Implement "No Posts Found" UI for Blog |
 
 ---
 
@@ -266,3 +269,51 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 - **Conversion Impact:** HIGH
 - **Brand Impact:** MEDIUM
 - **Notes:** Identified during June 2026 inspection.
+
+---
+
+### T038: Mobile Menu Visual Backdrop
+- **Task Number:** T038
+- **Priority:** HIGH
+- **Status:** PENDING
+- **Category:** MOBILE
+- **Issue:** The mobile menu in `LandingNavbar.tsx` lacks a backdrop overlay, causing visual overlap with the hero section content and reducing legibility.
+- **UX/Business Impact:** Frustrating navigation experience and reduced "premium" feel.
+- **Objective:** Improve mobile menu readability and focus.
+- **Detailed Instructions:** Update `components/LandingNavbar.tsx`. Implement a fixed, full-screen backdrop overlay (`bg-slate-900/80` with `backdrop-blur-sm`) that appears when `isOpen` is true.
+- **Expected Deliverables:** Clear, accessible mobile navigation menu with zero background visual noise.
+- **Conversion Impact:** MEDIUM (Navigation clarity)
+- **Brand Impact:** HIGH (Polish)
+- **Notes:** Identified June 06, 2026 inspection.
+
+---
+
+### T039: Pricing Table Row Interactions
+- **Task Number:** T039
+- **Priority:** MEDIUM
+- **Status:** PENDING
+- **Category:** UI/UX
+- **Issue:** The pricing table in `app/page.tsx` is static, making it difficult for users to track features across the four plan columns.
+- **UX/Business Impact:** Higher cognitive load during feature comparison.
+- **Objective:** Aid visual tracking during plan comparison.
+- **Detailed Instructions:** Update `app/page.tsx` pricing section. Add `hover:bg-slate-800/50` and `transition-colors` to the `<tr>` elements in the pricing table body.
+- **Expected Deliverables:** Interactive pricing table with clear row highlighting.
+- **Conversion Impact:** MEDIUM (Decision ease)
+- **Brand Impact:** MEDIUM (Premium feel)
+- **Notes:** Identified June 06, 2026 inspection.
+
+---
+
+### T040: Branded Blog Empty State
+- **Task Number:** T040
+- **Priority:** LOW
+- **Status:** PENDING
+- **Category:** UI/UX
+- **Issue:** The blog index page (`app/blog/page.tsx`) does not handle cases where no posts are returned, resulting in a blank or broken visual layout.
+- **UX/Business Impact:** Negative impact on brand professionalism if a user lands on an empty blog.
+- **Objective:** Maintain professional continuity.
+- **Detailed Instructions:** Update `app/blog/page.tsx`. Add a conditional check for `allPostsData.length === 0` and display a branded illustration or message (e.g., "Our writers are busy creating new insights. Check back soon!") with a link back to the home page.
+- **Expected Deliverables:** Graceful, branded fallback UI for empty content states.
+- **Conversion Impact:** LOW
+- **Brand Impact:** MEDIUM (Professionalism)
+- **Notes:** Identified June 06, 2026 inspection.
