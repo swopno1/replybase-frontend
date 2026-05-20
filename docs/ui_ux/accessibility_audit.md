@@ -44,3 +44,7 @@ ReplyBase follows excellent semantic HTML patterns (logical heading hierarchy, a
 3. **Keyboard Accessibility (T028):** Verified absence of skip link in `app/layout.tsx`.
 4. **Semantic Weights (T027):** Standardize H1 to `font-extrabold` and H3 to `font-semibold` for clear reading hierarchy.
 5. **Form Feedback (T037):** Implement `aria-describedby` for `ContactForm.tsx` error states to ensure screen reader clarity.
+
+## Inspection Update - June 06, 2026
+- **Observation (MEDIUM):** The "Mobile Menu Backdrop" (T038) needs to be correctly handled for accessibility. When the menu is open, the backdrop should prevent interaction with the background content (Inert state) and provide a clear visual boundary.
+- **Recommendation:** Use `aria-hidden="true"` on the backdrop and ensure focus is trapped within the mobile menu when active.

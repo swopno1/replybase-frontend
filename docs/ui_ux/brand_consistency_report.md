@@ -19,3 +19,7 @@
 - **CTA Standardization (T036):** Identified variance in CTA font weights (semibold vs medium). Standardizing on `font-semibold` for all primary actions.
 - **Thematic Consistency (T025):** Hardcoded `bg-slate-900` confirmed as a consistency blocker. Transition to `bg-background` is mandatory for design system health.
 - **Iconography (T031):** Lucide icons in feature lists vary in size. Standardizing to `size={20}` globally for list items.
+
+## Inspection Update - June 06, 2026
+- **Interaction Gaps (MEDIUM):** The pricing table (`app/page.tsx`) feels static. Adding a subtle `hover:bg-slate-800/50` to table rows (T039) will improve the "Premium Software" feel and aid in row-tracking for wide comparison tables.
+- **Content Continuity (LOW):** The Blog index (`app/blog/page.tsx`) currently assumes posts will always exist. Implementing a branded "Empty State" (T040) maintains professional continuity even when no content is present.

@@ -35,3 +35,7 @@ The mobile experience is functional but lacks the "premium app-like" feel requir
 3. **Touch Targets (T011):** Increase hit areas for social links in `LandingFooter.tsx` and the mobile menu close button.
 4. **Contrast (T012):** Standardize on `text-slate-400` for all secondary text to ensure outdoor legibility.
 5. **Ergonomic Navbar (T034):** Move mobile menu button 8px inward to prevent "thumb-stretch" friction on larger devices.
+
+## Inspection Update - June 06, 2026
+- **Observation (HIGH):** The mobile menu in `LandingNavbar.tsx` lacks a backdrop overlay. When open, the underlying hero text creates visual noise, making navigation links harder to read.
+- **Task (T038):** Implement a semi-transparent `bg-slate-900/80` backdrop with `backdrop-blur-sm` when the mobile menu is active.
