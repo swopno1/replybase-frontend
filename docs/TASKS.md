@@ -44,6 +44,74 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 | T038 | HIGH | PENDING | MOBILE | Mobile Menu Visual Noise | Reduced Readability | Implement Backdrop for Mobile Menu |
 | T039 | MEDIUM | PENDING | UI/UX | Static Pricing Table | Reduced Tracking Ease | Implement Row Hover for Pricing Table |
 | T040 | LOW | PENDING | UI/UX | Missing Blog Empty State | Continuity Gap | Implement "No Posts Found" UI for Blog |
+| T041 | HIGH | PENDING | ACCESSIBILITY | Mobile Menu Focus Leaks | Navigation Barrier | Implement Focus Trapping for Mobile Menu |
+| T042 | MEDIUM | PENDING | MOTION | Static Feature Entry | Low Perceived Sophistication | Implement Scroll-Driven Entry Animations |
+| T043 | MEDIUM | PENDING | SEO | Inconsistent Docs Metadata | Reduced Search Visibility | Documentation Metadata Audit & Update |
+| T044 | HIGH | PENDING | MOBILE | Unreadable Pricing Comparison | Decision Fatigue | Mobile Pricing Comparison Modal |
+
+---
+
+### T041: Mobile Menu Focus Trapping
+- **Task Number:** T041
+- **Priority:** HIGH
+- **Status:** PENDING
+- **Category:** ACCESSIBILITY
+- **Issue:** Focus can escape the mobile menu into the background content when active.
+- **UX/Business Impact:** Critical navigation barrier for keyboard/screen-reader users.
+- **Objective:** Ensure focus is trapped within the mobile menu when open.
+- **Detailed Instructions:** Update `components/LandingNavbar.tsx`. Use a focus-trap solution (e.g., `react-focus-lock`) to contain focus within the mobile menu.
+- **Expected Deliverables:** Accessible mobile navigation with full focus containment.
+- **Conversion Impact:** MEDIUM (Navigation accessibility)
+- **Brand Impact:** MEDIUM (Inclusivity)
+- **Notes:** Identified during June 07, 2026 inspection.
+
+---
+
+### T042: Scroll-Driven Feature Animations
+- **Task Number:** T042
+- **Priority:** MEDIUM
+- **Status:** PENDING
+- **Category:** MOTION
+- **Issue:** Platform feels "static" as users scroll through feature grids.
+- **UX/Business Impact:** Lower perceived platform intelligence and modern aesthetic.
+- **Objective:** Add entry rhythm to marketing sections.
+- **Detailed Instructions:** Implement `framer-motion` `whileInView` animations for feature cards in `app/page.tsx`. Use a staggered `y` offset (20px) and opacity fade-in.
+- **Expected Deliverables:** Smooth, interactive scroll experience for core feature sections.
+- **Conversion Impact:** LOW
+- **Brand Impact:** HIGH (Premium feel)
+- **Notes:** Identified June 07, 2026 inspection.
+
+---
+
+### T043: Documentation Metadata Audit
+- **Task Number:** T043
+- **Priority:** MEDIUM
+- **Status:** PENDING
+- **Category:** SEO
+- **Issue:** Documentation sub-pages lack descriptive unique metadata or use generic defaults.
+- **UX/Business Impact:** Lower click-through rate from search engines for technical queries.
+- **Objective:** Maximize search visibility for long-tail documentation queries.
+- **Detailed Instructions:** Audit all `page.tsx` files in `app/docs/`. Ensure each has a unique `title` and `description` in its `Metadata` export.
+- **Expected Deliverables:** 100% metadata coverage for documentation pages.
+- **Conversion Impact:** MEDIUM (Traffic quality)
+- **Brand Impact:** LOW
+- **Notes:** Identified June 07, 2026 inspection.
+
+---
+
+### T044: Mobile Pricing Comparison Modal
+- **Task Number:** T044
+- **Priority:** HIGH
+- **Status:** PENDING
+- **Category:** MOBILE
+- **Issue:** The horizontal pricing table is unusable on small screens (T008).
+- **UX/Business Impact:** Prevents informed decision-making for mobile users.
+- **Objective:** Provide a readable comparison experience for mobile.
+- **Detailed Instructions:** Create a `PricingComparisonModal` component. Trigger it from a "Compare All Features" button that replaces the table on mobile devices. Present features in a vertical, group-based checklist.
+- **Expected Deliverables:** Clean, readable, and interactive comparison view for mobile users.
+- **Conversion Impact:** HIGH (Decision ease)
+- **Brand Impact:** MEDIUM (Polish)
+- **Notes:** Strategic mobile UX improvement identified June 07, 2026.
 
 ---
 

@@ -48,3 +48,10 @@ ReplyBase follows excellent semantic HTML patterns (logical heading hierarchy, a
 ## Inspection Update - June 06, 2026
 - **Observation (MEDIUM):** The "Mobile Menu Backdrop" (T038) needs to be correctly handled for accessibility. When the menu is open, the backdrop should prevent interaction with the background content (Inert state) and provide a clear visual boundary.
 - **Recommendation:** Use `aria-hidden="true"` on the backdrop and ensure focus is trapped within the mobile menu when active.
+
+## Inspection Update - June 07, 2026
+- **Issue (HIGH):** Focus Trapping in Mobile Menu.
+- **Analysis:** Current `LandingNavbar.tsx` implementation does not trap focus when `isOpen` is true. Users tabbing through the menu will eventually land on elements behind the menu, creating a "broken" experience for keyboard and screen-reader users.
+- **Task (T041):** Implement focus trapping for the mobile menu using `react-focus-lock` or a custom focus trap hook. Ensure the background content is marked as `aria-hidden="true"` when the menu is active.
+- **Issue (LOW):** Documentation link icons lack descriptive titles or `aria-hidden`.
+- **Recommendation:** Set `aria-hidden="true"` on all purely decorative Lucide icons in the documentation navigation and lists.
