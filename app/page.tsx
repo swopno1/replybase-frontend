@@ -368,68 +368,7 @@ export default function LandingPage() {
               </div>
             </div>
           </div>
-        </section>
-
-        {/* Success Stories / Social Proof */}
-        <section
-          id="success"
-          className="py-20 bg-slate-800/60 border-b border-slate-800"
-        >
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-white motion-safe:animate-fade-in">
-                See How Businesses Succeed with ReplyBase
-              </h2>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-slate-900 p-8 rounded-2xl shadow-xl border border-slate-700/50 motion-safe:animate-slide-in-up">
-                <p className="text-slate-300 italic mb-6">
-                  &quot;ReplyBase transformed our customer response time. We
-                  now capture leads 24/7, even when our team is offline.&quot;
-                </p>
-                <div className="flex items-center gap-4">
-                  <div className="h-12 w-12 rounded-full bg-indigo-600" />
-                  <div>
-                    <div className="text-white font-bold">Sarah Jenkins</div>
-                    <div className="text-slate-500 text-sm">
-                      CEO, TechFlow Solutions
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-slate-900 p-8 rounded-2xl shadow-xl border border-slate-700/50 motion-safe:animate-slide-in-up">
-                <p className="text-slate-300 italic mb-6">
-                  &quot;The visual flow builder is a game-changer. We designed
-                  our entire lead qualification process in one afternoon.&quot;
-                </p>
-                <div className="flex items-center gap-4">
-                  <div className="h-12 w-12 rounded-full bg-purple-600" />
-                  <div>
-                    <div className="text-white font-bold">Mark Thompson</div>
-                    <div className="text-slate-500 text-sm">
-                      Marketing Director, GrowthLabs
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-slate-900 p-8 rounded-2xl shadow-xl border border-slate-700/50 motion-safe:animate-slide-in-up">
-                <p className="text-slate-300 italic mb-6">
-                  &quot;Having all our conversations—Facebook, Telegram, and
-                  Webchat—in one place has saved us hours every week.&quot;
-                </p>
-                <div className="flex items-center gap-4">
-                  <div className="h-12 w-12 rounded-full bg-blue-600" />
-                  <div>
-                    <div className="text-white font-bold">Elena Rodriguez</div>
-                    <div className="text-slate-500 text-sm">
-                      Customer Success Manager, OmniRetail
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+              </section>
 
         {/* Security Section */}
         <section
