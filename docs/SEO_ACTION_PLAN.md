@@ -6,7 +6,7 @@
 3. [x] Implement Schema.org JSON-LD for the homepage.
 
 ## Content Tasks
-1. [x] Create 5 new blog posts focusing on "AI Automation in the UK." (Added: ReplyBase vs Intercom, AI for Real Estate Agents)
+1. [x] Create 5 new blog posts focusing on "AI Automation in the UK." (Added: ReplyBase vs Intercom, AI for Real Estate Agents, ReplyBase vs Zendesk, Security-First AI)
 2. [/] Optimize the "About Us" page for "AI Startup" keywords. (Page exists, needs more targeted keywords)
 
 ## Technical Tasks
