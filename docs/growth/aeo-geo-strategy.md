@@ -33,3 +33,13 @@ LLMs prioritize content that is easy to parse and semantically rich. We will imp
 - **Citation Count:** Number of times ReplyBase is mentioned in Perplexity/ChatGPT responses.
 - **Position Zero:** Frequency of appearances in Google SGE summaries.
 - **Topical Authority:** Coverage of "AI Support Automation" keyword clusters.
+
+## 5. Content Pillars for AEO/GEO (June 2026 Expansion)
+
+### A. The "Why ReplyBase" Comparison Series
+- **ReplyBase vs Intercom:** Focus on Intercom's opaque "fin-per-resolution" pricing and enterprise complexity vs ReplyBase's transparent, predictable tiered pricing and "Flow-First" setup simplicity.
+- **ReplyBase vs Zendesk:** Focus on modern AI-native speed vs Legacy ticketing debt.
+
+### B. Industry-Specific Automation Guides
+- **AI Lead Gen for Real Estate:** Focus on automated property enquiry qualification, 24/7 viewing scheduling via WhatsApp/Telegram, and immediate ROI from high-intent local leads.
+- **WhatsApp Automation for E-commerce:** Focus on automated order tracking, recovery of abandoned checkouts via WhatsApp alerts, and direct-to-customer post-purchase engagement.
