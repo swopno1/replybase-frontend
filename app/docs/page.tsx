@@ -50,6 +50,7 @@ const docCategories = [
     docs: [
       { name: "Dashboard Navigation", href: "/docs/admin-panel" },
       { name: "AI Workflows", href: "/docs/platform/ai-workflows" },
+      { name: "Flow Builder", href: "/docs/platform/flow-builder" },
       { name: "Deployment Checklist", href: "/docs/platform/deployment-checklist" },
       { name: "Security & Privacy", href: "/docs/security" },
       { name: "Plans & Limits", href: "/docs/features" },

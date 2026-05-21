@@ -1,6 +1,7 @@
 import { Metadata } from "next";
-import { Layout, Users, MessageSquare, Zap, Shield } from "lucide-react";
+import { Layout, Users, MessageSquare, Zap, Shield, Cpu, GitBranch } from "lucide-react";
 import DocLayout from "../_components/DocLayout";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Platform Overview",
@@ -63,11 +64,31 @@ export default function PlatformOverviewPage() {
             Power your business with 24/7 automated replies. Use our Flow Builder for structured paths 
             and AI Fallback for natural language queries.
           </p>
-          <div className="p-6 bg-slate-800/40 rounded-2xl border border-slate-700 border-dashed text-center">
-            <p className="text-slate-400 italic">
-              AI Workflows documentation is currently being expanded.
-              {/* TODO: Link to /docs/platform/ai-workflows when content is finalized */}
-            </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link 
+              href="/docs/platform/ai-workflows"
+              className="flex items-center gap-4 p-4 bg-slate-800/30 hover:bg-slate-800/60 border border-slate-700 rounded-xl transition-all group"
+            >
+              <div className="p-2 bg-indigo-600/10 group-hover:bg-indigo-600/20 text-indigo-400 rounded-lg shrink-0">
+                <Cpu size={20} />
+              </div>
+              <div>
+                <h4 className="font-bold text-white text-sm mb-0.5">AI Workflows</h4>
+                <p className="text-xs text-slate-500">Hybrid AI orchestration & fallback systems.</p>
+              </div>
+            </Link>
+            <Link 
+              href="/docs/platform/flow-builder"
+              className="flex items-center gap-4 p-4 bg-slate-800/30 hover:bg-slate-800/60 border border-slate-700 rounded-xl transition-all group"
+            >
+              <div className="p-2 bg-indigo-600/10 group-hover:bg-indigo-600/20 text-indigo-400 rounded-lg shrink-0">
+                <GitBranch size={20} />
+              </div>
+              <div>
+                <h4 className="font-bold text-white text-sm mb-0.5">Visual Flow Builder</h4>
+                <p className="text-xs text-slate-500">Design interactive conversation branches & checkout flows.</p>
+              </div>
+            </Link>
           </div>
         </section>
 

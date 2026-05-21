@@ -20,7 +20,8 @@ import {
   Activity,
   CreditCard,
   CheckSquare,
-  Code2
+  Code2,
+  GitBranch
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -49,6 +50,7 @@ const navigation = [
     items: [
       { name: "Dashboard Guide", href: "/docs/admin-panel", icon: Layout },
       { name: "AI Workflows", href: "/docs/platform/ai-workflows", icon: Cpu },
+      { name: "Flow Builder", href: "/docs/platform/flow-builder", icon: GitBranch },
       { name: "Deployment Checklist", href: "/docs/platform/deployment-checklist", icon: CheckSquare },
       { name: "Security & Privacy", href: "/docs/security", icon: Shield },
       { name: "Plans & Limits", href: "/docs/features", icon: CreditCard },
