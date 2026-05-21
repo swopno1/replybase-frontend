@@ -338,12 +338,12 @@ export default function TermsPage() {
                 <br />
                 <strong>WhatsApp:</strong>{" "}
                 <a
-                  href="https://wa.me/447822033580"
+                  href="https://wa.me/447453383642"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-green-400 hover:text-green-300"
+                  className="text-indigo-400 hover:text-indigo-300 transition-colors"
                 >
-                  +44 7822 033580
+                  +44 7453 383642
                 </a>
                 <br />
                 <strong>Legal:</strong>{" "}

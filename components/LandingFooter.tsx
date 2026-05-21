@@ -88,7 +88,7 @@ export default function LandingFooter() {
               </li>
               <li>
                 <a
-                  href="https://wa.me/447822033580"
+                  href="https://wa.me/447453383642"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-white transition-colors"

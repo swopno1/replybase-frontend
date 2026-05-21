@@ -404,12 +404,12 @@ export default function PrivacyPage() {
                 <br />
                 <strong>WhatsApp:</strong>{" "}
                 <a
-                  href="https://wa.me/447822033580"
+                  href="https://wa.me/447453383642"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-green-400 hover:text-green-300"
                 >
-                  +44 7822 033580
+                  +44 7453 383642
                 </a>
                 <br />
                 <strong>Support:</strong>{" "}

@@ -69,12 +69,12 @@ export default function ContactForm() {
           </a>
           <span className="hidden sm:inline text-slate-600">·</span>
           <a
-            href="https://wa.me/447822033580"
+            href="https://wa.me/447453383642"
             target="_blank"
             rel="noopener noreferrer"
             className="text-green-400 hover:text-green-300 font-medium"
           >
-            💬 WhatsApp: +44 7822 033580
+            💬 WhatsApp: +44 7453 383642
           </a>
         </div>
       </CardHeader>
