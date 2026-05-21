@@ -39,3 +39,11 @@ The mobile experience is functional but lacks the "premium app-like" feel requir
 ## Inspection Update - June 06, 2026
 - **Observation (HIGH):** The mobile menu in `LandingNavbar.tsx` lacks a backdrop overlay. When open, the underlying hero text creates visual noise, making navigation links harder to read.
 - **Task (T038):** Implement a semi-transparent `bg-slate-900/80` backdrop with `backdrop-blur-sm` when the mobile menu is active.
+
+## Inspection Update - June 07, 2026
+- **Observation (HIGH):** Mobile Menu Ergonomics.
+- **Analysis:** In addition to T034 (button placement), the mobile menu items in `LandingNavbar.tsx` are too small for high-precision touch.
+- **Recommendation:** Increase vertical padding for mobile menu items (`py-4`) and add a subtle background hover/active state to indicate touch feedback.
+- **Observation (MEDIUM):** Pricing Table Decision Friction.
+- **Analysis:** Horizontal scrolling for pricing (T008) is still the primary conversion blocker.
+- **Task (T044):** Develop a mobile-optimized "Compare Plans" modal that presents features in a clean, vertical checklist format, replacing the horizontal table for devices < 768px.

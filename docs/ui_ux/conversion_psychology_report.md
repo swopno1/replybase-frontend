@@ -36,3 +36,11 @@ The website uses strong risk-reversal language ("No credit card required," "14-d
 4. **Signature Glow (T029):** Apply premium glow effects to the Hero CTA and the Pro pricing plan to guide attention to high-value actions.
 5. **Logo Bar (T006):** Implement the grayscale social proof bar below the Hero section.
 6. **Feature Skeleton Loaders (T035):** Implement custom skeleton loaders for blog and channel grids to reduce "Perceived Latency" during hydration.
+
+## Inspection Update - June 07, 2026
+- **Observation (HIGH):** Narrative Pacing & Social Proof.
+- **Analysis:** The gap between the Hero section and the Features section is too large. Users lose the "Trust Momentum" established at the top.
+- **Recommendation:** Implement T006 (Logo Bar) immediately as a buffer between Hero and Channels.
+- **Observation (MEDIUM):** Pricing Tier Guidance.
+- **Analysis:** Users landing on the pricing section (T033) need a clear "Path of Least Resistance."
+- **Task (T044):** Ensure the "Compare Features" modal for mobile includes a clear CTA for the 'Pro' plan at both the top and bottom of the view.

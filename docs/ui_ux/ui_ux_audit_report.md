@@ -18,13 +18,13 @@ The ReplyBase marketing site is a solid foundation, featuring a modern dark-them
 - **OBSERVATION:** Minor note with no immediate action required.
 
 ## Confidence Scoring
-- **UX Quality:** 70/100 (Slight decrease due to confirmed messaging conflicts)
-- **Conversion Readiness:** 55/100 (Decreased due to pricing friction on mobile)
+- **UX Quality:** 68/100 (Decrease due to identified focus trapping issues)
+- **Conversion Readiness:** 55/100
 - **SEO Readiness:** 85/100
 - **AI Discoverability:** 75/100
-- **Mobile Quality:** 50/100 (Decreased due to horizontal pricing table)
+- **Mobile Quality:** 48/100 (Decrease due to mobile menu ergonomic friction)
 - **Startup Positioning:** 65/100
-- **Trust Perception:** 55/100 (Decreased due to WhatsApp status mismatch)
+- **Trust Perception:** 55/100
 
 ## Visual Perception & Brand Identity
 - **Current State:** Professional dark theme using Slate and Indigo.
@@ -68,3 +68,13 @@ The ReplyBase marketing site is a solid foundation, featuring a modern dark-them
     - **Mobile UX (HIGH):** The mobile menu overlaps content without a sufficiently dark backdrop, reducing legibility of menu items against busy hero sections (T038).
     - **Empty States (LOW):** The blog index lacks a graceful "No posts found" state, which could impact user perception if the directory is empty or filters are added (T040).
 - **Strategic Recommendation:** Implement T039 (Pricing Row Hover) immediately to improve desktop scanability, and T038 (Mobile Backdrop) to ensure mobile menu accessibility.
+
+## Inspection Update - June 07, 2026
+- **Focus:** Accessibility Depth & Semantic SEO.
+- **Current State:**
+    - **Confidence Score:** 58/100 (Decrease due to identified accessibility blockers in mobile navigation).
+    - **Accessibility (HIGH):** The mobile menu lacks focus trapping. When open, keyboard/screen-reader focus can still escape into the background content, causing significant navigation confusion (T041).
+    - **Motion (MEDIUM):** Static feature grids lack entry rhythm. Implementing scroll-driven animations will improve the perceived sophistication of the platform (T042).
+    - **SEO (LOW):** Documentation pages have inconsistent metadata. A global audit of `app/docs` titles and descriptions is required to maximize search visibility (T043).
+    - **Mobile UX (HIGH):** Full pricing table comparison is unreadable on mobile. A modal-based "Feature Comparison" view is recommended for small screens (T044).
+- **Strategic Recommendation:** Prioritize T041 (Focus Trapping) to resolve critical accessibility friction before scaling brand-driven motion updates.

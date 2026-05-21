@@ -10,5 +10,6 @@
 2. [/] Optimize the "About Us" page for "AI Startup" keywords. (Page exists, needs more targeted keywords)
 
 ## Technical Tasks
-1. [ ] Check sitemap.xml validity in Google Search Console.
+1. [ ] Check sitemap.xml validity in Google Search Console. (Assigned T043)
 2. [ ] Optimize script loading order for faster TBT (Total Blocking Time).
+3. [ ] Perform Documentation Metadata Audit. (Assigned T043)
