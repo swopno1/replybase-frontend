@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import LandingNavbar from "@/components/LandingNavbar";
 import LandingFooter from "@/components/LandingFooter";
+import FoundingPromoModal from "@/components/FoundingPromoModal";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -47,6 +48,7 @@ export default function LandingPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <LandingNavbar />
+      <FoundingPromoModal />
 
       <main>
         {/* Hero Section */}
