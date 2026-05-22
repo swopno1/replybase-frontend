@@ -16,6 +16,11 @@
 - **Issue:** Inconsistent section padding. Some sections use `py-20`, others `py-12`.
 - **Recommendation:** Standardize on `py-24` for major landing sections and `py-12` for secondary sections.
 
+## Inspection Update - June 08, 2026
+- **Typography (MEDIUM):** CTA Weight Variance. Verified `font-medium` in footer links vs `font-semibold` in hero actions. Standardizing all actionable text to `font-semibold` (T036).
+- **Interactions (LOW):** Verified lack of pricing table hover states (T039) on desktop.
+- **Mobile Touch (MEDIUM):** Verified small touch targets in footer social icons and mobile menu button (T011).
+
 ## Components (Audit June 04, 2026)
 - **Buttons:** Functional. "Signature Glow" (T029) needed for primary Hero CTA to elevate brand perception.
 - **Cards:** Consistent `bg-slate-800/50` usage. Needs standard `hover:border-indigo-500/50` across all cards (T016).

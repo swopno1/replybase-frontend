@@ -44,3 +44,9 @@ The website uses strong risk-reversal language ("No credit card required," "14-d
 - **Observation (MEDIUM):** Pricing Tier Guidance.
 - **Analysis:** Users landing on the pricing section (T033) need a clear "Path of Least Resistance."
 - **Task (T044):** Ensure the "Compare Features" modal for mobile includes a clear CTA for the 'Pro' plan at both the top and bottom of the view.
+
+## Inspection Update - June 08, 2026
+- **Observation (HIGH):** CTA Authority & Trust.
+- **Analysis:** Inconsistent font weights (T036) for primary CTAs create a "subtle" lack of confidence in the user's action path.
+- **Task (T032):** Hero Authority Badge remains the highest impact "Low Effort" conversion win.
+- **Strategic Recommendation:** Deploy T024 (WhatsApp Sync) and T032 (Hero Authority) as immediate "Trust Stabilization" measures.
