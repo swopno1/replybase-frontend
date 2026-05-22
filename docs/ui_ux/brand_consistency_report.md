@@ -20,6 +20,11 @@
 - **Thematic Consistency (T025):** Hardcoded `bg-slate-900` confirmed as a consistency blocker. Transition to `bg-background` is mandatory for design system health.
 - **Iconography (T031):** Lucide icons in feature lists vary in size. Standardizing to `size={20}` globally for list items.
 
+## Inspection Update - June 08, 2026
+- **CTA Weight (HIGH):** Variance in `font-medium` vs `font-semibold` across primary action buttons (T036). Unifying on `font-semibold` is essential for brand authority.
+- **Interaction Feedback (MEDIUM):** Pricing table rows on desktop lack hover states (T039), making the tool feel more like a static table than a SaaS application.
+- **Mobile Touch (MEDIUM):** Standardized on 44x44px minimum touch targets (T011) and inward button positioning (T034) to improve ergonomic brand perception.
+
 ## Inspection Update - June 06, 2026
 - **Interaction Gaps (MEDIUM):** The pricing table (`app/page.tsx`) feels static. Adding a subtle `hover:bg-slate-800/50` to table rows (T039) will improve the "Premium Software" feel and aid in row-tracking for wide comparison tables.
 - **Content Continuity (LOW):** The Blog index (`app/blog/page.tsx`) currently assumes posts will always exist. Implementing a branded "Empty State" (T040) maintains professional continuity even when no content is present.

@@ -47,3 +47,9 @@ The mobile experience is functional but lacks the "premium app-like" feel requir
 - **Observation (MEDIUM):** Pricing Table Decision Friction.
 - **Analysis:** Horizontal scrolling for pricing (T008) is still the primary conversion blocker.
 - **Task (T044):** Develop a mobile-optimized "Compare Plans" modal that presents features in a clean, vertical checklist format, replacing the horizontal table for devices < 768px.
+
+## Inspection Update - June 08, 2026
+- **Observation (MEDIUM):** Mobile Menu Interaction Feedback.
+- **Analysis:** Current mobile menu links (`LandingNavbar.tsx`) lack immediate visual feedback on tap.
+- **Recommendation:** Implement a subtle active/pressed state (e.g., `active:bg-slate-800`) to improve the tactile feel of the navigation.
+- **Task (T034):** Confirmed ergonomic friction on large-screen mobile devices. Moving the menu trigger inward remains a priority for thumb-reach accessibility.

@@ -20,3 +20,7 @@
 ## Feb 2024 Inspection Notes
 - **Identified Opportunity:** The "Visual Builder" mockups on the homepage currently use `animate-pulse`. This should be replaced with more "intelligent" motion (e.g., node connections appearing via drawing path animations) to feel more "AI-native."
 - **Hover States:** Unified card hover interactions (`hover:shadow-indigo-500/10`) are needed across the board.
+
+## Inspection Update - June 08, 2026
+- **Interaction Feedback (MEDIUM):** Pricing table row hover (T039) confirmed as a significant gap in desktop interactivity. Standardizing table interactions is a key design system goal.
+- **Mobile Interaction (MEDIUM):** Mobile menu touch feedback (T011) is currently absent, leading to a "muted" tactile experience. Implementing `active:bg-slate-800` for mobile links is recommended.

@@ -55,3 +55,9 @@ ReplyBase follows excellent semantic HTML patterns (logical heading hierarchy, a
 - **Task (T041):** Implement focus trapping for the mobile menu using `react-focus-lock` or a custom focus trap hook. Ensure the background content is marked as `aria-hidden="true"` when the menu is active.
 - **Issue (LOW):** Documentation link icons lack descriptive titles or `aria-hidden`.
 - **Recommendation:** Set `aria-hidden="true"` on all purely decorative Lucide icons in the documentation navigation and lists.
+
+## Inspection Update - June 08, 2026
+- **Observation (HIGH):** Semantic Linking in Forms.
+- **Analysis:** `NewsletterSubscribe.tsx` and `ContactForm.tsx` (T037) lack `aria-describedby` for error states, leaving screen reader users unaware of why a form failed validation.
+- **Task (T005):** Verified missing `aria-controls` for mobile menu in `LandingNavbar.tsx`.
+- **Recommendation:** Prioritize the implementation of T041 (Focus Trapping) and T005 (ARIA controls) to ensure the mobile navigation is fully WCAG compliant.

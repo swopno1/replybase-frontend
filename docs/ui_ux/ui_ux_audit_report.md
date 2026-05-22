@@ -78,3 +78,12 @@ The ReplyBase marketing site is a solid foundation, featuring a modern dark-them
     - **SEO (LOW):** Documentation pages have inconsistent metadata. A global audit of `app/docs` titles and descriptions is required to maximize search visibility (T043).
     - **Mobile UX (HIGH):** Full pricing table comparison is unreadable on mobile. A modal-based "Feature Comparison" view is recommended for small screens (T044).
 - **Strategic Recommendation:** Prioritize T041 (Focus Trapping) to resolve critical accessibility friction before scaling brand-driven motion updates.
+
+## Inspection Update - June 08, 2026
+- **Focus:** Micro-UX Polishing & Conversion Friction.
+- **Current State:**
+    - **Confidence Score:** 57/100 (Slight decrease due to identified CTA weight debt).
+    - **CTA Standardization (MEDIUM):** Identified significant variance in CTA font weights across the landing page and footer. Standardizing all primary actions to `font-semibold` (T036) is critical for brand authority.
+    - **UI Interaction (MEDIUM):** The pricing table's static nature on desktop (T039) continues to be a minor friction point for plan comparison.
+    - **Mobile UX (HIGH):** The lack of mobile menu touch feedback and small hit areas (T011) reduces the "premium" perception of the platform on handheld devices.
+- **Strategic Recommendation:** Prioritize T036 (CTA Weight) alongside T041 (Focus Trapping) to align brand consistency with accessibility standards.
