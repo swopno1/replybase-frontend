@@ -16,15 +16,15 @@
 **Focus:** Social Proof & Vertical Expansion.
 - [x] **Content Pillar 4:** Industry Deep Dives: [x] "AI for Real Estate Agents", [x] "AI for E-commerce Agencies."
 - [x] **Content Pillar 5:** "Security First: Why ReplyBase is Safer than Generic Wrapper Bots."
-- **Content Pillar 6:** Founder Interviews: "How [Company X] Scaled Support to 10k Users with 0 New Hires."
-- **Asset:** "The ROI of AI Support" (Calculator/Spreadsheet).
+- [ ] **Content Pillar 6:** Founder Interviews: "How [Company X] Scaled Support to 10k Users with 0 New Hires."
+- [ ] **Asset:** "The ROI of AI Support" (Calculator/Spreadsheet).
 
 ## Phase 3: The Market Leader (Month 5-6)
 **Focus:** Ecosystem & Advanced Workflows.
-- **Content Pillar 7:** "Advanced CRM Syncing: Closing the Loop on AI Leads."
-- **Content Pillar 8:** "The Future of GEO: How to Optimize Your Business for AI Search Engines."
-- **Content Pillar 9:** "ReplyBase API Masterclass: Building Custom Integrations."
-- **Asset:** "State of AI Customer Service 2025" (Original Research Report).
+- [ ] **Content Pillar 7:** "Advanced CRM Syncing: Closing the Loop on AI Leads."
+- [x] **Content Pillar 8:** "The Future of GEO: How to Optimize Your Business for AI Search Engines." (Updated June 2026)
+- [ ] **Content Pillar 9:** "ReplyBase API Masterclass: Building Custom Integrations."
+- [ ] **Asset:** "State of AI Customer Service 2025" (Original Research Report).
 
 ## Multi-Channel Distribution
 1. **Blog:** Central hub for AEO/SEO.

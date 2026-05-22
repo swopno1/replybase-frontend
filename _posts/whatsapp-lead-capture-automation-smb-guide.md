@@ -22,7 +22,7 @@ Small business owners often find themselves tethered to their phones, replying t
 
 By using the WhatsApp Business API combined with an AI builder like ReplyBase, you can create a system that greets every prospect instantly, qualifies them based on your criteria, and even books a meeting on your calendar.
 
-### Comparison: Manual vs. AI-Automated Lead Capture
+## Technical Fact Block: Manual vs. AI-Automated Lead Capture
 
 | Metric | Manual WhatsApp Support | AI-Automated WhatsApp |
 | :--- | :--- | :--- |
