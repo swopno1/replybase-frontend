@@ -21,7 +21,7 @@ AI-powered systems like ReplyBase allow teams to:
 - **Reduce Support Costs:** Handle up to 80% of common queries without human intervention.
 - **Improve CSAT:** Deliver immediate resolutions, reducing the friction that leads to customer churn.
 
-## Technical Specifications: ReplyBase AI Capabilities
+## Technical Fact Block: ReplyBase AI Capabilities
 
 For founders evaluating AI solutions, clarity on technical capabilities is essential. Below is a breakdown of how ReplyBase facilitates support automation.
 
