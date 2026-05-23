@@ -53,3 +53,11 @@ The mobile experience is functional but lacks the "premium app-like" feel requir
 - **Analysis:** Current mobile menu links (`LandingNavbar.tsx`) lack immediate visual feedback on tap.
 - **Recommendation:** Implement a subtle active/pressed state (e.g., `active:bg-slate-800`) to improve the tactile feel of the navigation.
 - **Task (T034):** Confirmed ergonomic friction on large-screen mobile devices. Moving the menu trigger inward remains a priority for thumb-reach accessibility.
+
+## Inspection Update - June 09, 2026
+- **Observation (MEDIUM):** Content Engagement Friction.
+- **Analysis:** With the launch of long-form "AI & Opportunity" blog content, there is no visual indicator for reading progress on mobile. This can lead to perceived length fatigue and lower completion rates.
+- **Task (T047):** Implement a thin, sticky reading progress bar (`bg-indigo-500`) at the top of the viewport for the `app/blog/[slug]/page.tsx` route.
+- **Observation (HIGH):** Final Conversion Trust.
+- **Analysis:** The "Final CTA" on the landing page feels isolated on mobile. Without immediate trust signals (like a security badge) near the "Start Trial" button, users may hesitate at the last step.
+- **Task (T046):** Add a compact "End-to-End Encrypted & GDPR Compliant" trust badge below the final mobile CTA buttons in `app/page.tsx`.

@@ -48,6 +48,40 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 | T042 | MEDIUM | PENDING | MOTION | Static Feature Entry | Low Perceived Sophistication | Implement Scroll-Driven Entry Animations |
 | T043 | MEDIUM | PENDING | SEO | Inconsistent Docs Metadata | Reduced Search Visibility | Documentation Metadata Audit & Update |
 | T044 | HIGH | PENDING | MOBILE | Unreadable Pricing Comparison | Decision Fatigue | Mobile Pricing Comparison Modal |
+| T046 | MEDIUM | PENDING | CONVERSION | Final CTA Trust Leak | Higher Bounce at Exit | Conversion Trust Anchor in Final CTA |
+| T047 | LOW | PENDING | UI/UX | Content Length Fatigue | Lower Blog Completion | Blog Reading Progress Indicator |
+
+---
+
+### T046: Final CTA Trust Anchor
+- **Task Number:** T046
+- **Priority:** MEDIUM
+- **Status:** PENDING
+- **Category:** CONVERSION
+- **Issue:** The bottom-of-page CTA lacks immediate trust signals, causing friction for users who have scrolled through the entire narrative but remain hesitant.
+- **UX/Business Impact:** Potential loss of high-intent leads at the final stage of the funnel.
+- **Objective:** Stabilize the final acquisition funnel with a "Trust Anchor."
+- **Detailed Instructions:** Update `app/page.tsx` final CTA section. Insert a compact trust signal row below or next to the primary buttons. Include text like "End-to-End Encrypted & GDPR Compliant" or a micro-testimonial from a founder.
+- **Expected Deliverables:** High-trust final CTA section that reinforces security and reliability.
+- **Conversion Impact:** MEDIUM
+- **Brand Impact:** MEDIUM (Professionalism)
+- **Notes:** Identified June 09, 2026.
+
+---
+
+### T047: Blog Reading Progress Indicator
+- **Task Number:** T047
+- **Priority:** LOW
+- **Status:** PENDING
+- **Category:** UI/UX
+- **Issue:** Long-form "AI & Opportunity" blog posts lack visual feedback on reading progress, leading to higher abandonment on mobile.
+- **UX/Business Impact:** Lower educational content consumption and reduced time-on-site.
+- **Objective:** Improve the reading experience for long-form content.
+- **Detailed Instructions:** Update `app/blog/[slug]/page.tsx`. Implement a thin, sticky progress bar at the top of the viewport (under the navbar) that fills as the user scrolls through the article content.
+- **Expected Deliverables:** Functional reading progress bar for all blog posts.
+- **Conversion Impact:** LOW
+- **Brand Impact:** MEDIUM (Premium UX)
+- **Notes:** Identified June 09, 2026 following blog content launch.
 
 ---
 
@@ -407,3 +441,18 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
   - **Objective:** Create 10 high-authority posts to guide SMBs through AI transformation.
   - **Deliverables:** 10 Markdown files in `_posts/` with full SEO/AEO optimization.
   - **Notes:** Completed June 2026.
+---
+
+### T048: Create 10 Educational Blog Posts on AI Lead Generation Mastery
+- **Task Number:** T048
+- **Priority:** HIGH
+- **Status:** COMPLETED
+- **Category:** CONTENT
+- **Issue:** Need for targeted educational content highlighting ReplyBase as a modern AI Lead Generation tool and its role in creating new business opportunities.
+- **UX/Business Impact:** Increases topical authority for high-intent keywords like "AI Lead Generation" and "Multi-Channel Lead Capture," driving qualified organic traffic.
+- **Objective:** Position ReplyBase as the premier choice for AI-native lead generation and sales enablement.
+- **Detailed Instructions:** Create 10 SEO/AEO-optimized blog posts in `_posts/` covering topics such as conversational AI vs. traditional forms, scaling lead gen without scaling teams, multi-channel mastery, and AI-driven nurturing workflows. Each post must follow the project's strict SEO/AEO structure.
+- **Expected Deliverables:** 10 high-quality Markdown files in `_posts/`.
+- **Conversion Impact:** HIGH
+- **Brand Impact:** HIGH
+- **Notes:** Identified and completed June 10, 2026.
