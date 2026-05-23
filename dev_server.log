@@ -2,16 +2,13 @@
 > replybase-frontend@0.1.0 dev /app
 > next dev
 
-⚠ Port 3000 is in use by an unknown process, using available port 3001 instead.
 ▲ Next.js 16.2.4 (Turbopack)
-- Local:         http://localhost:3001
-- Network:       http://192.168.0.2:3001
-✓ Ready in 597ms
-⨯ Another next dev server is already running.
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.2:3000
+✓ Ready in 496ms
 
-- Local:        http://localhost:3000
-- PID:          54903
-- Dir:          / GET /blog/smb-ai-adoption-urgency 200 in 324ms (next.js: 39ms, generate-params: 30ms, application-code: 285ms)
+○ Compiling /blog ...
+ GET /blog 200 in 5.5s (next.js: 4.3s, application-code: 1191ms)
 [browser] [ReplyBase Webchat] Initialization failed: Failed to fetch TypeError: Failed to fetch
     at request (https://app.replybase.co.uk/embed/replybase-webchat.js:1023:12)
     at loadConfig (https://app.replybase.co.uk/embed/replybase-webchat.js:1102:12)
@@ -21,57 +18,15 @@
 [browser] [ReplyBase Webchat] Chat unavailable: Failed to fetch
     at showError (https://app.replybase.co.uk/embed/replybase-webchat.js:767:13)
     at <unknown> (https://app.replybase.co.uk/embed/replybase-webchat.js:813:9) (https://app.replybase.co.uk/embed/replybase-webchat.js:767:13)
- GET /blog/ai-native-business-models 200 in 227ms (next.js: 23ms, generate-params: 19ms, application-code: 204ms)
-✓ Compiled in 385ms
- GET /blog/ai-native-business-models 200 in 749ms (next.js: 242ms, generate-params: 20ms, application-code: 507ms)
- GET /blog/smb-ai-adoption-urgency 200 in 172ms (next.js: 23ms, generate-params: 20ms, application-code: 149ms)
-[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-https://react.dev/link/hydration-mismatch
-
-  ...
-    <RedirectBoundary>
-      <RedirectErrorBoundary router={{...}}>
-        <InnerLayoutRouter url="/blog/smb-..." tree={[...]} params={{slug:"smb-..."}} cacheNode={{rsc:{...}, ...}} ...>
-          <SegmentViewNode type="page" pagePath="blog/[slug...">
-            <SegmentTrieNode>
-            <BlogPostPage>
-              <div className="bg-backgro...">
-                <script>
-                <LandingNavbar>
-                <div>
-                <main>
-                <LandingFooter>
-                  <footer className="bg-backgro...">
-                    <div className="container ...">
-                      <div className="grid grid-...">
-                        <div className="col-span-2...">
-                          <div>
-                          <div className="bg-card/40...">
-                            <NewsletterSubscribe compact={true}>
-                              <form onSubmit={function handleSubmit} className="flex flex-...">
-                                <div>
-                                <div className="flex gap-2">
-                                  <input
-                                    type="email"
-                                    value=""
-                                    onChange={function onChange}
-                                    placeholder="Your email"
-                                    aria-label="Newsletter email"
-                                    className="flex-1 px-3 py-1.5 bg-background border border-border rounded-lg text-x..."
-                                    disabled={false}
--                                   style={{caret-color:"transparent"}}
-                                  >
-                                  ...
-                        ...
-                      ...
-          ...
-        ...
+ GET /blog/ai-booking-automation-complete-guide 200 in 3.1s (next.js: 2.8s, generate-params: 1189ms, application-code: 234ms)
+ GET /blog 200 in 492ms (next.js: 5ms, application-code: 486ms)
+[browser] [ReplyBase Webchat] Initialization failed: Failed to fetch TypeError: Failed to fetch
+    at request (https://app.replybase.co.uk/embed/replybase-webchat.js:1023:12)
+    at loadConfig (https://app.replybase.co.uk/embed/replybase-webchat.js:1102:12)
+    at initWidget (https://app.replybase.co.uk/embed/replybase-webchat.js:772:5)
+    at <unknown> (https://app.replybase.co.uk/embed/replybase-webchat.js:815:5)
+    at <unknown> (https://app.replybase.co.uk/embed/replybase-webchat.js:1135:3) (https://app.replybase.co.uk/embed/replybase-webchat.js:812:17)
+[browser] [ReplyBase Webchat] Chat unavailable: Failed to fetch
+    at showError (https://app.replybase.co.uk/embed/replybase-webchat.js:767:13)
+    at <unknown> (https://app.replybase.co.uk/embed/replybase-webchat.js:813:9) (https://app.replybase.co.uk/embed/replybase-webchat.js:767:13)
+ GET /blog/ai-booking-automation-complete-guide 200 in 256ms (next.js: 36ms, generate-params: 30ms, application-code: 220ms)
