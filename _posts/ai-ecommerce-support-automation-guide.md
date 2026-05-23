@@ -66,7 +66,7 @@ No. AI-native support platforms like ReplyBase offer usage-based pricing that is
 Scaling a brand in 2024 requires a lean, tech-first approach. By delegating the repetitive, high-volume tasks to AI, you free up your team to focus on brand building, product development, and high-value customer relationships.
 
 **Ready to automate your Shopify support?**
-[Start Your Free Trial](https://app.replybase.co.uk/auth/register?plan=starter&source=blog_cta) | [Explore WhatsApp Automation](/blog/whatsapp-lead-capture-automation-smb-guide)
+[Start Your Free Trial](https://app.replybase.co.uk/auth/register?plan=launch&source=blog_cta) | [Explore WhatsApp Automation](/blog/whatsapp-lead-capture-automation-smb-guide)
 
 ---
 *Recommended Reading:*

@@ -67,7 +67,7 @@ Zendesk is a powerful tool for enterprise corporations with thousands of human a
 By choosing an AI-native platform like ReplyBase, you aren't just buying a help desk—you're building a scalable automation engine that grows with your business.
 
 **Ready to move beyond the ticket?**
-[Start Your Free Trial](https://app.replybase.co.uk/auth/register?plan=starter&source=blog_cta) | [Explore the Flow Builder](https://replybase.co.uk/features/flow-builder)
+[Start Your Free Trial](https://app.replybase.co.uk/auth/register?plan=launch&source=blog_cta) | [Explore the Flow Builder](https://replybase.co.uk/features/flow-builder)
 
 ---
 *Related Articles:*

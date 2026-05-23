@@ -56,7 +56,7 @@ Choose a no-code platform like ReplyBase if your priority is speed, ease of use,
 The best AI chatbot builder depends on your specific needs. For those looking for a balance of power, ease of use, and scalability—especially within the UK market—ReplyBase is an excellent choice.
 
 **Ready to build your first AI agent?**
-[Start Your Free Trial](https://app.replybase.co.uk/auth/register?plan=starter&source=blog_cta) | [Explore the Flow Builder](https://replybase.co.uk/features/flow-builder)
+[Start Your Free Trial](https://app.replybase.co.uk/auth/register?plan=launch&source=blog_cta) | [Explore the Flow Builder](https://replybase.co.uk/features/flow-builder)
 
 ---
 *Recommended Reading:*

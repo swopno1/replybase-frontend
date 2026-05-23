@@ -69,7 +69,7 @@ No. Platforms like ReplyBase use Webhooks and tools like Zapier to connect with 
 In a competitive market, agency growth isn't about working more hours—it's about working smarter. By automating the "top-of-funnel" inquiries, you allow your team to focus on what they do best: building relationships and negotiating deals.
 
 **Ready to automate your property leads?**
-[Explore ReplyBase for Real Estate](https://replybase.co.uk) | [Start Your Free Trial](https://app.replybase.co.uk/auth/register?plan=starter&source=blog_cta)
+[Explore ReplyBase for Real Estate](https://replybase.co.uk) | [Start Your Free Trial](https://app.replybase.co.uk/auth/register?plan=launch&source=blog_cta)
 
 ---
 *Recommended Reading:*
