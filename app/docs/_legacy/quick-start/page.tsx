@@ -32,7 +32,7 @@ export default function QuickStartDoc() {
           Step 2: Choose Your Plan
         </h2>
         <p className="text-slate-300 mb-4">
-          ReplyBase currently shows four plans in the pricing and billing flow:
+          ReplyBase currently shows five plans in the pricing and billing flow:
         </p>
         <div className="grid grid-cols-2 gap-3 text-sm">
           <Link
@@ -45,13 +45,19 @@ export default function QuickStartDoc() {
             href="https://app.replybase.co.uk/settings?tab=billing"
             className="bg-slate-800 border border-slate-700 rounded p-3 hover:border-indigo-500 transition-colors"
           >
-            Starter: GBP29/mo
+            Launch: GBP29/mo
           </Link>
           <Link
             href="https://app.replybase.co.uk/settings?tab=billing"
             className="bg-slate-800 border border-slate-700 rounded p-3 hover:border-indigo-500 transition-colors"
           >
-            Pro: GBP89/mo
+            Grow: GBP49/mo
+          </Link>
+          <Link
+            href="https://app.replybase.co.uk/settings?tab=billing"
+            className="bg-slate-800 border border-slate-700 rounded p-3 hover:border-indigo-500 transition-colors"
+          >
+            Scale: GBP89/mo
           </Link>
           <Link
             href="https://app.replybase.co.uk/settings?tab=billing"

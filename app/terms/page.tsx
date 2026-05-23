@@ -60,8 +60,8 @@ export default function TermsPage() {
             </h2>
             <ul className="list-disc ml-6 space-y-2 text-slate-400">
               <li>
-                The Service offers four subscription tiers: Free (£0), Starter
-                (£29/month), Pro (£89/month), and Business (£249/month).
+                The Service offers five subscription tiers: Free (£0), Launch
+                (£29/month), Grow (£49/month), Scale (£89/month), and Business (£249/month).
               </li>
               <li>
                 You agree to pay the fees associated with your selected plan.
@@ -102,22 +102,27 @@ export default function TermsPage() {
             <ul className="list-disc ml-6 space-y-2 text-slate-400">
               <li>
                 <strong className="text-slate-200">Free:</strong> 1 bot, 100
-                daily messages, limited AI features.
+                daily messages, 100 monthly messages, 200 automations, web-only sources, community support.
               </li>
               <li>
-                <strong className="text-slate-200">Starter:</strong> 3 bots,
+                <strong className="text-slate-200">Launch:</strong> 2 bots,
                 1,500 automations per month, 1,000 AI responses per month, CRM
-                access, and email support.
+                access, web and social channels, standard email support.
               </li>
               <li>
-                <strong className="text-slate-200">Pro:</strong> 10 bots, 10,000
-                automations per month, 7,500 AI responses per month, CRM access,
-                API access, and priority support.
+                <strong className="text-slate-200">Grow:</strong> 5 bots,
+                5,000 automations per month, 3,500 AI responses per month, CRM
+                access, web and social channels, priority email support.
+              </li>
+              <li>
+                <strong className="text-slate-200">Scale:</strong> 10 bots,
+                10,000 automations per month, 7,500 AI responses per month, CRM
+                access, API access, all standard channels, priority live-chat support.
               </li>
               <li>
                 <strong className="text-slate-200">Business:</strong> 25 bots,
                 40,000 automations per month, 25,000 AI responses per month, CRM
-                access, API access, and priority plus support.
+                access, API access, custom integrations, dedicated SLA support.
               </li>
             </ul>
             <p className="mt-4 text-slate-400">
@@ -210,9 +215,10 @@ export default function TermsPage() {
             </p>
             <ul className="list-disc ml-6 space-y-2 text-slate-400">
               <li>Free: 99% uptime</li>
-              <li>Starter: 99.5% uptime, email support</li>
-              <li>Pro: 99.9% uptime, 24-hour chat support</li>
-              <li>Business: 99.99% uptime, 1-hour phone support</li>
+              <li>Launch: 99.5% uptime, standard email support</li>
+              <li>Grow: 99.9% uptime, priority email support</li>
+              <li>Scale: 99.9% uptime, priority live-chat support</li>
+              <li>Business: 99.99% uptime, dedicated SLA support</li>
             </ul>
             <p className="mt-4 text-slate-400">
               Scheduled maintenance will be announced in advance when possible.

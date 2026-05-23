@@ -483,21 +483,193 @@ export default function LandingPage() {
         </section>
 
         {/* Pricing Section */}
-        <section id="pricing" className="py-20">
+        <section id="pricing" className="py-20 bg-slate-900/30">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-white">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-5xl font-extrabold text-white tracking-tight">
                 Simple, Transparent Pricing
               </h2>
-              <p className="mt-4 text-slate-400 max-w-3xl mx-auto">
-                Start free, upgrade as you grow. All plans support Webchat, Facebook Messenger,
-                and website lead capture with flow-first runtime and
-                AI-fallback.
+              <p className="mt-4 text-slate-400 max-w-3xl mx-auto text-lg">
+                Start free, upgrade as you grow. All paid plans include a 14-day free trial.
               </p>
             </div>
 
-            <div className="overflow-x-auto">
-              <table className="w-full text-left border-collapse bg-slate-900 rounded-2xl overflow-hidden border border-slate-800">
+            {/* Plan Cards Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20 items-stretch">
+              {/* Launch Card */}
+              <div className="bg-slate-900/80 border border-slate-800 rounded-3xl p-8 flex flex-col justify-between hover:border-slate-700 transition-all duration-300 relative group">
+                <div>
+                  <h3 className="text-xl font-bold text-white mb-2">Launch</h3>
+                  <p className="text-slate-400 text-sm mb-6 min-h-[40px]">Perfect for solopreneurs getting started with lead automation.</p>
+                  <div className="flex items-baseline mb-6">
+                    <span className="text-4xl font-extrabold text-white">£29</span>
+                    <span className="text-slate-400 text-sm ml-2">/month</span>
+                  </div>
+                  <ul className="space-y-4 mb-8">
+                    <li className="flex items-start gap-3 text-sm text-slate-300">
+                      <Check className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
+                      <span>1,000 AI Responses / mo</span>
+                    </li>
+                    <li className="flex items-start gap-3 text-sm text-slate-300">
+                      <Check className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
+                      <span>1,500 Automations / mo</span>
+                    </li>
+                    <li className="flex items-start gap-3 text-sm text-slate-300">
+                      <Check className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
+                      <span>2 active AI Assistants</span>
+                    </li>
+                    <li className="flex items-start gap-3 text-sm text-slate-300">
+                      <Check className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
+                      <span>Webchat, Facebook or WhatsApp</span>
+                    </li>
+                    <li className="flex items-start gap-3 text-sm text-slate-300">
+                      <Check className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
+                      <span>Email alerts & Standard Support</span>
+                    </li>
+                  </ul>
+                </div>
+                <a
+                  href="https://app.replybase.co.uk/auth/register?plan=launch&source=pricing_cards"
+                  className="block w-full py-3 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-center font-semibold transition-colors duration-300"
+                >
+                  Start 14-Day Trial
+                </a>
+              </div>
+
+              {/* Grow Card */}
+              <div className="bg-slate-900 border-2 border-indigo-600/30 rounded-3xl p-8 flex flex-col justify-between relative hover:border-indigo-600/60 transition-all duration-300 shadow-xl shadow-indigo-600/5 group">
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-indigo-600 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                  Best Value
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-white mb-2">Grow</h3>
+                  <p className="text-slate-400 text-sm mb-6 min-h-[40px]">Ideal for growing businesses running multi-channel campaigns.</p>
+                  <div className="flex items-baseline mb-6">
+                    <span className="text-4xl font-extrabold text-white">£49</span>
+                    <span className="text-slate-400 text-sm ml-2">/month</span>
+                  </div>
+                  <ul className="space-y-4 mb-8">
+                    <li className="flex items-start gap-3 text-sm text-slate-300">
+                      <Check className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
+                      <span className="font-semibold text-white">3,500 AI Responses / mo</span>
+                    </li>
+                    <li className="flex items-start gap-3 text-sm text-slate-300">
+                      <Check className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
+                      <span className="font-semibold text-white">5,000 Automations / mo</span>
+                    </li>
+                    <li className="flex items-start gap-3 text-sm text-slate-300">
+                      <Check className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
+                      <span>5 active AI Assistants</span>
+                    </li>
+                    <li className="flex items-start gap-3 text-sm text-slate-300">
+                      <Check className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
+                      <span>Webchat, Facebook + WhatsApp</span>
+                    </li>
+                    <li className="flex items-start gap-3 text-sm text-slate-300">
+                      <Check className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
+                      <span>Lead Scoring & Priority Support</span>
+                    </li>
+                  </ul>
+                </div>
+                <a
+                  href="https://app.replybase.co.uk/auth/register?plan=grow&source=pricing_cards"
+                  className="block w-full py-3 px-4 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-center font-semibold shadow-lg shadow-indigo-600/20 transition-all duration-300 transform group-hover:scale-[1.03]"
+                >
+                  Start 14-Day Trial
+                </a>
+              </div>
+
+              {/* Scale Card */}
+              <div className="bg-slate-900 border-2 border-purple-500/30 rounded-3xl p-8 flex flex-col justify-between relative hover:border-purple-500/60 transition-all duration-300 shadow-xl shadow-purple-500/5 group">
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-purple-600 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                  Most Popular
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-white mb-2">Scale</h3>
+                  <p className="text-slate-400 text-sm mb-6 min-h-[40px]">For high-volume SMBs and teams needing advanced AI.</p>
+                  <div className="flex items-baseline mb-6">
+                    <span className="text-4xl font-extrabold text-white">£89</span>
+                    <span className="text-slate-400 text-sm ml-2">/month</span>
+                  </div>
+                  <ul className="space-y-4 mb-8">
+                    <li className="flex items-start gap-3 text-sm text-slate-300">
+                      <Check className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
+                      <span className="font-semibold text-white">7,500 AI Responses / mo</span>
+                    </li>
+                    <li className="flex items-start gap-3 text-sm text-slate-300">
+                      <Check className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
+                      <span className="font-semibold text-white">10,000 Automations / mo</span>
+                    </li>
+                    <li className="flex items-start gap-3 text-sm text-slate-300">
+                      <Check className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
+                      <span>10 active AI Assistants</span>
+                    </li>
+                    <li className="flex items-start gap-3 text-sm text-slate-300">
+                      <Check className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
+                      <span>Webchat, FB, WhatsApp, Telegram</span>
+                    </li>
+                    <li className="flex items-start gap-3 text-sm text-slate-300">
+                      <Check className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
+                      <span>CRM syncing & Team Access</span>
+                    </li>
+                  </ul>
+                </div>
+                <a
+                  href="https://app.replybase.co.uk/auth/register?plan=scale&source=pricing_cards"
+                  className="block w-full py-3 px-4 rounded-xl bg-purple-600 hover:bg-purple-500 text-white text-center font-semibold shadow-lg shadow-purple-500/20 transition-all duration-300 transform group-hover:scale-[1.03]"
+                >
+                  Start 14-Day Trial
+                </a>
+              </div>
+
+              {/* Business Card */}
+              <div className="bg-slate-900/80 border border-slate-800 rounded-3xl p-8 flex flex-col justify-between hover:border-slate-700 transition-all duration-300 relative group">
+                <div>
+                  <h3 className="text-xl font-bold text-white mb-2">Business</h3>
+                  <p className="text-slate-400 text-sm mb-6 min-h-[40px]">Full scale lead operations with custom integrations.</p>
+                  <div className="flex items-baseline mb-6">
+                    <span className="text-4xl font-extrabold text-white">£249</span>
+                    <span className="text-slate-400 text-sm ml-2">/month</span>
+                  </div>
+                  <ul className="space-y-4 mb-8">
+                    <li className="flex items-start gap-3 text-sm text-slate-300">
+                      <Check className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
+                      <span>25,000 AI Responses / mo</span>
+                    </li>
+                    <li className="flex items-start gap-3 text-sm text-slate-300">
+                      <Check className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
+                      <span>40,000 Automations / mo</span>
+                    </li>
+                    <li className="flex items-start gap-3 text-sm text-slate-300">
+                      <Check className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
+                      <span>25 active AI Assistants</span>
+                    </li>
+                    <li className="flex items-start gap-3 text-sm text-slate-300">
+                      <Check className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
+                      <span>API key access & Outgoing Webhooks</span>
+                    </li>
+                    <li className="flex items-start gap-3 text-sm text-slate-300">
+                      <Check className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
+                      <span>White-Label Branding & SLA support</span>
+                    </li>
+                  </ul>
+                </div>
+                <a
+                  href="https://app.replybase.co.uk/auth/register?plan=business&source=pricing_cards"
+                  className="block w-full py-3 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-center font-semibold transition-colors duration-300"
+                >
+                  Start Business Trial
+                </a>
+              </div>
+            </div>
+
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-bold text-white mb-2">Compare All Plan Features</h3>
+              <p className="text-slate-400 text-sm">Detailed limit configurations across all plans.</p>
+            </div>
+
+            <div className="overflow-x-auto mb-16">
+              <table className="w-full text-left border-collapse bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 text-sm">
                 <thead>
                   <tr className="bg-slate-800">
                     <th className="p-4 text-white font-bold border-b border-slate-700">
@@ -507,10 +679,13 @@ export default function LandingPage() {
                       Free
                     </th>
                     <th className="p-4 text-white font-bold border-b border-slate-700 text-center">
-                      Starter
+                      Launch
                     </th>
                     <th className="p-4 text-white font-bold border-b border-slate-700 text-center">
-                      Pro
+                      Grow
+                    </th>
+                    <th className="p-4 text-white font-bold border-b border-slate-700 text-center">
+                      Scale
                     </th>
                     <th className="p-4 text-white font-bold border-b border-slate-700 text-center">
                       Business
@@ -519,9 +694,10 @@ export default function LandingPage() {
                 </thead>
                 <tbody className="divide-y divide-slate-800">
                   <tr>
-                    <td className="p-4 font-semibold text-white">Monthly</td>
+                    <td className="p-4 font-semibold text-white">Monthly Price</td>
                     <td className="p-4 text-center text-slate-400">£0</td>
                     <td className="p-4 text-center text-slate-400">£29</td>
+                    <td className="p-4 text-center text-slate-400">£49</td>
                     <td className="p-4 text-center text-slate-400">£89</td>
                     <td className="p-4 text-center text-slate-400">£249</td>
                   </tr>
@@ -531,6 +707,7 @@ export default function LandingPage() {
                     </td>
                     <td className="p-4 text-center text-slate-400">100</td>
                     <td className="p-4 text-center text-slate-400">1,000</td>
+                    <td className="p-4 text-center text-slate-400">3,500</td>
                     <td className="p-4 text-center text-slate-400">7,500</td>
                     <td className="p-4 text-center text-slate-400">25,000</td>
                   </tr>
@@ -540,6 +717,7 @@ export default function LandingPage() {
                     </td>
                     <td className="p-4 text-center text-slate-400">200</td>
                     <td className="p-4 text-center text-slate-400">1,500</td>
+                    <td className="p-4 text-center text-slate-400">5,000</td>
                     <td className="p-4 text-center text-slate-400">10,000</td>
                     <td className="p-4 text-center text-slate-400">40,000</td>
                   </tr>
@@ -549,11 +727,13 @@ export default function LandingPage() {
                     <td className="p-4 text-center text-slate-400">£12 / 1k</td>
                     <td className="p-4 text-center text-slate-400">£10 / 1k</td>
                     <td className="p-4 text-center text-slate-400">£8 / 1k</td>
+                    <td className="p-4 text-center text-slate-400">£6 / 1k</td>
                   </tr>
                   <tr>
-                    <td className="p-4 font-semibold text-white">Bots</td>
+                    <td className="p-4 font-semibold text-white">Bots (Assistants)</td>
                     <td className="p-4 text-center text-slate-400">1</td>
-                    <td className="p-4 text-center text-slate-400">3</td>
+                    <td className="p-4 text-center text-slate-400">2</td>
+                    <td className="p-4 text-center text-slate-400">5</td>
                     <td className="p-4 text-center text-slate-400">10</td>
                     <td className="p-4 text-center text-slate-400">25</td>
                   </tr>
@@ -561,23 +741,29 @@ export default function LandingPage() {
                     <td className="p-4 font-semibold text-white">
                       Supported Channels
                     </td>
-                    <td className="p-4 text-center text-slate-400">
+                    <td className="p-4 text-center text-slate-400 text-xs">
                       Webchat, Facebook, Website Forms
                     </td>
-                    <td className="p-4 text-center text-slate-400">
-                      Telegram, Webchat, Facebook, WhatsApp, Website Forms
+                    <td className="p-4 text-center text-slate-400 text-xs">
+                      Webchat, Facebook or WhatsApp
                     </td>
-                    <td className="p-4 text-center text-slate-400">
-                      Telegram, Webchat, Facebook, WhatsApp, Website Forms
+                    <td className="p-4 text-center text-slate-400 text-xs">
+                      Webchat, Facebook + WhatsApp
                     </td>
-                    <td className="p-4 text-center text-slate-400">
-                      Telegram, Webchat, Facebook, WhatsApp, Website Forms
+                    <td className="p-4 text-center text-slate-400 text-xs">
+                      Webchat, FB, WhatsApp, Telegram
+                    </td>
+                    <td className="p-4 text-center text-slate-400 text-xs">
+                      All channels + Custom Integrations
                     </td>
                   </tr>
                   <tr>
                     <td className="p-4 font-semibold text-white">CRM Access</td>
                     <td className="p-4 text-center text-red-500">
                       <XIcon className="mx-auto" size={16} />
+                    </td>
+                    <td className="p-4 text-center text-green-500">
+                      <Check className="mx-auto" size={16} />
                     </td>
                     <td className="p-4 text-center text-green-500">
                       <Check className="mx-auto" size={16} />
@@ -597,6 +783,9 @@ export default function LandingPage() {
                     <td className="p-4 text-center text-red-500">
                       <XIcon className="mx-auto" size={16} />
                     </td>
+                    <td className="p-4 text-center text-red-500">
+                      <XIcon className="mx-auto" size={16} />
+                    </td>
                     <td className="p-4 text-center text-green-500">
                       <Check className="mx-auto" size={16} />
                     </td>
@@ -609,28 +798,29 @@ export default function LandingPage() {
                     <td className="p-4 text-center text-slate-400">
                       Community
                     </td>
-                    <td className="p-4 text-center text-slate-400">Email</td>
-                    <td className="p-4 text-center text-slate-400">Priority</td>
+                    <td className="p-4 text-center text-slate-400">Standard Email</td>
+                    <td className="p-4 text-center text-slate-400">Priority Email</td>
+                    <td className="p-4 text-center text-slate-400">Priority Chat</td>
                     <td className="p-4 text-center text-slate-400">
-                      Priority +
+                      Dedicated SLA
                     </td>
                   </tr>
                   <tr>
                     <td className="p-4 font-semibold text-white">
-                      Get Started
+                      Action
                     </td>
                     <td className="p-4 text-center">
                       <a
                         href="https://app.replybase.co.uk/auth/register?plan=free&source=pricing_table_free"
-                        className="block w-full bg-slate-700 hover:bg-slate-600 text-white py-2 rounded-lg"
+                        className="block w-full bg-slate-700 hover:bg-slate-600 text-white py-2 rounded-lg text-center"
                       >
                         Get Started
                       </a>
                     </td>
                     <td className="p-4 text-center">
                       <a
-                        href="https://app.replybase.co.uk/auth/register?plan=starter&source=pricing_table_starter"
-                        className="block w-full bg-indigo-600 hover:bg-indigo-500 text-white py-2 rounded-lg mb-1"
+                        href="https://app.replybase.co.uk/auth/register?plan=launch&source=pricing_table_launch"
+                        className="block w-full bg-indigo-600 hover:bg-indigo-500 text-white py-2 rounded-lg mb-1 text-center"
                       >
                         Start Free Trial
                       </a>
@@ -638,8 +828,17 @@ export default function LandingPage() {
                     </td>
                     <td className="p-4 text-center">
                       <a
-                        href="https://app.replybase.co.uk/auth/register?plan=pro&source=pricing_table_pro"
-                        className="block w-full bg-indigo-600 hover:bg-indigo-500 text-white py-2 rounded-lg mb-1"
+                        href="https://app.replybase.co.uk/auth/register?plan=grow&source=pricing_table_grow"
+                        className="block w-full bg-indigo-600 hover:bg-indigo-500 text-white py-2 rounded-lg mb-1 text-center"
+                      >
+                        Start Free Trial
+                      </a>
+                      <p className="text-xs text-muted-foreground">14 days free</p>
+                    </td>
+                    <td className="p-4 text-center">
+                      <a
+                        href="https://app.replybase.co.uk/auth/register?plan=scale&source=pricing_table_scale"
+                        className="block w-full bg-indigo-600 hover:bg-indigo-500 text-white py-2 rounded-lg mb-1 text-center"
                       >
                         Start Free Trial
                       </a>
@@ -648,7 +847,7 @@ export default function LandingPage() {
                     <td className="p-4 text-center">
                       <a
                         href="https://app.replybase.co.uk/auth/register?plan=business&source=pricing_table_business"
-                        className="block w-full bg-indigo-600 hover:bg-indigo-500 text-white py-2 rounded-lg mb-2"
+                        className="block w-full bg-indigo-600 hover:bg-indigo-500 text-white py-2 rounded-lg mb-2 text-center"
                       >
                         Start Business Trial
                       </a>

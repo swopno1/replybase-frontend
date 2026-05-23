@@ -14,16 +14,22 @@ const plans = [
     name: "Free",
     price: "GBP0",
     limits:
-      "Best for testing and first setup: 1 bot, 100 daily messages, limited AI features, 1 source connection per bot, community support",
+      "Best for testing and first setup: 1 bot, 100 daily messages, 100 monthly messages, 200 automations/month, 1 source connection per bot, community support",
   },
   {
-    name: "Starter",
+    name: "Launch",
     price: "GBP29",
     limits:
-      "Smart Automation: 3 bots, 1,500 automations/month, 1,000 AI responses/month, CRM access, email support",
+      "Smart Automation: 2 bots, 1,500 automations/month, 1,000 AI responses/month, CRM access, email support",
   },
   {
-    name: "Pro",
+    name: "Grow",
+    price: "GBP49",
+    limits:
+      "Scaling Automations: 5 bots, 5,000 automations/month, 3,500 AI responses/month, CRM access, email support",
+  },
+  {
+    name: "Scale",
     price: "GBP89",
     limits:
       "AI Co-Pilot: 10 bots, 10,000 automations/month, 7,500 AI responses/month, CRM access, API access, priority support",
