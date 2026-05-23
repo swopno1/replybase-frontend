@@ -30,6 +30,8 @@ This is a refined view of UI/UX and Brand tasks from the master TASKS.md file.
 | UX-033 | PENDING | LOW | Abrupt content load | Motion Perception | High-fidelity skeletons (T035) |
 | UX-034 | PENDING | MEDIUM | Action weight variance | Brand Consistency | Semibold CTA standardization (T036) |
 | UX-035 | PENDING | MEDIUM | Silent form feedback | Inclusivity | Aria-describedby for forms (T037) |
+| UX-036 | PENDING | MEDIUM | Final CTA Trust Leak | Funnel Stability | Conversion Trust Anchor (T046) |
+| UX-037 | PENDING | LOW | Content length fatigue | Premium UX | Reading Progress Indicator (T047) |
 
 ---
 

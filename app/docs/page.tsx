@@ -1,17 +1,12 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import {
-  FileText,
-  Rocket,
-  Database,
-  Settings,
-  Globe,
-} from "lucide-react";
+import { FileText, Rocket, Database, Settings, Globe } from "lucide-react";
 import DocLayout from "./_components/DocLayout";
 
 export const metadata: Metadata = {
   title: "Documentation Overview",
-  description: "Complete guides for setting up and using ReplyBase — Webchat, Telegram, Facebook Messenger, and more.",
+  description:
+    "Complete guides for setting up and using ReplyBase — Webchat, Telegram, Facebook Messenger, and more.",
 };
 
 const docCategories = [
@@ -51,7 +46,10 @@ const docCategories = [
       { name: "Dashboard Navigation", href: "/docs/admin-panel" },
       { name: "AI Workflows", href: "/docs/platform/ai-workflows" },
       { name: "Flow Builder", href: "/docs/platform/flow-builder" },
-      { name: "Deployment Checklist", href: "/docs/platform/deployment-checklist" },
+      {
+        name: "Deployment Checklist",
+        href: "/docs/platform/deployment-checklist",
+      },
       { name: "Security & Privacy", href: "/docs/security" },
       { name: "Plans & Limits", href: "/docs/features" },
     ],
@@ -75,8 +73,6 @@ export default function DocsPage() {
     <DocLayout
       title="Documentation"
       description="Everything you need to set up ReplyBase, connect your channels, and start capturing leads automatically."
-      videoUrl="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-      videoTitle="Introduction to ReplyBase"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
         {docCategories.map((category) => {
@@ -128,7 +124,8 @@ export default function DocsPage() {
             Need more help?
           </h2>
           <p className="text-slate-400 mb-6 max-w-xl">
-            Can't find what you're looking for? Our team is here to help you get started or solve any technical challenges.
+            Can&apos;t find what you&apos;re looking for? Our team is here to
+            help you get started or solve any technical challenges.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link

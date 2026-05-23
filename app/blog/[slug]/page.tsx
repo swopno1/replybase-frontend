@@ -3,6 +3,7 @@ import path from "path";
 import matter from "gray-matter";
 import { remark } from "remark";
 import html from "remark-html";
+import gfm from "remark-gfm";
 import Link from "next/link";
 import LandingNavbar from "@/components/LandingNavbar";
 import LandingFooter from "@/components/LandingFooter";
@@ -33,6 +34,7 @@ async function getPostData(slug: string) {
     const matterResult = matter(fileContents);
 
     const processedContent = await remark()
+      .use(gfm)
       .use(html)
       .process(matterResult.content);
     const contentHtml = processedContent.toString();
@@ -184,7 +186,7 @@ export default async function BlogPostPage({
               <h3 className="text-2xl font-bold text-white mb-4">Ready to automate your support?</h3>
               <p className="text-slate-400 mb-8">Join the hundreds of UK founders scaling their businesses with ReplyBase.</p>
               <div className="flex flex-col sm:flex-row justify-center gap-4">
-                <Link href="https://replybase.co.uk" className="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-8 py-3 rounded-lg transition-all">
+                <Link href="https://app.replybase.co.uk/auth/register?plan=starter&source=blog_cta" className="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-8 py-3 rounded-lg transition-all">
                   Start Free Trial
                 </Link>
                 <Link href="/contact" className="border border-slate-700 text-white font-semibold px-8 py-3 rounded-lg hover:bg-slate-800 transition-all">

@@ -63,7 +63,7 @@ ReplyBase uses custom-tuned versions of industry-leading models like GPT-4o and 
 If you have a large team of human agents and require deep enterprise reporting, Intercom remains a strong choice. However, if your goal is to **automate your support operations** and scale without increasing headcount, ReplyBase is the superior engine for growth.
 
 **Ready to see the difference?**
-[Start Your Free Trial](https://replybase.co.uk) | [View Our Pricing](https://replybase.co.uk/pricing)
+[Start Your Free Trial](https://app.replybase.co.uk/auth/register?plan=starter&source=blog_cta) | [View Our Pricing](https://replybase.co.uk/pricing)
 
 ---
 *Related Articles:*

@@ -25,7 +25,9 @@
 - [x] **Content Pillar 8:** "The Future of GEO: How to Optimize Your Business for AI Search Engines." (Updated June 2026)
 - [x] **Content Pillar 9:** "ReplyBase API Masterclass: Building Custom Integrations."
 - [x] **Content Pillar 10:** "AI & Opportunity Series": 10 educational posts on AI-driven business transformation. (Completed June 2026)
-- [x] **Content Pillar 11:** "Lead Generation Impact Series": 10 educational posts on lead capture, ROI, and growth. (Completed June 2026)
+- [x] **Content Pillar 11:** "AI Lead Generation Mastery": 10 educational posts on AI-native lead generation and sales enablement. (Completed June 2026)
+- [x] **Content Pillar 12:** "Lead Generation Impact Series": 10 educational posts on lead capture, ROI, and growth. (Completed June 2026)
+- [x] **Content Pillar 13:** "SMB AI Transformation Series": 10 educational posts on SMB AI adoption and ReplyBase impact. (Completed June 2026)
 - [ ] **Asset:** "State of AI Customer Service 2025" (Original Research Report).
 
 ## Multi-Channel Distribution
