@@ -76,7 +76,7 @@ export default function FoundingPromoModal() {
           </div>
 
           <Link
-            href="https://app.replybase.co.uk/auth/register?plan=pro&source=promo_modal&promo=FOUNDING50"
+            href="https://app.replybase.co.uk/auth/register?plan=Grow&source=promo_modal&promo=FOUNDING50"
             onClick={dismissModal}
             className="w-full bg-linear-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(79,70,229,0.3)] hover:shadow-[0_0_25px_rgba(79,70,229,0.5)] transform hover:scale-[1.02]"
           >
