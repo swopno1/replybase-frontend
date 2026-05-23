@@ -67,7 +67,7 @@ No. ReplyBase is designed as a no-code platform. You can have a functional AI as
 The transition to AI-driven support is the most significant operational upgrade a founder can make in 2024. By embracing automation, you free your team from repetitive tasks and provide your customers with the instant service they expect.
 
 **Ready to automate your support?**
-[Start Your Free Trial](https://replybase.co.uk) | [Book a Strategy Demo](https://replybase.co.uk/contact)
+[Start Your Free Trial](https://app.replybase.co.uk/auth/register?plan=starter&source=blog_cta) | [Book a Strategy Demo](https://replybase.co.uk/contact)
 
 ---
 *Internal Linking Opportunities:*

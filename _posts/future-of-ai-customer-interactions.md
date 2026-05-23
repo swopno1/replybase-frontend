@@ -51,7 +51,7 @@ AI will not replace human agents, but it will fundamentally change their role. A
 Staying ahead in 2025 requires adopting flexible, powerful platforms that can adapt to these rapid technological shifts. By focusing on intent-driven automation and proactive engagement today, you can build a customer experience that stands the test of time.
 
 **Ready to future-proof your support?**
-[Start Your Free Trial](https://replybase.co.uk) | [View Our Features](https://replybase.co.uk/features)
+[Start Your Free Trial](https://app.replybase.co.uk/auth/register?plan=starter&source=blog_cta) | [View Our Features](https://replybase.co.uk/features)
 
 ---
 *Related Articles:*
