@@ -48,6 +48,40 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 | T042 | MEDIUM | PENDING | MOTION | Static Feature Entry | Low Perceived Sophistication | Implement Scroll-Driven Entry Animations |
 | T043 | MEDIUM | PENDING | SEO | Inconsistent Docs Metadata | Reduced Search Visibility | Documentation Metadata Audit & Update |
 | T044 | HIGH | PENDING | MOBILE | Unreadable Pricing Comparison | Decision Fatigue | Mobile Pricing Comparison Modal |
+| T046 | MEDIUM | PENDING | CONVERSION | Final CTA Trust Leak | Higher Bounce at Exit | Conversion Trust Anchor in Final CTA |
+| T047 | LOW | PENDING | UI/UX | Content Length Fatigue | Lower Blog Completion | Blog Reading Progress Indicator |
+
+---
+
+### T046: Final CTA Trust Anchor
+- **Task Number:** T046
+- **Priority:** MEDIUM
+- **Status:** PENDING
+- **Category:** CONVERSION
+- **Issue:** The bottom-of-page CTA lacks immediate trust signals, causing friction for users who have scrolled through the entire narrative but remain hesitant.
+- **UX/Business Impact:** Potential loss of high-intent leads at the final stage of the funnel.
+- **Objective:** Stabilize the final acquisition funnel with a "Trust Anchor."
+- **Detailed Instructions:** Update `app/page.tsx` final CTA section. Insert a compact trust signal row below or next to the primary buttons. Include text like "End-to-End Encrypted & GDPR Compliant" or a micro-testimonial from a founder.
+- **Expected Deliverables:** High-trust final CTA section that reinforces security and reliability.
+- **Conversion Impact:** MEDIUM
+- **Brand Impact:** MEDIUM (Professionalism)
+- **Notes:** Identified June 09, 2026.
+
+---
+
+### T047: Blog Reading Progress Indicator
+- **Task Number:** T047
+- **Priority:** LOW
+- **Status:** PENDING
+- **Category:** UI/UX
+- **Issue:** Long-form "AI & Opportunity" blog posts lack visual feedback on reading progress, leading to higher abandonment on mobile.
+- **UX/Business Impact:** Lower educational content consumption and reduced time-on-site.
+- **Objective:** Improve the reading experience for long-form content.
+- **Detailed Instructions:** Update `app/blog/[slug]/page.tsx`. Implement a thin, sticky progress bar at the top of the viewport (under the navbar) that fills as the user scrolls through the article content.
+- **Expected Deliverables:** Functional reading progress bar for all blog posts.
+- **Conversion Impact:** LOW
+- **Brand Impact:** MEDIUM (Premium UX)
+- **Notes:** Identified June 09, 2026 following blog content launch.
 
 ---
 
