@@ -37,3 +37,5 @@
 - **TOFU:** Monthly Organic Traffic Growth.
 - **MOFU:** Newsletter opt-in rate.
 - **BOFU:** Conversion rate from "Blog" to "Trial Start."
+
+- [x] **Content Pillar 11:** "SMB AI Transformation Series": 10 educational posts on SMB AI adoption and ReplyBase impact. (Completed June 2026)

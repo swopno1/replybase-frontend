@@ -401,3 +401,9 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 - **Conversion Impact:** HIGH
 - **Brand Impact:** HIGH
 - **Notes:** Identified and completed June 08, 2026.
+
+- [x] **T048:** (Priority: MEDIUM) Add 10 educational blog posts on SMB AI adoption and ReplyBase impact.
+  - **Issue:** Strategic gap in educational content for traditional SMBs.
+  - **Objective:** Create 10 high-authority posts to guide SMBs through AI transformation.
+  - **Deliverables:** 10 Markdown files in `_posts/` with full SEO/AEO optimization.
+  - **Notes:** Completed June 2026.
