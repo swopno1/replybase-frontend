@@ -3,6 +3,7 @@ import path from "path";
 import matter from "gray-matter";
 import { remark } from "remark";
 import html from "remark-html";
+import gfm from "remark-gfm";
 import Link from "next/link";
 import LandingNavbar from "@/components/LandingNavbar";
 import LandingFooter from "@/components/LandingFooter";
@@ -33,6 +34,7 @@ async function getPostData(slug: string) {
     const matterResult = matter(fileContents);
 
     const processedContent = await remark()
+      .use(gfm)
       .use(html)
       .process(matterResult.content);
     const contentHtml = processedContent.toString();
