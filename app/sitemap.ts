@@ -122,36 +122,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     new Set([...getStaticAppRoutes(), ...getBlogRoutes()]),
   ).sort();
 
-  // Add SaaS app key routes
-  const appBase = "https://app.replybase.co.uk";
-  const extraAppRoutes = [
-    {
-      url: `${appBase}/`,
-      lastModified: new Date(),
-      changeFrequency: "weekly" as const,
-      priority: 1.0,
-    },
-    {
-      url: `${appBase}/auth/login`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.9,
-    },
-    {
-      url: `${appBase}/auth/register`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.9,
-    },
-  ];
-
-  return [
-    ...allRoutes.map((route) => ({
-      url: `${SITE_URL}${route === "/" ? "" : route}`,
-      lastModified: new Date(),
-      changeFrequency: getChangeFrequency(route),
-      priority: getPriority(route),
-    })),
-    ...extraAppRoutes,
-  ];
+  return allRoutes.map((route) => ({
+    url: `${SITE_URL}${route === "/" ? "" : route}`,
+    lastModified: new Date(),
+    changeFrequency: getChangeFrequency(route),
+    priority: getPriority(route),
+  }));
 }
