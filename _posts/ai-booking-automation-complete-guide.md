@@ -70,4 +70,4 @@ Absolutely. By sending automated, conversational reminders via WhatsApp or SMS, 
 AI booking automation is no longer a luxury reserved for enterprise firms. For SMBs and startups, it is a vital tool for scaling operations and improving customer satisfaction. By automating the "scheduling dance," you can focus on what you do best: delivering value to your clients.
 
 **Ready to automate your calendar?**
-[Start Your Free Trial](https://replybase.co.uk) | [Book a Demo](https://replybase.co.uk/demo) | [Explore WhatsApp Automation](/blog/whatsapp-lead-capture-automation-smb-guide)
+[Start Your Free Trial](https://app.replybase.co.uk/auth/register?plan=starter&source=blog_cta) | [Book a Demo](https://replybase.co.uk/demo) | [Explore WhatsApp Automation](/blog/whatsapp-lead-capture-automation-smb-guide)

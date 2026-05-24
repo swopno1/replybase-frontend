@@ -51,7 +51,7 @@ Yes. Modern AI platforms like ReplyBase can instantly translate and respond to c
 By implementing an AI chatbot like ReplyBase, businesses can significantly reduce their support costs while actually improving the quality of service provided to their customers. Efficiency isn't about replacing humans; it's about empowering them to do more meaningful work.
 
 **Ready to boost your team's efficiency?**
-[Get Started for Free](https://replybase.co.uk) | [Calculate Your Savings](https://replybase.co.uk/roi-calculator)
+[Get Started for Free](https://app.replybase.co.uk/auth/register?plan=starter&source=blog_cta) | [Calculate Your Savings](https://replybase.co.uk/roi-calculator)
 
 ---
 *Related Articles:*

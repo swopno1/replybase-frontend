@@ -73,7 +73,7 @@ Not with modern AI. Unlike old-school "press 1 for sales" bots, ReplyBase uses a
 Stop treating WhatsApp as a manual messaging app and start treating it as a scalable sales channel. By implementing an AI lead capture flow, you ensure that no prospect is ever ignored and your sales pipeline stays full around the clock.
 
 **Ready to build your WhatsApp lead engine?**
-[Get Started with ReplyBase](https://replybase.co.uk) | [View Pricing](https://replybase.co.uk/pricing)
+[Get Started with ReplyBase](https://app.replybase.co.uk/auth/register?plan=starter&source=blog_cta) | [View Pricing](https://replybase.co.uk/pricing)
 
 ---
 *Related Reading:*

@@ -64,4 +64,4 @@ At a minimum, you should sync contact details (name, email, phone). However, for
 An AI that talks but doesn't "listen" to your CRM is only doing half its job. By implementing AI CRM continuity, you transform your AI from a simple chat tool into a powerful, integrated member of your sales operations team. Stop losing leads and start closing more deals with automated continuity.
 
 **Ready to close the loop?**
-[Integrate Your CRM Now](https://replybase.co.uk) | [View API Documentation](/docs/ai-workflows) | [Read: Advanced CRM Syncing](/blog/advanced-crm-syncing-guide)
+[Integrate Your CRM Now](https://app.replybase.co.uk/auth/register?plan=starter&source=blog_ctahttps://replybase.co.uk) | [View API Documentation](/docs/ai-workflows) | [Read: Advanced CRM Syncing](/blog/advanced-crm-syncing-guide)

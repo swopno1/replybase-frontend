@@ -64,4 +64,4 @@ Absolutely. In fact, for SMBs with limited staff, an omnichannel AI strategy is 
 Customers don't care about your internal silos; they care about getting fast, accurate answers on the platform they prefer. By adopting an omnichannel AI strategy, you remove the barriers to communication, build deeper trust, and create a scalable foundation for business growth.
 
 **Ready to unify your communication?**
-[Get Started with ReplyBase](https://replybase.co.uk) | [Explore Our Features](/docs/ai-workflows) | [Read: AI Lead Gen Mastery](/blog/multi-channel-lead-capture-mastery)
+[Get Started with ReplyBase](https://app.replybase.co.uk/auth/register?plan=starter&source=blog_cta) | [Explore Our Features](/docs/ai-workflows) | [Read: AI Lead Gen Mastery](/blog/multi-channel-lead-capture-mastery)

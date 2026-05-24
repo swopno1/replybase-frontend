@@ -66,7 +66,7 @@ ReplyBase offers flexible data residency. While our primary infrastructure is bu
 AI has the power to transform your business, but it shouldn't come at the cost of your customers' trust. By choosing a platform that prioritizes security and privacy from day one, you can reap the benefits of automation without the regulatory headache.
 
 **Scale with confidence.**
-[Review Our Privacy Policy](https://replybase.co.uk/privacy) | [Start Your Secure Trial](https://replybase.co.uk)
+[Review Our Privacy Policy](https://replybase.co.uk/privacy) | [Start Your Secure Trial](https://app.replybase.co.uk/auth/register?plan=starter&source=blog_cta)
 
 ---
 *Related Articles:*
