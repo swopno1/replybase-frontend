@@ -61,3 +61,11 @@ The mobile experience is functional but lacks the "premium app-like" feel requir
 - **Observation (HIGH):** Final Conversion Trust.
 - **Analysis:** The "Final CTA" on the landing page feels isolated on mobile. Without immediate trust signals (like a security badge) near the "Start Trial" button, users may hesitate at the last step.
 - **Task (T046):** Add a compact "End-to-End Encrypted & GDPR Compliant" trust badge below the final mobile CTA buttons in `app/page.tsx`.
+
+## Inspection Update - June 12, 2026
+- **Observation (HIGH):** Ergonomic Friction.
+- **Analysis:** The mobile menu trigger in `LandingNavbar.tsx` is positioned too close to the right edge (T034), making it uncomfortable for single-handed thumb use on modern large-screen smartphones.
+- **Observation (CRITICAL):** Accessibility & Focus.
+- **Analysis:** Confirmed that the mobile menu does not trap focus (T041), allowing keyboard and screen-reader users to navigate behind the menu while it is open. This is a primary accessibility blocker.
+- **Observation (MEDIUM):** Visual Clarity.
+- **Analysis:** Lack of a dark backdrop overlay (T038) for the mobile menu causes visual interference with the hero section content, reducing legibility.
