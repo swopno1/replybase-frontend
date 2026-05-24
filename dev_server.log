@@ -1,14 +1,14 @@
 
-> replybase-frontend@0.1.0 dev /app
+> replybase-frontend@0.1.0 dev
 > next dev
 
 ▲ Next.js 16.2.4 (Turbopack)
 - Local:         http://localhost:3000
 - Network:       http://192.168.0.2:3000
-✓ Ready in 496ms
+✓ Ready in 1033ms
 
 ○ Compiling /blog ...
- GET /blog 200 in 5.5s (next.js: 4.3s, application-code: 1191ms)
+ GET /blog 200 in 6.4s (next.js: 4.8s, application-code: 1561ms)
 [browser] [ReplyBase Webchat] Initialization failed: Failed to fetch TypeError: Failed to fetch
     at request (https://app.replybase.co.uk/embed/replybase-webchat.js:1023:12)
     at loadConfig (https://app.replybase.co.uk/embed/replybase-webchat.js:1102:12)
@@ -18,15 +18,4 @@
 [browser] [ReplyBase Webchat] Chat unavailable: Failed to fetch
     at showError (https://app.replybase.co.uk/embed/replybase-webchat.js:767:13)
     at <unknown> (https://app.replybase.co.uk/embed/replybase-webchat.js:813:9) (https://app.replybase.co.uk/embed/replybase-webchat.js:767:13)
- GET /blog/ai-booking-automation-complete-guide 200 in 3.1s (next.js: 2.8s, generate-params: 1189ms, application-code: 234ms)
- GET /blog 200 in 492ms (next.js: 5ms, application-code: 486ms)
-[browser] [ReplyBase Webchat] Initialization failed: Failed to fetch TypeError: Failed to fetch
-    at request (https://app.replybase.co.uk/embed/replybase-webchat.js:1023:12)
-    at loadConfig (https://app.replybase.co.uk/embed/replybase-webchat.js:1102:12)
-    at initWidget (https://app.replybase.co.uk/embed/replybase-webchat.js:772:5)
-    at <unknown> (https://app.replybase.co.uk/embed/replybase-webchat.js:815:5)
-    at <unknown> (https://app.replybase.co.uk/embed/replybase-webchat.js:1135:3) (https://app.replybase.co.uk/embed/replybase-webchat.js:812:17)
-[browser] [ReplyBase Webchat] Chat unavailable: Failed to fetch
-    at showError (https://app.replybase.co.uk/embed/replybase-webchat.js:767:13)
-    at <unknown> (https://app.replybase.co.uk/embed/replybase-webchat.js:813:9) (https://app.replybase.co.uk/embed/replybase-webchat.js:767:13)
- GET /blog/ai-booking-automation-complete-guide 200 in 256ms (next.js: 36ms, generate-params: 30ms, application-code: 220ms)
+ GET /blog/the-strategic-impact-of-lead-generation 200 in 2.3s (next.js: 2.1s, generate-params: 772ms, application-code: 200ms)
