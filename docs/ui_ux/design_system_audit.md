@@ -21,6 +21,10 @@
 - **Interactions (LOW):** Verified lack of pricing table hover states (T039) on desktop.
 - **Mobile Touch (MEDIUM):** Verified small touch targets in footer social icons and mobile menu button (T011).
 
+## Inspection Update - June 12, 2026
+- **Theming Debt (MEDIUM):** Hardcoded `bg-slate-900` backgrounds verified in `app/about/page.tsx`, `app/contact/page.tsx`, and `app/privacy/page.tsx`. Transition to `bg-background` (T025) is required to ensure system-wide color consistency.
+- **Hierarchy (MEDIUM):** Confirmed H1 headings in `app/about/page.tsx` and `app/contact/page.tsx` do not consistently use `font-extrabold` (T027), leading to a flatter visual hierarchy compared to the landing page.
+
 ## Components (Audit June 04, 2026)
 - **Buttons:** Functional. "Signature Glow" (T029) needed for primary Hero CTA to elevate brand perception.
 - **Cards:** Consistent `bg-slate-800/50` usage. Needs standard `hover:border-indigo-500/50` across all cards (T016).

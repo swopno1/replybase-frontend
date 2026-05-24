@@ -24,3 +24,7 @@
 ## Inspection Update - June 08, 2026
 - **Interaction Feedback (MEDIUM):** Pricing table row hover (T039) confirmed as a significant gap in desktop interactivity. Standardizing table interactions is a key design system goal.
 - **Mobile Interaction (MEDIUM):** Mobile menu touch feedback (T011) is currently absent, leading to a "muted" tactile experience. Implementing `active:bg-slate-800` for mobile links is recommended.
+
+## Inspection Update - June 12, 2026
+- **Platform Intelligence (MEDIUM):** Verified that feature grids and channel highlights lack entry rhythm (T042). Static loading reduces the perceived "AI-native" intelligence of the platform.
+- **Tactile Feedback (MEDIUM):** Pricing table interactions remain static on desktop (T039). Introducing row hover states is a priority for aiding user feature comparison.
