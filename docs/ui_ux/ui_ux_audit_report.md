@@ -97,11 +97,12 @@ The ReplyBase marketing site is a solid foundation, featuring a modern dark-them
     - **Content UX (LOW):** Long-form educational content in `_posts/` requires a reading progress indicator to improve completion rates on mobile (T047).
 - **Strategic Recommendation:** Prioritize T046 (Trust Anchor) to stabilize the final acquisition funnel, followed by T025 (Theming Standardization) to ensure brand cohesion.
 
-## Inspection Update - June 12, 2026
-- **Focus:** Enterprise Trust & Frictionless Conversion.
+## Inspection Update - June 13, 2026
+- **Focus:** Unified Trust Architecture & Design System Integrity.
 - **Current State:**
-    - **Confidence Score:** 54/100 (Slight decrease due to persistent trust signal gaps).
-    - **Conversion (HIGH):** Verified that the Hero section lacks immediate authority signals (T032). Adding a "Trusted by 100+ teams" badge is critical for establishing credibility above the fold.
-    - **Trust (CRITICAL):** Confirmed the WhatsApp status mismatch (T024) remains a major trust leak. "Beta" vs "Coming Soon" messaging erodes professional perception.
-    - **Mobile UX (HIGH):** Mobile menu trigger placement (T034) causes measurable ergonomic friction on larger devices. Focus trapping (T041) and backdrop implementation (T038) are essential for a premium mobile experience.
-- **Strategic Recommendation:** Consolidate T024, T032, and T046 into a "Trust Authority Layer" proposal to systematically address the most significant conversion blockers.
+    - **Confidence Score:** 52/100 (Slight decrease due to confirmed "Brand Drift" on static pages).
+    - **Trust Architecture (CRITICAL):** The "Trust Leak" cluster (T024, T032, T046) remains the highest priority for conversion stabilization. WhatsApp status inconsistency (T024) is a primary friction point for professional credibility.
+    - **Design System (HIGH):** Theming debt (T025) confirmed in About, Contact, and Privacy routes. The persistence of hardcoded `bg-slate-900` blocks global theme scalability and creates visual inconsistency with the modern `bg-background` standard used in the Blog.
+    - **Mobile Experience (HIGH):** Mobile menu ergonomics (T034) and accessibility (T038, T041) are sub-optimal. The lack of focus trapping and backdrop reduces the perceived quality of the mobile acquisition funnel.
+    - **Brand Positioning (MEDIUM):** Static pages lack the "Signature Glow" visual identity introduced in the Blog routes, leading to a fragmented user journey during the consideration phase.
+- **Strategic Recommendation:** Execute the "Trust Authority Layer" (TAL) redesign immediately. Concurrently, standardize all page backgrounds to `bg-background` (T025) and implement the "Signature Glow" visual language across all public-facing routes to eliminate brand drift.
