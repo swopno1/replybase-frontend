@@ -29,6 +29,8 @@
 - **Interaction Gaps (MEDIUM):** The pricing table (`app/page.tsx`) feels static. Adding a subtle `hover:bg-slate-800/50` to table rows (T039) will improve the "Premium Software" feel and aid in row-tracking for wide comparison tables.
 - **Content Continuity (LOW):** The Blog index (`app/blog/page.tsx`) currently assumes posts will always exist. Implementing a branded "Empty State" (T040) maintains professional continuity even when no content is present.
 
-## Inspection Update - June 12, 2026
-- **Brand Drift (HIGH):** Strategic fragmentation confirmed on `app/about/page.tsx` and `app/contact/page.tsx`. These pages use hardcoded `bg-slate-900` instead of the theme-compliant `bg-background` (T025) and lack the "Signature Glow" visual elements introduced in the blog.
-- **CTA Authority (MEDIUM):** Inconsistent font weights for primary buttons persist. Hero buttons use `font-semibold`, but navbar and footer buttons often default to `font-medium`, diluting the brand's "action-oriented" voice (T036).
+## Inspection Update - June 13, 2026
+- **Brand Drift (CRITICAL):** Identified severe visual fragmentation between the Blog (vibrant, theme-compliant) and static pages like About and Contact (flat, hardcoded `bg-slate-900`). This drift undermines the "Premium AI SaaS" positioning (T025).
+- **Visual Identity (HIGH):** The "Signature Glow" (T029) is currently isolated to the Blog. Expanding this to the Hero CTA and static page headers is essential for a unified brand experience.
+- **CTA Standardization (HIGH):** Confirmed persistent variance in CTA weights (T036). Unifying on `font-semibold` across the entire site is a non-negotiable for brand authority and conversion clarity.
+- **Typographic Integrity (MEDIUM):** H1 weights are inconsistent across routes (T027). Unifying on `font-extrabold` globally will strengthen the brand's visual punch.
