@@ -34,3 +34,8 @@
 - **Visual Identity (HIGH):** The "Signature Glow" (T029) is currently isolated to the Blog. Expanding this to the Hero CTA and static page headers is essential for a unified brand experience.
 - **CTA Standardization (HIGH):** Confirmed persistent variance in CTA weights (T036). Unifying on `font-semibold` across the entire site is a non-negotiable for brand authority and conversion clarity.
 - **Typographic Integrity (MEDIUM):** H1 weights are inconsistent across routes (T027). Unifying on `font-extrabold` globally will strengthen the brand's visual punch.
+
+## Inspection Update - June 14, 2026 (Current Daily Inspection)
+- **Brand Positioning (HIGH):** Re-confirmed brand drift on static pages (T025). The transition to `bg-background` and "Signature Glow" is critical for maintaining a premium positioning.
+- **Typographic Hierarchy (MEDIUM):** Confirmed that `ContactForm.tsx` uses `font-bold` for its H1, while the landing page uses `font-extrabold` (T027).
+- **CTA Clarity (MEDIUM):** Inconsistent CTA weights (T036) continue to contribute to a "Template-Adjacent" feel.

@@ -42,7 +42,7 @@ This is a refined view of UI/UX and Brand tasks from the master TASKS.md file.
 - **Issue:** Contradictory information regarding WhatsApp availability across landing page sections (T024).
 - **Objective:** Align WhatsApp status to "Beta" globally to maintain trust.
 - **Expected Deliverables:** Unified messaging in `app/page.tsx`.
-- **Notes:** Confirmed as CRITICAL trust leak June 2026. Confirmed June 12, 2026.
+- **Notes:** Confirmed as CRITICAL trust leak June 2026. Confirmed June 12, 2026. Confirmed June 14, 2026.
 
 ---
 
@@ -53,4 +53,4 @@ This is a refined view of UI/UX and Brand tasks from the master TASKS.md file.
 - **Issue:** `app/about/page.tsx`, `app/blog/page.tsx`, `app/blog/[slug]/page.tsx`, and `app/privacy/page.tsx` use hardcoded `bg-slate-900` instead of `bg-background` (T025).
 - **Objective:** Ensure all pages respect the global design tokens for consistency.
 - **Expected Deliverables:** Pages updated to use the semantic `bg-background` class.
-- **Notes:** Confirmed June 2026 audit. Confirmed June 12, 2026.
+- **Notes:** Confirmed June 2026 audit. Confirmed June 12, 2026. Confirmed June 14, 2026.

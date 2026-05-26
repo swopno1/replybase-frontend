@@ -69,3 +69,11 @@ The mobile experience is functional but lacks the "premium app-like" feel requir
 - **Analysis:** Confirmed that the mobile menu does not trap focus (T041), allowing keyboard and screen-reader users to navigate behind the menu while it is open. This is a primary accessibility blocker.
 - **Observation (MEDIUM):** Visual Clarity.
 - **Analysis:** Lack of a dark backdrop overlay (T038) for the mobile menu causes visual interference with the hero section content, reducing legibility.
+
+## Inspection Update - June 14, 2026 (Current Daily Inspection)
+- **Observation (CRITICAL):** Accessibility Blockers.
+- **Analysis:** Re-confirmed that the mobile menu in `LandingNavbar.tsx` lacks focus trapping (T041). Keyboard navigation still leaks into the background hero content.
+- **Observation (HIGH):** Ergonomic Polish.
+- **Analysis:** Thumb-reach friction for the menu trigger (T034) remains an issue on large devices.
+- **Observation (MEDIUM):** Branding & Hierarchy.
+- **Analysis:** Static pages still lack the "Signature Glow" header used in the blog, leading to a fragmented user journey (T025).
