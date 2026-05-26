@@ -61,3 +61,11 @@ ReplyBase follows excellent semantic HTML patterns (logical heading hierarchy, a
 - **Analysis:** `NewsletterSubscribe.tsx` and `ContactForm.tsx` (T037) lack `aria-describedby` for error states, leaving screen reader users unaware of why a form failed validation.
 - **Task (T005):** Verified missing `aria-controls` for mobile menu in `LandingNavbar.tsx`.
 - **Recommendation:** Prioritize the implementation of T041 (Focus Trapping) and T005 (ARIA controls) to ensure the mobile navigation is fully WCAG compliant.
+
+## Inspection Update - June 14, 2026 (Current Daily Inspection)
+- **Observation (CRITICAL):** Mobile Focus Management.
+- **Analysis:** Focus trapping for the mobile menu (T041) remains unimplemented, posing a major barrier for keyboard and assistive technology users.
+- **Observation (HIGH):** Interactive Feedback.
+- **Analysis:** Contact and Newsletter forms lack proper `aria-live` regions for status updates (T005, T037).
+- **Observation (MEDIUM):** Skip Links.
+- **Analysis:** Lack of a "Skip to Content" link (T028) forces keyboard users to navigate through the entire navbar on every page load.
