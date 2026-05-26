@@ -441,6 +441,12 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
   - **Objective:** Create 10 high-authority posts to guide SMBs through AI transformation.
   - **Deliverables:** 10 Markdown files in `_posts/` with full SEO/AEO optimization.
   - **Notes:** Completed June 2026.
+
+- [x] **T050:** (Priority: HIGH) Add 10 educational blog posts on Omnichannel Sales & Social Automation.
+  - **Issue:** Strategic gap in content regarding Instagram, Messenger, and unified social sales strategies.
+  - **Objective:** Create 10 high-authority posts to bridge the social automation gap.
+  - **Deliverables:** 10 Markdown files in `_posts/` with full SEO/AEO optimization.
+  - **Notes:** Completed June 2026.
 ---
 
 ### T048: Create 10 Educational Blog Posts on AI Lead Generation Mastery
@@ -472,3 +478,19 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 - **Conversion Impact:** HIGH
 - **Brand Impact:** HIGH
 - **Notes:** Identified and completed June 12, 2026.
+
+---
+
+### T050: Create 10 Educational Blog Posts on Omnichannel Sales & Social Automation
+- **Task Number:** T050
+- **Priority:** HIGH
+- **Status:** COMPLETED
+- **Category:** CONTENT
+- **Issue:** Strategic gap in high-authority educational content specifically addressing Instagram DM automation, Facebook Messenger for business, and unified social sales strategies.
+- **UX/Business Impact:** Increases topical authority and attracts high-intent organic traffic looking to automate social media sales and unified communication.
+- **Objective:** Position ReplyBase as a leader in social commerce and omnichannel automation.
+- **Detailed Instructions:** Create 10 SEO/AEO-optimized blog posts in _posts/ covering Instagram DM automation, social commerce trends, and unified AI social strategies. Each post must follow the project's strict SEO/AEO structure.
+- **Expected Deliverables:** 10 high-quality Markdown files in _posts/.
+- **Conversion Impact:** HIGH
+- **Brand Impact:** HIGH
+- **Notes:** Identified and completed June 14, 2026.
