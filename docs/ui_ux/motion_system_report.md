@@ -28,3 +28,7 @@
 ## Inspection Update - June 12, 2026
 - **Platform Intelligence (MEDIUM):** Verified that feature grids and channel highlights lack entry rhythm (T042). Static loading reduces the perceived "AI-native" intelligence of the platform.
 - **Tactile Feedback (MEDIUM):** Pricing table interactions remain static on desktop (T039). Introducing row hover states is a priority for aiding user feature comparison.
+
+## Inspection Update - June 15, 2026 (Current Daily Inspection)
+- **Interaction Rhythm (MEDIUM):** Identified lack of "Overlay Entry Motion." Modals and mobile menus should use a consistent 300ms ease-out scale/opacity transition (T009).
+- **Surface Transitions (LOW):** Card hover states (`hover:border-indigo-500/50`) should include a 150ms `transition-colors` to match the premium "Signature Glow" aesthetic.
