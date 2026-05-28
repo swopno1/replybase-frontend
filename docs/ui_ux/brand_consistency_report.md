@@ -40,7 +40,13 @@
 - **Typographic Hierarchy (MEDIUM):** Confirmed that `ContactForm.tsx` uses `font-bold` for its H1, while the landing page uses `font-extrabold` (T027).
 - **CTA Clarity (MEDIUM):** Inconsistent CTA weights (T036) continue to contribute to a "Template-Adjacent" feel.
 
-## Inspection Update - June 15, 2026 (Current Daily Inspection)
+## Inspection Update - June 15, 2026
 - **Visual Integrity (MEDIUM):** Card background opacity mismatch identified. Standardizing across Landing, Docs, and Blog is necessary to eliminate "Visual Noise."
 - **Brand Identity (HIGH):** The "Signature Glow" header is still isolated to the Blog. Static pages (About, Contact) feel flat and outdated in comparison.
 - **Typographic Consistency (MEDIUM):** Unifying H1 weights to `font-extrabold` (T027) and CTA weights to `font-semibold` (T036) remains a high-impact low-effort brand win.
+
+## Inspection Update - June 16, 2026 (Current Daily Inspection)
+- **Brand Drift (CRITICAL):** Re-confirmed severe visual fragmentation. Static routes (`about`, `privacy`) use `bg-slate-900` and `font-bold` for H1, while modern routes use `bg-background` and `font-extrabold`. This "Version Gap" undermines brand maturity (T025, T027).
+- **Surface Audit (HIGH):** Confirmed surface opacity drift (T052). `app/page.tsx` uses 40% while `ContactForm.tsx` and `app/blog/page.tsx` use 50%. Unified standard: `bg-slate-800/45`.
+- **CTA Identity (MEDIUM):** Inconsistent CTA weights confirmed (T036). `LandingNavbar.tsx` (`font-medium`) vs `app/page.tsx` (`font-semibold`).
+- **Overlay Integrity (HIGH):** `FoundingPromoModal.tsx` backdrop token (T051) confirmed as inconsistent (`bg-slate-950/60`).
