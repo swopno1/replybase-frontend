@@ -116,7 +116,7 @@ The ReplyBase marketing site is a solid foundation, featuring a modern dark-them
     - **UX Consistency (MEDIUM):** Heading weights vary between `font-bold` and `font-extrabold` across pages (T027). Standardizing this is essential for a "Premium" aesthetic.
 - **Strategic Recommendation:** Prioritize the "Trust Authority Layer" components (T032, T024, T046) and resolve critical mobile accessibility blockers (T041, T038) to stabilize the core acquisition funnel.
 
-## Inspection Update - June 15, 2026 (Current Daily Inspection)
+## Inspection Update - June 15, 2026
 - **Focus:** Consistency Debt & Surface Architecture.
 - **Current State:**
     - **Confidence Score:** 48/100 (Slight decrease due to identified surface-level inconsistencies).
@@ -125,3 +125,13 @@ The ReplyBase marketing site is a solid foundation, featuring a modern dark-them
     - **Typography (MEDIUM):** Re-confirmed heading weight drift. `ContactForm.tsx` H1 uses `font-bold`, while the Landing Page H1 uses `font-extrabold`. Unifying on `font-extrabold` (T027) is essential.
     - **Trust (CRITICAL):** WhatsApp status mismatch (T024) and lack of Hero Authority (T032) continue to be the primary conversion blockers.
 - **Strategic Recommendation:** Initiate the "Overlay & Surface Standardization" audit (T051, T052) concurrently with the "Trust Authority Layer" rollout to eliminate visual fragmentation.
+
+## Inspection Update - June 16, 2026 (Current Daily Inspection)
+- **Focus:** Conversion Funnel Stabilization & Global Theme Audit.
+- **Current State:**
+    - **Confidence Score:** 46/100 (Decrease due to confirmed persistent Trust Leaks across static pages).
+    - **Trust Architecture (CRITICAL):** Confirmed "WhatsApp Conflict" (T024) in `app/page.tsx`: Step 1 of 'How It Works' states "Coming Soon" while the Channels grid correctly identifies it as "Beta". This contradiction remains a top-tier credibility risk.
+    - **Thematic Integrity (HIGH):** Audit of `app/about/page.tsx` and `app/privacy/page.tsx` confirms persistent hardcoded `bg-slate-900` (T025). Static routes feel "visually fossilized" compared to the modern Blog routes using `bg-background`.
+    - **Typography (MEDIUM):** Confirmed CTA weight variance (T036). `LandingNavbar.tsx` uses `font-medium` while the Hero section uses `font-semibold`.
+    - **Consistency Audit (HIGH):** Re-verified T051 (Backdrop) and T052 (Surface). `FoundingPromoModal.tsx` backdrop at `bg-slate-950/60` deviates from the proposed 75% standard. Card opacities vary between 40% (Landing) and 50% (ContactForm/Blog).
+- **Strategic Recommendation:** Finalize the "Trust Authority Layer" (TAL) components (T032, T024, T046) and begin global replacement of hardcoded background tokens (T025) to unify the platform aesthetic.

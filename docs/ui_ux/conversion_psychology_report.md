@@ -51,7 +51,13 @@ The website uses strong risk-reversal language ("No credit card required," "14-d
 - **Decision Clarity (HIGH):** Pricing tier guidance (T033) is still insufficient. The 'Pro' (Scale) plan requires stronger visual emphasis to reduce decision fatigue.
 - **Strategic Recommendation:** Prioritize the implementation of the TAL (Trust Authority Layer) proposal. Aligning WhatsApp status (T024) and adding the Hero Authority Badge (T032) are the most immediate "quick wins" for conversion stabilization.
 
-## Inspection Update - June 15, 2026 (Current Daily Inspection)
+## Inspection Update - June 15, 2026
 - **Trust Architecture (HIGH):** Persistent WhatsApp status mismatch (T024) remains the #1 "Internal Trust Leak."
 - **Conversion Friction (MEDIUM):** Identified visual inconsistency in CTA weights (T036) as a source of "Subconscious Friction." Standardizing the visual weight of action points reduces cognitive load.
 - **Acquisition Stability (HIGH):** Hero Authority Badge (T032) and Final CTA Trust Anchor (T046) are the highest priority conversion "multipliers" for today.
+
+## Inspection Update - June 16, 2026 (Current Daily Inspection)
+- **Trust Architecture (CRITICAL):** Confirmed "WhatsApp Status Conflict" (T024) in `app/page.tsx`. This mismatch between "Coming Soon" (Step 1) and "Beta" (Channels) is a primary conversion blocker for security-conscious SMBs.
+- **Hero Authority (HIGH):** Re-confirmed absence of Hero Authority Badge (T032). Visitors lack immediate proof of scale upon landing.
+- **Final Funnel Stability (HIGH):** The Final CTA section (T046) lacks immediate trust anchors (security seals/GDPR compliance).
+- **CTA Weight (MEDIUM):** Inconsistent CTA weights (T036) confirmed between Navbar and Hero. Standardizing to `font-semibold` globally will improve action clarity.

@@ -30,3 +30,8 @@ Currently, ReplyBase utilizes multiple, slightly varying opacity levels for simi
 
 ## AI-Readable Execution Prompt
 "Standardize the visual surface architecture of the site. 1. In `globals.css`, define a utility class `.backdrop-standard { @apply bg-slate-950/75 backdrop-blur-sm; }`. 2. Apply this class to the backdrop in `FoundingPromoModal.tsx` and the mobile menu container in `LandingNavbar.tsx`. 3. Perform a global search and replace for `bg-slate-800/40`, `bg-slate-800/50`, and `bg-slate-800/60` within card containers, unifying them to `bg-slate-800/45` to ensure surface consistency."
+
+## Inspection Update - June 16, 2026 (Current Daily Inspection)
+- **Surface Fragmentation (HIGH):** Audit of `ContactForm.tsx` (50%) and `app/page.tsx` (40%) confirms inconsistent card background opacities (T052).
+- **Overlay Inconsistency (HIGH):** `FoundingPromoModal.tsx` confirmed to use `bg-slate-950/60`, deviating from the proposed 75% standard for interruptive overlays (T051).
+- **Recommendation:** Implement a unified CSS variable for surfaces and overlays to eliminate future drift.
