@@ -4,11 +4,6 @@ import Script from "next/script";
 import { useEffect, useState } from "react";
 import { isMainDomain, isProduction } from "@/lib/client-analytics";
 
-const plausibleDomain =
-  process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN || "replybase.co.uk";
-const plausibleScriptSrc =
-  process.env.NEXT_PUBLIC_PLAUSIBLE_SCRIPT_SRC ||
-  "https://engine.replybase.co.uk/js/script.js";
 const clarityProjectId = process.env.NEXT_PUBLIC_CLARITY_PROJECT_ID;
 const posthogKey = process.env.NEXT_PUBLIC_POSTHOG_KEY;
 const posthogHost = process.env.NEXT_PUBLIC_POSTHOG_HOST || ""; // "https://app.posthog.com";
@@ -30,12 +25,17 @@ export function AnalyticsScripts() {
 
   return (
     <>
+      {/* Google Tag Manager */}
       <Script
-        id="plausible"
+        id="gtm-script"
         strategy="afterInteractive"
-        defer
-        data-domain={plausibleDomain}
-        src={plausibleScriptSrc}
+        dangerouslySetInnerHTML={{
+          __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PCKHK9XS');`,
+        }}
       />
 
       {clarityProjectId ? (
