@@ -28,6 +28,8 @@
 - [x] **Content Pillar 11:** "AI Lead Generation Mastery": 10 educational posts on AI-native lead generation and sales enablement. (Completed June 2026)
 - [x] **Content Pillar 12:** "AI Core Systems": 3 high-authority guides on AI Booking, Omnichannel Strategy, and CRM Continuity. (Completed June 2026)
 - [x] **Content Pillar 13:** "Lead Generation Impact Series": 10 educational posts on Lead Generation ROI, B2B strategies, and psychology. (Completed June 2026)
+- [x] **Content Pillar 14:** "Omnichannel Sales & Social Automation Series": 10 educational posts on Instagram/Messenger automation and unified social sales. (Completed June 2026)
+- [x] **Content Pillar 15:** "Professional Services & Strategic Growth Series": 10 educational posts on UK Accounting, Consultant scaling, and 2026 Strategy. (Completed June 2026)
 - [ ] **Asset:** "State of AI Customer Service 2025" (Original Research Report).
 
 ## Multi-Channel Distribution

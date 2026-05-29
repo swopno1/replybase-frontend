@@ -27,7 +27,7 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 | T021 | HIGH | PENDING | CONVERSION | Repeating trial text | Cognitive load | Consolidate risk-reversal messaging in pricing section |
 | T022 | MEDIUM | PENDING | BRAND | Non-vibrant Indigo | Brand soul | Transition to custom high-saturation "ReplyBase Indigo" |
 | T023 | MEDIUM | PENDING | UI/UX | Radius mismatch in Newsletter | Design inconsistency | Standardize Newsletter input/button radii to match Shadcn defaults |
-| T024 | HIGH | PENDING | CONVERSION | WhatsApp Status Conflict | Trust erosion | Align WhatsApp status globally to "Beta" |
+| T024 | HIGH | IN_PROGRESS | CONVERSION | WhatsApp Status Conflict | Trust erosion | Align WhatsApp status globally to "Beta" |
 | T025 | MEDIUM | PENDING | UI/UX | Hardcoded bg-slate-900 | Theming debt | Standardize on bg-background token |
 | T026 | MEDIUM | PENDING | TECH | 150+ Linting Errors | Technical health | Achieve zero-lint-error state |
 | T027 | MEDIUM | PENDING | UI/UX | Inconsistent H1/H3 weights | Visual hierarchy | Unify on font-extrabold (H1) and font-semibold (H3) |
@@ -35,7 +35,7 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 | T029 | HIGH | PENDING | BRAND | Generic Hero CTA | Brand Identity | Signature Glow for Hero CTA |
 | T030 | HIGH | PENDING | CONVERSION | Repetitive trial text | Cognitive Load | Consolidate Pricing Risk-Reversal |
 | T031 | MEDIUM | PENDING | UI/UX | Icon size inconsistency | Visual Fragmentation | Standardize Lucide icons to size 20 in lists |
-| T032 | HIGH | PENDING | CONVERSION | Missing Hero Authority | Low Trust | Add "Trusted by 100+ teams" badge above Hero H1 |
+| T032 | HIGH | IN_PROGRESS | CONVERSION | Missing Hero Authority | Low Trust | Add "Trusted by 100+ teams" badge above Hero H1 |
 | T033 | HIGH | PENDING | CONVERSION | No Pro Plan highlight | Decision Flow | Pro tier visual emphasis |
 | T034 | MEDIUM | PENDING | MOBILE | Ergonomic Friction | Reduced Usability | Move mobile menu button 8px inward |
 | T035 | LOW | PENDING | MOTION | Abrupt Loading | Low Perceived Quality | Implement high-fidelity skeleton loaders for blog/channels |
@@ -48,8 +48,10 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 | T042 | MEDIUM | PENDING | MOTION | Static Feature Entry | Low Perceived Sophistication | Implement Scroll-Driven Entry Animations |
 | T043 | MEDIUM | PENDING | SEO | Inconsistent Docs Metadata | Reduced Search Visibility | Documentation Metadata Audit & Update |
 | T044 | HIGH | PENDING | MOBILE | Unreadable Pricing Comparison | Decision Fatigue | Mobile Pricing Comparison Modal |
-| T046 | MEDIUM | PENDING | CONVERSION | Final CTA Trust Leak | Higher Bounce at Exit | Conversion Trust Anchor in Final CTA |
+| T046 | MEDIUM | IN_PROGRESS | CONVERSION | Final CTA Trust Leak | Higher Bounce at Exit | Conversion Trust Anchor in Final CTA |
 | T047 | LOW | PENDING | UI/UX | Content Length Fatigue | Lower Blog Completion | Blog Reading Progress Indicator |
+| T051 | HIGH | PENDING | UI/UX | Inconsistent Backdrop Tokens | Design fragmentation | Standardize on bg-slate-950/75 for all overlays |
+| T052 | MEDIUM | PENDING | UI/UX | Card background opacity variance | Subtle visual discord | Unify card backgrounds to bg-slate-800/45 globally |
 
 ---
 
@@ -65,7 +67,7 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 - **Expected Deliverables:** High-trust final CTA section that reinforces security and reliability.
 - **Conversion Impact:** MEDIUM
 - **Brand Impact:** MEDIUM (Professionalism)
-- **Notes:** Identified June 09, 2026. Confirmed June 12, 2026.
+- **Notes:** Identified June 09, 2026. Confirmed June 12, 2026. Confirmed June 13, 2026. Confirmed June 14, 2026. Confirmed June 15, 2026. Confirmed June 16, 2026 as essential for funnel closure.
 
 ---
 
@@ -81,7 +83,7 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 - **Expected Deliverables:** Functional reading progress bar for all blog posts.
 - **Conversion Impact:** LOW
 - **Brand Impact:** MEDIUM (Premium UX)
-- **Notes:** Identified June 09, 2026 following blog content launch. Confirmed June 12, 2026.
+- **Notes:** Identified June 09, 2026 following blog content launch. Confirmed June 12, 2026. Confirmed June 13, 2026. Confirmed June 14, 2026. Confirmed June 15, 2026.
 
 ---
 
@@ -97,7 +99,7 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 - **Expected Deliverables:** Accessible mobile navigation with full focus containment.
 - **Conversion Impact:** MEDIUM (Navigation accessibility)
 - **Brand Impact:** MEDIUM (Inclusivity)
-- **Notes:** Identified during June 07, 2026 inspection. Confirmed June 08, 2026.
+- **Notes:** Identified during June 07, 2026 inspection. Confirmed June 08, 2026. Confirmed June 13, 2026. Confirmed June 14, 2026. Confirmed June 15, 2026.
 
 ---
 
@@ -113,7 +115,7 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 - **Expected Deliverables:** Smooth, interactive scroll experience for core feature sections.
 - **Conversion Impact:** LOW
 - **Brand Impact:** HIGH (Premium feel)
-- **Notes:** Identified June 07, 2026 inspection. Confirmed June 08, 2026.
+- **Notes:** Identified June 07, 2026 inspection. Confirmed June 08, 2026. Confirmed June 13, 2026. Confirmed June 14, 2026. Confirmed June 15, 2026.
 
 ---
 
@@ -145,7 +147,7 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 - **Expected Deliverables:** Clean, readable, and interactive comparison view for mobile users.
 - **Conversion Impact:** HIGH (Decision ease)
 - **Brand Impact:** MEDIUM (Polish)
-- **Notes:** Strategic mobile UX improvement identified June 07, 2026. Confirmed June 08, 2026.
+- **Notes:** Strategic mobile UX improvement identified June 07, 2026. Confirmed June 08, 2026. Confirmed June 13, 2026. Confirmed June 14, 2026. Confirmed June 15, 2026.
 
 ---
 
@@ -161,7 +163,7 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 - **Expected Deliverables:** Consistent messaging for WhatsApp across the entire landing page.
 - **Conversion Impact:** HIGH (Trust building)
 - **Brand Impact:** MEDIUM (Professionalism)
-- **Notes:** Identified during March 2024 deep inspection. Confirmed as CRITICAL trust leak June 2026. Confirmed June 08, 2026. Confirmed June 12, 2026.
+- **Notes:** Identified during March 2024 deep inspection. Confirmed as CRITICAL trust leak June 2026. Confirmed June 08, 2026. Confirmed June 12, 2026. Confirmed June 13, 2026. Confirmed June 14, 2026. Confirmed June 15, 2026. Confirmed June 16, 2026 in `app/page.tsx` 'How It Works' Step 1.
 
 ---
 
@@ -177,7 +179,7 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 - **Expected Deliverables:** Page containers correctly using Tailwind theme variables.
 - **Conversion Impact:** LOW
 - **Brand Impact:** MEDIUM (Consistency)
-- **Notes:** Essential for long-term design system health. Confirmed June 2026 audit. Confirmed June 08, 2026. Confirmed June 12, 2026.
+- **Notes:** Essential for long-term design system health. Confirmed June 2026 audit. Confirmed June 08, 2026. Confirmed June 12, 2026. Confirmed June 13, 2026. Confirmed June 14, 2026. Confirmed June 15, 2026. Confirmed June 16, 2026 audit of `about` and `privacy` pages.
 
 ---
 
@@ -193,7 +195,7 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 - **Expected Deliverables:** Clean `npm run lint` output.
 - **Conversion Impact:** LOW
 - **Brand Impact:** LOW
-- **Notes:** Identified as part of the technical health check during frontend inspection. Confirmed June 08, 2026.
+- **Notes:** Identified as part of the technical health check during frontend inspection. Confirmed June 08, 2026. Confirmed June 13, 2026. Confirmed June 14, 2026.
 
 ---
 
@@ -209,7 +211,7 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 - **Expected Deliverables:** Consistent typographic hierarchy across all pages.
 - **Conversion Impact:** LOW
 - **Brand Impact:** MEDIUM
-- **Notes:** Identified May 2026. Confirmed June 08, 2026. Confirmed June 12, 2026.
+- **Notes:** Identified May 2026. Confirmed June 08, 2026. Confirmed June 12, 2026. Confirmed June 13, 2026. Confirmed June 14, 2026. Confirmed June 15, 2026.
 
 ---
 
@@ -225,7 +227,7 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 - **Expected Deliverables:** Functional skip link visible only on focus.
 - **Conversion Impact:** LOW
 - **Brand Impact:** MEDIUM (Inclusivity)
-- **Notes:** Identified May 2026. Confirmed June 08, 2026.
+- **Notes:** Identified May 2026. Confirmed June 08, 2026. Confirmed June 13, 2026. Confirmed June 14, 2026.
 
 ---
 
@@ -241,7 +243,7 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 - **Expected Deliverables:** Visually elite CTA with a vibrant, glowing border/shadow.
 - **Conversion Impact:** HIGH
 - **Brand Impact:** HIGH
-- **Notes:** Follows `docs/proposals_signature-glow/`. Confirmed June 08, 2026. Confirmed June 12, 2026.
+- **Notes:** Follows `docs/proposals_signature-glow/`. Confirmed June 08, 2026. Confirmed June 12, 2026. Confirmed June 13, 2026. Confirmed June 14, 2026. Confirmed June 15, 2026.
 
 ---
 
@@ -257,7 +259,7 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 - **Expected Deliverables:** Cleaner pricing table with centralized risk-reversal messaging.
 - **Conversion Impact:** MEDIUM
 - **Brand Impact:** MEDIUM
-- **Notes:** Identified in Conversion Psychology audit May 2026. Confirmed June 08, 2026.
+- **Notes:** Identified in Conversion Psychology audit May 2026. Confirmed June 08, 2026. Confirmed June 13, 2026. Confirmed June 14, 2026. Confirmed June 15, 2026.
 
 ---
 
@@ -273,7 +275,7 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 - **Expected Deliverables:** Consistent icon scaling across all marketing pages.
 - **Conversion Impact:** LOW
 - **Brand Impact:** MEDIUM (Polish)
-- **Notes:** Identified May 24, 2026 deep inspection. Confirmed June 08, 2026. Confirmed June 12, 2026.
+- **Notes:** Identified May 24, 2026 deep inspection. Confirmed June 08, 2026. Confirmed June 12, 2026. Confirmed June 13, 2026. Confirmed June 14, 2026.
 
 ---
 
@@ -289,7 +291,7 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 - **Expected Deliverables:** Immediate trust signal at the entry point.
 - **Conversion Impact:** HIGH
 - **Brand Impact:** MEDIUM
-- **Notes:** Recommendation from Conversion Psychology Audit May 2024. Confirmed June 2026. Confirmed June 08, 2026. Confirmed June 12, 2026.
+- **Notes:** Recommendation from Conversion Psychology Audit May 2024. Confirmed June 2026. Confirmed June 08, 2026. Confirmed June 12, 2026. Confirmed June 13, 2026. Confirmed June 14, 2026. Confirmed June 15, 2026. Confirmed June 16, 2026 as highest priority conversion multiplier.
 
 ---
 
@@ -305,7 +307,7 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 - **Expected Deliverables:** More accessible mobile menu trigger.
 - **Conversion Impact:** LOW
 - **Brand Impact:** MEDIUM (Ergonomic Polish)
-- **Notes:** Identified June 05, 2026 inspection. Confirmed June 08, 2026. Confirmed June 12, 2026.
+- **Notes:** Identified June 05, 2026 inspection. Confirmed June 08, 2026. Confirmed June 12, 2026. Confirmed June 13, 2026. Confirmed June 14, 2026. Confirmed June 15, 2026.
 
 ---
 
@@ -321,7 +323,7 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 - **Expected Deliverables:** Smooth, "shimmer-effect" loading states for dynamic sections.
 - **Conversion Impact:** LOW
 - **Brand Impact:** HIGH (Premium feel)
-- **Notes:** Strategic motion improvement June 2026. Confirmed June 08, 2026.
+- **Notes:** Strategic motion improvement June 2026. Confirmed June 08, 2026. Confirmed June 13, 2026. Confirmed June 14, 2026.
 
 ---
 
@@ -337,7 +339,7 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 - **Expected Deliverables:** Consistent "Action Weight" across the entire site.
 - **Conversion Impact:** LOW
 - **Brand Impact:** MEDIUM
-- **Notes:** Identified June 05, 2026 inspection. Confirmed June 08, 2026. Confirmed June 12, 2026.
+- **Notes:** Identified June 05, 2026 inspection. Confirmed June 08, 2026. Confirmed June 12, 2026. Confirmed June 13, 2026. Confirmed June 14, 2026.
 
 ---
 
@@ -353,7 +355,7 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 - **Expected Deliverables:** Fully accessible feedback loops for all public forms.
 - **Conversion Impact:** LOW
 - **Brand Impact:** MEDIUM (Inclusivity)
-- **Notes:** Strategic accessibility alignment June 2026. Confirmed June 08, 2026.
+- **Notes:** Strategic accessibility alignment June 2026. Confirmed June 08, 2026. Confirmed June 13, 2026. Confirmed June 14, 2026.
 
 
 ---
@@ -370,7 +372,7 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 - **Expected Deliverables:** A visually distinct 'Pro' plan that guides user choice.
 - **Conversion Impact:** HIGH
 - **Brand Impact:** MEDIUM
-- **Notes:** Identified during June 2026 inspection. Confirmed June 08, 2026.
+- **Notes:** Identified during June 2026 inspection. Confirmed June 08, 2026. Confirmed June 13, 2026. Confirmed June 14, 2026. Confirmed June 15, 2026.
 
 ---
 
@@ -386,7 +388,7 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 - **Expected Deliverables:** Clear, accessible mobile navigation menu with zero background visual noise.
 - **Conversion Impact:** MEDIUM (Navigation clarity)
 - **Brand Impact:** HIGH (Polish)
-- **Notes:** Identified June 06, 2026 inspection. Confirmed June 08, 2026. Confirmed June 12, 2026.
+- **Notes:** Identified June 06, 2026 inspection. Confirmed June 08, 2026. Confirmed June 12, 2026. Confirmed June 13, 2026. Confirmed June 14, 2026. Confirmed June 15, 2026.
 
 ---
 
@@ -402,7 +404,7 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 - **Expected Deliverables:** Interactive pricing table with clear row highlighting.
 - **Conversion Impact:** MEDIUM (Decision ease)
 - **Brand Impact:** MEDIUM (Premium feel)
-- **Notes:** Identified June 06, 2026 inspection. Confirmed June 08, 2026. Confirmed June 12, 2026.
+- **Notes:** Identified June 06, 2026 inspection. Confirmed June 08, 2026. Confirmed June 12, 2026. Confirmed June 14, 2026. Confirmed June 15, 2026.
 
 ---
 
@@ -418,7 +420,39 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 - **Expected Deliverables:** Graceful, branded fallback UI for empty content states.
 - **Conversion Impact:** LOW
 - **Brand Impact:** MEDIUM (Professionalism)
-- **Notes:** Identified during June 07, 2026 inspection. Confirmed June 08, 2026. Confirmed June 12, 2026.
+- **Notes:** Identified during June 07, 2026 inspection. Confirmed June 08, 2026. Confirmed June 12, 2026. Confirmed June 13, 2026. Confirmed June 14, 2026. Confirmed June 15, 2026.
+
+---
+
+### T051: Standardize Backdrop Tokens
+- **Task Number:** T051
+- **Priority:** HIGH
+- **Status:** PENDING
+- **Category:** UI/UX
+- **Issue:** Inconsistent backdrop color and opacity tokens between `FoundingPromoModal.tsx` (bg-slate-950/60) and proposed mobile menu backdrop (bg-slate-900/80).
+- **UX/Business Impact:** Fragmented "Overlay Experience" reduces perceived platform polish.
+- **Objective:** Unify all UI overlays under a single semantic token.
+- **Detailed Instructions:** Create a new Tailwind utility or CSS variable `--backdrop-overlay` and apply `bg-slate-950/75` with `backdrop-blur-sm` to all modals and mobile menus.
+- **Expected Deliverables:** Consistent visual layer for all foreground-interruptive components.
+- **Conversion Impact:** LOW
+- **Brand Impact:** MEDIUM (System Integrity)
+- **Notes:** Identified June 15, 2026 daily inspection.
+
+---
+
+### T052: Standardize Card Background Opacity
+- **Task Number:** T052
+- **Priority:** MEDIUM
+- **Status:** PENDING
+- **Category:** UI/UX
+- **Issue:** Visual "Layer Noise" identified. Landing features use `bg-slate-800/40`, while Docs and Blog cards use `bg-slate-800/50`.
+- **UX/Business Impact:** Subtle visual fragmentation that undermines the "Design System" feel.
+- **Objective:** Unify card surface opacities across the entire marketing site.
+- **Detailed Instructions:** Audit `app/page.tsx`, `app/blog/page.tsx`, and `app/docs/page.tsx`. Standardize all card backgrounds to `bg-slate-800/45`.
+- **Expected Deliverables:** Perfectly consistent card surfaces across all routes.
+- **Conversion Impact:** LOW
+- **Brand Impact:** MEDIUM (Polish)
+- **Notes:** Identified June 15, 2026 daily inspection.
 
 ---
 
@@ -439,6 +473,18 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 - [x] **T048:** (Priority: MEDIUM) Add 10 educational blog posts on SMB AI adoption and ReplyBase impact.
   - **Issue:** Strategic gap in educational content for traditional SMBs.
   - **Objective:** Create 10 high-authority posts to guide SMBs through AI transformation.
+  - **Deliverables:** 10 Markdown files in `_posts/` with full SEO/AEO optimization.
+  - **Notes:** Completed June 2026.
+
+- [x] **T050:** (Priority: HIGH) Add 10 educational blog posts on Omnichannel Sales & Social Automation.
+  - **Issue:** Strategic gap in content regarding Instagram, Messenger, and unified social sales strategies.
+  - **Objective:** Create 10 high-authority posts to bridge the social automation gap.
+  - **Deliverables:** 10 Markdown files in `_posts/` with full SEO/AEO optimization.
+  - **Notes:** Completed June 2026.
+
+- [x] **T053:** (Priority: HIGH) Add 10 educational blog posts on Professional Services & Strategic Growth.
+  - **Issue:** Strategic gap in content regarding UK Accounting, Consulting, and long-term 2026 AI strategy.
+  - **Objective:** Create 10 high-authority posts to establish leadership in professional services automation.
   - **Deliverables:** 10 Markdown files in `_posts/` with full SEO/AEO optimization.
   - **Notes:** Completed June 2026.
 ---
@@ -472,3 +518,19 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 - **Conversion Impact:** HIGH
 - **Brand Impact:** HIGH
 - **Notes:** Identified and completed June 12, 2026.
+
+---
+
+### T050: Create 10 Educational Blog Posts on Omnichannel Sales & Social Automation
+- **Task Number:** T050
+- **Priority:** HIGH
+- **Status:** COMPLETED
+- **Category:** CONTENT
+- **Issue:** Strategic gap in high-authority educational content specifically addressing Instagram DM automation, Facebook Messenger for business, and unified social sales strategies.
+- **UX/Business Impact:** Increases topical authority and attracts high-intent organic traffic looking to automate social media sales and unified communication.
+- **Objective:** Position ReplyBase as a leader in social commerce and omnichannel automation.
+- **Detailed Instructions:** Create 10 SEO/AEO-optimized blog posts in _posts/ covering Instagram DM automation, social commerce trends, and unified AI social strategies. Each post must follow the project's strict SEO/AEO structure.
+- **Expected Deliverables:** 10 high-quality Markdown files in _posts/.
+- **Conversion Impact:** HIGH
+- **Brand Impact:** HIGH
+- **Notes:** Identified and completed June 14, 2026.

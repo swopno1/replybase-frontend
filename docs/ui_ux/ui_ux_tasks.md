@@ -24,13 +24,13 @@ This is a refined view of UI/UX and Brand tasks from the master TASKS.md file.
 | UX-027 | PENDING | MEDIUM | Inconsistent H1/H3 weights | Typographic Hierarchy | Standardized heading weights (T027) |
 | UX-028 | PENDING | HIGH | Repetitive trial text | Cognitive Load | Consolidate Pricing Risk-Reversal (T030) |
 | UX-029 | PENDING | MEDIUM | Icon size inconsistency | Visual Polish | Unified icon sizing (T031) |
-| UX-030 | PENDING | HIGH | Missing Hero Authority | Trust Building | Hero trust badge (T032) |
+| UX-030 | IN_PROGRESS | HIGH | Missing Hero Authority | Trust Building | Hero trust badge (T032) |
 | UX-031 | PENDING | HIGH | No Pro Plan highlight | Decision Flow | Pro tier visual emphasis (T033) |
 | UX-032 | PENDING | MEDIUM | Mobile thumb friction | Ergonomics | Ergonomic menu trigger (T034) |
 | UX-033 | PENDING | LOW | Abrupt content load | Motion Perception | High-fidelity skeletons (T035) |
 | UX-034 | PENDING | MEDIUM | Action weight variance | Brand Consistency | Semibold CTA standardization (T036) |
 | UX-035 | PENDING | MEDIUM | Silent form feedback | Inclusivity | Aria-describedby for forms (T037) |
-| UX-036 | PENDING | MEDIUM | Final CTA Trust Leak | Funnel Stability | Conversion Trust Anchor (T046) |
+| UX-036 | IN_PROGRESS | MEDIUM | Final CTA Trust Leak | Funnel Stability | Conversion Trust Anchor (T046) |
 | UX-037 | PENDING | LOW | Content length fatigue | Premium UX | Reading Progress Indicator (T047) |
 
 ---
@@ -38,11 +38,11 @@ This is a refined view of UI/UX and Brand tasks from the master TASKS.md file.
 ### UX-023: WhatsApp Status Mismatch
 - **Task Number:** UX-023 (T024)
 - **Priority:** HIGH
-- **Status:** PENDING
+- **Status:** IN_PROGRESS
 - **Issue:** Contradictory information regarding WhatsApp availability across landing page sections (T024).
 - **Objective:** Align WhatsApp status to "Beta" globally to maintain trust.
 - **Expected Deliverables:** Unified messaging in `app/page.tsx`.
-- **Notes:** Confirmed as CRITICAL trust leak June 2026. Confirmed June 12, 2026.
+- **Notes:** Confirmed as CRITICAL trust leak June 2026. Confirmed June 12, 2026. Confirmed June 14, 2026. Confirmed June 16, 2026.
 
 ---
 
@@ -53,4 +53,4 @@ This is a refined view of UI/UX and Brand tasks from the master TASKS.md file.
 - **Issue:** `app/about/page.tsx`, `app/blog/page.tsx`, `app/blog/[slug]/page.tsx`, and `app/privacy/page.tsx` use hardcoded `bg-slate-900` instead of `bg-background` (T025).
 - **Objective:** Ensure all pages respect the global design tokens for consistency.
 - **Expected Deliverables:** Pages updated to use the semantic `bg-background` class.
-- **Notes:** Confirmed June 2026 audit. Confirmed June 12, 2026.
+- **Notes:** Confirmed June 2026 audit. Confirmed June 12, 2026. Confirmed June 14, 2026. Confirmed June 16, 2026 audit of `about` and `privacy` pages.
