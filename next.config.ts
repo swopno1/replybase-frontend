@@ -11,12 +11,12 @@ const nextConfig: NextConfig = {
             value: [
               "default-src 'self'",
               // GTM + GA4 + Facebook Pixel (via GTM) + ReplyBase chat widget
-              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://ssl.google-analytics.com https://www.google-analytics.com https://tagmanager.google.com https://connect.facebook.net https://*.facebook.com https://app.replybase.co.uk",
+              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://ssl.google-analytics.com https://www.google-analytics.com https://tagmanager.google.com https://connect.facebook.net https://*.facebook.com https://app.replybase.co.uk https://capi-automation.s3.us-east-2.amazonaws.com",
               "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://tagmanager.google.com https://app.replybase.co.uk",
               // GTM noscript iframe + Facebook iframes
               "frame-src 'self' https://www.googletagmanager.com https://*.facebook.com https://app.replybase.co.uk",
               // GA4 / GTM / Facebook / ReplyBase data endpoints
-              "connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://www.googletagmanager.com https://stats.g.doubleclick.net https://region1.google-analytics.com https://connect.facebook.net https://*.facebook.com https://app.replybase.co.uk",
+              "connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://www.googletagmanager.com https://stats.g.doubleclick.net https://region1.google-analytics.com https://connect.facebook.net https://*.facebook.com https://app.replybase.co.uk https://capi-automation.s3.us-east-2.amazonaws.com",
               // Tracking pixels (Facebook, GA, GTM)
               "img-src 'self' data: https: blob:",
               "font-src 'self' data: https://fonts.gstatic.com https://app.replybase.co.uk",
