@@ -31,6 +31,7 @@
 - [x] **Content Pillar 14:** "Omnichannel Sales & Social Automation Series": 10 educational posts on Instagram/Messenger automation and unified social sales. (Completed June 2026)
 - [x] **Content Pillar 15:** "Professional Services & Strategic Growth Series": 10 educational posts on UK Accounting, Consultant scaling, and 2026 Strategy. (Completed June 2026)
 - [x] **Content Pillar 16:** "The WhatsApp-First Growth Engine": 10 educational posts on WhatsApp-native automation and conversational sales. (Completed June 2026)
+- [ ] **Content Pillar 17:** "The AI-Driven RevOps Revolution": 10 educational posts on scaling revenue operations with AI. (Initiated June 2026)
 - [ ] **Asset:** "State of AI Customer Service 2025" (Original Research Report).
 
 ## Multi-Channel Distribution
