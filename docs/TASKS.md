@@ -566,3 +566,19 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 - **Conversion Impact:** HIGH
 - **Brand Impact:** HIGH
 - **Notes:** Identified and initiated June 17, 2026.
+
+---
+
+### T056: Create 10 Educational Blog Posts on AI for Hospitality & Service Excellence
+- **Task Number:** T056
+- **Priority:** HIGH
+- **Status:** COMPLETED
+- **Category:** CONTENT
+- **Issue:** Strategic gap in high-authority content regarding AI applications in restaurants, hotels, and event venues, which represent a significant market for booking and support automation.
+- **UX/Business Impact:** Increases topical authority for high-intent hospitality keywords, attracting hotel owners, restaurant managers, and event venue operators.
+- **Objective:** Establish ReplyBase as a leader in hospitality automation and guest experience enhancement.
+- **Detailed Instructions:** Create 10 SEO/AEO-optimized blog posts in _posts/ covering AI reservations, digital concierges, WhatsApp for hotels, and hospitality ROI. Each post must follow the project's strict SEO/AEO structure (Frontmatter, Fact Blocks, AEO FAQ).
+- **Expected Deliverables:** 10 high-quality Markdown files in _posts/.
+- **Conversion Impact:** HIGH
+- **Brand Impact:** HIGH
+- **Notes:** Identified and completed June 20, 2026.
