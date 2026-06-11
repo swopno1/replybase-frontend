@@ -48,3 +48,7 @@ LLMs prioritize content that is easy to parse and semantically rich. We will imp
 - **Conversational vs. Static:** Focus on reducing friction and increasing completion rates compared to traditional HTML forms.
 - **Multi-Channel Lead Capture:** Emphasize the "WhatsApp First" strategy for modern mobile-first consumers.
 - **AI Sales Enablement:** Position AI as an SDR-enhancement tool that provides deep context for human closers.
+
+### D. AI for Trade Services & Property Maintenance (June 2026 Expansion)
+- **Automating Emergency Call-Outs:** Focus on 24/7 AI-driven triage for plumbers, electricians, and locksmiths to capture high-intent emergency leads.
+- **Reducing Admin for Trades:** Emphasize how AI agents handle initial quoting inquiries and appointment scheduling, allowing tradespeople to focus on on-site work.
