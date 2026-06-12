@@ -487,6 +487,12 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
   - **Objective:** Create 10 high-authority posts to establish leadership in professional services automation.
   - **Deliverables:** 10 Markdown files in `_posts/` with full SEO/AEO optimization.
   - **Notes:** Completed June 2026.
+
+- [x] **T057:** (Priority: HIGH) Add 5 educational blog posts on AI for Trade Services & Property Maintenance.
+  - **Issue:** Strategic gap in content regarding UK plumbers, electricians, and construction firms.
+  - **Objective:** Establish leadership in trade services automation and emergency inquiry handling.
+  - **Deliverables:** 5 Markdown files in `_posts/` with full SEO/AEO optimization.
+  - **Notes:** Initiated June 21, 2026.
 ---
 
 ### T048: Create 10 Educational Blog Posts on AI Lead Generation Mastery
