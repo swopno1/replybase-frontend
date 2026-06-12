@@ -52,6 +52,7 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 | T047 | LOW | PENDING | UI/UX | Content Length Fatigue | Lower Blog Completion | Blog Reading Progress Indicator |
 | T051 | HIGH | PENDING | UI/UX | Inconsistent Backdrop Tokens | Design fragmentation | Standardize on bg-slate-950/75 for all overlays |
 | T052 | MEDIUM | PENDING | UI/UX | Card background opacity variance | Subtle visual discord | Unify card backgrounds to bg-slate-800/45 globally |
+| T058 | HIGH | COMPLETED | DOCS/UI | Missing API docs pages + no sidebar navigation | Developer UX gap for Scale/Business buyers | Create API Reference and Webhooks coming-soon pages with DocsSidebar "Developer API" section |
 
 ---
 
@@ -588,3 +589,22 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
 - **Conversion Impact:** HIGH
 - **Brand Impact:** HIGH
 - **Notes:** Identified and completed June 20, 2026.
+
+---
+
+### T058: API Documentation Pages & Sidebar Navigation
+- **Task Number:** T058
+- **Priority:** HIGH
+- **Status:** COMPLETED
+- **Category:** DOCS/UI
+- **Issue:** `/docs/api/reference` and `/docs/api/webhooks` returned 404. Business plan buyers expect API documentation, and `DocsSidebar` had no Developer API section.
+- **UX/Business Impact:** Developer-facing docs are a key trust signal for Scale and Business plan buyers. Missing pages create a broken journey from the pricing page to documentation.
+- **Objective:** Create coming-soon docs pages for both API routes and add sidebar navigation.
+- **Detailed Instructions:**
+  1. Created `app/docs/api/reference/page.tsx` — "Coming Soon" page with API key concepts, endpoint overview, and Bearer token auth preview. Available Q3 2026 (Scale and Business plans).
+  2. Created `app/docs/api/webhooks/page.tsx` — "Coming Soon" page with HMAC-SHA256 signature details, full event reference (5 events: `lead.created`, `lead.updated`, `conversation.new_message`, `contact.updated`, `bot.flow_completed`), example payload, and retry/auto-disable behavior.
+  3. Added "Developer API" section to `app/docs/_components/DocsSidebar.tsx` between Platform and Resources groups. Uses `Code2` icon for API Reference and `Webhook` icon for Webhooks (both from lucide-react). Added `Webhook` to the existing import.
+- **Expected Deliverables:** Two live docs pages + sidebar navigation entries visible at all viewport sizes.
+- **Conversion Impact:** MEDIUM (trust signal for developer-focused buyers on Scale and Business plans)
+- **Brand Impact:** HIGH (professional developer experience; no more 404 from the pricing page)
+- **Notes:** Completed June 2026. Both pages show "Coming Soon — Available Q3 2026" banner matching the development roadmap. Pages reference Scale and Business plan gating, consistent with `lib/plans.ts`.
