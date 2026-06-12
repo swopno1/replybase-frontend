@@ -21,7 +21,8 @@ import {
   CreditCard,
   CheckSquare,
   Code2,
-  GitBranch
+  GitBranch,
+  Webhook
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -54,6 +55,13 @@ const navigation = [
       { name: "Deployment Checklist", href: "/docs/platform/deployment-checklist", icon: CheckSquare },
       { name: "Security & Privacy", href: "/docs/security", icon: Shield },
       { name: "Plans & Limits", href: "/docs/features", icon: CreditCard },
+    ],
+  },
+  {
+    title: "Developer API",
+    items: [
+      { name: "API Reference", href: "/docs/api/reference", icon: Code2 },
+      { name: "Webhooks", href: "/docs/api/webhooks", icon: Webhook },
     ],
   },
   {
