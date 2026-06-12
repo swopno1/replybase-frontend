@@ -20,25 +20,57 @@ const plans = [
     name: "Launch",
     price: "GBP29",
     limits:
-      "Smart Automation: 2 bots, 1,500 automations/month, 1,000 AI responses/month, CRM access, email support",
+      "Smart Automation: 2 bots, 1,500 automations/month, 1,000 AI responses/month, CRM access, email support (48h target)",
   },
   {
     name: "Grow",
     price: "GBP49",
     limits:
-      "Scaling Automations: 5 bots, 5,000 automations/month, 3,500 AI responses/month, CRM access, email support",
+      "Scaling Automations: 5 bots, 5,000 automations/month, 3,500 AI responses/month, CRM access, email support (48h target)",
   },
   {
     name: "Scale",
     price: "GBP89",
     limits:
-      "AI Co-Pilot: 10 bots, 10,000 automations/month, 7,500 AI responses/month, CRM access, API access, priority support",
+      "AI Co-Pilot: 10 bots, 10,000 automations/month, 7,500 AI responses/month, CRM access, API access, priority email support (24h target)",
   },
   {
     name: "Business",
     price: "GBP249",
     limits:
-      "AI Agent: 25 bots, 40,000 automations/month, 25,000 AI responses/month, CRM access, API access, priority plus support",
+      "AI Agent: 25 bots, 40,000 automations/month, 25,000 AI responses/month, CRM access, API access, Priority+ support (4h target, dedicated Slack/WhatsApp channel, quarterly review call)",
+  },
+];
+
+const slaTiers = [
+  {
+    plan: "Free",
+    tier: "Community",
+    responseTarget: "No SLA",
+    channels: "Community forum",
+    features: "Best-effort community answers",
+  },
+  {
+    plan: "Launch & Grow",
+    tier: "Standard Email",
+    responseTarget: "48h",
+    channels: "Email",
+    features: "Best-effort response via email",
+  },
+  {
+    plan: "Scale",
+    tier: "Priority Email",
+    responseTarget: "24h",
+    channels: "Email",
+    features: "Priority queue, 24-hour response commitment",
+  },
+  {
+    plan: "Business",
+    tier: "Priority+",
+    responseTarget: "4h",
+    channels: "Email + Dedicated Slack/WhatsApp (optional)",
+    features:
+      "4-hour response commitment, dedicated communication channel, quarterly business review call",
   },
 ];
 
@@ -129,6 +161,43 @@ export default function FeaturesDoc() {
             webchat areas.
           </li>
         </ul>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-white mb-4">Support SLA Tiers</h2>
+        <p className="text-slate-300 mb-6">
+          Every plan includes a defined support commitment. Higher-tier plans
+          receive faster response times and dedicated communication channels.
+        </p>
+        <div className="overflow-x-auto rounded-lg border border-slate-700">
+          <table className="w-full text-sm text-left">
+            <thead className="bg-slate-800 text-slate-300">
+              <tr>
+                <th className="px-4 py-3 font-semibold">Plan</th>
+                <th className="px-4 py-3 font-semibold">Tier</th>
+                <th className="px-4 py-3 font-semibold">Response Target</th>
+                <th className="px-4 py-3 font-semibold">Channels</th>
+                <th className="px-4 py-3 font-semibold">Includes</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-slate-700">
+              {slaTiers.map((row) => (
+                <tr key={row.plan} className="bg-slate-800/30 hover:bg-slate-800/50 transition-colors">
+                  <td className="px-4 py-3 font-medium text-white">{row.plan}</td>
+                  <td className="px-4 py-3 text-indigo-400 font-semibold">{row.tier}</td>
+                  <td className="px-4 py-3 text-slate-200 font-bold">{row.responseTarget}</td>
+                  <td className="px-4 py-3 text-slate-300">{row.channels}</td>
+                  <td className="px-4 py-3 text-slate-400">{row.features}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-slate-400 text-xs mt-3">
+          Response targets are business-day commitments (9am–5pm GMT). The
+          Business plan Priority+ tier includes a dedicated Slack or WhatsApp
+          channel (optional) and a quarterly business review call.
+        </p>
       </section>
 
       <section className="mb-10">
