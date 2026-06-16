@@ -1,6 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  serverActions: {
+    // Only accept server action requests originating from the production domain.
+    // Rejects bot probes (the "x" action IDs in logs) from unknown origins.
+    allowedOrigins: ["replybase.co.uk", "www.replybase.co.uk"],
+  },
   async headers() {
     return [
       {

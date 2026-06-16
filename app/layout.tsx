@@ -71,6 +71,7 @@ import CookieConsent from "@/components/CookieConsent";
 import Script from "next/script";
 import { AnalyticsScripts } from "@/components/analytics/analytics-scripts";
 import { MarketingFunnelTracker } from "@/components/analytics/marketing-funnel-tracker";
+import { DeploymentGuard } from "@/components/DeploymentGuard";
 
 export default function RootLayout({
   children,
@@ -103,6 +104,7 @@ export default function RootLayout({
         <MarketingFunnelTracker />
         <CookieConsent />
         <AnalyticsScripts />
+        <DeploymentGuard />
 
         <Script
           src="https://app.replybase.co.uk/embed/replybase-webchat.js"
