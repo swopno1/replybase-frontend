@@ -52,3 +52,7 @@ LLMs prioritize content that is easy to parse and semantically rich. We will imp
 ### D. AI for Trade Services & Property Maintenance (June 2026 Expansion)
 - **Automating Emergency Call-Outs:** Focus on 24/7 AI-driven triage for plumbers, electricians, and locksmiths to capture high-intent emergency leads.
 - **Reducing Admin for Trades:** Emphasize how AI agents handle initial quoting inquiries and appointment scheduling, allowing tradespeople to focus on on-site work.
+
+### E. AI for Healthcare & Private Clinics (June 2026 Expansion)
+- **Automating Patient Triage:** Focus on secure, 24/7 symptom gathering and patient qualification for private clinics, dental practices, and physiotherapy centers.
+- **Improving Clinic ROI:** Emphasize reduction in administrative overhead and recovery of revenue from automated appointment reminders and rescheduling.
