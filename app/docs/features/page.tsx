@@ -15,30 +15,35 @@ const plans = [
     price: "GBP0",
     limits:
       "Best for testing and first setup: 1 bot, 100 daily messages, 100 monthly messages, 200 automations/month, 1 source connection per bot, community support",
+    branding: "\"Powered by ReplyBase\" link shown in webchat widget",
   },
   {
     name: "Launch",
     price: "GBP29",
     limits:
       "Smart Automation: 2 bots, 1,500 automations/month, 1,000 AI responses/month, CRM access, email support (48h target)",
+    branding: "\"Powered by ReplyBase\" link shown in webchat widget",
   },
   {
     name: "Grow",
     price: "GBP49",
     limits:
       "Scaling Automations: 5 bots, 5,000 automations/month, 3,500 AI responses/month, CRM access, email support (48h target)",
+    branding: "No ReplyBase branding in widget",
   },
   {
     name: "Scale",
     price: "GBP89",
     limits:
       "AI Co-Pilot: 10 bots, 10,000 automations/month, 7,500 AI responses/month, CRM access, API access, priority email support (24h target)",
+    branding: "No ReplyBase branding in widget",
   },
   {
     name: "Business",
     price: "GBP249",
     limits:
       "AI Agent: 25 bots, 40,000 automations/month, 25,000 AI responses/month, CRM access, API access, Priority+ support (4h target, dedicated Slack/WhatsApp channel, quarterly review call)",
+    branding: "Full white-label: custom logo, colors, and email branding (Settings → Branding)",
   },
 ];
 
@@ -97,7 +102,8 @@ export default function FeaturesDoc() {
               <p className="text-indigo-400 font-bold mb-2">
                 {plan.price}/month
               </p>
-              <p className="text-sm text-slate-300">{plan.limits}</p>
+              <p className="text-sm text-slate-300 mb-3">{plan.limits}</p>
+              <p className="text-xs text-slate-500 border-t border-slate-700 pt-2">{plan.branding}</p>
             </div>
           ))}
         </div>
@@ -223,6 +229,54 @@ export default function FeaturesDoc() {
             your plan caps.
           </li>
         </ul>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-white mb-4">Webchat Widget Branding</h2>
+        <p className="text-slate-300 mb-4">
+          The webchat widget includes plan-aware branding behavior that is automatically applied based on your subscription — no configuration required.
+        </p>
+        <div className="overflow-x-auto rounded-lg border border-slate-700">
+          <table className="w-full text-sm text-left">
+            <thead className="bg-slate-800 text-slate-300">
+              <tr>
+                <th className="px-4 py-3 font-semibold">Plan</th>
+                <th className="px-4 py-3 font-semibold">Widget footer</th>
+                <th className="px-4 py-3 font-semibold">White-label</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-slate-700 text-slate-400">
+              <tr className="bg-slate-800/30">
+                <td className="px-4 py-3 font-medium text-white">Free</td>
+                <td className="px-4 py-3">&ldquo;Powered by ReplyBase&rdquo; link</td>
+                <td className="px-4 py-3">No</td>
+              </tr>
+              <tr className="bg-slate-800/30">
+                <td className="px-4 py-3 font-medium text-white">Launch</td>
+                <td className="px-4 py-3">&ldquo;Powered by ReplyBase&rdquo; link</td>
+                <td className="px-4 py-3">No</td>
+              </tr>
+              <tr className="bg-slate-800/30">
+                <td className="px-4 py-3 font-medium text-white">Grow</td>
+                <td className="px-4 py-3">None</td>
+                <td className="px-4 py-3">No</td>
+              </tr>
+              <tr className="bg-slate-800/30">
+                <td className="px-4 py-3 font-medium text-white">Scale</td>
+                <td className="px-4 py-3">None</td>
+                <td className="px-4 py-3">No</td>
+              </tr>
+              <tr className="bg-slate-800/30">
+                <td className="px-4 py-3 font-medium text-white">Business</td>
+                <td className="px-4 py-3">None</td>
+                <td className="px-4 py-3">Yes — custom logo, colors, email branding</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="text-slate-400 text-xs mt-3">
+          The branding footer is applied automatically — there is no setting to disable it on Free or Launch. Upgrading to Grow or above removes it immediately.
+        </p>
       </section>
 
       <section className="mb-10">

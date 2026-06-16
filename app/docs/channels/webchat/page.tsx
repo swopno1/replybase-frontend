@@ -1,11 +1,12 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { 
-  Globe, 
-  Code, 
-  Smartphone, 
-  Palette, 
+import {
+  Globe,
+  Code,
+  Smartphone,
+  Palette,
   ArrowRight,
+  Sparkles,
 } from "lucide-react";
 import Callout from "../../_components/Callout";
 import DocLayout from "../../_components/DocLayout";
@@ -104,6 +105,32 @@ export default function WebchatWidget() {
           <code className="text-[10px] text-indigo-400">data-avatar-url="https://..."</code>
         </div>
       </div>
+
+      <h2 className="text-2xl font-bold text-white mt-16 mb-6 flex items-center gap-2">
+        <Sparkles size={24} className="text-indigo-400" />
+        Branding
+      </h2>
+      <p className="text-slate-400 mb-6 leading-relaxed">
+        On the <strong className="text-white">Free</strong> and <strong className="text-white">Launch</strong> plans, a subtle <em>"Powered by ReplyBase"</em> link appears at the bottom of the chat panel. This helps visitors discover ReplyBase when they are impressed by the AI and want to add it to their own site.
+      </p>
+
+      <div className="bg-slate-800/30 border border-slate-700 rounded-xl p-5 mb-6">
+        <div className="flex items-start gap-3">
+          <div className="shrink-0 mt-0.5 h-5 w-5 rounded-full bg-indigo-600/20 flex items-center justify-center">
+            <span className="text-indigo-400 text-xs font-bold">i</span>
+          </div>
+          <div>
+            <p className="text-sm text-slate-300 font-semibold mb-1">What visitors see</p>
+            <p className="text-xs text-slate-400 leading-relaxed">
+              A single line at the bottom of the chat panel reading <span className="text-slate-200">"Powered by ReplyBase"</span> with a link to <span className="text-slate-200">replybase.co.uk</span>. It is styled to be subtle — grey text, no logo — and does not interfere with the conversation.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <Callout type="tip" title="Remove the branding">
+        Upgrade to the <strong>Grow plan (£49/mo)</strong> or above to remove the "Powered by ReplyBase" footer entirely. Business plan subscribers can also configure their own logo and brand colors via <strong>Settings → Branding</strong>.
+      </Callout>
 
       <h2 className="text-2xl font-bold text-white mt-16 mb-6 flex items-center gap-2">
         <Smartphone size={24} className="text-indigo-400" />
