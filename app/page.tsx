@@ -23,21 +23,22 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  "name": "ReplyBase",
-  "applicationCategory": "BusinessApplication",
-  "operatingSystem": "Web",
-  "description": "Capture every lead, reply instantly, and manage your conversations—all in one simple platform.",
-  "offers": {
+  name: "ReplyBase",
+  applicationCategory: "BusinessApplication",
+  operatingSystem: "Web",
+  description:
+    "Capture every lead, reply instantly, and manage your conversations—all in one simple platform.",
+  offers: {
     "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "GBP"
+    price: "0",
+    priceCurrency: "GBP",
   },
-  "publisher": {
+  publisher: {
     "@type": "Organization",
-    "name": "ReplyBase",
-    "url": "https://replybase.co.uk",
-    "logo": "https://replybase.co.uk/image/logo.png"
-  }
+    name: "ReplyBase",
+    url: "https://replybase.co.uk",
+    logo: "https://replybase.co.uk/image/logo.png",
+  },
 };
 
 export default function LandingPage() {
@@ -57,7 +58,7 @@ export default function LandingPage() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight tracking-tight drop-shadow-lg motion-safe:animate-fade-in">
-                Never Miss Another {" "}
+                Never Miss Another{" "}
                 <span className="text-transparent bg-clip-text bg-linear-to-r from-indigo-400 to-purple-400">
                   Lead
                 </span>
@@ -68,7 +69,7 @@ export default function LandingPage() {
               </p>
               <div className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4 motion-safe:animate-fade-in">
                 <Link
-                  href="https://app.replybase.co.uk/auth/register?source=hero"
+                  href="/#pricing"
                   className="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-8 py-3 rounded-lg transition-transform duration-300 transform hover:scale-105 flex items-center justify-center gap-2 shadow-lg"
                 >
                   Start 14-Day Free Trial
@@ -301,7 +302,9 @@ export default function LandingPage() {
                   <h3 className="text-lg font-bold text-white mb-2">
                     {channel.title}
                   </h3>
-                  <p className="text-muted-foreground text-sm">{channel.desc}</p>
+                  <p className="text-muted-foreground text-sm">
+                    {channel.desc}
+                  </p>
                 </div>
               ))}
             </div>
@@ -332,7 +335,8 @@ export default function LandingPage() {
                   Connect Your Channels
                 </h3>
                 <p className="text-slate-400 text-center">
-                  Launch Webchat, Facebook Messenger, and website lead capture in minutes. WhatsApp and Telegram coming soon.
+                  Launch Webchat, Facebook Messenger, and website lead capture
+                  in minutes. WhatsApp and Telegram coming soon.
                 </p>
               </div>
               <div className="bg-slate-800 p-6 rounded-2xl shadow-xl border border-slate-700/50 flex flex-col items-center motion-safe:animate-fade-in">
@@ -370,7 +374,7 @@ export default function LandingPage() {
               </div>
             </div>
           </div>
-              </section>
+        </section>
 
         {/* Security Section */}
         <section
@@ -490,7 +494,8 @@ export default function LandingPage() {
                 Simple, Transparent Pricing
               </h2>
               <p className="mt-4 text-slate-400 max-w-3xl mx-auto text-lg">
-                Start free, upgrade as you grow. All paid plans include a 14-day free trial.
+                Start free, upgrade as you grow. All paid plans include a 14-day
+                free trial.
               </p>
             </div>
 
@@ -500,9 +505,14 @@ export default function LandingPage() {
               <div className="bg-slate-900/80 border border-slate-800 rounded-3xl p-8 flex flex-col justify-between hover:border-slate-700 transition-all duration-300 relative group">
                 <div>
                   <h3 className="text-xl font-bold text-white mb-2">Launch</h3>
-                  <p className="text-slate-400 text-sm mb-6 min-h-[40px]">Perfect for solopreneurs getting started with lead automation.</p>
+                  <p className="text-slate-400 text-sm mb-6 min-h-[40px]">
+                    Perfect for solopreneurs getting started with lead
+                    automation.
+                  </p>
                   <div className="flex items-baseline mb-6">
-                    <span className="text-4xl font-extrabold text-white">£29</span>
+                    <span className="text-4xl font-extrabold text-white">
+                      £29
+                    </span>
                     <span className="text-slate-400 text-sm ml-2">/month</span>
                   </div>
                   <ul className="space-y-4 mb-8">
@@ -543,19 +553,28 @@ export default function LandingPage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white mb-2">Grow</h3>
-                  <p className="text-slate-400 text-sm mb-6 min-h-[40px]">Ideal for growing businesses running multi-channel campaigns.</p>
+                  <p className="text-slate-400 text-sm mb-6 min-h-[40px]">
+                    Ideal for growing businesses running multi-channel
+                    campaigns.
+                  </p>
                   <div className="flex items-baseline mb-6">
-                    <span className="text-4xl font-extrabold text-white">£49</span>
+                    <span className="text-4xl font-extrabold text-white">
+                      £49
+                    </span>
                     <span className="text-slate-400 text-sm ml-2">/month</span>
                   </div>
                   <ul className="space-y-4 mb-8">
                     <li className="flex items-start gap-3 text-sm text-slate-300">
                       <Check className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
-                      <span className="font-semibold text-white">3,500 AI Responses / mo</span>
+                      <span className="font-semibold text-white">
+                        3,500 AI Responses / mo
+                      </span>
                     </li>
                     <li className="flex items-start gap-3 text-sm text-slate-300">
                       <Check className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
-                      <span className="font-semibold text-white">5,000 Automations / mo</span>
+                      <span className="font-semibold text-white">
+                        5,000 Automations / mo
+                      </span>
                     </li>
                     <li className="flex items-start gap-3 text-sm text-slate-300">
                       <Check className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
@@ -586,19 +605,27 @@ export default function LandingPage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white mb-2">Scale</h3>
-                  <p className="text-slate-400 text-sm mb-6 min-h-[40px]">For high-volume SMBs and teams needing advanced AI.</p>
+                  <p className="text-slate-400 text-sm mb-6 min-h-[40px]">
+                    For high-volume SMBs and teams needing advanced AI.
+                  </p>
                   <div className="flex items-baseline mb-6">
-                    <span className="text-4xl font-extrabold text-white">£89</span>
+                    <span className="text-4xl font-extrabold text-white">
+                      £89
+                    </span>
                     <span className="text-slate-400 text-sm ml-2">/month</span>
                   </div>
                   <ul className="space-y-4 mb-8">
                     <li className="flex items-start gap-3 text-sm text-slate-300">
                       <Check className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
-                      <span className="font-semibold text-white">7,500 AI Responses / mo</span>
+                      <span className="font-semibold text-white">
+                        7,500 AI Responses / mo
+                      </span>
                     </li>
                     <li className="flex items-start gap-3 text-sm text-slate-300">
                       <Check className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
-                      <span className="font-semibold text-white">10,000 Automations / mo</span>
+                      <span className="font-semibold text-white">
+                        10,000 Automations / mo
+                      </span>
                     </li>
                     <li className="flex items-start gap-3 text-sm text-slate-300">
                       <Check className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
@@ -625,10 +652,16 @@ export default function LandingPage() {
               {/* Business Card */}
               <div className="bg-slate-900/80 border border-slate-800 rounded-3xl p-8 flex flex-col justify-between hover:border-slate-700 transition-all duration-300 relative group">
                 <div>
-                  <h3 className="text-xl font-bold text-white mb-2">Business</h3>
-                  <p className="text-slate-400 text-sm mb-6 min-h-[40px]">Full scale lead operations with custom integrations.</p>
+                  <h3 className="text-xl font-bold text-white mb-2">
+                    Business
+                  </h3>
+                  <p className="text-slate-400 text-sm mb-6 min-h-[40px]">
+                    Full scale lead operations with custom integrations.
+                  </p>
                   <div className="flex items-baseline mb-6">
-                    <span className="text-4xl font-extrabold text-white">£249</span>
+                    <span className="text-4xl font-extrabold text-white">
+                      £249
+                    </span>
                     <span className="text-slate-400 text-sm ml-2">/month</span>
                   </div>
                   <ul className="space-y-4 mb-8">
@@ -664,8 +697,12 @@ export default function LandingPage() {
             </div>
 
             <div className="text-center mb-8">
-              <h3 className="text-2xl font-bold text-white mb-2">Compare All Plan Features</h3>
-              <p className="text-slate-400 text-sm">Detailed limit configurations across all plans.</p>
+              <h3 className="text-2xl font-bold text-white mb-2">
+                Compare All Plan Features
+              </h3>
+              <p className="text-slate-400 text-sm">
+                Detailed limit configurations across all plans.
+              </p>
             </div>
 
             <div className="overflow-x-auto mb-16">
@@ -694,7 +731,9 @@ export default function LandingPage() {
                 </thead>
                 <tbody className="divide-y divide-slate-800">
                   <tr>
-                    <td className="p-4 font-semibold text-white">Monthly Price</td>
+                    <td className="p-4 font-semibold text-white">
+                      Monthly Price
+                    </td>
                     <td className="p-4 text-center text-slate-400">£0</td>
                     <td className="p-4 text-center text-slate-400">£29</td>
                     <td className="p-4 text-center text-slate-400">£49</td>
@@ -730,7 +769,9 @@ export default function LandingPage() {
                     <td className="p-4 text-center text-slate-400">£6 / 1k</td>
                   </tr>
                   <tr>
-                    <td className="p-4 font-semibold text-white">Bots (Assistants)</td>
+                    <td className="p-4 font-semibold text-white">
+                      Bots (Assistants)
+                    </td>
                     <td className="p-4 text-center text-slate-400">1</td>
                     <td className="p-4 text-center text-slate-400">2</td>
                     <td className="p-4 text-center text-slate-400">5</td>
@@ -798,17 +839,21 @@ export default function LandingPage() {
                     <td className="p-4 text-center text-slate-400">
                       Community
                     </td>
-                    <td className="p-4 text-center text-slate-400">Standard Email</td>
-                    <td className="p-4 text-center text-slate-400">Priority Email</td>
-                    <td className="p-4 text-center text-slate-400">Priority Chat</td>
+                    <td className="p-4 text-center text-slate-400">
+                      Standard Email
+                    </td>
+                    <td className="p-4 text-center text-slate-400">
+                      Priority Email
+                    </td>
+                    <td className="p-4 text-center text-slate-400">
+                      Priority Chat
+                    </td>
                     <td className="p-4 text-center text-slate-400">
                       Dedicated SLA
                     </td>
                   </tr>
                   <tr>
-                    <td className="p-4 font-semibold text-white">
-                      Action
-                    </td>
+                    <td className="p-4 font-semibold text-white">Action</td>
                     <td className="p-4 text-center">
                       <a
                         href="https://app.replybase.co.uk/auth/register?plan=free&source=pricing_table_free"
@@ -824,7 +869,9 @@ export default function LandingPage() {
                       >
                         Start Free Trial
                       </a>
-                      <p className="text-xs text-muted-foreground">14 days free</p>
+                      <p className="text-xs text-muted-foreground">
+                        14 days free
+                      </p>
                     </td>
                     <td className="p-4 text-center">
                       <a
@@ -833,7 +880,9 @@ export default function LandingPage() {
                       >
                         Start Free Trial
                       </a>
-                      <p className="text-xs text-muted-foreground">14 days free</p>
+                      <p className="text-xs text-muted-foreground">
+                        14 days free
+                      </p>
                     </td>
                     <td className="p-4 text-center">
                       <a
@@ -842,7 +891,9 @@ export default function LandingPage() {
                       >
                         Start Free Trial
                       </a>
-                      <p className="text-xs text-muted-foreground">14 days free</p>
+                      <p className="text-xs text-muted-foreground">
+                        14 days free
+                      </p>
                     </td>
                     <td className="p-4 text-center">
                       <a
