@@ -55,6 +55,7 @@ const plausibleGoalMap: Partial<Record<TrackingEventName, string>> = {
 // Standard events give Meta's algorithm better signal quality than custom events.
 const fbPixelEventMap: Partial<Record<TrackingEventName, string>> = {
   get_started_click: "Lead",
+  promo_modal_viewed: "ViewContent",
   promo_cta_click: "InitiateCheckout",
   contact_form_submission: "Contact",
   newsletter_signup: "Subscribe",
@@ -172,7 +173,7 @@ export function trackEvent(
     // Fire Facebook Pixel standard events directly for high-value conversions
     const fbEventName = fbPixelEventMap[eventName];
     if (fbEventName && typeof window.fbq === "function") {
-      window.fbq("track", fbEventName, { content_name: eventName, ...properties });
+      window.fbq("track", fbEventName, properties);
     }
 
     return true;
