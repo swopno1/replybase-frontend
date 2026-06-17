@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { X, Gift, ArrowRight, Copy, Check } from "lucide-react";
 import Link from "next/link";
+import { trackEvent } from "@/lib/client-analytics";
 
 export default function FoundingPromoModal() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +14,14 @@ export default function FoundingPromoModal() {
     const hasDismissed = localStorage.getItem("foundingPromoDismissed");
     if (!hasDismissed) {
       // Delay showing the modal for 1.5s to let the user see the hero section
-      const timer = setTimeout(() => setIsOpen(true), 1500);
+      const timer = setTimeout(() => {
+        setIsOpen(true);
+        trackEvent("promo_modal_viewed", {
+          onceKey: "marketing:promo_modal_viewed",
+          onceScope: "session",
+          properties: { promo: "FOUNDING50" },
+        });
+      }, 1500);
       return () => clearTimeout(timer);
     }
   }, []);
@@ -77,7 +85,12 @@ export default function FoundingPromoModal() {
 
           <Link
             href="https://app.replybase.co.uk/auth/register?plan=grow&source=promo_modal&promo=FOUNDING50"
-            onClick={dismissModal}
+            onClick={() => {
+              trackEvent("promo_cta_click", {
+                properties: { promo: "FOUNDING50", source: "promo_modal" },
+              });
+              dismissModal();
+            }}
             className="w-full bg-linear-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(79,70,229,0.3)] hover:shadow-[0_0_25px_rgba(79,70,229,0.5)] transform hover:scale-[1.02]"
           >
             Claim 50% Discount <ArrowRight className="h-5 w-5" />

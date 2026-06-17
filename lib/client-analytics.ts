@@ -5,7 +5,9 @@ export type TrackingEventName =
   | "pricing_viewed"
   | "page_viewed"
   | "newsletter_signup"
-  | "contact_form_submission";
+  | "contact_form_submission"
+  | "promo_modal_viewed"
+  | "promo_cta_click";
 
 type OnceScope = "memory" | "session" | "local";
 
@@ -20,6 +22,11 @@ type ClarityAPI = {
   (command: "set", key: string, value: string): void;
 };
 
+type FbqAPI = {
+  (command: "track", eventName: string, params?: Record<string, unknown>): void;
+  (command: "trackCustom", eventName: string, params?: Record<string, unknown>): void;
+};
+
 declare global {
   interface Window {
     plausible?: (
@@ -30,6 +37,8 @@ declare global {
     posthog?: {
       capture: (eventName: string, properties?: Record<string, unknown>) => void;
     };
+    fbq?: FbqAPI;
+    dataLayer?: Record<string, unknown>[];
   }
 }
 
@@ -40,6 +49,15 @@ const plausibleGoalMap: Partial<Record<TrackingEventName, string>> = {
   pricing_viewed: "Pricing Viewed",
   newsletter_signup: "Newsletter Signup",
   contact_form_submission: "Contact Form Submission",
+};
+
+// Maps app events to standard Facebook Pixel events.
+// Standard events give Meta's algorithm better signal quality than custom events.
+const fbPixelEventMap: Partial<Record<TrackingEventName, string>> = {
+  get_started_click: "Lead",
+  promo_cta_click: "InitiateCheckout",
+  contact_form_submission: "Contact",
+  newsletter_signup: "Subscribe",
 };
 
 export function isProduction() {
@@ -145,6 +163,16 @@ export function trackEvent(
 
     if (window.posthog?.capture) {
       window.posthog.capture(eventName, properties);
+    }
+
+    // Push to GTM dataLayer so any GTM-managed tags (GA4, FB Pixel) can react
+    window.dataLayer = window.dataLayer ?? [];
+    window.dataLayer.push({ event: eventName, ...properties });
+
+    // Fire Facebook Pixel standard events directly for high-value conversions
+    const fbEventName = fbPixelEventMap[eventName];
+    if (fbEventName && typeof window.fbq === "function") {
+      window.fbq("track", fbEventName, { content_name: eventName, ...properties });
     }
 
     return true;
