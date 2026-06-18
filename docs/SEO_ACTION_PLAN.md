@@ -20,6 +20,7 @@
 11. [x] Deploy "AI for Hospitality & Service Excellence" 10-part educational series. (Completed June 2026)
 12. [x] Deploy "AI for Trade Services & Property Maintenance" 10-part educational series. (Completed June 21, 2026)
 13. [x] Deploy "AI for Healthcare & Private Clinics" 10-part educational series. (Completed June 22, 2026)
+14. [x] Deploy "AI for Automotive & Dealership Growth" 10-part educational series. (Completed June 23, 2026)
 
 ## Technical Tasks
 1. [ ] Check sitemap.xml validity in Google Search Console. (Assigned T043)
