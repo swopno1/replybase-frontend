@@ -99,11 +99,13 @@ export default function RootLayout({
         <AnalyticsScripts />
         <DeploymentGuard />
 
-        <Script
-          src="https://app.replybase.co.uk/embed/replybase-webchat.js"
-          data-site-id="cmox71v1i000514r77qgm4bot"
-          strategy="lazyOnload"
-        />
+        {process.env.NODE_ENV === "production" && (
+          <Script
+            src="https://app.replybase.co.uk/embed/replybase-webchat.js"
+            data-site-id="cmox71v1i000514r77qgm4bot"
+            strategy="lazyOnload"
+          />
+        )}
       </body>
     </html>
   );
