@@ -343,7 +343,7 @@ function WidgetInstallMock() {
 // ─── Step definitions ─────────────────────────────────────────────────────────
 
 const Step1Video = () => <YoutubeVideo videoId="7Ow7id78Lic" />;
-const Step2Video = () => <YoutubeVideo videoId="zWd1CyNEF50" />;
+const Step2Video = () => <YoutubeVideo videoId="oGRzLyZYpC4" />;
 
 const HOW_IT_WORKS_STEPS = [
   {
