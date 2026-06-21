@@ -5,18 +5,17 @@ import {
   Globe,
   Send,
   MessageSquare,
-  Zap,
   Clock,
   Phone,
-  Layout,
-  CheckCircle2
+  CheckCircle2,
 } from "lucide-react";
 import Callout from "../_components/Callout";
 import DocLayout from "../_components/DocLayout";
 
 export const metadata: Metadata = {
   title: "Quick Start Guide",
-  description: "Step-by-step guide to setting up your ReplyBase workspace and connecting your first AI chatbot channel.",
+  description:
+    "Step-by-step guide to setting up your ReplyBase workspace and connecting your first AI chatbot channel.",
 };
 
 const steps = [
@@ -101,19 +100,25 @@ export default function GetStartedPage() {
       </div>
 
       <Callout type="tip" title="Prerequisites">
-        Before you start, make sure you have access to the platform (Facebook Page, Telegram Account, etc.) you wish to integrate.
+        Before you start, make sure you have access to the platform (Facebook
+        Page, Telegram Account, etc.) you wish to integrate.
       </Callout>
 
       {/* Steps */}
       <div className="space-y-0 mt-12 relative">
         {/* Vertical line connector */}
         <div className="absolute left-5 top-10 bottom-10 w-0.5 bg-slate-800" />
-        
+
         {steps.map((step, index) => (
-          <div key={step.number} className="flex gap-8 mb-12 last:mb-0 relative">
+          <div
+            key={step.number}
+            className="flex gap-8 mb-12 last:mb-0 relative"
+          >
             {/* Step indicator */}
             <div className="flex flex-col items-center shrink-0">
-              <div className={`flex items-center justify-center w-10 h-10 rounded-full ${step.color} text-white font-bold text-sm z-10 border-4 border-slate-900`}>
+              <div
+                className={`flex items-center justify-center w-10 h-10 rounded-full ${step.color} text-white font-bold text-sm z-10 border-4 border-slate-900`}
+              >
                 {step.number}
               </div>
             </div>
@@ -145,7 +150,9 @@ export default function GetStartedPage() {
                       <div className="text-white font-bold text-xs mb-1">
                         {name}
                       </div>
-                      <div className="text-slate-500 text-[10px] line-clamp-1">{sub}</div>
+                      <div className="text-slate-500 text-[10px] line-clamp-1">
+                        {sub}
+                      </div>
                     </Link>
                   ))}
                 </div>
@@ -171,10 +178,14 @@ export default function GetStartedPage() {
             <div className="flex items-center justify-center w-10 h-10 rounded-full bg-emerald-600 text-white">
               <CheckCircle2 size={24} />
             </div>
-            <h3 className="text-2xl font-bold text-white">You're ready to go!</h3>
+            <h3 className="text-2xl font-bold text-white">
+              You&apos;re ready to go!
+            </h3>
           </div>
           <p className="text-slate-400 mb-6 max-w-xl">
-            Once you've completed these steps, your first channel will be live and capturing leads automatically. Explore our advanced features to further automate your business.
+            Once you&apos;ve completed these steps, your first channel will be
+            live and capturing leads automatically. Explore our advanced
+            features to further automate your business.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link
