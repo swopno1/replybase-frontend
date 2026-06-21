@@ -84,7 +84,7 @@ export default function FoundingPromoModal() {
           </div>
 
           <Link
-            href="https://app.replybase.co.uk/auth/register?plan=grow&source=promo_modal&promo=FOUNDING50"
+            href="https://app.replybase.co.uk/auth/claim?plan=grow&source=promo_modal&promo=FOUNDING50&cycle=annual"
             onClick={() => {
               trackEvent("promo_cta_click", {
                 properties: { promo: "FOUNDING50", source: "promo_modal" },

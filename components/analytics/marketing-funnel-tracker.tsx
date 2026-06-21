@@ -10,8 +10,8 @@ import { setClarityTags, trackEvent } from "@/lib/client-analytics";
  * 1. Fire `pricing_viewed` (origin=marketing) when the #pricing section
  *    scrolls into view — fires at most once per session.
  * 2. Fire `get_started_click` (origin=marketing) when any CTA anchor that
- *    points to app.replybase.co.uk/auth/register is clicked — before the
- *    browser navigates, so the event reaches Plausible/Clarity.
+ *    points to app.replybase.co.uk/auth/register or /auth/claim is clicked —
+ *    before the browser navigates, so the event reaches Plausible/Clarity.
  */
 export function MarketingFunnelTracker() {
   // ── Pricing section visibility ─────────────────────────────────────────
@@ -58,7 +58,10 @@ export function MarketingFunnelTracker() {
       }
 
       const href = target.getAttribute("href") || "";
-      if (!href.includes("app.replybase.co.uk/auth/register")) {
+      const isSignupCta =
+        href.includes("app.replybase.co.uk/auth/register") ||
+        href.includes("app.replybase.co.uk/auth/claim");
+      if (!isSignupCta) {
         return;
       }
 

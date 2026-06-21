@@ -539,7 +539,7 @@ export default function LandingPage() {
                   </ul>
                 </div>
                 <a
-                  href="https://app.replybase.co.uk/auth/register?plan=launch&source=pricing_cards"
+                  href="https://app.replybase.co.uk/auth/claim?plan=launch&source=pricing_cards"
                   className="block w-full py-3 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-center font-semibold transition-colors duration-300"
                 >
                   Start 14-Day Trial
@@ -591,7 +591,7 @@ export default function LandingPage() {
                   </ul>
                 </div>
                 <a
-                  href="https://app.replybase.co.uk/auth/register?plan=grow&source=pricing_cards"
+                  href="https://app.replybase.co.uk/auth/claim?plan=grow&source=pricing_cards"
                   className="block w-full py-3 px-4 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-center font-semibold shadow-lg shadow-indigo-600/20 transition-all duration-300 transform group-hover:scale-[1.03]"
                 >
                   Start 14-Day Trial
@@ -642,7 +642,7 @@ export default function LandingPage() {
                   </ul>
                 </div>
                 <a
-                  href="https://app.replybase.co.uk/auth/register?plan=scale&source=pricing_cards"
+                  href="https://app.replybase.co.uk/auth/claim?plan=scale&source=pricing_cards"
                   className="block w-full py-3 px-4 rounded-xl bg-purple-600 hover:bg-purple-500 text-white text-center font-semibold shadow-lg shadow-purple-500/20 transition-all duration-300 transform group-hover:scale-[1.03]"
                 >
                   Start 14-Day Trial
@@ -688,7 +688,7 @@ export default function LandingPage() {
                   </ul>
                 </div>
                 <a
-                  href="https://app.replybase.co.uk/auth/register?plan=business&source=pricing_cards"
+                  href="https://app.replybase.co.uk/auth/claim?plan=business&source=pricing_cards"
                   className="block w-full py-3 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-center font-semibold transition-colors duration-300"
                 >
                   Start Business Trial
@@ -864,7 +864,7 @@ export default function LandingPage() {
                     </td>
                     <td className="p-4 text-center">
                       <a
-                        href="https://app.replybase.co.uk/auth/register?plan=launch&source=pricing_table_launch"
+                        href="https://app.replybase.co.uk/auth/claim?plan=launch&source=pricing_table_launch"
                         className="block w-full bg-indigo-600 hover:bg-indigo-500 text-white py-2 rounded-lg mb-1 text-center"
                       >
                         Start Free Trial
@@ -875,7 +875,7 @@ export default function LandingPage() {
                     </td>
                     <td className="p-4 text-center">
                       <a
-                        href="https://app.replybase.co.uk/auth/register?plan=grow&source=pricing_table_grow"
+                        href="https://app.replybase.co.uk/auth/claim?plan=grow&source=pricing_table_grow"
                         className="block w-full bg-indigo-600 hover:bg-indigo-500 text-white py-2 rounded-lg mb-1 text-center"
                       >
                         Start Free Trial
@@ -886,7 +886,7 @@ export default function LandingPage() {
                     </td>
                     <td className="p-4 text-center">
                       <a
-                        href="https://app.replybase.co.uk/auth/register?plan=scale&source=pricing_table_scale"
+                        href="https://app.replybase.co.uk/auth/claim?plan=scale&source=pricing_table_scale"
                         className="block w-full bg-indigo-600 hover:bg-indigo-500 text-white py-2 rounded-lg mb-1 text-center"
                       >
                         Start Free Trial
@@ -897,7 +897,7 @@ export default function LandingPage() {
                     </td>
                     <td className="p-4 text-center">
                       <a
-                        href="https://app.replybase.co.uk/auth/register?plan=business&source=pricing_table_business"
+                        href="https://app.replybase.co.uk/auth/claim?plan=business&source=pricing_table_business"
                         className="block w-full bg-indigo-600 hover:bg-indigo-500 text-white py-2 rounded-lg mb-2 text-center"
                       >
                         Start Business Trial

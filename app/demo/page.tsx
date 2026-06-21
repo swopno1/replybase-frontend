@@ -17,7 +17,7 @@ import {
 } from "lucide-react";
 
 const SIGNUP_URL =
-  "https://app.replybase.co.uk/auth/register?source=fb_ad_demo&plan=grow";
+  "https://app.replybase.co.uk/pricing?source=fb_ad_demo";
 
 const CHAT_MESSAGES = [
   { from: "visitor", text: "Hi, do you have availability this week?" },
