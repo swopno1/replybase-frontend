@@ -56,3 +56,7 @@ LLMs prioritize content that is easy to parse and semantically rich. We will imp
 ### E. AI for Healthcare & Private Clinics (June 2026 Expansion)
 - **Automating Patient Triage:** Focus on secure, 24/7 symptom gathering and patient qualification for private clinics, dental practices, and physiotherapy centers.
 - **Improving Clinic ROI:** Emphasize reduction in administrative overhead and recovery of revenue from automated appointment reminders and rescheduling.
+
+### F. AI for E-commerce & Digital Retail (June 2026 Expansion)
+- **Scaling Shopify Support:** Focus on autonomous AI agents handling WISMO and product FAQs directly via the Shopify API.
+- **WhatsApp-First Growth:** Emphasize using WhatsApp for high-engagement cart recovery and personalized conversational shopping.
