@@ -13,11 +13,9 @@ import {
   Shield,
   Clock,
   TrendingUp,
-  ChevronRight,
 } from "lucide-react";
 
-const SIGNUP_URL =
-  "https://app.replybase.co.uk/pricing?source=fb_ad_demo";
+const SIGNUP_URL = "https://app.replybase.co.uk/pricing?source=fb_ad_demo";
 
 const CHAT_MESSAGES = [
   { from: "visitor", text: "Hi, do you have availability this week?" },
@@ -344,7 +342,7 @@ function WidgetInstallMock() {
 
 // ─── Step definitions ─────────────────────────────────────────────────────────
 
-const Step1Video = () => <YoutubeVideo videoId="CHfjM5R7alI" />;
+const Step1Video = () => <YoutubeVideo videoId="7Ow7id78Lic" />;
 const Step2Video = () => <YoutubeVideo videoId="zWd1CyNEF50" />;
 
 const HOW_IT_WORKS_STEPS = [
