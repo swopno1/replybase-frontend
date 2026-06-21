@@ -969,7 +969,7 @@ export default function LandingPage() {
             </p>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-8">
               <Link
-                href="https://app.replybase.co.uk/auth/register?source=final_cta"
+                href="https://app.replybase.co.uk/pricing?source=final_cta"
                 className="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-8 py-3 rounded-lg transition-transform duration-300 transform hover:scale-105 flex items-center justify-center gap-2 shadow-lg"
               >
                 Start 14-Day Free Trial

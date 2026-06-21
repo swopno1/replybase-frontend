@@ -15,7 +15,8 @@ export default function LandingNavbar() {
         <Link href="/" className="flex items-center gap-3">
           <Image
             src="/image/logo.png"
-            alt="ReplyBase - AI-powered conversation automation platform" priority={true}
+            alt="ReplyBase - AI-powered conversation automation platform"
+            priority={true}
             width={40}
             height={40}
             className="h-10 w-auto bg-white rounded-full"
@@ -59,7 +60,7 @@ export default function LandingNavbar() {
           </li>
           <li>
             <Link
-              href="https://app.replybase.co.uk/auth/register?source=navbar_desktop"
+              href="https://app.replybase.co.uk/pricing?source=navbar_desktop"
               className="text-sm font-medium text-white bg-primary hover:bg-primary/90 rounded-lg px-4 py-2 transition-colors"
             >
               Get Started Free
@@ -110,7 +111,7 @@ export default function LandingNavbar() {
             Login
           </Link>
           <Link
-            href="https://app.replybase.co.uk/auth/register?source=navbar_mobile"
+            href="https://app.replybase.co.uk/pricing?source=navbar_mobile"
             className="block w-full text-sm font-medium text-white bg-primary hover:bg-primary/90 rounded-lg px-4 py-2 text-center"
             onClick={() => setIsOpen(false)}
           >
