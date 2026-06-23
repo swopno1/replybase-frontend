@@ -5,6 +5,7 @@ import { remark } from "remark";
 import html from "remark-html";
 import gfm from "remark-gfm";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 import LandingNavbar from "@/components/LandingNavbar";
 import LandingFooter from "@/components/LandingFooter";
 
@@ -23,35 +24,30 @@ export async function generateStaticParams() {
 }
 
 async function getPostData(slug: string) {
-  try {
-    const fullPath = path.join(postsDirectory, `${slug}.md`);
+  const fullPath = path.join(postsDirectory, `${slug}.md`);
 
-    if (!fs.existsSync(fullPath)) {
-      throw new Error(`Post not found: ${slug}`);
-    }
-
-    const fileContents = fs.readFileSync(fullPath, "utf8");
-    const matterResult = matter(fileContents);
-
-    const processedContent = await remark()
-      .use(gfm)
-      .use(html)
-      .process(matterResult.content);
-    const contentHtml = processedContent.toString();
-
-    return {
-      slug,
-      contentHtml,
-      ...(matterResult.data as {
-        title: string;
-        date: string;
-        excerpt?: string;
-      }),
-    };
-  } catch (error) {
-    console.error(`Error fetching post data for slug "${slug}":`, error);
-    throw error;
+  if (!fs.existsSync(fullPath)) {
+    return null;
   }
+
+  const fileContents = fs.readFileSync(fullPath, "utf8");
+  const matterResult = matter(fileContents);
+
+  const processedContent = await remark()
+    .use(gfm)
+    .use(html)
+    .process(matterResult.content);
+  const contentHtml = processedContent.toString();
+
+  return {
+    slug,
+    contentHtml,
+    ...(matterResult.data as {
+      title: string;
+      date: string;
+      excerpt?: string;
+    }),
+  };
 }
 
 export async function generateMetadata({
@@ -60,27 +56,24 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  try {
-    const postData = await getPostData(slug);
-    return {
+  const postData = await getPostData(slug);
+  if (!postData) {
+    return { title: "Post Not Found" };
+  }
+  return {
+    title: postData.title,
+    description: postData.excerpt,
+    alternates: {
+      canonical: `/blog/${slug}`,
+    },
+    openGraph: {
       title: postData.title,
       description: postData.excerpt,
-      alternates: {
-        canonical: `/blog/${slug}`,
-      },
-      openGraph: {
-        title: postData.title,
-        description: postData.excerpt,
-        url: `https://replybase.co.uk/blog/${slug}`,
-        type: "article",
-        publishedTime: postData.date,
-      },
-    };
-  } catch {
-    return {
-      title: "Post Not Found",
-    };
-  }
+      url: `https://replybase.co.uk/blog/${slug}`,
+      type: "article",
+      publishedTime: postData.date,
+    },
+  };
 }
 
 export default async function BlogPostPage({
@@ -89,34 +82,10 @@ export default async function BlogPostPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  let postData;
-  let loadError = false;
-  try {
-    postData = await getPostData(slug);
-  } catch (error) {
-    console.error("Error loading post:", error);
-    loadError = true;
-  }
+  const postData = await getPostData(slug);
 
-  if (loadError || !postData) {
-    return (
-      <div className="bg-background text-foreground antialiased selection:bg-indigo-500/20 font-inter">
-        <LandingNavbar />
-        <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
-          <div className="text-center">
-            <h2 className="text-2xl font-bold">Post Not Found</h2>
-            <p className="text-slate-400">
-              The post you are looking for does not exist or could not be
-              loaded.
-            </p>
-            <Link href="/blog" className="mt-8 inline-block text-indigo-400 font-semibold hover:text-indigo-300">
-              ← Back to Blog
-            </Link>
-          </div>
-        </main>
-        <LandingFooter />
-      </div>
-    );
+  if (!postData) {
+    notFound();
   }
 
   return (
