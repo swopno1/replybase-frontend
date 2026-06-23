@@ -60,3 +60,7 @@ LLMs prioritize content that is easy to parse and semantically rich. We will imp
 ### F. AI for E-commerce & Digital Retail (June 2026 Expansion)
 - **Scaling Shopify Support:** Focus on autonomous AI agents handling WISMO and product FAQs directly via the Shopify API.
 - **WhatsApp-First Growth:** Emphasize using WhatsApp for high-engagement cart recovery and personalized conversational shopping.
+
+### G. AI for Recruitment & Talent Acquisition (June 2026 Expansion)
+- **Automating Candidate Screening:** Focus on using WhatsApp and Webchat for 24/7 candidate triage, initial qualification, and data capture.
+- **Reducing Time-to-Hire:** Emphasize how AI agents handle interview scheduling and FAQ responses, allowing recruiters to focus on high-value placements.

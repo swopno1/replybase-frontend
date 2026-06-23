@@ -513,6 +513,12 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
   - **Objective:** Establish leadership in e-commerce automation, WhatsApp-driven growth, and autonomous retail support.
   - **Deliverables:** 10 high-quality Markdown files in `_posts/` with full SEO/AEO optimization.
   - **Notes:** Completed June 24, 2026. Series includes: `ai-for-uk-ecommerce-2026-guide.md`, `scaling-shopify-support-with-ai-agents.md`, `whatsapp-automation-for-ecommerce-growth.md`, `reducing-cart-abandonment-with-conversational-ai.md`, `ai-driven-personalization-in-retail.md`, `automating-returns-and-exchanges-with-ai.md`, `scaling-peak-season-support-with-ai.md`, `multichannel-messaging-for-retail-brands.md`, `improving-ecommerce-roi-with-ai-automation.md`, and `future-of-ai-in-uk-retail-2026.md`.
+
+- [x] **T062:** (Priority: HIGH) Add 10 educational blog posts on AI for Recruitment & Talent Acquisition Mastery.
+  - **Issue:** Strategic gap in high-authority content regarding UK recruitment agencies, high-volume hiring, and candidate engagement automation.
+  - **Objective:** Establish leadership in recruitment automation, WhatsApp-driven candidate sourcing, and AI-powered screening.
+  - **Deliverables:** 10 high-quality Markdown files in `_posts/` with full SEO/AEO optimization.
+  - **Notes:** Completed June 25, 2026. Series includes: `ai-for-uk-recruitment-2026-guide.md`, `automating-candidate-screening-whatsapp.md`, `reducing-time-to-hire-with-ai-agents.md`, `improving-candidate-experience-with-instant-replies.md`, `scaling-high-volume-hiring-with-ai-triage.md`, `automating-interview-scheduling-for-recruiters.md`, `ai-driven-passive-candidate-engagement.md`, `multichannel-comms-for-uk-headhunters.md`, `integrating-ai-with-recruitment-crms.md`, and `future-of-ai-in-uk-talent-acquisition-2026.md`.
 ---
 
 ### T048: Create 10 Educational Blog Posts on AI Lead Generation Mastery
