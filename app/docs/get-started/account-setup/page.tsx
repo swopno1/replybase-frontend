@@ -14,7 +14,7 @@ export default function AccountSetupPage() {
     <DocLayout
       title="Create Your Account"
       description="Get started with ReplyBase by creating your workspace. It takes less than two minutes and gives you immediate access to all core features."
-      videoUrl="https://youtu.be/7Ow7id78Lic"
+      videoUrl="https://youtu.be/clHjHuhV3eI"
       videoTitle="Create Your Account In Minutes #ReplyBase"
     >
       <h2 className="text-2xl font-bold text-white mb-6">
