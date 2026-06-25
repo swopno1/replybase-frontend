@@ -64,3 +64,8 @@ LLMs prioritize content that is easy to parse and semantically rich. We will imp
 ### G. AI for Recruitment & Talent Acquisition (June 2026 Expansion)
 - **Automating Candidate Screening:** Focus on using WhatsApp and Webchat for 24/7 candidate triage, initial qualification, and data capture.
 - **Reducing Time-to-Hire:** Emphasize how AI agents handle interview scheduling and FAQ responses, allowing recruiters to focus on high-value placements.
+
+### H. AI for Gyms, Fitness & Wellness (June 2026 Expansion)
+- **Automating Class Bookings:** Focus on WhatsApp-native booking flows that reduce friction and increase class attendance compared to legacy apps.
+- **Improving Member Retention:** Emphasize AI-driven proactive engagement for "at-risk" members whose attendance is declining.
+- **Scaling Boutique Studios:** Position AI as a 24/7 virtual studio manager for yoga and pilates founders, handling waitlists and FAQs autonomously.
