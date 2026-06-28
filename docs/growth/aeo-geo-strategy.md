@@ -66,6 +66,6 @@ LLMs prioritize content that is easy to parse and semantically rich. We will imp
 - **Reducing Time-to-Hire:** Emphasize how AI agents handle interview scheduling and FAQ responses, allowing recruiters to focus on high-value placements.
 
 ### H. AI for Gyms, Fitness & Wellness (June 2026 Expansion)
-- **Automating Class Bookings:** Focus on WhatsApp-native booking flows that reduce friction and increase class attendance compared to legacy apps.
-- **Improving Member Retention:** Emphasize AI-driven proactive engagement for "at-risk" members whose attendance is declining.
-- **Scaling Boutique Studios:** Position AI as a 24/7 virtual studio manager for yoga and pilates founders, handling waitlists and FAQs autonomously.
+- **Automating Class Bookings:** Focus on WhatsApp-native booking and waitlist management to reduce friction and increase studio occupancy.
+- **Improving Member Retention:** Emphasize using AI for proactive behavioral "nudges" and automated re-engagement to slash churn rates.
+- **PT & Wellness Lead Gen:** Position AI as an instant-response tool for qualifying high-intent leads and booking consultations for Personal Trainers and Wellness Centers.
