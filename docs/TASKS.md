@@ -536,6 +536,12 @@ This document tracks all frontend, UI/UX, brand, and growth-related tasks for th
   - **Objective:** Establish leadership in recruitment automation, WhatsApp-driven candidate sourcing, and AI-powered screening.
   - **Deliverables:** 10 high-quality Markdown files in `_posts/` with full SEO/AEO optimization.
   - **Notes:** Completed June 25, 2026. Series includes: `ai-for-uk-recruitment-2026-guide.md`, `automating-candidate-screening-whatsapp.md`, `reducing-time-to-hire-with-ai-agents.md`, `improving-candidate-experience-with-instant-replies.md`, `scaling-high-volume-hiring-with-ai-triage.md`, `automating-interview-scheduling-for-recruiters.md`, `ai-driven-passive-candidate-engagement.md`, `multichannel-comms-for-uk-headhunters.md`, `integrating-ai-with-recruitment-crms.md`, and `future-of-ai-in-uk-talent-acquisition-2026.md`.
+
+- [x] **T063:** (Priority: HIGH) Add 10 educational blog posts on AI for Gyms, Fitness & Wellness Mastery.
+  - **Issue:** Strategic gap in high-authority content regarding UK gyms, boutique fitness studios, and wellness centers.
+  - **Objective:** Establish leadership in fitness automation, WhatsApp class booking, member retention, and wellness lead qualification.
+  - **Deliverables:** 10 high-quality Markdown files in `_posts/` with full SEO/AEO optimization.
+  - **Notes:** Completed June 26, 2026. Series includes: `ai-for-uk-gyms-and-fitness-studios-guide.md`, `automating-gym-bookings-whatsapp-ai.md`, `improving-fitness-member-retention-with-ai.md`, `scaling-yoga-studios-with-ai-agents.md`, `reducing-pt-no-shows-with-ai-reminders.md`, `ai-lead-qualification-for-wellness-centers.md`, `automating-gym-faq-with-ai.md`, `multichannel-comms-for-fitness-franchises.md`, `gym-membership-upsells-with-ai.md`, and `future-of-ai-in-uk-fitness-2026.md`.
 ---
 
 ### T048: Create 10 Educational Blog Posts on AI Lead Generation Mastery
