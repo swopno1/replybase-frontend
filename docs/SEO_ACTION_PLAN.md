@@ -24,6 +24,7 @@
 15. [x] Deploy "AI for E-commerce & Digital Retail Mastery" 10-part educational series. (Completed June 24, 2026)
 16. [x] Deploy "AI for Recruitment & Talent Acquisition Mastery" 10-part educational series. (Completed June 25, 2026)
 17. [x] Deploy "AI for Gyms, Fitness & Wellness Mastery" 10-part educational series. (Completed June 26, 2026)
+18. [x] Deploy "AI for Real Estate & Property Agency Mastery" 10-part educational series. (Completed June 27, 2026)
 
 ## Technical Tasks
 1. [ ] Check sitemap.xml validity in Google Search Console. (Assigned T043)
