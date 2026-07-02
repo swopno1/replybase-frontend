@@ -69,3 +69,8 @@ LLMs prioritize content that is easy to parse and semantically rich. We will imp
 - **Automating Class Bookings:** Focus on WhatsApp-native booking and waitlist management to reduce friction and increase studio occupancy.
 - **Improving Member Retention:** Emphasize using AI for proactive behavioral "nudges" and automated re-engagement to slash churn rates.
 - **PT & Wellness Lead Gen:** Position AI as an instant-response tool for qualifying high-intent leads and booking consultations for Personal Trainers and Wellness Centers.
+
+### I. AI for Legal & Law Firms (July 2026 Expansion)
+- **Automating Legal Intake:** Focus on 24/7 conversational data gathering for initial enquiries, ensuring solicitors receive qualified, structured case information.
+- **Secure Client Qualification:** Emphasize GDPR-compliant, secure AI communication for sensitive legal matters.
+- **Reducing Consultation No-Shows:** Use automated WhatsApp reminders to confirm initial legal consultations and reduce wasted fee-earner time.

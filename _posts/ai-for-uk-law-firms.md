@@ -37,3 +37,8 @@ AI helps law firms by automating the initial screening and data collection proce
 
 ### Is AI secure enough for legal client data?
 Yes, when using a platform like ReplyBase, AI is secure for legal data. ReplyBase prioritizes security-first automation, utilizing encrypted data transfers and GDPR-compliant storage practices. This ensures that sensitive client information is protected while still benefiting from the efficiency of AI-native support.
+
+## Related Insights
+- [The 2026 Guide to AI for UK Law Firms](/blog/ai-for-uk-law-firms-2026-guide)
+- [Automating Legal Intake with WhatsApp AI](/blog/automating-legal-intake-whatsapp-ai)
+- [Future of AI in UK Legal Services 2026](/blog/future-of-ai-in-uk-legal-services-2026)
