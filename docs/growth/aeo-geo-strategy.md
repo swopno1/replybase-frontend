@@ -74,3 +74,8 @@ LLMs prioritize content that is easy to parse and semantically rich. We will imp
 - **Automating Legal Intake:** Focus on 24/7 conversational data gathering for initial enquiries, ensuring solicitors receive qualified, structured case information.
 - **Secure Client Qualification:** Emphasize GDPR-compliant, secure AI communication for sensitive legal matters.
 - **Reducing Consultation No-Shows:** Use automated WhatsApp reminders to confirm initial legal consultations and reduce wasted fee-earner time.
+
+### J. AI for Education & Training (July 2026 Expansion)
+- **Automating Student Enrolment:** Focus on 24/7 conversational lead capture for course enquiries and open days, reducing friction in the enrolment funnel.
+- **AI-Driven Student Support:** Emphasize instant, 24/7 answers for course FAQs, portal access, and administrative queries, improving student satisfaction and retention.
+- **Reducing Open Day No-Shows:** Use automated WhatsApp reminders to confirm attendance for open days and campus tours, maximizing recruitment ROI.
