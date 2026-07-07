@@ -7,7 +7,8 @@ export type TrackingEventName =
   | "newsletter_signup"
   | "contact_form_submission"
   | "promo_modal_viewed"
-  | "promo_cta_click";
+  | "promo_cta_click"
+  | "founding10_application_submitted";
 
 type OnceScope = "memory" | "session" | "local";
 

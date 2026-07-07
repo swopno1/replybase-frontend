@@ -14,6 +14,7 @@ const EXCLUDED_ROUTES = new Set([
   "/docs/webchat-qa-rollout",
   "/deletion-status",
   "/actions",
+  "/founding10", // paid ad landing page — noindex
 ]);
 
 // Pages that exist as HTML but need noindex treatment — kept in sitemap at
