@@ -43,7 +43,7 @@ export async function POST(req: Request) {
 
     await resend.emails.send({
       from: "ReplyBase Founding 10 <system@replybase.co.uk>",
-      to: "admin@replybase.co.uk",
+      to: ["admin@replybase.co.uk", "amirhossain.limon@gmail.com"],
       subject: `Founding 10 Application: ${escapeHtml(firstName)} ${escapeHtml(lastName)} — ${escapeHtml(businessName)}`,
       replyTo: email,
       html: `
