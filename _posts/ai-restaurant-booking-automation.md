@@ -6,6 +6,7 @@ keywords: 'restaurant booking automation, AI reservations, automated restaurant 
 category: 'Industry'
 tags: ['Hospitality', 'Automation', 'AI', 'Restaurant', 'Booking']
 canonical: '/blog/ai-restaurant-booking-automation'
+featured_image: '/images/blog/ai-restaurant-booking-automation.jpg'
 ---
 
 For restaurant owners, the reservation process is a double-edged sword. While bookings are the lifeblood of the business, managing them—handling phone calls, confirming slots, and dealing with no-shows—can be an operational nightmare.

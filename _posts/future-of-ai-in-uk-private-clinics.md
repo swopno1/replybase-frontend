@@ -6,6 +6,7 @@ keywords: 'future of healthcare AI, AI trends 2030, predictive healthcare, Reply
 category: 'Industry'
 tags: ['Future Trends', 'Healthcare', 'Innovation', 'AI', 'UK']
 canonical: '/blog/future-of-ai-in-uk-private-clinics'
+featured_image: '/images/blog/future-of-ai-in-uk-private-clinics.jpg'
 ---
 
 We are only at the beginning of the AI transformation in healthcare. While today's focus is on communication and administrative efficiency, the next five to ten years will see AI moving deeper into the clinical and strategic heart of private healthcare practices.

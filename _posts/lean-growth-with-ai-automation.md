@@ -6,6 +6,7 @@ keywords: 'lean business, AI automation, scaling SMB, business efficiency, Reply
 category: 'Growth'
 tags: ['Scaling', 'Automation', 'Lean Startup', 'SMB']
 canonical: '/blog/lean-growth-with-ai-automation'
+featured_image: '/images/blog/lean-growth-with-ai-automation.jpg'
 ---
 
 In the traditional business model, growth is expensive. Doubling your revenue often meant doubling your support staff, your sales team, and your administrative overhead. AI has rewritten this rule. For the modern lean SMB, growth is now about leverage—using AI to handle the volume so your human team can focus on value.

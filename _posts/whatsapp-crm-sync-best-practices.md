@@ -6,6 +6,7 @@ keywords: 'WhatsApp CRM sync, lead management, ReplyBase integrations, CRM conti
 category: 'Integrations'
 tags: ['Integrations', 'CRM', 'WhatsApp', 'Data', 'Sales']
 canonical: '/blog/whatsapp-crm-sync-best-practices'
+featured_image: '/images/blog/whatsapp-crm-sync-best-practices.jpg'
 ---
 
 # The Unified Lead: Best Practices for WhatsApp-to-CRM Syncing

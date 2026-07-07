@@ -6,6 +6,7 @@ keywords: 'sales forecasting AI, revenue prediction, RevOps strategy, sales pipe
 category: 'Strategy'
 tags: ['Sales', 'Forecasting', 'RevOps', 'AI', 'Analytics']
 canonical: '/blog/ai-driven-sales-forecasting'
+featured_image: '/images/blog/ai-driven-sales-forecasting.jpg'
 ---
 
 In the fast-paced world of B2B SaaS, a "gut feeling" is no longer a viable strategy for sales forecasting. Revenue Operations (RevOps) leaders are increasingly turning to AI to transform forecasting from a manual, error-prone exercise into a precise, data-driven science.

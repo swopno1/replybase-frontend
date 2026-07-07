@@ -6,6 +6,7 @@ keywords: 'local SEO UK, SMB lead generation, Google Business Profile, local mar
 category: 'Marketing'
 tags: ['Local SEO', 'UK Business', 'SMB', 'Lead Gen']
 canonical: '/blog/local-seo-lead-gen-uk-smb'
+featured_image: '/images/blog/local-seo-lead-gen-uk-smb.jpg'
 ---
 
 For small businesses in the UK—from law firms in London to tradespeople in Manchester—the battle for leads is won on the local stage. Local SEO has long been the gold standard for being found, but being found is only half the battle. You also need to be *responsive*.

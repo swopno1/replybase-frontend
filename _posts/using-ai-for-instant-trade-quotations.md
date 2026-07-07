@@ -6,6 +6,7 @@ keywords: 'instant trade quotes, AI quoting for trades, trade business lead gen,
 category: 'Sales'
 tags: ['Quoting', 'Sales', 'AI Automation', 'UK Trades', 'Lead Generation']
 canonical: '/blog/using-ai-for-instant-trade-quotations'
+featured_image: '/images/blog/using-ai-for-instant-trade-quotations.jpg'
 ---
 
 In the UK trade market, the "Early Bird" doesn't just get the worm; they get the contract. Statistics show that the first business to provide a quote has a 70% higher chance of winning the job. But if you're on a site all day, you can't be sitting at a laptop drafting estimates.

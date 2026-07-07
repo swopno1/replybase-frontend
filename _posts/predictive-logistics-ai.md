@@ -6,6 +6,7 @@ keywords: 'predictive logistics, AI supply chain, automated procurement, invento
 category: 'Operations'
 tags: ['Logistics', 'Supply Chain', 'Operations', 'AI']
 canonical: '/blog/predictive-logistics-ai'
+featured_image: '/images/blog/predictive-logistics-ai.jpg'
 ---
 
 Supply chains have traditionally been reactive, struggling to adapt to sudden shifts in demand or global disruptions. Supply Chain 2.0 changes the game by using AI to transition from "Just-in-Time" to "Just-in-Case" predictive logistics.
@@ -38,3 +39,11 @@ Predictive logistics is the use of AI, machine learning, and big data to anticip
 
 ### How does AI reduce supply chain costs?
 AI reduces supply chain costs by optimizing inventory levels, preventing overstocking and stockouts. It also identifies the most efficient shipping routes to save fuel and time, and uses automated procurement to secure the best prices for raw materials, leading to significantly higher operational margins.
+
+---
+
+## Start Automating Your Customer Conversations
+
+ReplyBase gives UK businesses a 24/7 AI assistant across WhatsApp, Facebook Messenger, and webchat — capturing leads, booking appointments, and answering enquiries automatically.
+
+[Start Your Free 14-Day Trial](https://app.replybase.co.uk/auth/register?plan=launch&source=blog_cta) | [See How It Works](/docs/get-started)

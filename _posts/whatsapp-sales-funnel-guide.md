@@ -6,6 +6,7 @@ keywords: 'WhatsApp sales funnel, conversational sales, full-funnel marketing, W
 category: 'Sales'
 tags: ['Sales', 'WhatsApp', 'Strategy', 'Automation', 'Conversion']
 canonical: '/blog/whatsapp-sales-funnel-guide'
+featured_image: '/images/blog/whatsapp-sales-funnel-guide.jpg'
 ---
 
 Traditional marketing funnels are "leaky." You attract a lead on social media, send them to a landing page, ask them to fill out a form, wait for them to confirm their email, and then hope they click a link to a sales page. Every step is an opportunity for the lead to drop off.

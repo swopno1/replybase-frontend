@@ -6,6 +6,7 @@ keywords: 'e-commerce ROI AI, support automation benefits, retail cost reduction
 category: 'E-commerce'
 tags: ['ROI', 'Profitability', 'AI Automation', 'E-commerce', 'Business Impact']
 canonical: '/blog/improving-ecommerce-roi-with-ai-automation'
+featured_image: '/images/blog/improving-ecommerce-roi-with-ai-automation.jpg'
 ---
 
 For too long, e-commerce support has been viewed as a necessary expense—a "cost center" that grows as the business grows.

@@ -6,6 +6,7 @@ keywords: 'Shopify support automation, scale customer service AI, Shopify AI age
 category: 'E-commerce'
 tags: ['Shopify', 'Customer Support', 'AI Agents', 'Scaling', 'Retail Tech']
 canonical: '/blog/scaling-shopify-support-with-ai-agents'
+featured_image: '/images/blog/scaling-shopify-support-with-ai-agents.jpg'
 ---
 
 For many Shopify merchants, success brings a hidden crisis: the support ticket flood. As orders scale, the volume of routine inquiries—WISMO, product questions, return status—can quickly drown your team.

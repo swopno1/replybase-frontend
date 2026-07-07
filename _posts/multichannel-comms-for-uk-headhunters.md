@@ -6,6 +6,7 @@ keywords: 'multichannel recruitment, headhunting automation, unified communicati
 category: 'Recruitment'
 tags: ['Headhunting', 'Multichannel', 'AI Strategy', 'Unified Communications', 'Talent Sourcing']
 canonical: '/blog/multichannel-comms-for-uk-headhunters'
+featured_image: '/images/blog/multichannel-comms-for-uk-headhunters.jpg'
 ---
 
 In the high-stakes world of executive search and specialist headhunting, your ability to "get through" to a candidate is everything. But in 2026, talent is fragmented. Some prefer LinkedIn, some live on WhatsApp, and others engage only with personalized web experiences.

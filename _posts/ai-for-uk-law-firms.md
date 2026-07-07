@@ -6,6 +6,7 @@ keywords: 'AI for law firms, legal automation UK, automated client intake, legal
 category: 'Industry'
 tags: ['Legal', 'UK', 'Automation', 'AI', 'Client Intake']
 canonical: '/blog/ai-for-uk-law-firms'
+featured_image: '/images/blog/ai-for-uk-law-firms.jpg'
 ---
 
 For UK law firms, the client intake process is often a bottleneck. Handling initial enquiries, checking for conflicts, and gathering basic matter details can consume hours of valuable time for solicitors and administrative staff.

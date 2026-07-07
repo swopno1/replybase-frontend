@@ -6,6 +6,7 @@ keywords: 'WhatsApp marketing ROI, conversational sales, WhatsApp vs email ROI, 
 category: 'Sales'
 tags: ['ROI', 'Marketing', 'WhatsApp', 'Sales', 'Strategy']
 canonical: '/blog/whatsapp-marketing-roi-2026'
+featured_image: '/images/blog/whatsapp-marketing-roi-2026.jpg'
 ---
 
 # WhatsApp Marketing ROI in 2026: Why Conversational Sales Outperform Email

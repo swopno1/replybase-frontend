@@ -6,6 +6,7 @@ keywords: 'scaling social support, AI customer service, social media automation,
 category: 'Operations'
 tags: ['Support', 'AI', 'Scaling', 'Social Media', 'Operations']
 canonical: '/blog/scaling-social-support-with-ai'
+featured_image: '/images/blog/scaling-social-support-with-ai.jpg'
 ---
 
 For a modern brand, "Office Hours" are a relic of the past. Your customers are scrolling Instagram at 11 PM and browsing Facebook on Sunday mornings. If they have a problem or a question, they expect an answer in minutes, not days.

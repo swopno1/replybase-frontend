@@ -6,6 +6,7 @@ keywords: 'multilingual healthcare AI, medical translation AI, inclusive healthc
 category: 'Patient Experience'
 tags: ['Accessibility', 'Inclusivity', 'Multilingual AI', 'Healthcare', 'UK']
 canonical: '/blog/multilingual-patient-support-with-ai'
+featured_image: '/images/blog/multilingual-patient-support-with-ai.jpg'
 ---
 
 The UK is a diverse nation, and healthcare providers often serve patients who speak a variety of languages. Communication barriers in a medical setting aren't just an inconvenience—they can lead to poorer health outcomes and reduced access to care.

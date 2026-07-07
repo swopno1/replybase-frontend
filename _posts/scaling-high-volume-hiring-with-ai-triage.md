@@ -6,6 +6,7 @@ keywords: 'high-volume hiring, recruitment AI triage, automated application scre
 category: 'Recruitment'
 tags: ['High-Volume Hiring', 'AI Triage', 'Scaling', 'Recruitment Operations', 'Automation']
 canonical: '/blog/scaling-high-volume-hiring-with-ai-triage'
+featured_image: '/images/blog/scaling-high-volume-hiring-with-ai-triage.jpg'
 ---
 
 For agencies specializing in retail, hospitality, or logistics, the challenge isn't finding candidates—it's managing the flood of applications. When you receive 500 applications for a single warehouse role, the manual "sift and sort" process becomes a major operational bottleneck.

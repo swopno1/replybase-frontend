@@ -6,6 +6,7 @@ keywords: 'Zapier integration, AI automation, ReplyBase Zapier, connect apps, au
 category: 'Workflows'
 tags: ['Zapier', 'Automation', 'No-Code', 'Integrations', 'Efficiency']
 canonical: '/blog/zapier-integration-guide'
+featured_image: '/images/blog/zapier-integration-guide.jpg'
 ---
 
 Efficiency is the currency of the modern SMB. With the Zapier + ReplyBase integration, you can connect your AI chatbot to the thousands of apps you already use every day. From Slack and Gmail to Trello and Monday.com, the possibilities are endless.

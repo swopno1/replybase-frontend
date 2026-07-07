@@ -6,6 +6,7 @@ keywords: 'lead generation, business growth, sales funnel, customer acquisition,
 category: 'Strategy'
 tags: ['Lead Gen', 'Business Growth', 'Sales Strategy', 'ReplyBase']
 canonical: '/blog/the-strategic-impact-of-lead-generation'
+featured_image: '/images/blog/the-strategic-impact-of-lead-generation.jpg'
 ---
 
 In the modern business landscape, lead generation is no longer just a marketing function; it is a critical driver of enterprise value. For UK-based SMBs and global scale-ups alike, the ability to predictably attract and qualify potential customers is the difference between stagnation and exponential growth.

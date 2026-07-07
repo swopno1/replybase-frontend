@@ -6,6 +6,7 @@ keywords: 'scale support, high-volume WhatsApp, AI support automation, ReplyBase
 category: 'Efficiency'
 tags: ['Scaling', 'Support', 'WhatsApp', 'AI', 'Efficiency']
 canonical: '/blog/whatsapp-support-automation-scaling'
+featured_image: '/images/blog/whatsapp-support-automation-scaling.jpg'
 ---
 
 # Scaling Support: Managing High-Volume WhatsApp Inquiries with AI

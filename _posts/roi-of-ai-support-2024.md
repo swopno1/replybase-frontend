@@ -6,6 +6,7 @@ keywords: 'ROI of AI, AI support savings, business automation value, ReplyBase R
 category: 'Business'
 tags: ['ROI', 'Business Strategy', 'Automation', 'Finance', 'AI']
 canonical: '/blog/roi-of-ai-support-2024'
+featured_image: '/images/blog/roi-of-ai-support-2024.jpg'
 ---
 
 Implementing AI isn't just about following a trend; it's a strategic business decision that should yield a measurable return. For SMBs and founders, understanding the ROI of AI support is crucial for justifying the investment and optimizing operations.

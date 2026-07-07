@@ -6,6 +6,7 @@ keywords: 'customer experience, CX 2026, instant support, AI chatbot, customer e
 category: 'Trends'
 tags: ['CX', 'Customer Service', 'AI Support', 'Retention']
 canonical: '/blog/modern-customer-experience-expectations'
+featured_image: '/images/blog/modern-customer-experience-expectations.jpg'
 ---
 
 The definition of "fast" has changed. In 2026, a 10-minute wait for a support response is considered a failure. A 24-hour response time is an invitation for your customer to find a competitor. Modern consumers, raised on instant digital interactions, now expect immediate, accurate, and personalized service across every channel.

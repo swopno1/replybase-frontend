@@ -6,6 +6,7 @@ keywords: 'hyper-personalization, customer experience, AI marketing, personalize
 category: 'Marketing'
 tags: ['Personalization', 'CX', 'Marketing AI', 'Customer Loyalty']
 canonical: '/blog/hyper-personalization-era'
+featured_image: '/images/blog/hyper-personalization-era.jpg'
 ---
 
 We have entered the era of hyper-personalization. Customers no longer respond to generic marketing "segments." They expect brands to understand their unique needs, history, and current context in real-time. AI is the only technology capable of delivering this level of individual attention at scale.

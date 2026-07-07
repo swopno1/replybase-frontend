@@ -6,6 +6,7 @@ keywords: 'reducing no-shows trades, trade appointment reminders, automated job 
 category: 'Operations'
 tags: ['No-Shows', 'Efficiency', 'AI Automation', 'UK Trades', 'Operations']
 canonical: '/blog/reducing-no-shows-in-trade-services-with-ai'
+featured_image: '/images/blog/reducing-no-shows-in-trade-services-with-ai.jpg'
 ---
 
 For plumbers, electricians, and boiler engineers, the most expensive mile is the one that ends at a locked door. "No-shows" are the silent killer of trade profitability. You've fought through traffic, used fuel, and turned down other work, only to find the customer "forgot" you were coming.

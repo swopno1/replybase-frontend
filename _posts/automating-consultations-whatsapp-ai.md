@@ -6,6 +6,7 @@ keywords: 'automate consultations, WhatsApp AI booking, service business automat
 category: 'Efficiency'
 tags: ['Automation', 'Consulting', 'WhatsApp', 'AI', 'Lead Gen']
 canonical: '/blog/automating-consultations-whatsapp-ai'
+featured_image: '/images/blog/automating-consultations-whatsapp-ai.jpg'
 ---
 
 For consultants, advisors, and agency owners, the consultation is the most important part of the sales process. It’s where trust is built and deals are closed. However, the *process* of getting a lead onto a call is often a nightmare of back-and-forth emails, manual qualification, and missed opportunities.

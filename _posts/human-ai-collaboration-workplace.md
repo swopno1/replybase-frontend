@@ -6,6 +6,7 @@ keywords: 'human-ai collaboration, future of work, workforce transformation, AI 
 category: 'Workplace'
 tags: ['Future of Work', 'Collaboration', 'Productivity', 'Culture']
 canonical: '/blog/human-ai-collaboration-workplace'
+featured_image: '/images/blog/human-ai-collaboration-workplace.jpg'
 ---
 
 The most successful companies of the next decade won't be those with the best AI, but those with the best human-AI collaboration. This "Collaborative Intelligence" paradigm shifts the role of the employee from a doer of tasks to a director of agents.

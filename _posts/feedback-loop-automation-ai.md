@@ -6,6 +6,7 @@ keywords: 'feedback loop automation, AI customer insights, automated product fee
 category: 'Technical'
 tags: ['Data Strategy', 'Product Management', 'Automation', 'Customer Insights', 'Analytics']
 canonical: '/blog/feedback-loop-automation-ai'
+featured_image: '/images/blog/feedback-loop-automation-ai.jpg'
 ---
 
 Most businesses view their chatbot transcripts as a pile of "support history" to be archived. But hidden within those thousands of conversations is the most accurate, real-time product roadmap you will ever have.

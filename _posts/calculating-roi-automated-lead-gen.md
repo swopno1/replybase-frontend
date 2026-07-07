@@ -6,6 +6,7 @@ keywords: 'lead gen ROI, automation value, sales efficiency, marketing metrics, 
 category: 'Strategy'
 tags: ['ROI', 'Lead Gen', 'Automation', 'Metrics']
 canonical: '/blog/calculating-roi-automated-lead-gen'
+featured_image: '/images/blog/calculating-roi-automated-lead-gen.jpg'
 ---
 
 For any business investment, the ultimate question is: "What is the return?" When it comes to automating lead generation, many founders struggle to see past the initial subscription cost to the profound long-term value created across the entire sales organization.

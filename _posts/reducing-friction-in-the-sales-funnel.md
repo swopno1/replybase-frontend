@@ -6,6 +6,7 @@ keywords: 'sales funnel optimization, friction reduction, conversion rate, AI sa
 category: 'Conversion'
 tags: ['Optimization', 'Friction', 'Sales Funnel', 'AI CRO']
 canonical: '/blog/reducing-friction-in-the-sales-funnel'
+featured_image: '/images/blog/reducing-friction-in-the-sales-funnel.jpg'
 ---
 
 Friction is the silent killer of growth. Whether it’s a slow-loading page, a complex pricing table, or a long-winded contact form, every obstacle in your sales funnel provides a reason for a potential customer to leave.

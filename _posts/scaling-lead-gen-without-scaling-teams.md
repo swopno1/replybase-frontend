@@ -6,6 +6,7 @@ keywords: 'scaling lead gen, SMB AI strategy, lead generation automation, AI sal
 category: 'Strategy'
 tags: ['Scaling', 'SMB', 'Lead Gen', 'Automation']
 canonical: '/blog/scaling-lead-gen-without-scaling-teams.md'
+featured_image: '/images/blog/scaling-lead-gen-without-scaling-teams.jpg'
 ---
 
 Historically, the ability to generate a high volume of leads was tied directly to the size of a company’s marketing and sales teams. Enterprises had the budget to hire dozens of SDRs (Sales Development Representatives) to hunt for prospects. Today, AI has levelled the playing field.

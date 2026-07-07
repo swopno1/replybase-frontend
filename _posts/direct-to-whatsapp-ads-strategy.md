@@ -6,6 +6,7 @@ keywords: 'Click-to-WhatsApp ads, Meta ads strategy, WhatsApp lead generation, d
 category: 'Marketing'
 tags: ['Ads', 'Marketing', 'WhatsApp', 'Lead Gen', 'Meta']
 canonical: '/blog/direct-to-whatsapp-ads-strategy'
+featured_image: '/images/blog/direct-to-whatsapp-ads-strategy.jpg'
 ---
 
 # Direct-to-WhatsApp Ads: The Ultimate Strategy for High-Converting Lead Gen

@@ -6,6 +6,7 @@ keywords: 'recruitment CRM integration, AI for Bullhorn, Vincere AI automation, 
 category: 'Recruitment'
 tags: ['CRM Integration', 'Data Management', 'API', 'Automation', 'Recruitment Tech']
 canonical: '/blog/integrating-ai-with-recruitment-crms'
+featured_image: '/images/blog/integrating-ai-with-recruitment-crms.jpg'
 ---
 
 For many UK recruitment agencies, the CRM (Customer Relationship Management) or ATS (Applicant Tracking System) is a "data graveyard"—a place where candidate information goes to be forgotten because it's too difficult to keep updated.

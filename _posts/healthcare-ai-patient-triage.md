@@ -6,6 +6,7 @@ keywords: 'healthcare AI UK, patient triage automation, secure medical chatbots,
 category: 'Industry'
 tags: ['Healthcare', 'Patient Care', 'Security', 'AI', 'UK']
 canonical: '/blog/healthcare-ai-patient-triage'
+featured_image: '/images/blog/healthcare-ai-patient-triage.jpg'
 ---
 
 The UK healthcare sector is under unprecedented pressure. Managing patient enquiries, appointment scheduling, and initial triage requires a system that is both efficient and impeccably secure.

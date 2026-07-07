@@ -6,6 +6,7 @@ keywords: 'interview scheduling automation, recruitment AI scheduling, automated
 category: 'Recruitment'
 tags: ['Scheduling', 'Interviewing', 'Automation', 'Efficiency', 'Recruitment Tech']
 canonical: '/blog/automating-interview-scheduling-for-recruiters'
+featured_image: '/images/blog/automating-interview-scheduling-for-recruiters.jpg'
 ---
 
 Ask any UK recruiter what their least favorite task is, and "interview scheduling" will be near the top of the list. The endless back-and-forth between a candidate's diary and a client's calendar is a massive drain on productivity and a frequent cause of "candidate cooling" as momentum dies during the delay.

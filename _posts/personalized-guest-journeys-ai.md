@@ -6,6 +6,7 @@ keywords: 'hospitality personalization, AI guest journey, personalized hotel sta
 category: 'Strategy'
 tags: ['Hospitality', 'Personalization', 'AI', 'Guest Journey', 'Marketing']
 canonical: '/blog/personalized-guest-journeys-ai'
+featured_image: '/images/blog/personalized-guest-journeys-ai.jpg'
 ---
 
 In 2026, guests no longer want "standard" service. They want service that is built specifically for them. The era of generic hospitality is over, replaced by **Hyper-Personalization**—the ability to use AI to tailor every touchpoint of the guest journey to the individual's needs, preferences, and context.

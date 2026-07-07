@@ -6,6 +6,7 @@ keywords: 'scaling boutique agencies, agency automation AI, AI for marketing age
 category: 'Business'
 tags: ['Agencies', 'Scalability', 'Automation', 'Operations', 'Profitability']
 canonical: '/blog/scaling-boutique-agencies-with-ai'
+featured_image: '/images/blog/scaling-boutique-agencies-with-ai.jpg'
 ---
 
 Boutique agencies are defined by their expertise and their intimacy. Clients choose you because they want *your* specific vision, not a nameless account manager. However, this creates a scaling ceiling: you can only grow by hiring more people, which increases overhead, dilutes your culture, and often lowers your margins.

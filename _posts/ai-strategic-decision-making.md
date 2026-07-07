@@ -6,6 +6,7 @@ keywords: 'strategic decision making, executive AI, predictive modeling, busines
 category: 'Leadership'
 tags: ['Leadership', 'Strategy', 'Decision Making', 'Predictive Analytics']
 canonical: '/blog/ai-strategic-decision-making'
+featured_image: '/images/blog/ai-strategic-decision-making.jpg'
 ---
 
 Strategic decision-making has traditionally been a mix of data, experience, and gut feeling. However, in an increasingly complex global market, "gut feeling" is no longer enough. The "Intelligent Executive" leverages AI to augment their intuition with predictive power and deep scenario modeling.
@@ -38,3 +39,11 @@ AI helps with business strategy by providing predictive insights and advanced sc
 
 ### Will AI replace executive decision-making?
 No, AI will not replace executive decision-making. Instead, it acts as a powerful augmentation tool. While AI excels at processing data and identifying patterns, human leaders are still essential for setting vision, managing culture, making ethical judgments, and applying creative intuition to complex problems.
+
+---
+
+## Start Automating Your Customer Conversations
+
+ReplyBase gives UK businesses a 24/7 AI assistant across WhatsApp, Facebook Messenger, and webchat — capturing leads, booking appointments, and answering enquiries automatically.
+
+[Start Your Free 14-Day Trial](https://app.replybase.co.uk/auth/register?plan=launch&source=blog_cta) | [See How It Works](/docs/get-started)

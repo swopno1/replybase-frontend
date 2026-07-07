@@ -6,6 +6,7 @@ keywords: 'Instagram DM automation, Instagram sales bot, automate Instagram lead
 category: 'Social Media'
 tags: ['Instagram', 'Automation', 'Lead Generation', 'Sales']
 canonical: '/blog/instagram-dm-automation-guide'
+featured_image: '/images/blog/instagram-dm-automation-guide.jpg'
 ---
 
 For many modern brands, Instagram is the top of the funnel. But for most founders, the DM inbox is a "black hole" where high-intent leads go to die. Managing hundreds of messages manually is impossible, and "Link in Bio" strategies often see high drop-off rates.

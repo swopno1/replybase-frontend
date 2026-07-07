@@ -6,6 +6,7 @@ keywords: 'conversational sales funnel, social media sales, DM sales funnel, Rep
 category: 'Design'
 tags: ['Design', 'Sales', 'Social Media', 'Conversion', 'AI']
 canonical: '/blog/conversational-sales-funnels-social'
+featured_image: '/images/blog/conversational-sales-funnels-social.jpg'
 ---
 
 The traditional sales funnel—Ad > Landing Page > Lead Form > Sales Call—is dying on social media. It's too slow, has too many steps, and feels like "work" for the user.

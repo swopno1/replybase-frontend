@@ -6,6 +6,7 @@ keywords: 'AI integrations, marketing stack, ReplyBase API, CRM sync, Zapier aut
 category: 'Integrations'
 tags: ['Integrations', 'MarTech', 'API', 'Automation']
 canonical: '/blog/integrating-replybase-with-your-marketing-stack'
+featured_image: '/images/blog/integrating-replybase-with-your-marketing-stack.jpg'
 ---
 
 An AI lead generation tool should never exist in a vacuum. To unlock its full potential, it must be the central hub of your marketing ecosystem—connected to your CRM, your email marketing platform, and your analytics suite.

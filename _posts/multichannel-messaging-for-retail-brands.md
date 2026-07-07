@@ -6,6 +6,7 @@ keywords: 'multichannel retail strategy, omnichannel AI messaging, retail growth
 category: 'E-commerce'
 tags: ['Multichannel', 'Retail Strategy', 'AI Automation', 'Omnichannel', 'Customer Comms']
 canonical: '/blog/multichannel-messaging-for-retail-brands'
+featured_image: '/images/blog/multichannel-messaging-for-retail-brands.jpg'
 ---
 
 Your customers are everywhere. They're scrolling on Instagram, browsing your mobile site, and chatting with friends on WhatsApp. For high-growth retail brands, the challenge is being present and consistent across all these channels.

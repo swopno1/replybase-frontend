@@ -6,6 +6,7 @@ keywords: 'SaaS onboarding, user activation, WhatsApp for SaaS, reduce churn, AI
 category: 'SaaS'
 tags: ['SaaS', 'Onboarding', 'WhatsApp', 'AI', 'Growth']
 canonical: '/blog/saas-onboarding-whatsapp-ai'
+featured_image: '/images/blog/saas-onboarding-whatsapp-ai.jpg'
 ---
 
 # SaaS User Activation: Using WhatsApp AI to Reduce Churn and Boost Onboarding

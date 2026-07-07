@@ -6,6 +6,7 @@ keywords: 'AI for medical admin, private practice automation, medical office AI,
 category: 'Operational Efficiency'
 tags: ['Medical Admin', 'AI Agents', 'Healthcare', 'Business Growth', 'UK']
 canonical: '/blog/reducing-clinic-admin-with-ai-agents'
+featured_image: '/images/blog/reducing-clinic-admin-with-ai-agents.jpg'
 ---
 
 The "administrative tax" on private medical practices is higher than ever. Managing insurance queries, processing payments, coordinating with specialists, and handling patient communications can take up more time than actual clinical work.

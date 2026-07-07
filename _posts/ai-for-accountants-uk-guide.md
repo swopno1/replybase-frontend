@@ -6,6 +6,7 @@ keywords: 'AI for accountants UK, accounting firm automation, automated client s
 category: 'Industry'
 tags: ['Accounting', 'Automation', 'UK Business', 'Client Experience']
 canonical: '/blog/ai-for-accountants-uk-guide'
+featured_image: '/images/blog/ai-for-accountants-uk-guide.jpg'
 ---
 
 For UK accounting firms, the transition from "traditional" to "digital" is no longer optional. With MTD (Making Tax Digital) and increasing client expectations for real-time responsiveness, firms are facing a choice: scale their headcount or scale their intelligence.

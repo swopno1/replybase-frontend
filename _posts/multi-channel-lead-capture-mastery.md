@@ -6,6 +6,7 @@ keywords: 'multi-channel lead generation, WhatsApp lead capture, Telegram automa
 category: 'Marketing'
 tags: ['WhatsApp', 'Telegram', 'Omnichannel', 'Lead Gen']
 canonical: '/blog/multi-channel-lead-capture-mastery'
+featured_image: '/images/blog/multi-channel-lead-capture-mastery.jpg'
 ---
 
 In the modern digital landscape, your potential customers aren't just on your website. They are on WhatsApp, Telegram, and social media. If your lead generation strategy is limited to a web-based contact form, you are missing out on a massive segment of your market.

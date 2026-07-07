@@ -6,6 +6,7 @@ keywords: 'lead capture, conversational AI, web forms, conversion rate optimizat
 category: 'Technology'
 tags: ['AI', 'Lead Capture', 'UX', 'ReplyBase']
 canonical: '/blog/evolution-of-lead-capture-ai'
+featured_image: '/images/blog/evolution-of-lead-capture-ai.jpg'
 ---
 
 For decades, the static web form has been the gatekeeper of the internet. However, as user expectations evolve and attention spans shorten, these rigid "fill-in-the-box" interfaces are increasingly becoming a point of friction rather than a bridge to connection.

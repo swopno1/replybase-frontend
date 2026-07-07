@@ -6,6 +6,7 @@ keywords: 'revenue attribution AI, omnichannel marketing, RevOps analytics, sale
 category: 'Analytics'
 tags: ['Attribution', 'RevOps', 'ROI', 'Omnichannel', 'AI']
 canonical: '/blog/omnichannel-revenue-attribution-ai'
+featured_image: '/images/blog/omnichannel-revenue-attribution-ai.jpg'
 ---
 
 One of the biggest challenges in modern RevOps is "dark social" and fragmented communication. If a lead starts on an Instagram DM, moves to WhatsApp for a consultation, and finally closes on a webchat, which channel gets the credit? Without AI-driven attribution, you're making investment decisions based on incomplete data.

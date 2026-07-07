@@ -6,6 +6,7 @@ keywords: 'WhatsApp recruitment, candidate screening automation, AI for talent s
 category: 'Recruitment'
 tags: ['WhatsApp', 'Candidate Screening', 'Automation', 'Talent Sourcing', 'Recruitment Tech']
 canonical: '/blog/automating-candidate-screening-whatsapp'
+featured_image: '/images/blog/automating-candidate-screening-whatsapp.jpg'
 ---
 
 For UK recruiters, the initial screening call is both essential and incredibly time-consuming. Repeating the same questions about salary expectations, notice periods, and right-to-work status hundreds of times a week is an inefficient use of a consultant's time.

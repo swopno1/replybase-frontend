@@ -6,6 +6,7 @@ keywords: 'local business AI, automation for local shops, small business growth,
 category: 'Local'
 tags: ['Local Business', 'Automation', 'Strategy', 'Opportunity']
 canonical: '/blog/local-business-automation-opportunities.md'
+featured_image: '/images/blog/local-business-automation-opportunities.jpg'
 ---
 
 The local shop on the corner, the neighborhood law firm, and the regional service provider are all standing on the edge of a major opportunity. While "local" has always meant personal, it has also meant "limited by hours." AI allows local businesses to keep their personal touch while removing the traditional limits of time and geography.

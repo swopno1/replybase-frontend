@@ -6,6 +6,7 @@ keywords: 'AI hotel concierge, digital concierge, hotel automation, guest experi
 category: 'Industry'
 tags: ['Hospitality', 'Hotels', 'AI', 'Concierge', 'Guest Experience']
 canonical: '/blog/hospitality-ai-concierge-guide'
+featured_image: '/images/blog/hospitality-ai-concierge-guide.jpg'
 ---
 
 In the luxury hospitality sector, the concierge has always been the symbol of personalized service. In 2026, that service is being scaled and enhanced by the "AI Concierge"—a digital assistant that provides the same level of expertise and responsiveness to every guest, 24/7.

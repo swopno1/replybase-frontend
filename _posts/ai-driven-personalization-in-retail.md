@@ -6,6 +6,7 @@ keywords: 'e-commerce personalization AI, conversational shopping, AI product re
 category: 'E-commerce'
 tags: ['Personalization', 'Customer Journey', 'AI Automation', 'Retail', 'Experience Design']
 canonical: '/blog/ai-driven-personalization-in-retail'
+featured_image: '/images/blog/ai-driven-personalization-in-retail.jpg'
 ---
 
 "Personalization" has long been the holy grail of e-commerce, but for most brands, it's been limited to basic email tags and "Recommended for you" grids.

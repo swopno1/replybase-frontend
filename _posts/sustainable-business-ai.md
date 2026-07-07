@@ -6,6 +6,7 @@ keywords: 'sustainable business, AI sustainability, green tech, ESG AI, resource
 category: 'Sustainability'
 tags: ['Sustainability', 'ESG', 'Efficiency', 'Green Tech']
 canonical: '/blog/sustainable-business-ai'
+featured_image: '/images/blog/sustainable-business-ai.jpg'
 ---
 
 Sustainability and profitability are often seen as being at odds. AI is bridging this gap by proving that efficiency is the fastest path to both. "Green Intelligence" leverages AI to optimize every aspect of a business's environmental footprint while simultaneously reducing costs.
@@ -38,3 +39,11 @@ AI contributes to business sustainability by optimizing resource use and reducin
 
 ### Can AI help with ESG reporting?
 Yes, AI can significantly streamline ESG reporting. It can automate the collection and analysis of data across an entire organization and its supply chain, providing accurate, real-time insights into carbon footprints, waste management, and social impact, ensuring compliance with evolving global regulations.
+
+---
+
+## Start Automating Your Customer Conversations
+
+ReplyBase gives UK businesses a 24/7 AI assistant across WhatsApp, Facebook Messenger, and webchat — capturing leads, booking appointments, and answering enquiries automatically.
+
+[Start Your Free 14-Day Trial](https://app.replybase.co.uk/auth/register?plan=launch&source=blog_cta) | [See How It Works](/docs/get-started)

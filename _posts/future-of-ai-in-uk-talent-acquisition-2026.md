@@ -6,6 +6,7 @@ keywords: 'future of recruitment AI, UK talent trends 2026, autonomous sourcing,
 category: 'Recruitment'
 tags: ['Future of Work', 'Talent Acquisition', 'AI Trends', 'Strategy', 'Recruitment']
 canonical: '/blog/future-of-ai-in-uk-talent-acquisition-2026'
+featured_image: '/images/blog/future-of-ai-in-uk-talent-acquisition-2026.jpg'
 ---
 
 The transformation of the UK recruitment industry that began in 2024 has reached its peak in 2026. What was once seen as "experimental tech" is now the backbone of every successful agency and internal talent team.

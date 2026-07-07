@@ -6,6 +6,7 @@ keywords: 'AI for real estate, property lead automation, real estate chatbot UK,
 category: 'Industry'
 tags: ['Real Estate', 'AI Automation', 'PropTech', 'UK Business', 'Lead Capture']
 canonical: '/blog/ai-automation-real-estate-uk'
+featured_image: '/images/blog/ai-automation-real-estate-uk.jpg'
 ---
 
 The UK real estate market is notoriously fast-paced. Whether it’s a high-demand rental in London or a commercial property in Manchester, the speed of response often determines who wins the instruction or closes the sale.

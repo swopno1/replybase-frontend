@@ -6,6 +6,7 @@ keywords: 'landlord maintenance automation, AI for property management, property
 category: 'Industry'
 tags: ['Property Management', 'Landlords', 'AI Automation', 'Maintenance', 'UK Business']
 canonical: '/blog/ai-driven-maintenance-scheduling-for-landlords'
+featured_image: '/images/blog/ai-driven-maintenance-scheduling-for-landlords.jpg'
 ---
 
 For landlords and property managers in the UK, "maintenance" is often synonymous with "interruption." A leaking tap at 11 PM or a broken boiler on a Sunday morning usually results in a flurry of stressful messages between the tenant, the landlord, and the contractor.

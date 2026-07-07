@@ -6,6 +6,7 @@ keywords: 'automated returns AI, e-commerce exchanges, AI return triage, Shopify
 category: 'E-commerce'
 tags: ['Returns', 'Operations', 'AI Automation', 'Customer Loyalty', 'Logistics']
 canonical: '/blog/automating-returns-and-exchanges-with-ai'
+featured_image: '/images/blog/automating-returns-and-exchanges-with-ai.jpg'
 ---
 
 Returns are the "silent killer" of e-commerce margins. For many UK retailers, the administrative cost of processing a return—answering emails, verifying eligibility, and coordinating logistics—can often exceed the value of the item itself.

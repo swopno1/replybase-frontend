@@ -6,6 +6,7 @@ keywords: 'Shopify AI automation, e-commerce customer support AI, WhatsApp for e
 category: 'Industry'
 tags: ['E-commerce', 'Shopify', 'AI Automation', 'Customer Support', 'UK Retail']
 canonical: '/blog/ai-ecommerce-support-automation-guide'
+featured_image: '/images/blog/ai-ecommerce-support-automation-guide.jpg'
 ---
 
 For e-commerce founders, growth is a double-edged sword. As your Shopify store scales, so does the volume of "Where is my order?" (WISMO) tickets, return requests, and product inquiries.

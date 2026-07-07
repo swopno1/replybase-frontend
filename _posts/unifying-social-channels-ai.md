@@ -6,6 +6,7 @@ keywords: 'unify social media, multi-channel AI, ReplyBase dashboard, omnichanne
 category: 'Efficiency'
 tags: ['Omnichannel', 'AI', 'Productivity', 'Social Media', 'Business Systems']
 canonical: '/blog/unifying-social-channels-ai'
+featured_image: '/images/blog/unifying-social-channels-ai.jpg'
 ---
 
 As a business grows, so does its "digital footprint." You start with a website, then an Instagram, then a Facebook Page, and then a WhatsApp Business account. Suddenly, your team is juggling four different apps just to answer one customer's questions.

@@ -6,6 +6,7 @@ keywords: 'AI for trade services, UK trade automation, property maintenance AI, 
 category: 'Industry'
 tags: ['Trade Services', 'AI Automation', 'UK Business', 'Lead Generation', 'Operations']
 canonical: '/blog/ai-for-uk-trade-services-guide'
+featured_image: '/images/blog/ai-for-uk-trade-services-guide.jpg'
 ---
 
 For UK tradespeople, the "office" is often a van, and the "admin team" is frequently the business owner working late into the night. Whether you are a solo plumber in London or a growing construction firm in Birmingham, the challenge is the same: you can't be on the tools and on the phone at the same time.

@@ -6,6 +6,7 @@ keywords: 'customer retention, WhatsApp loyalty, customer lifetime value, LTV op
 category: 'Retention'
 tags: ['Retention', 'LTV', 'WhatsApp', 'Customer Success', 'Automation']
 canonical: '/blog/whatsapp-customer-retention-strategies'
+featured_image: '/images/blog/whatsapp-customer-retention-strategies.jpg'
 ---
 
 # The Retention Engine: Boosting Customer LTV with WhatsApp Automation

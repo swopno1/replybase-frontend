@@ -6,6 +6,7 @@ keywords: 'automated client onboarding, AI onboarding workflow, client experienc
 category: 'Workflow'
 tags: ['Onboarding', 'Customer Experience', 'Automation', 'SaaS', 'Professional Services']
 canonical: '/blog/automating-client-onboarding-ai'
+featured_image: '/images/blog/automating-client-onboarding-ai.jpg'
 ---
 
 In the world of professional services and SaaS, the "Onboarding Gap" is where client relationships go to die. It's that awkward period after a client has paid, but before they've seen value—often filled with manual forms, missing documents, and slow email replies.

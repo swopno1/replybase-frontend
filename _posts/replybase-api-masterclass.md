@@ -6,6 +6,7 @@ keywords: 'ReplyBase API, custom AI integrations, API documentation, developer g
 category: 'Technical'
 tags: ['API', 'Developers', 'Automation', 'Customization', 'AI']
 canonical: '/blog/replybase-api-masterclass'
+featured_image: '/images/blog/replybase-api-masterclass.jpg'
 ---
 
 While our visual flow builder is powerful, some business requirements demand a deeper level of integration. For technical founders and developers, the ReplyBase API is the key to unlocking unlimited possibilities in AI automation.

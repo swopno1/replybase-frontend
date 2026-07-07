@@ -6,6 +6,7 @@ keywords: 'hotel ROI, AI automation hospitality, hospitality cost reduction, anc
 category: 'Strategy'
 tags: ['Hospitality', 'ROI', 'Automation', 'Profitability', 'Business']
 canonical: '/blog/improving-hotel-roi-with-ai'
+featured_image: '/images/blog/improving-hotel-roi-with-ai.jpg'
 ---
 
 In an industry with tight margins and rising labor costs, "efficiency" is no longer just a buzzword—it's a financial necessity. For hotel owners and operators in 2026, AI automation has moved from a "nice-to-have" innovation to a primary driver of Return on Investment (ROI).

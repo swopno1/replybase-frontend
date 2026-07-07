@@ -6,6 +6,7 @@ keywords: 'AI for physiotherapy, physio chatbot, injury triage automation, Reply
 category: 'Industry'
 tags: ['Physiotherapy', 'Healthcare', 'Triage', 'Automation', 'UK']
 canonical: '/blog/ai-driven-triage-for-physiotherapy'
+featured_image: '/images/blog/ai-driven-triage-for-physiotherapy.jpg'
 ---
 
 Physiotherapy is a highly consultative profession. Patients often reach out with specific symptoms, asking if a physiotherapist can help with their particular injury or pain. Managing these detailed enquiries while running a busy clinic can be a significant administrative challenge.

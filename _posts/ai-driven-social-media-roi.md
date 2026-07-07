@@ -6,6 +6,7 @@ keywords: 'social media AI ROI, calculate AI value, business impact of AI, Reply
 category: 'Analysis'
 tags: ['ROI', 'Data', 'Analysis', 'Business Impact', 'AI']
 canonical: '/blog/ai-driven-social-media-roi'
+featured_image: '/images/blog/ai-driven-social-media-roi.jpg'
 ---
 
 For years, social media ROI has been a "fuzzy" metric—likes, shares, and impressions. But in the era of AI automation, we can finally move beyond vanity metrics and look at the real impact on the bottom line.

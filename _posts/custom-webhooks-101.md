@@ -6,6 +6,7 @@ keywords: 'webhooks 101, custom webhooks, ReplyBase automation, developer webhoo
 category: 'Technical'
 tags: ['Webhooks', 'Developers', 'Automation', 'Customization', 'AI']
 canonical: '/blog/custom-webhooks-101'
+featured_image: '/images/blog/custom-webhooks-101.jpg'
 ---
 
 Webhooks are the "glue" of the modern web. For developers looking to integrate ReplyBase deeply into their existing technology stack, understanding and utilizing custom webhooks is essential.

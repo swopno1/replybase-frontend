@@ -6,6 +6,7 @@ keywords: 'event booking automation, venue management AI, automated event enquir
 category: 'Industry'
 tags: ['Hospitality', 'Events', 'Automation', 'AI', 'Booking']
 canonical: '/blog/automating-event-bookings-ai'
+featured_image: '/images/blog/automating-event-bookings-ai.jpg'
 ---
 
 For event venues and planners, the journey from "enquiry" to "confirmed booking" is often long and fraught with manual back-and-forth. In 2026, AI-native automation is collapsing this timeline, allowing venues to scale their booking capacity without increasing administrative staff.

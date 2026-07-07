@@ -6,6 +6,7 @@ keywords: 'reduce cart abandonment AI, conversational recovery, e-commerce reven
 category: 'E-commerce'
 tags: ['Cart Abandonment', 'Revenue Recovery', 'AI Automation', 'E-commerce', 'Conversational AI']
 canonical: '/blog/reducing-cart-abandonment-with-conversational-ai'
+featured_image: '/images/blog/reducing-cart-abandonment-with-conversational-ai.jpg'
 ---
 
 Abandoned carts are the biggest "what if" in e-commerce. You've spent the money to acquire the lead, they've found the product, and then... they vanish.

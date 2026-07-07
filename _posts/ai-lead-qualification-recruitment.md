@@ -6,6 +6,7 @@ keywords: 'recruitment AI, talent sourcing automation, WhatsApp recruitment, lea
 category: 'Industry'
 tags: ['Recruitment', 'Talent Sourcing', 'WhatsApp', 'AI', 'HR Tech']
 canonical: '/blog/ai-lead-qualification-recruitment'
+featured_image: '/images/blog/ai-lead-qualification-recruitment.jpg'
 ---
 
 The recruitment industry moves fast. In a competitive market, the speed at which you can identify and qualify a candidate often determines whether you close the placement.

@@ -6,6 +6,7 @@ keywords: 'SDR automation, AI sales development, RevOps scaling, lead qualificat
 category: 'Workflows'
 tags: ['Sales', 'SDR', 'RevOps', 'AI', 'Productivity']
 canonical: '/blog/scaling-sdr-capacity-with-ai'
+featured_image: '/images/blog/scaling-sdr-capacity-with-ai.jpg'
 ---
 
 For most startups, the "SDR bottleneck" is a primary barrier to growth. Hiring, training, and managing a team of Sales Development Representatives is expensive and slow. AI-driven RevOps is changing this by providing "Digital SDRs" that can handle 90% of the top-of-funnel work, allowing your human closers to focus entirely on high-value deals.

@@ -6,6 +6,7 @@ keywords: 'multichannel comms contractors, unified trade communication, WhatsApp
 category: 'Operations'
 tags: ['Communication', 'Operations', 'AI Automation', 'UK Trades', 'Multichannel']
 canonical: '/blog/multichannel-comms-for-uk-contractors'
+featured_image: '/images/blog/multichannel-comms-for-uk-contractors.jpg'
 ---
 
 As a contractor or project manager, you are the hub of a massive information web. Clients are messaging you on WhatsApp, sub-contractors are texting you site updates, and suppliers are emailing invoices. When your "Front Office" is just your personal phone, things get lost.

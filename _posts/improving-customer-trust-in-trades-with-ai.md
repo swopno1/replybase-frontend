@@ -6,6 +6,7 @@ keywords: 'customer trust in trades, professional trade services, AI communicati
 category: 'Strategy'
 tags: ['Trust', 'Customer Experience', 'AI Automation', 'UK Trades', 'Branding']
 canonical: '/blog/improving-customer-trust-in-trades-with-ai'
+featured_image: '/images/blog/improving-customer-trust-in-trades-with-ai.jpg'
 ---
 
 In the UK, the trade industry has a communication problem. We've all heard the stories: the builder who doesn't show up, the plumber who never sends the quote, or the electrician who stops answering their phone halfway through a job.

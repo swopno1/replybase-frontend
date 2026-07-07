@@ -6,6 +6,7 @@ keywords: 'healthcare AI compliance, GDPR for clinics, secure medical AI, ReplyB
 category: 'Security'
 tags: ['Security', 'Compliance', 'GDPR', 'Healthcare', 'UK']
 canonical: '/blog/hipaa-and-gdpr-compliant-ai-for-clinics'
+featured_image: '/images/blog/hipaa-and-gdpr-compliant-ai-for-clinics.jpg'
 ---
 
 In the healthcare sector, data privacy isn't just a best practice—it's a legal and ethical mandate. As AI agents become more integrated into patient workflows, understanding the compliance landscape is essential for any clinic owner or medical professional.

@@ -6,6 +6,7 @@ keywords: 'passive candidate engagement, recruitment AI nurture, talent pipeline
 category: 'Recruitment'
 tags: ['Passive Talent', 'Candidate Nurture', 'AI Automation', 'Pipeline Building', 'Sourcing']
 canonical: '/blog/ai-driven-passive-candidate-engagement'
+featured_image: '/images/blog/ai-driven-passive-candidate-engagement.jpg'
 ---
 
 In many sectors, the best talent isn't looking for a job. These "passive candidates" are currently employed, but might be open to the right opportunity if it's presented correctly. The challenge for UK recruiters is maintaining a relationship with hundreds of passive candidates without it becoming a full-time job.

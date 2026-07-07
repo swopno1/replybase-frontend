@@ -6,6 +6,7 @@ keywords: 'candidate experience, recruitment automation, instant replies, candid
 category: 'Recruitment'
 tags: ['Candidate Experience', 'Communication', 'AI Automation', 'Branding', 'Recruitment']
 canonical: '/blog/improving-candidate-experience-with-instant-replies'
+featured_image: '/images/blog/improving-candidate-experience-with-instant-replies.jpg'
 ---
 
 In the 2026 talent market, "ghosting" is a two-way street. While recruiters have long complained about candidates disappearing, the reality is that poor communication from agencies is the leading cause of candidate dropout.

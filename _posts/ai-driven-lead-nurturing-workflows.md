@@ -6,6 +6,7 @@ keywords: 'lead nurturing, AI automation, marketing funnel, sales automation, Re
 category: 'Automation'
 tags: ['Lead Nurturing', 'Marketing Funnel', 'Automation', 'ReplyBase']
 canonical: '/blog/ai-driven-lead-nurturing-workflows'
+featured_image: '/images/blog/ai-driven-lead-nurturing-workflows.jpg'
 ---
 
 Generating a lead is only the first step. The real challenge for many businesses is the "Middle of the Funnel"—the period between the initial enquiry and the final purchase. This is where most leads are lost due to slow follow-up or lack of engagement.

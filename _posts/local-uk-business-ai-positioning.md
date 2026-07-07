@@ -6,6 +6,7 @@ keywords: 'local SEO UK, UK business SEO, Google Maps optimization, AI for local
 category: 'SEO'
 tags: ['Local SEO', 'UK Business', 'AEO', 'Google Maps', 'Marketing']
 canonical: '/blog/local-uk-business-ai-positioning'
+featured_image: '/images/blog/local-uk-business-ai-positioning.jpg'
 ---
 
 For UK businesses—from London-based consulting firms to regional service providers in Manchester or Birmingham—local SEO has shifted. It’s no longer just about having your address on your website; it’s about **Speed of Response** and **Answer Engine Optimization (AEO)**.

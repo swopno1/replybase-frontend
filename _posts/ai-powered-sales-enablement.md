@@ -6,6 +6,7 @@ keywords: 'sales enablement, AI lead qualification, sales context, SDR automatio
 category: 'Sales'
 tags: ['Sales', 'Enablement', 'AI Tools', 'Strategy']
 canonical: '/blog/ai-powered-sales-enablement'
+featured_image: '/images/blog/ai-powered-sales-enablement.jpg'
 ---
 
 In many organizations, there is a disconnect between the marketing team that generates leads and the sales team that closes them. Sales reps often receive "cold" leads with very little context, forcing them to start the qualification process from scratch.

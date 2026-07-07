@@ -6,6 +6,7 @@ keywords: 'lead nurturing, CLV, customer lifetime value, automated follow-up, Re
 category: 'Automation'
 tags: ['Nurturing', 'CLV', 'Automation', 'ReplyBase']
 canonical: '/blog/automated-lead-nurturing-workflows'
+featured_image: '/images/blog/automated-lead-nurturing-workflows.jpg'
 ---
 
 Many businesses focus exclusively on the "top of the funnel"—the moment a lead is captured. However, the strategic impact of lead generation is truly realized in the weeks and months that follow. Automated lead nurturing is the process of building relationships with prospects at scale, ensuring your brand stays top-of-mind until they are ready to purchase.

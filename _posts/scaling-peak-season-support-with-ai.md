@@ -6,6 +6,7 @@ keywords: 'Black Friday AI support, peak season automation, e-commerce Q4 scalin
 category: 'E-commerce'
 tags: ['Black Friday', 'Peak Season', 'Scaling', 'AI Agents', 'Q4 Strategy']
 canonical: '/blog/scaling-peak-season-support-with-ai'
+featured_image: '/images/blog/scaling-peak-season-support-with-ai.jpg'
 ---
 
 For UK e-commerce brands, Q4 is everything. But the massive influx of traffic during Black Friday and the Christmas rush often comes with a crippling downside: a support backlog that takes weeks to clear.

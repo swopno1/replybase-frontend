@@ -6,6 +6,7 @@ keywords: 'Shopify AI support, e-commerce automation, Shopify chatbot, ReplyBase
 category: 'E-commerce'
 tags: ['Shopify', 'E-commerce', 'Automation', 'AI', 'Customer Support']
 canonical: '/blog/shopify-ai-support-automation'
+featured_image: '/images/blog/shopify-ai-support-automation.jpg'
 ---
 
 E-commerce is a 24/7 business, but your support team isn't. For Shopify merchants, the ability to provide instant, accurate support is a key differentiator that drives repeat purchases and reduces cart abandonment.

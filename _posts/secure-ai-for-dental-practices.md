@@ -6,6 +6,7 @@ keywords: 'AI for dental practices, dental chatbot, dentist automation UK, Reply
 category: 'Industry'
 tags: ['Dental', 'Healthcare', 'Automation', 'Patient Retention', 'UK']
 canonical: '/blog/secure-ai-for-dental-practices'
+featured_image: '/images/blog/secure-ai-for-dental-practices.jpg'
 ---
 
 Dental practices face a unique set of communication challenges. From managing urgent toothache enquiries to handling routine check-up bookings and cosmetic dentistry consultations, the volume of inbound messages can be overwhelming for a front-desk team.

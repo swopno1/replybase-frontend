@@ -6,6 +6,7 @@ keywords: 'local lead generation, UK business AI, service business marketing, au
 category: 'Local Business'
 tags: ['UK Business', 'Local Lead Gen', 'Service Industry', 'AI Strategy']
 canonical: '/blog/local-business-lead-gen-ai'
+featured_image: '/images/blog/local-business-lead-gen-ai.jpg'
 ---
 
 For local service businesses in the UK—be it a high-street solicitor, a boutique estate agency, or a specialized consultancy—the challenge of lead generation is often about availability. When a potential client searches for a service at 8:00 PM on a Sunday, the business that responds first usually wins the contract.

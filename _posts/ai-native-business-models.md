@@ -6,6 +6,7 @@ keywords: 'AI-native business, business architecture, AI strategy, digital trans
 category: 'Strategy'
 tags: ['AI Strategy', 'Business Models', 'Transformation', 'Innovation']
 canonical: '/blog/ai-native-business-models'
+featured_image: '/images/blog/ai-native-business-models.jpg'
 ---
 
 The transition from "Digital-First" to "AI-Native" marks the most significant architectural shift in business since the dawn of the internet. For UK founders and global enterprises alike, being AI-native isn't just about using AI tools; it's about rebuilding the core logic of the business around machine intelligence.

@@ -6,6 +6,7 @@ keywords: 'Facebook Messenger for business, Messenger AI bot, Facebook sales aut
 category: 'Social Media'
 tags: ['Facebook', 'Messenger', 'Automation', 'Growth', 'Customer Support']
 canonical: '/blog/facebook-messenger-ai-business-growth'
+featured_image: '/images/blog/facebook-messenger-ai-business-growth.jpg'
 ---
 
 With over a billion active users, Facebook Messenger remains one of the most effective channels for businesses to connect with their audience. However, the expectation for instant response on Facebook is higher than ever.

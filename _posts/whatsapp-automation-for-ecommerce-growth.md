@@ -6,6 +6,7 @@ keywords: 'WhatsApp e-commerce automation, WhatsApp AI chatbot, conversational c
 category: 'E-commerce'
 tags: ['WhatsApp', 'E-commerce', 'Automation', 'Engagement', 'Sales']
 canonical: '/blog/whatsapp-automation-for-ecommerce-growth'
+featured_image: '/images/blog/whatsapp-automation-for-ecommerce-growth.jpg'
 ---
 
 In the UK, WhatsApp isn't just a messaging app; it's where life happens. For e-commerce brands, it represents the most direct and high-engagement channel available.

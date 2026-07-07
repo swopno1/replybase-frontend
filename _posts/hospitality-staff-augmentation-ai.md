@@ -6,6 +6,7 @@ keywords: 'hospitality labour shortage, AI staff augmentation, hotel automation,
 category: 'Strategy'
 tags: ['Hospitality', 'Labour', 'Automation', 'AI', 'Business']
 canonical: '/blog/hospitality-staff-augmentation-ai'
+featured_image: '/images/blog/hospitality-staff-augmentation-ai.jpg'
 ---
 
 The hospitality industry in 2026 continues to face a significant challenge: a chronic shortage of skilled labour. From front-desk managers to concierge staff, finding and retaining talent is harder than ever. AI automation is no longer just a way to save money; it is a critical strategy for maintaining service standards in the face of a reduced workforce.

@@ -6,6 +6,7 @@ keywords: 'expansion revenue AI, upsell automation, LTV growth, RevOps strategy,
 category: 'Strategy'
 tags: ['Revenue', 'Expansion', 'RevOps', 'AI', 'LTV']
 canonical: '/blog/automated-expansion-revenue-strategies'
+featured_image: '/images/blog/automated-expansion-revenue-strategies.jpg'
 ---
 
 True SaaS growth doesn't just come from new logos—it comes from the expansion of existing accounts. In many organizations, expansion is a manual, reactive process. AI-driven RevOps is turning this on its head by using conversational intelligence to identify "expansion intent" and automate the upsell journey.

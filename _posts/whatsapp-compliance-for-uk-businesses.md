@@ -6,6 +6,7 @@ keywords: 'WhatsApp compliance UK, WhatsApp Business API rules, GDPR WhatsApp bu
 category: 'Compliance'
 tags: ['WhatsApp', 'Security', 'GDPR', 'UK Business', 'Legal']
 canonical: '/blog/whatsapp-compliance-for-uk-businesses'
+featured_image: '/images/blog/whatsapp-compliance-for-uk-businesses.jpg'
 ---
 
 For UK businesses, WhatsApp is no longer just an "informal" chat app; it is a critical sales and support channel. However, moving from manual messaging to professional AI automation requires a deep understanding of compliance—both from WhatsApp’s own terms and from UK legal frameworks like GDPR.

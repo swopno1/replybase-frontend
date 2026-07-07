@@ -6,6 +6,7 @@ keywords: 'multichannel lead gen, omnichannel marketing, AI lead capture, WhatsA
 category: 'Automation'
 tags: ['Multichannel', 'Lead Gen', 'AI Strategy', 'ReplyBase']
 canonical: '/blog/multichannel-lead-gen-engine'
+featured_image: '/images/blog/multichannel-lead-gen-engine.jpg'
 ---
 
 The days of relying on a single traffic source or capture method are over. Today's buyers jump between devices and platforms, expecting a consistent and frictionless experience at every touchpoint. To compete, businesses must build a multichannel lead generation engine that can capture intent wherever it appears.

@@ -6,6 +6,7 @@ keywords: 'AI appointment booking, medical scheduling automation, clinic booking
 category: 'Operational Efficiency'
 tags: ['Booking Automation', 'Healthcare', 'Customer Experience', 'SaaS', 'UK']
 canonical: '/blog/automating-patient-booking-with-ai'
+featured_image: '/images/blog/automating-patient-booking-with-ai.jpg'
 ---
 
 For many private clinics, the process of booking an appointment is still surprisingly manual. Phone lines are often busy, emails go back and forth for days, and staff spend hours managing cancellations and rescheduling. This friction doesn't just frustrate patients—it costs clinics money.

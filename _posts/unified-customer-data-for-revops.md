@@ -6,6 +6,7 @@ keywords: 'unified customer data, RevOps data stack, CRM integration, data silos
 category: 'Workflows'
 tags: ['Data', 'RevOps', 'CRM', 'Integration', 'Automation']
 canonical: '/blog/unified-customer-data-for-revops'
+featured_image: '/images/blog/unified-customer-data-for-revops.jpg'
 ---
 
 Data silos are the enemy of growth. When your marketing team is looking at one set of numbers, your sales team is working from another, and your customer success team is flying blind, revenue inevitably leaks out of the gaps. Revenue Operations (RevOps) exists to fix this, and unified customer data is the foundation.

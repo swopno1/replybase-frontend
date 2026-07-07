@@ -6,6 +6,7 @@ keywords: 'scaling construction business, construction AI agents, project manage
 category: 'Strategy'
 tags: ['Construction', 'Scaling', 'AI Agents', 'UK Business', 'Project Management']
 canonical: '/blog/scaling-a-construction-firm-with-ai-agents'
+featured_image: '/images/blog/scaling-a-construction-firm-with-ai-agents.jpg'
 ---
 
 Scaling a construction firm or a large contracting business is famously difficult. As you take on more projects, the administrative complexity doesn't just grow—it explodes. You need to manage sub-contractors, qualify massive volumes of inquiries, and keep clients updated across multiple sites.

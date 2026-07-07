@@ -6,6 +6,7 @@ keywords: 'emergency call-out automation, AI triage for trades, 24/7 trade suppo
 category: 'Operations'
 tags: ['Emergency Services', 'Triage', 'AI Automation', 'UK Trades', 'Operations']
 canonical: '/blog/automating-emergency-call-outs-with-ai'
+featured_image: '/images/blog/automating-emergency-call-outs-with-ai.jpg'
 ---
 
 For property maintenance companies, locksmiths, and drainage specialists, the "Emergency Call-Out" is the highest-value—and highest-stress—part of the business. These jobs usually come in when you are asleep, at dinner, or already on another site.

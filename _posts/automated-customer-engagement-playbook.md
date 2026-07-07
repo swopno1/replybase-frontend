@@ -6,6 +6,7 @@ keywords: 'customer engagement playbook, proactive AI, social media engagement, 
 category: 'Playbook'
 tags: ['Engagement', 'Automation', 'Strategy', 'WhatsApp', 'Social Media']
 canonical: '/blog/automated-customer-engagement-playbook'
+featured_image: '/images/blog/automated-customer-engagement-playbook.jpg'
 ---
 
 Most businesses treat customer engagement as a "reactive" process. A customer asks a question, and the business replies. In 2026, the most successful brands are those that use **proactive AI automation** to initiate high-value conversations.

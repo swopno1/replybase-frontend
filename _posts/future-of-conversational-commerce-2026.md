@@ -6,6 +6,7 @@ keywords: 'future of commerce, conversational AI trends 2026, WhatsApp commerce,
 category: 'Strategy'
 tags: ['Trends', 'Future', 'AI', 'Commerce', 'Strategy']
 canonical: '/blog/future-of-conversational-commerce-2026'
+featured_image: '/images/blog/future-of-conversational-commerce-2026.jpg'
 ---
 
 # The Future of Conversational Commerce: 2026 Trends and Predictions

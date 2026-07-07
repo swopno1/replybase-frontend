@@ -6,6 +6,7 @@ keywords: 'lead-to-revenue automation, lead lifecycle, AI sales funnel, RevOps a
 category: 'Workflows'
 tags: ['Automation', 'Lead Gen', 'RevOps', 'Sales', 'Workflows']
 canonical: '/blog/automating-lead-to-revenue-lifecycle'
+featured_image: '/images/blog/automating-lead-to-revenue-lifecycle.jpg'
 ---
 
 The biggest threat to SaaS growth isn't a lack of leads; it's the "dead zone" between marketing capture and sales closing. When a lead sits in a CRM for hours waiting for a human to follow up, the conversion probability drops exponentially.
