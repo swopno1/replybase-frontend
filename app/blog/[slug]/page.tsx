@@ -46,6 +46,10 @@ async function getPostData(slug: string) {
       title: string;
       date: string;
       excerpt?: string;
+      keywords?: string;
+      category?: string;
+      tags?: string[];
+      featured_image?: string;
     }),
   };
 }
@@ -60,9 +64,16 @@ export async function generateMetadata({
   if (!postData) {
     return { title: "Post Not Found" };
   }
+
+  const ogImage = postData.featured_image
+    ? `https://replybase.co.uk${postData.featured_image}`
+    : "https://replybase.co.uk/opengraph-image.png";
+
   return {
     title: postData.title,
     description: postData.excerpt,
+    keywords: postData.keywords,
+    authors: [{ name: "Shaun", url: "https://replybase.co.uk/about" }],
     alternates: {
       canonical: `/blog/${slug}`,
     },
@@ -72,6 +83,15 @@ export async function generateMetadata({
       url: `https://replybase.co.uk/blog/${slug}`,
       type: "article",
       publishedTime: postData.date,
+      authors: ["https://replybase.co.uk/about"],
+      tags: postData.tags,
+      images: [{ url: ogImage, width: 1200, height: 630, alt: postData.title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: postData.title,
+      description: postData.excerpt,
+      images: [ogImage],
     },
   };
 }
@@ -99,19 +119,26 @@ export default async function BlogPostPage({
             headline: postData.title,
             description: postData.excerpt,
             datePublished: postData.date,
+            dateModified: postData.date,
             url: `https://replybase.co.uk/blog/${slug}`,
+            image: postData.featured_image
+              ? `https://replybase.co.uk${postData.featured_image}`
+              : "https://replybase.co.uk/opengraph-image.png",
+            keywords: postData.keywords,
+            articleSection: postData.category,
             publisher: {
               "@type": "Organization",
               name: "ReplyBase",
+              url: "https://replybase.co.uk",
               logo: {
                 "@type": "ImageObject",
                 url: "https://replybase.co.uk/icon.png",
               },
             },
             author: {
-              "@type": "Organization",
-              name: "ReplyBase",
-              url: "https://replybase.co.uk",
+              "@type": "Person",
+              name: "Shaun",
+              url: "https://replybase.co.uk/about",
             },
           }),
         }}
@@ -131,16 +158,21 @@ export default async function BlogPostPage({
           <h1 className="text-4xl md:text-5xl font-extrabold text-white leading-tight tracking-tight max-w-4xl">
             {postData.title}
           </h1>
-          <div className="mt-6 flex items-center gap-4 text-slate-400">
-             <time dateTime={postData.date} className="font-medium">
-              {new Date(postData.date).toLocaleDateString("en-US", {
+          <div className="mt-6 flex flex-wrap items-center gap-3 text-slate-400 text-sm">
+            {postData.category && (
+              <span className="bg-indigo-600/20 text-indigo-300 border border-indigo-500/30 px-3 py-1 rounded-full font-medium text-xs">
+                {postData.category}
+              </span>
+            )}
+            <time dateTime={postData.date} className="font-medium">
+              {new Date(postData.date).toLocaleDateString("en-GB", {
                 year: "numeric",
                 month: "long",
                 day: "numeric",
               })}
             </time>
-            <span>•</span>
-            <span className="text-indigo-400 font-semibold">ReplyBase Team</span>
+            <span>·</span>
+            <span className="text-white font-semibold">Shaun, ReplyBase</span>
           </div>
         </div>
       </div>
@@ -152,8 +184,8 @@ export default async function BlogPostPage({
 
         <div className="max-w-prose mx-auto mt-20 pt-10 border-t border-slate-800">
            <div className="bg-slate-800/40 rounded-2xl p-8 border border-slate-700 text-center">
-              <h3 className="text-2xl font-bold text-white mb-4">Ready to automate your support?</h3>
-              <p className="text-slate-400 mb-8">Join the hundreds of UK founders scaling their businesses with ReplyBase.</p>
+              <h3 className="text-2xl font-bold text-white mb-4">Ready to stop missing enquiries?</h3>
+              <p className="text-slate-400 mb-8">Start your free 14-day trial. No card required. Set up in minutes.</p>
               <div className="flex flex-col sm:flex-row justify-center gap-4">
                 <Link href="https://app.replybase.co.uk/auth/claim?plan=launch&source=blog_cta" className="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-8 py-3 rounded-lg transition-all">
                   Start Free Trial

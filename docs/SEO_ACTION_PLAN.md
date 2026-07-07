@@ -29,6 +29,37 @@
 20. [x] Deploy "AI for Education & Training Mastery" 10-part educational series. (Completed July 03, 2026)
 
 ## Technical Tasks
-1. [ ] Check sitemap.xml validity in Google Search Console. (Assigned T043)
+1. [x] Check sitemap.xml validity in Google Search Console. (July 2026 — sitemap walker bug fixed, now skips `_legacy` private dir)
 2. [ ] Optimize script loading order for faster TBT (Total Blocking Time).
-3. [ ] Perform Documentation Metadata Audit. (Assigned T043)
+3. [x] Perform Documentation Metadata Audit. (July 2026 — completed, see seo-audit-report-2026-07.md)
+
+---
+
+## ⚠️ Strategic Pivot — July 2026
+
+**Effective immediately, the bulk-publishing strategy is paused.**
+
+GSC data (Jun 30 2026) confirms that 203 published blog posts have generated near-zero impressions and approximately 0 indexed pages. Google's "Crawled – currently not indexed" verdict on the blog is a quality signal that more volume will not fix.
+
+**The 10-part series approach produced thin content at high speed. Stop publishing new series until existing content earns indexing.**
+
+See `docs/content-calendar-2026.md` for the revised strategy.
+
+### Technical fixes applied (July 2026)
+- [x] 29 × 301 redirects added in `next.config.ts` (clears entire GSC 404 report)
+- [x] `robots.ts` updated — `/_next/static/media/` and `/_next/static/chunks/` disallowed (stops font files being crawled)
+- [x] `app/sitemap.ts` bug fixed — walker now skips all `_`-prefixed private dirs (was generating sitemap entries for non-existent URLs)
+- [x] Blog `[slug]/page.tsx` — `Article` JSON-LD: author changed to `Person` (Shaun), added `image`, `keywords`, `articleSection`, `dateModified`
+- [x] Blog `generateMetadata` — added `keywords`, `authors`, OG `images`, full Twitter Card
+- [x] Blog post header — category pill added, "ReplyBase Team" → "Shaun, ReplyBase" (E-E-A-T)
+- [x] Blog CTA copy — removed false "hundreds of founders" claim
+
+### Actions still required
+- [ ] Add `robots: { index: false }` to auth layout in `replybase-development` (clears 7 "Alternate canonical" GSC entries)
+- [ ] Delete `/blog/first-post` (test post — thin content signal)
+- [ ] Submit all fixed 404 URLs in GSC for revalidation
+- [ ] Audit 203 posts — identify top 20 keepers, 301-redirect or delete the rest
+- [ ] Add `FAQPage` JSON-LD schema to blog template (AEO signal)
+- [ ] Add `featured_image` to top 20 blog posts (enables Google Discover)
+- [ ] Publish Pillar 1: WhatsApp Business API UK guide (3,500+ words)
+- [ ] Launch Founding 10 Facebook campaign → `replybase.co.uk/founding10`

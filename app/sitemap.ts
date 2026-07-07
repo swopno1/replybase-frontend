@@ -60,7 +60,9 @@ function getStaticAppRoutes(): string[] {
 
       const segment = entry.name;
 
-      if (segment === "api" || segment === "_components" || segment === "actions") {
+      // Skip Next.js App Router private folders (underscore prefix), API dir, and actions dir.
+      // Private folders are never routed — including them in the sitemap generates URLs that 404.
+      if (segment.startsWith("_") || segment === "api" || segment === "actions") {
         continue;
       }
 

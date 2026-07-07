@@ -89,6 +89,9 @@ export default function Founding10Page() {
               >
                 Apply Now — It&apos;s Free
               </a>
+              <p className="mt-4 text-slate-400 text-sm">
+                Applications close once all 10 places have been filled.
+              </p>
             </div>
           </div>
         </section>
