@@ -1,7 +1,7 @@
 ---
 title: 'Facebook Messenger for Business: Driving Growth with AI'
 date: '2026-06-14'
-excerpt: 'Messenger is more than a chat app—it's a powerful customer acquisition tool. Discover how to use AI to scale your Facebook sales and support.'
+excerpt: "Messenger is more than a chat app—it's a powerful customer acquisition tool. Discover how to use AI to scale your Facebook sales and support."
 keywords: 'Facebook Messenger for business, Messenger AI bot, Facebook sales automation, ReplyBase Messenger, automated customer support'
 category: 'Social Media'
 tags: ['Facebook', 'Messenger', 'Automation', 'Growth', 'Customer Support']

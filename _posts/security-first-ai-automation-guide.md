@@ -1,7 +1,7 @@
 ---
 title: 'Security-First AI: Why ReplyBase is Safer than Generic Wrapper Bots'
 date: '2024-06-20'
-excerpt: 'Data privacy and security are the biggest concerns for businesses adopting AI. Discover why ReplyBase's architecture is built for GDPR compliance and enterprise-grade safety.'
+excerpt: "Data privacy and security are the biggest concerns for businesses adopting AI. Discover why ReplyBase's architecture is built for GDPR compliance and enterprise-grade safety."
 keywords: 'secure AI chatbot, GDPR compliant AI support, safe AI automation for business, AI data privacy, ReplyBase security'
 category: 'Security'
 tags: ['AI Security', 'GDPR', 'Data Privacy', 'SaaS', 'Enterprise AI']
