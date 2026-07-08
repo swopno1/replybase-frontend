@@ -129,6 +129,19 @@ export default function Founding10Form() {
       </div>
 
       <div className="space-y-2">
+        <Label htmlFor="businessWebsite" className="text-slate-300 font-medium">
+          Business Website <span className="text-slate-500 text-xs font-normal">(optional)</span>
+        </Label>
+        <Input
+          id="businessWebsite"
+          name="businessWebsite"
+          type="url"
+          placeholder="https://yourbusiness.co.uk"
+          className="bg-slate-800/60 border-slate-700 text-white placeholder:text-slate-500 focus:border-indigo-500 focus:ring-indigo-500/20 h-11"
+        />
+      </div>
+
+      <div className="space-y-2">
         <Label htmlFor="industry" className="text-slate-300 font-medium">
           Industry <span className="text-indigo-400">*</span>
         </Label>
@@ -160,6 +173,19 @@ export default function Founding10Form() {
           type="email"
           placeholder="jane@yourbusiness.co.uk"
           required
+          className="bg-slate-800/60 border-slate-700 text-white placeholder:text-slate-500 focus:border-indigo-500 focus:ring-indigo-500/20 h-11"
+        />
+      </div>
+
+      <div className="space-y-2">
+        <Label htmlFor="phone" className="text-slate-300 font-medium">
+          Phone Number <span className="text-slate-500 text-xs font-normal">(optional)</span>
+        </Label>
+        <Input
+          id="phone"
+          name="phone"
+          type="tel"
+          placeholder="+44 7700 000000"
           className="bg-slate-800/60 border-slate-700 text-white placeholder:text-slate-500 focus:border-indigo-500 focus:ring-indigo-500/20 h-11"
         />
       </div>
