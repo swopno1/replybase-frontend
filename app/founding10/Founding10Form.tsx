@@ -214,7 +214,7 @@ export default function Founding10Form() {
                 className="sr-only"
               />
               <span
-                className={`w-4 h-4 rounded-full border-2 flex-shrink-0 ${
+                className={`w-4 h-4 rounded-full border-2 shrink-0 ${
                   contactMethod === value ? "border-indigo-400 bg-indigo-400" : "border-slate-600"
                 }`}
               />
